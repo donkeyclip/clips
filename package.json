@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "turbo run start",
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "lint-staged": "lint-staged",
+    "prepare": "husky install",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "eslint": "^8.41.0",
+    "eslint-config-custom": "workspace:*",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
+    "pnpm": "^8.6.0",
+    "prettier": "^2.8.8",
+    "tsconfig": "workspace:*",
+    "turbo": "^1.9.6"
+  },
+  "packageManager": "pnpm@7.15.0",
+  "name": "clip"
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Clip",
+  "extends": "./base.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "lib": ["DOM", "ES2015", "ESNext"],
+    "module": "ESNext",
+    "outDir": "dist",
+    "moduleResolution": "node",
+    "target": "ESNext",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "importHelpers": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "declaration": true,
+    "noUnusedLocals": false
+  },
+  "include": ["./types.d.ts"]
+}

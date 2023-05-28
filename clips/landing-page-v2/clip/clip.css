@@ -1,0 +1,283 @@
+* {
+  /*
+    This is an example of how to use MotorCortex's init params in css, using a css variable
+      if you are unfamiliar with css variables here is a quick guide https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties#basic_usage
+  */
+  font-family: "DM Sans", sans-serif;
+  color: white;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.root {
+  width: 100%;
+  height: 100%;
+  background-color: #131415;
+  position: relative;
+}
+
+.cursor {
+  position: absolute;
+}
+
+.main-title {
+  background-color: #303030;
+  width: 600px;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 700;
+  border-radius: 30px;
+  left: 50%;
+  top: 8%;
+}
+.main-title-text {
+  width: 100%;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: break-spaces;
+  overflow: hidden;
+  position: absolute;
+}
+
+.latter {
+  position: relative;
+  top: 100%;
+}
+
+.first-slide,
+.second-slide {
+  top: 58%;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 276px);
+  grid-template-rows: repeat(3, 160px);
+  column-gap: 15px;
+  row-gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.main-grid-item {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  width: 275px;
+  height: 160px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 10px;
+}
+
+.grid-card {
+  width: 275px;
+  height: 160px;
+  background-color: #262626;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  position: absolute;
+  border-width: 0px;
+  border-style: solid;
+  border-color: #595961;
+}
+
+.clip-wrapper {
+  align-items: center;
+  background-color: #262626;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 330px;
+  width: 530px;
+  left: 420px;
+  top: 440px;
+}
+
+.clip-wrapper:hover {
+  border: 3px solid #595961;
+}
+
+.play-button,
+.pause-button {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+
+.play-bar {
+  align-items: center;
+  background-color: #bf59ff;
+  border-radius: 30px;
+  bottom: 35px;
+  display: flex;
+  height: 14px;
+  justify-content: flex-start;
+  left: 71px;
+  position: absolute;
+  width: 420px;
+}
+
+.play-bar-progress {
+  height: 7px;
+  border-radius: 7px;
+  width: 0px;
+  background-color: #35c7ff;
+  margin-left: 4.5px;
+}
+
+.title-wrapper,
+.subtitle-wrapper {
+  font-size: 24px;
+  font-weight: 700;
+  height: 35px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 500px;
+}
+
+.heighlight-text {
+  color: #35c7ff;
+}
+
+.title,
+.subtitle {
+  position: absolute;
+  width: 100%;
+}
+
+.product-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  height: 330px;
+  width: 530px;
+  font-size: 16px;
+  font-weight: bold;
+  top: 45%;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.product-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 30px;
+  background-color: #d9d9d9;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.product-text {
+  position: relative;
+}
+
+.product-title-wrapper,
+.product-description-wrapper,
+.product-price-wrapper,
+.product-button-wrapper {
+  height: 29px;
+  overflow: hidden;
+  position: relative;
+  width: 206px;
+}
+
+.product-button-wrapper {
+  height: 50px;
+  margin-top: 7px;
+}
+
+.product-title,
+.product-description,
+.product-price,
+.product-button,
+.product-image {
+  position: absolute;
+  top: 0;
+}
+
+.product-button {
+  align-items: center;
+  background-color: #bf59ff;
+  border-radius: 30px;
+  display: flex;
+  height: 42px;
+  justify-content: center;
+  width: 170px;
+}
+
+.browser {
+  top: 60%;
+}
+
+.client-list-wrapper {
+  background-color: #1b1b1b;
+  width: 350px;
+  position: absolute;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  gap: 40px;
+  font-size: 30px;
+  font-weight: bold;
+  top: 18%;
+}
+
+.client-card {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  padding: 15px;
+  width: 300px;
+  border-radius: 30px;
+}
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+}
+
+.cliet-image {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 31px;
+}
+
+.browser-logo:hover {
+  fill: #525252;
+}
+
+.browser-link:hover {
+  fill: #c7c7c7;
+}
