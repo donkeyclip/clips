@@ -26,7 +26,7 @@ const failedToFindCmd =
   !args._.find((arg) => ["build", "start"].includes(arg));
 if (args.help || failedToFindCmd) {
   console.log(`
-Usage: donkeyclip-bundler <command> [options]
+Usage: donkeyclip-server <command> [options]
 
 Commands:
   build      Build the bundle.

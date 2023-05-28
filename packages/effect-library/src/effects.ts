@@ -1,14 +1,8 @@
 import { CSSEffect } from "@donkeyclip/motorcortex";
+import { CSSProps } from "./type";
 
 function cssEffectGenerator(key: keyof CSSStyleDeclaration) {
-  return (params: {
-    value: string | number;
-    initValue?: string | number;
-    selector: ConstructorParameters<typeof CSSEffect>[1]["selector"];
-    duration: ConstructorParameters<typeof CSSEffect>[1]["duration"] | any; // TODO: drop any once we get the type fix from mc
-    delay?: ConstructorParameters<typeof CSSEffect>[1]["delay"];
-    easing?: keyof typeof import("@donkeyclip/motorcortex").utils["easings"];
-  }) => {
+  return (params: CSSProps) => {
     const {
       value,
       initValue,

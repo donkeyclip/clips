@@ -14,7 +14,7 @@
   "scripts": {
     "lint": "eslint -c .eslintrc --no-error-on-unmatched-pattern ./**/*{.ts,.js}",
     "lint:fix": "pnpm run lint -- --fix",
-    "start": "donkeyclip-bundler start ./clip/clip.ts"
+    "start": "donkeyclip-server start ./clip/clip.ts"
   },
   "keywords": [
     "motorcortex",
