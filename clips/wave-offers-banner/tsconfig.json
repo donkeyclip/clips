@@ -1,0 +1,13 @@
+{
+  "extends": "tsconfig/clip.json",
+  "compilerOptions": {
+    "target": "ESNext",
+    "outDir": "./dist/",
+    "allowJs": true,
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {}
+  },
+  "include": ["./", "../../packages/effect-library/src/scaleBig.ts"],
+  "exclude": ["dist", "./server/bundle.js", "node_modules"]
+}

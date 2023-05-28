@@ -8,7 +8,7 @@
   "sideEffects": false,
   "type": "module",
   "bin": {
-    "donkeyclip-bundler": "./dist/cli/index.js"
+    "donkeyclip-server": "./dist/cli/index.js"
   },
   "engines": {
     "node": ">=18"
