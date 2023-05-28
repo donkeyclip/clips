@@ -1,6 +1,8 @@
 /* eslint-disable sonarjs/no-duplicate-string */
 import { backgroundColor, left, opacity, top } from "@donkeyclip/effects";
 import { HTMLClip } from "@donkeyclip/motorcortex";
+import { renderDonkeyclip } from "@donkeyclip/server";
+import pkg from "../package.json";
 import { clipIncidents } from "./ClipIncidents";
 import css from "./clip.css";
 import html from "./clip.html";
@@ -151,4 +153,4 @@ clip.addIncident(
   16790
 );
 
-export { clip };
+export default renderDonkeyclip({ clipId: pkg.id, initParams, clip });
