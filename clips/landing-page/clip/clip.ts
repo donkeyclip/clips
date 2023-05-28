@@ -1,6 +1,8 @@
 /* eslint-disable sonarjs/no-duplicate-string */
 import { left, opacity, scale, width } from "@donkeyclip/effects";
 import { HTMLClip } from "@donkeyclip/motorcortex";
+import { renderDonkeyclip } from "@donkeyclip/server";
+import pkg from "../package.json";
 import css from "./clip.css";
 import html from "./clip.html";
 import initParams from "./initParams";
@@ -477,4 +479,4 @@ clip.addIncident(
   14300
 );
 
-export { clip };
+export default renderDonkeyclip({ clipId: pkg.id, initParams, clip });
