@@ -14,7 +14,7 @@ export default [
             description: "New fashion Shoes",
             price: "300$",
             image:
-              "https://donkeyclip.github.io/clips/clips/landing-page-v2/server/images/shoes.jpg",
+              "https://donkeyclip.github.io/clips/clips/landing-page-v2/images/shoes.jpg",
           },
         },
         {
@@ -26,7 +26,7 @@ export default [
             description: "New headphones",
             price: "200$",
             image:
-              "https://donkeyclip.github.io/clips/clips/landing-page-v2/server/images/tech.png",
+              "https://donkeyclip.github.io/clips/clips/landing-page-v2/images/tech.png",
           },
         },
         {
@@ -38,7 +38,7 @@ export default [
             description: "Bes bike for kids",
             price: "250$",
             image:
-              "https://donkeyclip.github.io/clips/clips/landing-page-v2/server/images/bike.jpg",
+              "https://donkeyclip.github.io/clips/clips/landing-page-v2/images/bike.jpg",
           },
         },
       ],
