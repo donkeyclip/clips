@@ -36,7 +36,7 @@ jobs:
     timeout-minutes: 45
     # Only run on main repo on and PRs that match the main repo.
     if: |
-      github.repository == 'donkeyclip/donkeyclip' &&
+      github.repository == 'donkeyclip/clips' &&
       (github.event_name != 'pull_request' ||
       github.event.pull_request.head.repo.full_name == github.repository)
     steps:
