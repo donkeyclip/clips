@@ -28,7 +28,7 @@
     "eslint": "^8.32.0",
     "eslint-config-custom": "workspace:*",
     "prettier": "^2.8.3",
-    "typescript": "5.0.4"
+    "typescript": "5.1.3"
   },
   "optionalDependencies": {
     "tsconfig": "workspace:*"
