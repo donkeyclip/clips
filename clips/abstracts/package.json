@@ -1,0 +1,42 @@
+{
+  "name": "abstracts",
+  "id": "3fcf7586-6aaf-44c8-abf1-703275cb12f4",
+  "version": "1.0.0",
+  "description": "Starter repo for creating Donkeyclips",
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/donkeyclip/motorcortex-clip-starter"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "scripts": {
+    "lint": "eslint -c .eslintrc --no-error-on-unmatched-pattern ./**/*{.ts,.js}",
+    "lint:fix": "pnpm run lint -- --fix",
+    "start": "donkeyclip-server start ./clip/clip.ts"
+  },
+  "keywords": [
+    "motorcortex",
+    "donkeyclip",
+    "motorcortex-clip"
+  ],
+  "devDependencies": {
+    "@donkeyclip/effects": "workspace:*",
+    "@donkeyclip/motorcortex": "9.7.0",
+    "@donkeyclip/motorcortex-player": "2.10.8",
+    "@donkeyclip/server": "workspace:*",
+    "eslint": "^8.32.0",
+    "eslint-config-custom": "workspace:*",
+    "typescript": "5.1.3"
+  },
+  "optionalDependencies": {
+    "tsconfig": "workspace:*"
+  },
+  "dependencies": {
+    "@donkeyclip/motorcortex-anime": "^3.1.1",
+    "esbuild-loader": "^3.0.1",
+    "html-loader": "^4.2.0",
+    "postcss-loader": "7.3.3"
+  }
+}
