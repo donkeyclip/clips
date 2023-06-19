@@ -30,7 +30,7 @@
     "@donkeyclip/motorcortex": "9.7.0",
     "eslint": "^8.41.0",
     "eslint-config-custom": "workspace:*",
-    "tsup": "6.7.0",
+    "tsup": "7.0.0",
     "typescript": "5.1.3"
   }
 }
