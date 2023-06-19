@@ -19,6 +19,6 @@
     "tsconfig": "workspace:*",
     "turbo": "^1.9.9"
   },
-  "packageManager": "pnpm@8.6.2",
+  "packageManager": "pnpm@8.6.3",
   "name": "clip"
 }
