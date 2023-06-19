@@ -1,15 +1,8 @@
 /* eslint-disable sonarjs/no-duplicate-string */
-import {
-  backgroundColor,
-  left,
-  opacity,
-  top,
-  topMoveCombo,
-} from "@donkeyclip/effects";
+import { left, opacity, top, topMoveCombo } from "@donkeyclip/effects";
 import { HTMLClip } from "@donkeyclip/motorcortex";
 import { renderDonkeyclip } from "@donkeyclip/server";
 import pkg from "../package.json";
-import { clipIncidents } from "./ClipIncidents";
 import css from "./clip.css";
 import html from "./clip.html";
 import initParams from "./initParams";
