@@ -1,0 +1,120 @@
+* {
+ 
+  --font-color: {{ initParams.fontColor }};
+  --background-color: {{ initParams.backgroundColor }};
+  --primary-color: {{ initParams.primaryColor }};
+  --secondary-color: {{ initParams.secondaryColor }};
+  /*
+    This is an example of how to use MotorCortex's init params in css, using a css variable
+      if you are unfamiliar with css variables here is a quick guide https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties#basic_usage
+  */
+}
+
+.container {
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+height: 100%;
+color: var(--font-color);
+background-color: var(--background-color);
+font-family: 'Inter', sans-serif;
+font-weight: 900;
+}
+
+.left-tranform{
+  transform: translate(-50%, -50%);
+  left: 122px;
+}
+
+.absolute-flex{
+  position: absolute;
+  display: flex;
+  overflow: hidden;
+}
+
+.text-wrapper,.secondaryText-wrapper{
+  height: 60px;
+  font-size: 40px;
+  color: var(--font-color);
+ 
+  font-family: 'Kanit', sans-serif;
+}
+.text-wrapper{
+
+  top: 63px;
+}
+
+.secondaryText-wrapper{
+ 
+  top: 120px;
+}
+.secondaryText-letter,.tex-letter,.offer-letter{
+  position: relative;
+  top: 100%;
+}
+
+.cta-wrapper{
+  position: absolute;
+  width: 164px;
+  height: 34px;
+  top: 230px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  
+}
+
+.cta{
+  position: absolute;
+  width: 158px;
+  height: 28px;
+  top: 158px;
+  border: 1px solid var(--font-color);
+  border-radius: 148px;
+  color: var(--font-color);
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  font-family: Poppins;
+  font-weight: 700;
+}
+
+
+
+.offer-wrapper{
+  width: 170px;
+  height: 45px;
+  top: 170px;
+  line-height: 42px;
+  font-size: 40px;
+  font-weight: 400 !important;
+}
+
+
+
+.product-wrapper{
+  position: absolute;
+  width: 687px;
+  height: 167px;
+  left: 377px;
+  top:-70px;
+  transform: rotate(-35deg) ;
+  gap:15px
+}
+
+.product-wrapper-bottom{
+  top:532px;
+  left: -422px;
+}
+
+.product-image{
+  width: 229px;
+  height: 167px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
