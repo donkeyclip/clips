@@ -22,7 +22,7 @@ font-family: 'Inter', sans-serif;
 font-weight: 900;
 }
 
-.left-tranform{
+.left-transform{
   transform: translate(-50%, -50%);
   left: 122px;
 }
