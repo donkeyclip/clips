@@ -1,11 +1,5 @@
 /* eslint-disable sonarjs/no-duplicate-string */
-import {
-  left,
-  opacity,
-  top,
-  topMoveCombo,
-  calculateDiagonalEndPosition,
-} from "@donkeyclip/effects";
+import { left, top, calculateDiagonalEndPosition } from "@donkeyclip/effects";
 import { HTMLClip } from "@donkeyclip/motorcortex";
 import { renderDonkeyclip } from "@donkeyclip/server";
 import pkg from "../package.json";
