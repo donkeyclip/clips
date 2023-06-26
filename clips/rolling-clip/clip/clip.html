@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="text-wrapper absolute-flex left-tranform">
+    <div class="tex-letter" mc-for="key,item" mc-of="initParams.text">
+      {{item}}
+      <div mc-if="item ===' '">&nbsp;</div>
+    </div>
+  </div>
+  <div class="secondaryText-wrapper absolute-flex left-tranform">
+    <div
+      class="secondaryText-letter"
+      mc-for="key,item"
+      mc-of="initParams.secondaryText"
+    >
+      {{item}}
+      <div mc-if="item ===' '">&nbsp;</div>
+    </div>
+  </div>
+  <div class="cta-wrapper left-tranform">
+    <div class="cta">{{initParams.cta}}</div>
+  </div>
+
+  <div class="product-wrapper product-wrapper-top absolute-flex">
+    <div
+      class="product-image"
+      mc-for="key,item"
+      mc-of="initParams.products"
+      style="background-image: url({{item.image}});"
+    ></div>
+  </div>
+  <div class="product-wrapper product-wrapper-bottom absolute-flex">
+    <div
+      class="product-image"
+      mc-for="key,item"
+      mc-of="initParams.products"
+      style="background-image: url({{item.image}});"
+    ></div>
+  </div>
+  <div class="offer-wrapper absolute-flex left-tranform">
+    <div class="offer-letter" mc-for="key,item" mc-of="initParams.offer">
+      {{item}}
+      <div mc-if="item ===' '">&nbsp;</div>
+    </div>
+  </div>
+</div>
