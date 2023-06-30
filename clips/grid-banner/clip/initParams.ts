@@ -1,45 +1,26 @@
 export default [
   {
-    name: "Blue medium",
+    name: "Deafaut",
     value: {
-      firstSlideTitle: "Preview the template",
-      secondSlideTitle: "Use to Deliver Personalized Content",
-      users: [
+      primaryColor: "#FF5DBE",
+      secondaryColor: "#FA7474",
+      backgroundColor: "#FCFCFC",
+      fontColor: "#000",
+      text: ["summer", "offers"],
+      offer: ["50", "%", "off"],
+      cta: "Buy Now",
+      products: [
         {
-          name: "Alice",
-          intrest: "shoes",
-          color: "191, 89, 255",
-          product: {
-            title: "Hike 4",
-            description: "New fashion Shoes",
-            price: "300$",
-            image:
-              "https://donkeyclip.github.io/clips/clips/landing-page-v2/images/shoes.jpg",
-          },
+          image:
+            "https://donkeyclip.github.io/wave-offers-banner/server/assets/pr1.png",
         },
         {
-          name: "Bob",
-          intrest: "tech",
-          color: "62, 222, 255",
-          product: {
-            title: "Kgbm",
-            description: "New headphones",
-            price: "200$",
-            image:
-              "https://donkeyclip.github.io/clips/clips/landing-page-v2/images/tech.png",
-          },
+          image:
+            "https://donkeyclip.github.io/wave-offers-banner/server/assets/pr2.png",
         },
         {
-          name: "Little Timmy",
-          intrest: "bikes",
-          color: "237, 231, 92",
-          product: {
-            title: "Kubel",
-            description: "Bes bike for kids",
-            price: "250$",
-            image:
-              "https://donkeyclip.github.io/clips/clips/landing-page-v2/images/bike.jpg",
-          },
+          image:
+            "https://donkeyclip.github.io/wave-offers-banner/server/assets/pr3.png",
         },
       ],
     },

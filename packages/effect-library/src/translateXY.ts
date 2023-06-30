@@ -1,7 +1,7 @@
 import { CSSEffect } from "@donkeyclip/motorcortex";
-import { CommonParams } from "./type";
 export const translateXY = (
-  { selector, duration, delay, easing = "linear" }: CommonParams,
+  selector: string,
+  duration: number,
   x: string,
   initialX: string,
   y: string,
@@ -25,7 +25,5 @@ export const translateXY = (
     {
       selector,
       duration,
-      delay,
-      easing,
     }
   );

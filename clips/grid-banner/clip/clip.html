@@ -169,11 +169,8 @@
     </div>
   </div>
 
-  <div class="pr-bg">
-    <div
-      class="image"
-      style="background-image: url({{initParams.products[0].image}});"
-    ></div>
+  <div class="pr-bg" mc-for="key,item" mc-of="initParams.products">
+    <div class="image" style="background-image: url({{item.image}});"></div>
     <div class="shadow"></div>
   </div>
 </div>

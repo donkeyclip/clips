@@ -1,13 +1,5 @@
 /* eslint-disable sonarjs/no-duplicate-string */
-import {
-  backgroundColor,
-  left,
-  opacity,
-  top,
-  translateXY,
-  wave,
-  floating,
-} from "@donkeyclip/effects";
+import { translateXY, wave, floating, left } from "@donkeyclip/effects";
 import { HTMLClip } from "@donkeyclip/motorcortex";
 import { renderDonkeyclip } from "@donkeyclip/server";
 import pkg from "../package.json";
@@ -29,13 +21,13 @@ const clip = new HTMLClip({
   host,
   initParams: initParams[0].value,
   containerParams: {
-    width: "1280px",
-    height: "720px",
+    width: "470px",
+    height: "200px",
   },
   fonts: [
     {
       type: "google-font",
-      src: "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap",
+      src: "https://fonts.googleapis.com/css2?family=Kanit:wght@800;900&display=swap",
     },
   ],
   audio: "off",
