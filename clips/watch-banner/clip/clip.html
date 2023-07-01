@@ -1,0 +1,21 @@
+<div class="root">
+  <div class="rect1"></div>
+  <div class="rect2"></div>
+
+  <div class="product" mc-for="key,item" mc-of="initParams.products">
+    <div class="image-wrapper absolute-flex center">
+      <div class="image" style="background-image: url({{item.image}});"></div>
+    </div>
+    <div class="pr-name absolute-flex centerX">
+      <div class="tex-letter" mc-for="key,letter" mc-of="item.name">
+        {{letter}}
+        <div mc-if="letter ===' '">&nbsp;</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-wrapper absolute-flex centerX">
+    <div class="text">{{initParams.text}}</div>
+  </div>
+  <div class="cta centerX">{{initParams.cta}}</div>
+</div>
