@@ -1,9 +1,8 @@
 /* eslint-disable sonarjs/no-duplicate-string */
-import { translateXY, wave, floating, left } from "@donkeyclip/effects";
+import { translateXY, wave, leftMoveCombo } from "@donkeyclip/effects";
 import { HTMLClip } from "@donkeyclip/motorcortex";
 import { renderDonkeyclip } from "@donkeyclip/server";
 import pkg from "../package.json";
-import { clipIncidents } from "./ClipIncidents";
 import css from "./clip.css";
 import html from "./clip.html";
 import initParams from "./initParams";
@@ -51,6 +50,8 @@ clip.addIncident(
   translateXY(".cta-t:nth-child(2)", 500, "0px", "-3px", "0px", "-3px"),
   1550
 );
-clip.addIncident(floating(".image", "-48%", "-50%"), 0);
-
+clip.addIncident(
+  leftMoveCombo(".pr-bg", "0%", "-50%", "-50%", 1200, 800, 3000),
+  0
+);
 export default renderDonkeyclip({ clipId: pkg.id, initParams, clip });
