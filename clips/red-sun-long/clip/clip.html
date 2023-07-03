@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="left-ball"></div>
+  <div class="center-ball"></div>
+  <div class="right-ball"></div>
+  <div class="text-wrapper absolute-flex">
+    <div class="tex-loop" mc-for="key,item" mc-of="5">{{initParams.text}}</div>
+  </div>
+  <div class="secondaryText-wrapper absolute-flex">
+    <div
+      class="secondaryText-letter"
+      mc-for="key,item"
+      mc-of="initParams.secondaryText"
+    >
+      {{item}}
+      <div mc-if="item ===' '">&nbsp;</div>
+    </div>
+  </div>
+
+  <div class="product-wrapper absolute-flex">
+    <div
+      class="product-image absolute-flex"
+      mc-for="key,item"
+      mc-of="initParams.products"
+      style="background-image: url({{item.image}});"
+    ></div>
+  </div>
+  <div class="cta-offer-wrapper">
+    <div class="offer-wrapper absolute-flex">
+      <div class="offer-percentage">{{initParams.offer}}</div>
+    </div>
+    <div class="cta-wrapper">
+      <div class="cta">{{initParams.cta}}</div>
+    </div>
+  </div>
+</div>
