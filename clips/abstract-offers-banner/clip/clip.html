@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="text">{{initParams.text}}</div>
+
+  <div class="product" mc-for="key,item" mc-of="initParams.products">
+    <div class="pr-bg">
+      <div
+        class="image"
+        style="background-image: url({{item.image}});
+    "
+      ></div>
+      <div class="shadow"></div>
+    </div>
+    <div class="offer-circle">
+      <div class="offer">{{initParams.offer}}</div>
+    </div>
+
+    <div class="cross-wrapper">
+      <div class="cross"></div>
+      <div class="cross"></div>
+      <div class="cross"></div>
+      <div class="cross"></div>
+    </div>
+
+    <div class="grid-dot-wrapper">
+      <div mc-for="key,item" mc-of="66" class="grid-dot"></div>
+    </div>
+  </div>
+</div>
