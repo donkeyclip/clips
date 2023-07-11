@@ -2,4 +2,8 @@ export * from "./effects";
 export * from "./fadeOut";
 export * from "./scaleBig";
 export * from "./topMoveCombo";
+export * from "./leftMoveCombo";
+export * from "./wave";
+export * from "./translateXY";
+export * from "./floating";
 export * from "./helpers";

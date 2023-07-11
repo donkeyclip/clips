@@ -1,0 +1,166 @@
+* {
+  --font-color: {{ initParams.fontColor }};
+  --primary-color: {{ initParams.primaryColor }};
+  --secondary-color: {{ initParams.secondaryColor }};
+  --bg-color: {{ initParams.backgroundColor }};
+  /*
+    This is an example of how to use MotorCortex's init params in css, using a css variable
+      if you are unfamiliar with css variables here is a quick guide https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties#basic_usage
+  */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  color: var(--font-color);
+  font-family: 'Kanit';
+  font-style: normal;
+  background-color: var(--bg-color);
+ 
+}
+
+.grid{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.27) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.27) 1px, transparent 1px);
+  background-size: 18px 18px;
+
+}
+
+.column{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  left: 50%;
+  height: 100%;
+  gap: 10px;
+}
+
+.text{
+  position: relative;
+  top: 5px;
+  width: 200px;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 43px;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.row-wrapper{
+  display: flex;
+  position: relative;
+}
+.row{
+  position: relative;
+}
+
+.t1{
+  align-self: flex-start;
+}
+
+.t2{
+  align-self: flex-end;
+}
+
+.offer{
+  position: relative;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 30px;
+  -webkit-text-stroke: 1.5px var(--font-color);
+  -webkit-text-fill-color: transparent;
+  animation: offer 8s linear infinite;  
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+}
+
+.o1{
+  font-size: 16x;
+}
+
+.o3{
+  font-size: 30px;
+}
+
+.cta{
+  position: relative;
+  background: var(--font-color);
+  border-radius: 77px;
+  align-self: center;
+  justify-self: flex-end;
+  height: 20px;
+  top:20px;
+  padding: 5px 7px;
+}
+
+.cta-t{
+  position: relative;
+  top: -12px;
+  font-weight: 900;
+  font-size: 25px;
+  color: var(--secondary-color);
+  white-space: nowrap;
+}
+
+.cta-t:nth-child(2){
+  color: var(--primary-color);
+  top: -50px;
+}
+.cta-t:nth-child(3){
+  color: var(--bg-color);
+  top: -88px;
+}
+
+
+.pr-bg{
+  position: absolute;
+  width: 217px;
+  height: 136px;
+  left: 0%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  background: var(--primary-color);
+}
+.image{
+  position: relative;
+  top: 20%;
+  left: 45%;
+  transform: translate(-50%,-50%);
+  width: 115px;
+  height: 115px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.shadow{
+  width: 120px;
+  height: 8px;
+  background: radial-gradient(40.52% 50% at 50% 50%, rgba(0, 0, 0, 0.54) 0%, rgba(0, 0, 0, 0) 100%);
+  position: absolute;
+  top: 70%;
+  left: 45%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+
+.color1{
+  fill: var(--primary-color);
+}
+.color2{
+  fill: var(--secondary-color);
+}
+
