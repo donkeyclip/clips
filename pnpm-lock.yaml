@@ -264,8 +264,8 @@ importers:
         specifier: 9.9.0
         version: 9.9.0
       '@donkeyclip/motorcortex-player':
-        specifier: 2.10.8
-        version: 2.10.8(@donkeyclip/motorcortex@9.9.0)
+        specifier: 2.10.9
+        version: 2.10.9(@donkeyclip/motorcortex@9.9.0)
       '@donkeyclip/server':
         specifier: workspace:*
         version: link:../../packages/server
@@ -1889,15 +1889,6 @@ packages:
       '@donkeyclip/motorcortex': 9.9.0
       mc-animejs-core: 3.1.5
     dev: false
-
-  /@donkeyclip/motorcortex-player@2.10.8(@donkeyclip/motorcortex@9.9.0):
-    resolution: {integrity: sha512-83Z7+oiql740h/p4MtAWzBtEIAxauyF0s0gLl3z0uGY5h34e8ZfL/NKDtjI5SQcoQW+mU4efYjyat5DuNLcINA==}
-    engines: {node: '>=12'}
-    peerDependencies:
-      '@donkeyclip/motorcortex': '>= 7.4.0 < 10'
-    dependencies:
-      '@donkeyclip/motorcortex': 9.9.0
-    dev: true
 
   /@donkeyclip/motorcortex-player@2.10.9(@donkeyclip/motorcortex@9.9.0):
     resolution: {integrity: sha512-DI1bR3jM6UCmcfT1iKyHZmcebUHdWPYcB05XzzNh+iQWC0MbbLDkGVHTvpSl3oQYviUUMDAaJBh+RtbG/eJGxw==}
