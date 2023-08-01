@@ -1,0 +1,69 @@
+* {
+  --color: {{ initParams.color }};
+}
+
+.root {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  background-color: #121212;
+}
+
+
+.blob-wrapper {
+  filter: url("#goo");
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.blob {
+  position: absolute;
+  left: -20%;
+  top: 50%;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  border-radius: 100%;
+  margin-top: -50px;
+  margin-left: -50px;
+  background-color: rgba(147,92,255,1) ;
+
+}
+
+.br{
+  background-image: linear-gradient(90deg, rgba(52,200,255,1) 0%,  rgba(52,200,255,1) 100%);
+  left: 120%;
+}
+
+.logo{
+  position: absolute;
+  left: 50.5%;
+  top: 49%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.logo-path{
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  stroke-width:12;
+  stroke:#121212
+}
+
+
+.logo-text{
+  position: absolute;
+  /* width: 0px; */
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 52%;
+}
+

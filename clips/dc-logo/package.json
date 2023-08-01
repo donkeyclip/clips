@@ -1,12 +1,12 @@
 {
-  "name": "tech-banner",
-  "id": "78a36747-b285-4ef4-a0c1-c38c2dade8c8",
+  "name": "dc-logo",
+  "id": "b901bbdd-7ab8-4b0b-916d-7994948c8787",
   "version": "1.0.0",
   "description": "Starter repo for creating Donkeyclips",
   "author": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/donkeyclip/motorcortex-clip-starter"
+    "url": "https://github.com/donkeyclip/clips"
   },
   "engines": {
     "node": ">=14"
