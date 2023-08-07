@@ -1,9 +1,8 @@
 /* eslint-disable sonarjs/no-duplicate-string */
-import { top, topMoveCombo } from "@donkeyclip/effects";
+import { top, topLetterMove, topMoveCombo } from "@donkeyclip/effects";
 import { HTMLClip } from "@donkeyclip/motorcortex";
 import { renderDonkeyclip } from "@donkeyclip/server";
 import pkg from "../package.json";
-import { clipIncidents } from "./ClipIncidents";
 import css from "./clip.css";
 import html from "./clip.html";
 import initParams from "./initParams";
@@ -58,6 +57,18 @@ clip.addIncident(
   0,
 );
 
-clip.addIncident(clipIncidents(".pr-name"), 0);
+clip.addIncident(
+  topLetterMove(
+    ".pr-name",
+    ".tex-letter",
+    "0%",
+    "-100%",
+    "100%",
+    3000,
+    2000,
+    200,
+  ),
+  0,
+);
 
 export default renderDonkeyclip({ clipId: pkg.id, initParams, clip });
