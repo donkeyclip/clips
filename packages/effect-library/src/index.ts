@@ -6,4 +6,5 @@ export * from "./leftMoveCombo";
 export * from "./wave";
 export * from "./translateXY";
 export * from "./floating";
+export * from "./topLetterMove";
 export * from "./helpers";
