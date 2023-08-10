@@ -6,17 +6,17 @@
 }
 
 .container {
-display: flex;
-justify-content: center;
-flex-direction: column;
-align-items: center;
-height: 100%;
-background: var(--backgroundColor);
-font-family: 'Inter';
-font-style: normal;
-font-weight: 900;
-cursor: pointer;
-
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  background: var(--backgroundColor);
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  cursor: pointer;
+  color: var(--fontColor);
 }
 
 .circle{
@@ -67,7 +67,7 @@ cursor: pointer;
   border-radius: 148px;
   padding: 5px 20px;
   background: var(--primaryColor);
-  color: #FFFFFF;
+  color: var(--secondaryColor);
   white-space: nowrap;
   font-size: 14px;
   line-height: 17px;
@@ -160,5 +160,8 @@ cursor: pointer;
   position: absolute;
   left: 635.97px;
   top: 52px;
-  
+}
+
+svg path{
+  stroke: var(--fontColor);
 }
