@@ -7,4 +7,5 @@ export * from "./wave";
 export * from "./translateXY";
 export * from "./floating";
 export * from "./topLetterMove";
+export * from "./letterOpacity";
 export * from "./helpers";

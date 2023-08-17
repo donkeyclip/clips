@@ -1,6 +1,5 @@
 export default {
   primaryColor: { type: "color" },
-  secondaryColor: { type: "color" },
   backgroundColor: { type: "color" },
   fontColor: { type: "color" },
   text: { type: "string" },
