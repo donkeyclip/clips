@@ -4,7 +4,6 @@ export default [
     value: {
       primaryColor: "#952020",
       backgroundColor: "#F5F5F5",
-
       fontColor: "#19181C",
       text: "New Arrivals",
       secondaryText: "Summer offers",

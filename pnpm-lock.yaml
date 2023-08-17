@@ -401,6 +401,47 @@ importers:
         specifier: 5.1.6
         version: 5.1.6
 
+  clips/square-offers-bg1-banner:
+    dependencies:
+      "@donkeyclip/motorcortex-anime":
+        specifier: ^3.1.1
+        version: 3.1.1(@donkeyclip/motorcortex@9.10.0)
+      esbuild-loader:
+        specifier: ^3.0.1
+        version: 3.1.0(webpack@5.88.2)
+      html-loader:
+        specifier: ^4.2.0
+        version: 4.2.0(webpack@5.88.2)
+      postcss-loader:
+        specifier: 7.3.3
+        version: 7.3.3(postcss@8.4.27)(webpack@5.88.2)
+    optionalDependencies:
+      tsconfig:
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
+    devDependencies:
+      "@donkeyclip/effects":
+        specifier: workspace:*
+        version: link:../../packages/effect-library
+      "@donkeyclip/motorcortex":
+        specifier: 9.10.0
+        version: 9.10.0
+      "@donkeyclip/motorcortex-player":
+        specifier: 2.10.8
+        version: 2.10.8(@donkeyclip/motorcortex@9.10.0)
+      "@donkeyclip/server":
+        specifier: workspace:*
+        version: link:../../packages/server
+      eslint:
+        specifier: ^8.32.0
+        version: 8.46.0
+      eslint-config-custom:
+        specifier: workspace:*
+        version: link:../../packages/eslint-config-custom
+      typescript:
+        specifier: 5.1.6
+        version: 5.1.6
+
   clips/tech-banner:
     dependencies:
       "@donkeyclip/motorcortex-anime":
@@ -2374,6 +2415,18 @@ packages:
       "@donkeyclip/motorcortex": 9.9.0
       mc-animejs-core: 3.1.5
     dev: false
+
+  /@donkeyclip/motorcortex-player@2.10.8(@donkeyclip/motorcortex@9.10.0):
+    resolution:
+      {
+        integrity: sha512-83Z7+oiql740h/p4MtAWzBtEIAxauyF0s0gLl3z0uGY5h34e8ZfL/NKDtjI5SQcoQW+mU4efYjyat5DuNLcINA==,
+      }
+    engines: { node: ">=12" }
+    peerDependencies:
+      "@donkeyclip/motorcortex": ">= 7.4.0 < 10"
+    dependencies:
+      "@donkeyclip/motorcortex": 9.10.0
+    dev: true
 
   /@donkeyclip/motorcortex-player@2.10.8(@donkeyclip/motorcortex@9.9.0):
     resolution:
