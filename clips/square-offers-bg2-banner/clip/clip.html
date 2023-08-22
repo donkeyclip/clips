@@ -1,0 +1,52 @@
+<div class="container">
+  <div class="offer-bg-wrapper">
+    <div class="offer-bg offer-bg1">
+      <div class="offer">{{initParams.text}}</div>
+      <div class="offer">{{initParams.text}}</div>
+      <div class="offer">{{initParams.text}}</div>
+      <div class="offer">{{initParams.text}}</div>
+      <div class="offer">{{initParams.text}}</div>
+      <div class="offer">{{initParams.text}}</div>
+      <div class="offer">{{initParams.text}}</div>
+      <div class="offer">{{initParams.text}}</div>
+      <div class="offer">{{initParams.text}}</div>
+      <div class="offer">{{initParams.text}}</div>
+      <div class="offer">{{initParams.text}}</div>
+    </div>
+    <div class="offer-bg offer-bg2">
+      <div class="offer">{{initParams.offer[0]}}</div>
+      <div class="offer">{{initParams.offer[0]}}</div>
+      <div class="offer">{{initParams.offer[0]}}</div>
+      <div class="offer">{{initParams.offer[0]}}</div>
+      <div class="offer">{{initParams.offer[0]}}</div>
+      <div class="offer">{{initParams.offer[0]}}</div>
+      <div class="offer">{{initParams.offer[0]}}</div>
+      <div class="offer">{{initParams.offer[0]}}</div>
+      <div class="offer">{{initParams.offer[0]}}</div>
+      <div class="offer">{{initParams.offer[0]}}</div>
+      <div class="offer">{{initParams.offer[0]}}</div>
+    </div>
+  </div>
+  <div class="pr-name-wrapper">
+    <div class="pr-name" mc-for="key,item" mc-of="initParams.products">
+      <div class="letter" mc-for="key,letter" mc-of="item.name">
+        {{letter}}
+        <div mc-if="letter ===' '">&nbsp;</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pr-image" mc-for="key,item" mc-of="initParams.products">
+    <div class="image" style="background-image: url({{item.image}});"></div>
+  </div>
+
+  <div class="bottom-line">
+    <div class="description-wrapper">
+      <div class="pr-description" mc-for="key,item" mc-of="initParams.products">
+        {{item.description}}
+      </div>
+    </div>
+
+    <div class="cta">{{initParams.cta}}</div>
+  </div>
+</div>
