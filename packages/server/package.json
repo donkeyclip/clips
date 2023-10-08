@@ -30,7 +30,7 @@
     "cssnano": "^6.0.1",
     "html-loader": "^4.2.0",
     "minimist": "^1.2.8",
-    "postcss": "^8.4.27",
+    "postcss": "^8.4.31",
     "postcss-loader": "7.3.3",
     "source-map-loader": "^4.0.1",
     "swc-loader": "^0.2.3",
