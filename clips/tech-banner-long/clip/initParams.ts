@@ -1,29 +1,28 @@
 export default [
   {
-    name: "Deafaut",
+    name: "Tech Banner Long",
     value: {
       primaryColor: "#cbe896",
       secondaryColor: "#92a269",
       backgroundColor: "#aac0af",
       fontColor: "#272727",
       text: "New Arrivals",
-      offer: ["35", "%", "off"],
-      cta: "Explore Now",
-      link: "https://donkeyclip.com/explore",
+      secondaryText: "35% OFF",
+      ctaText: "Explore Now",
       products: [
         {
           name: "Smartwatch",
-          image:
+          featured_image:
             "https://donkeyclip.github.io/clips/clips/tech-banner/images/watch.png",
         },
         {
           name: "Smartphone",
-          image:
+          featured_image:
             "https://donkeyclip.github.io/clips/clips/tech-banner/images/phone.png",
         },
         {
           name: "Laptop",
-          image:
+          featured_image:
             "https://donkeyclip.github.io/clips/clips/tech-banner/images/laptop.png",
         },
       ],
