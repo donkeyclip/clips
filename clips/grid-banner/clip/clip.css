@@ -78,11 +78,11 @@
   line-height: 30px;
   -webkit-text-stroke: 1.5px var(--font-color);
   -webkit-text-fill-color: transparent;
-  animation: offer 8s linear infinite;  
   text-align: center;
   display: flex;
   flex-direction: row;
   gap: 14px;
+  word-spacing: 10px;
 }
 
 .o1{
