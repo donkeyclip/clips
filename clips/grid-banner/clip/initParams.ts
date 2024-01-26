@@ -6,9 +6,9 @@ export default [
       secondaryColor: "#FA7474",
       backgroundColor: "#FCFCFC",
       fontColor: "#000",
-      text: "summer",
-      secondaryText: "offers",
-      thirdText: "50 % OFF",
+      title: "summer",
+      subtitle: "offers",
+      text: "50 % OFF",
       ctaText: "Buy Now",
       products: [
         {

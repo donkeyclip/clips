@@ -1,19 +1,14 @@
 export default {
-  title: {
-    label: "Grid Banner",
-    type: "string",
-  },
-
+  title: { label: "Title", type: "string" },
+  subtitle: { label: "Subtitle", type: "string" },
   text: { label: "Text", type: "string" },
-  secondaryText: { label: "Secondary Text", type: "string" },
-  thirdText: { label: "Third Text", type: "string" },
 
   primaryColor: { label: "Primary Color", type: "color" },
   secondaryColor: { label: "Secondary Color", type: "color" },
   backgroundColor: { label: "Background Color", type: "color" },
   fontColor: { label: "Font Color", type: "color" },
 
-  ctaText: { type: "string" },
+  ctaText: { label: "CTA Text", type: "string" },
 
   products: {
     label: "Products",
