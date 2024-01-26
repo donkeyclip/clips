@@ -6,7 +6,7 @@ export default [
       secondaryColor: "#92a269",
       backgroundColor: "#aac0af",
       fontColor: "#272727",
-      text: "New Arrivals",
+      title: "New Arrivals",
       secondaryText: "35% OFF",
       ctaText: "Explore Now",
       products: [
