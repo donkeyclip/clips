@@ -5,7 +5,7 @@ export default [
       primaryColor: "#FF0099",
       backgroundColor: "#202020",
       fontColor: "#fff",
-      text: "summer offers",
+      title: "summer offers",
       secondaryText: "50 % off",
       products: [
         {

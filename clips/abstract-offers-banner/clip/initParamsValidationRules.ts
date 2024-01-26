@@ -1,10 +1,5 @@
 export default {
-  title: {
-    label: "Title",
-    type: "string",
-  },
-
-  text: { label: "Text", type: "string" },
+  title: { label: "Title", type: "string" },
   secondaryText: { label: "Secondary Text", type: "string" },
 
   primaryColor: { label: "Primary Color", type: "color" },
