@@ -1,13 +1,13 @@
 <div class="container">
-  <div class="text">{{initParams.text}}</div>
+  <div class="text">{{initParams.title}}</div>
   <div class="circle"></div>
   <div class="wave wave3"></div>
-  <div class="offer">{{initParams.offer}}</div>
+  <div class="offer">{{initParams.subtitle}}</div>
   <div
     class="image"
     mc-for="key,item"
     mc-of="initParams.products"
-    style="background-image: url({{item.image}});
+    style="background-image: url({{item.featured_image}});
   "
   ></div>
   <div class="wave wave2"></div>
