@@ -30,6 +30,20 @@
   text-align: right;
 }
 
+.discount-wrapper {
+  position: absolute;
+  top: 66px;
+  left: 40px;
+  line-height: 50px;
+  font-size: 34px;
+  text-align: right;
+}
+
+.discount-wrapper .secondary-text {
+  color: var(--primaryColor);
+  font-size: 64px;
+}
+
 .box {
   position: absolute;
   border: 10px solid var(--primaryColor);
@@ -64,6 +78,14 @@
   height: 83px;
   top: 227px;
   left: -34px;
+}
+
+.horizontal-line {
+  position: absolute;
+  width: 183px;
+  top: 29px;
+  left: 37px;
+  border: 2px solid var(--primaryColor);
 }
 
 .dots-wrapper {
