@@ -19,8 +19,8 @@ const clip = new HTMLClip({
   host,
   initParams: initParams[0].value,
   containerParams: {
-    width: "1280px",
-    height: "720px",
+    width: "300px",
+    height: "300px",
   },
   // fonts: [
   //   {

@@ -1,45 +1,30 @@
 export default [
   {
-    name: "Blue medium",
+    name: "Rectangle Offer v1",
     value: {
-      firstSlideTitle: "Preview the template",
-      secondSlideTitle: "Use to Deliver Personalized Content",
-      users: [
+      title: "SUMMER OFFERS",
+      subtitle: "50% OFF",
+      ctaText: "Buy Now",
+
+      primaryColor: "#FF7311",
+      secondaryColor: "#19181C",
+      backgroundColor: "#F3F0E7",
+
+      products: [
         {
-          name: "Alice",
-          intrest: "shoes",
-          color: "191, 89, 255",
-          product: {
-            title: "Hike 4",
-            description: "New fashion Shoes",
-            price: "300$",
-            image:
-              "https://donkeyclip.github.io/clips/clips/landing-page-v2/images/shoes.jpg",
-          },
+          name: "Product 1",
+          featured_image:
+            "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/23b91bbb-292c-4685-b563-70a58d65720c/air-max-90-mens-shoes-Bd2qnn.png",
         },
         {
-          name: "Bob",
-          intrest: "tech",
-          color: "62, 222, 255",
-          product: {
-            title: "Kgbm",
-            description: "New headphones",
-            price: "200$",
-            image:
-              "https://donkeyclip.github.io/clips/clips/landing-page-v2/images/tech.png",
-          },
+          name: "Product 2",
+          featured_image:
+            "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/23970a41-ebe9-48bf-b705-5c3d5cce2565/zoom-vomero-5-mens-shoes-MgsTqZ.png",
         },
         {
-          name: "Little Timmy",
-          intrest: "bikes",
-          color: "237, 231, 92",
-          product: {
-            title: "Kubel",
-            description: "Bes bike for kids",
-            price: "250$",
-            image:
-              "https://donkeyclip.github.io/clips/clips/landing-page-v2/images/bike.jpg",
-          },
+          name: "Product 3",
+          featured_image:
+            "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b3dcc618-91ac-4852-9c96-0a1eed407e66/dunk-low-retro-mens-shoes-GrPfVH.png",
         },
       ],
     },
