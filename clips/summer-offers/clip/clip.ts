@@ -5,7 +5,7 @@ import pkg from "../package.json";
 import css from "./clip.css";
 import html from "./clip.html";
 import initParams from "./initParams";
-import { pulsingGridDotsCombo, topToBottomCombo } from "./ClipIncidents";
+import { pulsingGridDotsCombo, topToBottomCombo, width } from "./ClipIncidents";
 
 const host = document.getElementById("clip");
 
@@ -31,6 +31,8 @@ const clip = new HTMLClip({
   ],
   audio: "off",
 });
+
+clip.addIncident(width(".horizontal-line", "0px", "183px"), 800);
 
 [1, 2, 3].forEach((_, index) => {
   const delayBetweenProduct = 1000;

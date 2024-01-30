@@ -94,9 +94,11 @@
 .horizontal-line {
   position: absolute;
   width: 183px;
+  height: 3px;
   top: 29px;
   left: 37px;
-  border: 2px solid var(--primaryColor);
+  background-color: var(--primaryColor);
+  /* border: 2px solid var(--primaryColor); */
 }
 
 .dots-wrapper {

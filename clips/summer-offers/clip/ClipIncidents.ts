@@ -108,3 +108,25 @@ export const pulsingGridDotsCombo = (selector: string, clip: HTMLClip) => {
     },
   );
 };
+
+export const width = (
+  selector: string,
+  initialWidth: string,
+  animatedWidth: string,
+) => {
+  return new CSSEffect(
+    {
+      animatedAttrs: {
+        width: animatedWidth,
+      },
+      initialValues: {
+        width: initialWidth,
+      },
+    },
+    {
+      selector,
+      duration: 1000,
+      easing: "easeOutCubic",
+    },
+  );
+};
