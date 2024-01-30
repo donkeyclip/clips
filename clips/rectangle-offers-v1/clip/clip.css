@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  --primaryColor: {{initParams.primaryColor}};
+  --secondaryColor: {{initParams.secondaryColor}};
+  --backgroundColor: {{initParams.backgroundColor}};
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
