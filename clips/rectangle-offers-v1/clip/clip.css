@@ -38,3 +38,12 @@
 .text-wrapper {
   font-size: 23px;
 }
+
+.products {
+  position: absolute;
+}
+
+.product-image {
+  width: 225px;
+  height: 150px;
+}
