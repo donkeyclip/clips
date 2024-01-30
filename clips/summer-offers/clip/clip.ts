@@ -22,12 +22,12 @@ const clip = new HTMLClip({
     width: "705px",
     height: "290px",
   },
-  // fonts: [
-  //   {
-  //     type: "google-font",
-  //     src: "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap",
-  //   },
-  // ],
+  fonts: [
+    {
+      type: "google-font",
+      src: "https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap",
+    },
+  ],
   audio: "off",
 });
 
