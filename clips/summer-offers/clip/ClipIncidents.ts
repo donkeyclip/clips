@@ -1,4 +1,4 @@
-import { CSSEffect, Combo } from "@donkeyclip/motorcortex";
+import { CSSEffect, Combo, HTMLClip } from "@donkeyclip/motorcortex";
 
 export const topToBottomCombo = (
   selector: string,
@@ -57,6 +57,54 @@ export const topToBottomCombo = (
     },
     {
       selector: selector,
+    },
+  );
+};
+
+export const pulsingGridDotsCombo = (selector: string, clip: HTMLClip) => {
+  const numberOfRepeats = Math.floor(clip.calculatedDuration / 3700) - 1;
+  return new Combo(
+    {
+      incidents: [
+        {
+          incidentClass: CSSEffect,
+          attrs: {
+            animatedAttrs: {
+              opacity: 1,
+            },
+            initialValues: {
+              opacity: 0,
+            },
+          },
+          props: {
+            duration: 700,
+            delay: "@expression(random(500))",
+            easing: "easeOutCubic",
+          },
+          position: 300,
+        },
+        {
+          incidentClass: CSSEffect,
+          attrs: {
+            animatedAttrs: {
+              opacity: 0,
+            },
+            initialValues: {
+              opacity: 1,
+            },
+          },
+          props: {
+            duration: 700,
+            delay: "@expression(random(500))",
+            easing: "easeOutCubic",
+          },
+          position: 3000,
+        },
+      ],
+    },
+    {
+      selector,
+      repeats: numberOfRepeats,
     },
   );
 };

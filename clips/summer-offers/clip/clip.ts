@@ -5,7 +5,7 @@ import pkg from "../package.json";
 import css from "./clip.css";
 import html from "./clip.html";
 import initParams from "./initParams";
-import { topToBottomCombo } from "./ClipIncidents";
+import { pulsingGridDotsCombo, topToBottomCombo } from "./ClipIncidents";
 
 const host = document.getElementById("clip");
 
@@ -50,6 +50,8 @@ const clip = new HTMLClip({
     0,
   );
 });
+
+clip.addIncident(pulsingGridDotsCombo(".dot", clip), 0);
 
 // clip.addIncident(
 //   top({
