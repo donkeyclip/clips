@@ -1,8 +1,22 @@
 <div class="container">
   <!-- TEXT CONTENT -->
   <div class="title-subtitle-wrapper">
-    <h2 class="title">{{initParams.title}}</h2>
-    <h2 class="subtitle">{{initParams.subtitle}}</h2>
+    <div class="title-inner-wrapper">
+      <!-- <h2 class="title">{{initParams.title}}</h2> -->
+      <div class="letter" mc-for="key,letter" mc-of="initParams.title">
+        <h2>{{letter}}</h2>
+      </div>
+    </div>
+    <div class="subtitle-inner-wrapper">
+      <!-- <h2 class="subtitle">{{initParams.subtitle}}</h2> -->
+      <div
+        class="letter subtitle"
+        mc-for="key,letter"
+        mc-of="initParams.subtitle"
+      >
+        <h2>{{letter}}</h2>
+      </div>
+    </div>
   </div>
   <div class="discount-wrapper">
     <h2 class="text">{{initParams.text}}</h2>

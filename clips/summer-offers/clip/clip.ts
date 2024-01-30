@@ -5,7 +5,13 @@ import pkg from "../package.json";
 import css from "./clip.css";
 import html from "./clip.html";
 import initParams from "./initParams";
-import { pulsingGridDotsCombo, topToBottomCombo, width } from "./ClipIncidents";
+import {
+  pulsingGridDotsCombo,
+  scaleSmallBigCombo,
+  top,
+  topToBottomCombo,
+  width,
+} from "./ClipIncidents";
 
 const host = document.getElementById("clip");
 
@@ -32,7 +38,10 @@ const clip = new HTMLClip({
   audio: "off",
 });
 
-clip.addIncident(width(".horizontal-line", "0px", "183px"), 800);
+clip.addIncident(width(".horizontal-line", "0px", "183px"), 200);
+
+clip.addIncident(top(".title-inner-wrapper .letter", "70px", "0px"), 0);
+clip.addIncident(top(".subtitle-inner-wrapper .letter", "50px", "0px"), 300);
 
 [1, 2, 3].forEach((_, index) => {
   const delayBetweenProduct = 1000;
@@ -49,22 +58,21 @@ clip.addIncident(width(".horizontal-line", "0px", "183px"), 800);
       enterScenePosition,
       exitScenePosition,
     ),
-    0,
+    1500,
+  );
+  clip.addIncident(
+    scaleSmallBigCombo(
+      ".discount-wrapper",
+      enterScenePosition,
+      exitScenePosition,
+    ),
+    1500,
   );
 });
 
+// the clips that depend on the 'clip' should be placed at the bottom since they need the calculated duration of the whole clip
 clip.addIncident(pulsingGridDotsCombo(".dot", clip), 0);
-
-// clip.addIncident(
-//   top({
-//     value: "0%",
-//     initValue: "100%",
-//     selector: ".first-title-wrapper .latter",
-//     duration: 300,
-//     delay: "@stagger(0, 300)",
-//   }),
-//   0,
-// );
+// clip.addIncident(scaleSmallBigCombo(".discount-wrapper"), 0);
 
 // clip.addIncident(
 //   top({

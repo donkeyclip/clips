@@ -130,3 +130,70 @@ export const width = (
     },
   );
 };
+
+export const top = (selector: string, from: string, to: string) => {
+  return new CSSEffect(
+    {
+      animatedAttrs: {
+        top: to,
+      },
+      initialValues: {
+        top: from,
+      },
+    },
+    {
+      selector,
+      duration: 700,
+      easing: "easeOutCubic",
+      delay: "@stagger(0, 200)",
+    },
+  );
+};
+
+export const scaleSmallBigCombo = (
+  selector: string,
+  enterPosition: number,
+  exitPosition: number,
+) => {
+  return new Combo(
+    {
+      incidents: [
+        {
+          incidentClass: CSSEffect,
+          attrs: {
+            animatedAttrs: {
+              scale: 1.1,
+            },
+            initialValues: {
+              scale: 1,
+            },
+          },
+          props: {
+            duration: 2000,
+            easing: "easeOutCubic",
+          },
+          position: enterPosition,
+        },
+        {
+          incidentClass: CSSEffect,
+          attrs: {
+            animatedAttrs: {
+              scale: 1,
+            },
+            initialValues: {
+              scale: 1.1,
+            },
+          },
+          props: {
+            duration: 1000,
+            easing: "easeOutCubic",
+          },
+          position: exitPosition,
+        },
+      ],
+    },
+    {
+      selector,
+    },
+  );
+};
