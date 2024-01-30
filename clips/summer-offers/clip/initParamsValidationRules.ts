@@ -1,21 +1,14 @@
 export default {
-  title: {
-    label: "Title",
-    type: "string",
-  },
-  subtitle: { type: "string" },
+  title: { label: "Title", type: "string" },
+  subtitle: { label: "Subtitle", type: "string" },
 
-  text: "Summer",
-  secondaryText: "Offers",
+  text: { label: "Text", type: "string" },
+  secondaryText: { label: "Secondary Text", type: "string" },
+  ctaText: { label: "CTA Text", type: "string" },
 
-  ctaLink: { type: "string" },
-  ctaText: { type: "string" },
-
-  primaryColor: { label: "Your best color", type: "color" },
-  secondaryColor: { type: "color" },
-  backgroundColor: { type: "color" },
-  fontColor: { type: "color" },
-  backgroundImage: { type: "string" },
+  primaryColor: { label: "Primary Color", type: "color" },
+  secondaryColor: { label: "Secondary Color", type: "color" },
+  backgroundColor: { label: "Background Color", type: "color" },
 
   products: {
     label: "Products",
