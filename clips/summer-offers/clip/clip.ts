@@ -5,6 +5,7 @@ import pkg from "../package.json";
 import css from "./clip.css";
 import html from "./clip.html";
 import initParams from "./initParams";
+import { topToBottomCombo } from "./ClipIncidents";
 
 const host = document.getElementById("clip");
 
@@ -31,13 +32,32 @@ const clip = new HTMLClip({
   audio: "off",
 });
 
+[1, 2, 3].forEach((_, index) => {
+  const delayBetweenProduct = 1000;
+  const productDisplayDuration = 4000;
+
+  const enterScenePosition =
+    index * (delayBetweenProduct + productDisplayDuration);
+
+  const exitScenePosition = enterScenePosition + productDisplayDuration;
+
+  clip.addIncident(
+    topToBottomCombo(
+      `.product-${index}`,
+      enterScenePosition,
+      exitScenePosition,
+    ),
+    0,
+  );
+});
+
 // clip.addIncident(
 //   top({
 //     value: "0%",
 //     initValue: "100%",
 //     selector: ".first-title-wrapper .latter",
 //     duration: 300,
-//     delay: "@stagger(0,300)",
+//     delay: "@stagger(0, 300)",
 //   }),
 //   0,
 // );

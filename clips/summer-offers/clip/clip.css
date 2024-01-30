@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   --primaryColor: {{initParams.primaryColor}};
+  --secondaryColor: {{initParams.secondaryColor}};
   --backgroundColor: {{initParams.backgroundColor}};
   --mainFont: 'Poppins', sans-serif;
 }
@@ -56,7 +57,7 @@
   height: 188.4px;
   top: 47.51px;
   left: 246.51px;
-  background-color: white;
+  background-color: var(--secondaryColor);
   overflow: hidden;
 }
 

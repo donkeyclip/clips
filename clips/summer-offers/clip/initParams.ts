@@ -10,6 +10,7 @@ export default [
       ctaText: "EXPLORE NOW",
 
       primaryColor: "#EF305E",
+      secondaryColor: "#ffffff",
       backgroundColor: "#F1F1F1",
 
       products: [
