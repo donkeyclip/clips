@@ -5,6 +5,7 @@
   --primaryColor: {{initParams.primaryColor}};
   --secondaryColor: {{initParams.secondaryColor}};
   --backgroundColor: {{initParams.backgroundColor}};
+  --mainFont: 'Krona One', sans-serif;;
 }
 
 .container {
@@ -14,4 +15,26 @@
   justify-content: center;
   align-items: center;
   background-color: var(--backgroundColor);
+  font-family: var(--mainFont);
+}
+
+.top-columns-wrapper {
+  display: flex;
+  gap: 0.5rem;
+  line-height: 15px;
+  margin-top: -50px;
+}
+
+.top-columns-wrapper .right-column {
+  color: transparent;
+  -webkit-text-stroke: 0.5px var(--primaryColor);
+}
+
+.top-columns-wrapper .left-column {
+  color: transparent;
+  -webkit-text-stroke: 0.5px black;
+}
+
+.text-wrapper {
+  font-size: 23px;
 }
