@@ -109,6 +109,10 @@
   color: var(--primaryColor);
 }
 
+.product-cta .text {
+  transform: translateY(100%);
+}
+
 .horizontal-line {
   position: relative;
   height: 1px;

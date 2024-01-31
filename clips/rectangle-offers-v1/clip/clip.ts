@@ -55,7 +55,7 @@ Array.from({ length: numberOfProducts }).forEach((_, index) => {
 
   clip.addIncident(
     showAndHideTextCombo({
-      selector: `.product-wrapper-${index} .text-outer-wrapper .text`,
+      selector: `.product-wrapper-${index} .product-name .text-outer-wrapper .text`,
       enterScenePosition: enterScenePosition + 500,
       exitScenePosition,
       enterAnimationDuration: 600,
@@ -65,6 +65,17 @@ Array.from({ length: numberOfProducts }).forEach((_, index) => {
     0,
   );
 });
+
+clip.addIncident(
+  showAndHideTextCombo({
+    selector: `.product-wrapper-0 .product-cta .text-outer-wrapper .text`,
+    enterScenePosition: 0,
+    enterAnimationDuration: 600,
+    exitAnimationDuration: 600,
+    displayTextDuration: clip.calculatedDuration - 1000,
+  }),
+  0,
+);
 
 // clip.addIncident(
 //   expandRetractImageCombo({
