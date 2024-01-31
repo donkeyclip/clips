@@ -28,11 +28,13 @@
 .top-columns-wrapper .right-column {
   color: transparent;
   -webkit-text-stroke: 0.5px var(--primaryColor);
+  animation: pulsingColor 8s infinite;
 }
 
 .top-columns-wrapper .left-column {
   color: transparent;
   -webkit-text-stroke: 0.5px black;
+  animation: pulsingColor2 8s infinite;
 }
 
 .text-wrapper {
@@ -111,4 +113,32 @@
   position: relative;
   height: 1px;
   background-color: var(--primaryColor);
+}
+
+@keyframes pulsingColor {
+  0% {
+    -webkit-text-stroke: 0.5px var(--primaryColor);
+
+  }
+  50% {
+    -webkit-text-stroke: 0.5px black;
+
+  }
+  100% {
+    -webkit-text-stroke: 0.5px var(--primaryColor);
+  }
+}
+
+@keyframes pulsingColor2 {
+  0% {
+    -webkit-text-stroke: 0.5px black;
+
+  }
+  50% {
+    -webkit-text-stroke: 0.5px var(--primaryColor);
+
+  }
+  100% {
+    -webkit-text-stroke: 0.5px black;
+  }
 }
