@@ -5,6 +5,7 @@ import pkg from "../package.json";
 import css from "./clip.css";
 import html from "./clip.html";
 import initParams from "./initParams";
+import { expandRetractImageCombo } from "./ClipIncidents";
 
 const host = document.getElementById("clip");
 
@@ -31,13 +32,35 @@ const clip = new HTMLClip({
   audio: "off",
 });
 
+const numberOfProducts = initParams[0].value.products.length;
+
+Array.from({ length: numberOfProducts }).forEach((_, index) => {
+  const delayBetweenImages = 1500;
+  const displayProductDuration = 4000;
+
+  const enterScenePosition =
+    index * (displayProductDuration + delayBetweenImages);
+
+  const exitScenePosition = enterScenePosition + displayProductDuration;
+
+  clip.addIncident(
+    expandRetractImageCombo({
+      selector: `.product-wrapper-${index} .product-image-wrapper`,
+      enterScenePosition,
+      exitScenePosition,
+      displayProductDuration: displayProductDuration,
+    }),
+    0,
+  );
+});
+
 // clip.addIncident(
-//   top({
-//     value: "0%",
-//     initValue: "100%",
-//     selector: ".first-title-wrapper .latter",
-//     duration: 300,
-//     delay: "@stagger(0,300)",
+//   expandRetractImageCombo({
+//     selector: ".product-wrapper-0 .product-image-wrapper",
+//     displayProductDuration: 4000,
+//     // duration: 1300,
+//     // delay: "@stagger(0,300)",
+//     // easing: "easeInOutQuad",
 //   }),
 //   0
 // );

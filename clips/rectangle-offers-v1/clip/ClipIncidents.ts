@@ -1,7 +1,58 @@
 import { CSSEffect, Combo } from "@donkeyclip/motorcortex";
+//This incident is export as function so you can use it more than one times
+export const clipPath = ({
+  selector,
+  from,
+  to,
+  duration,
+  delay = 0,
+  easing = "linear",
+}: {
+  selector: string;
+  from: string;
+  to: string;
+  duration: string | number;
+  delay?: string | number;
+  easing?: string;
+}) =>
+  new CSSEffect(
+    {
+      animatedAttrs: {
+        clipPath: to,
+      },
+      initialValues: {
+        clipPath: from,
+      },
+    },
+    {
+      selector,
+      duration,
+      delay,
+      easing,
+    },
+  );
 
-export const clipIncidents = (selector: string, half = false) => {
-  const divider = half ? 2 : 1;
+export const expandRetractImageCombo = ({
+  selector,
+  displayProductDuration,
+  enterScenePosition = 0,
+  exitScenePosition = 0,
+  enterAnimationDuration = 1300,
+  exitAnimationDuration = 1300,
+  easing = "easeInOutQuad",
+}: {
+  selector: string;
+  displayProductDuration: number;
+  enterScenePosition?: number;
+  exitScenePosition?: number;
+  enterAnimationDuration?: number;
+  exitAnimationDuration?: number;
+  from?: string;
+  to?: string;
+  duration?: string | number;
+  delay?: string | number;
+  easing?: string;
+}) => {
   return new Combo(
     {
       incidents: [
@@ -9,150 +60,37 @@ export const clipIncidents = (selector: string, half = false) => {
           incidentClass: CSSEffect,
           attrs: {
             animatedAttrs: {
-              opacity: 0,
+              clipPath: "polygon(10% 10%,90% 10%,90% 100%,10% 100%)",
             },
             initialValues: {
-              opacity: 1,
+              clipPath: "polygon(10% 10%,10% 10%,10% 100%,10% 100%)",
             },
           },
           props: {
-            selector: ".play-button",
-            duration: 10,
+            duration: enterAnimationDuration,
+            easing,
           },
-          position: 0,
+          position: enterScenePosition ? enterScenePosition : 0,
         },
         {
           incidentClass: CSSEffect,
           attrs: {
             animatedAttrs: {
-              opacity: 1,
-            },
-            initialValues: {
-              opacity: 0,
+              clipPath: "polygon(100% 10%,90% 10%,90% 100%,100% 100%)",
             },
           },
           props: {
-            selector: `.pause-button`,
-            duration: 10,
+            duration: exitAnimationDuration,
+            easing,
           },
-          position: 0,
-        },
-        {
-          incidentClass: CSSEffect,
-          attrs: {
-            animatedAttrs: {
-              top: `50%`,
-            },
-            initialValues: {
-              top: `155%`,
-            },
-          },
-          props: {
-            selector: ` .title,${selector} .subtitle`,
-            duration: 400,
-          },
-          position: 39,
-        },
-        {
-          incidentClass: CSSEffect,
-          attrs: {
-            animatedAttrs: {
-              top: `156%`,
-            },
-            initialValues: {
-              top: `50%`,
-            },
-          },
-          props: {
-            selector: `.title,${selector} .subtitle`,
-            duration: 400,
-          },
-          position: 2000 / divider,
-        },
-        {
-          incidentClass: CSSEffect,
-          attrs: {
-            animatedAttrs: {
-              left: `0%`,
-            },
-            initialValues: {
-              left: `-100%`,
-            },
-          },
-          props: {
-            selector: ` .product-title,${selector} .product-description,${selector} .product-price,${selector} .product-button,${selector} .product-image`,
-            duration: 400,
-          },
-          position: 2400 / divider,
-        },
-        {
-          incidentClass: CSSEffect,
-          attrs: {
-            animatedAttrs: {
-              width: `410px`,
-            },
-            initialValues: {
-              width: `0px`,
-            },
-          },
-          props: {
-            selector: `.play-bar-progress`,
-            duration: 4650 / divider,
-          },
-          position: 39,
-        },
-        {
-          incidentClass: CSSEffect,
-          attrs: {
-            animatedAttrs: {
-              left: `-100%`,
-            },
-            initialValues: {
-              left: `0%`,
-            },
-          },
-          props: {
-            selector: ` .product-title,${selector} .product-description,${selector} .product-price,${selector} .product-button,${selector} .product-image`,
-            duration: 400,
-          },
-          position: 4290 / divider,
-        },
-        {
-          incidentClass: CSSEffect,
-          attrs: {
-            animatedAttrs: {
-              opacity: 1,
-            },
-            initialValues: {
-              opacity: 0,
-            },
-          },
-          props: {
-            selector: `.play-button`,
-            duration: 10,
-          },
-          position: 4290 / divider,
-        },
-        {
-          incidentClass: CSSEffect,
-          attrs: {
-            animatedAttrs: {
-              opacity: 0,
-            },
-            initialValues: {
-              opacity: 1,
-            },
-          },
-          props: {
-            selector: `.pause-button`,
-            duration: 10,
-          },
-          position: 4290 / divider,
+          position: exitScenePosition
+            ? exitScenePosition
+            : displayProductDuration + enterAnimationDuration,
         },
       ],
     },
     {
-      selector: selector,
+      selector,
     },
   );
 };
