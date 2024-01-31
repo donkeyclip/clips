@@ -12,14 +12,12 @@ export default [
 
       products: [
         {
-          // name: "Air Max 90",
-          name: "",
+          name: "Air Max 90",
           featured_image:
             "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/23b91bbb-292c-4685-b563-70a58d65720c/air-max-90-mens-shoes-Bd2qnn.png",
         },
         {
-          // name: "Zoom Vomero 5",
-          name: "",
+          name: "Zoom Vomero 5",
           featured_image:
             "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/23970a41-ebe9-48bf-b705-5c3d5cce2565/zoom-vomero-5-mens-shoes-MgsTqZ.png",
         },

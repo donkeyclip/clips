@@ -12,10 +12,19 @@
         ></div>
       </div>
       <div class="product-content">
-        <h2 class="product-name">{{item.name}}</h2>
+        <h2 class="product-name">
+          <div class="text-outer-wrapper">
+            <span class="text">{{item.name}}</span>
+          </div>
+          <div class="hide-product"></div>
+        </h2>
+
         <div class="product-cta-wrapper">
           <div class="product-cta-inner-wrapper">
-            <h2 class="product-cta">{{initParams.ctaText}}</h2>
+            <h2 class="product-cta">
+              <span class="text">{{initParams.ctaText}}</span>
+              <div class="hide-product"></div>
+            </h2>
             <svg
               width="18"
               height="9"

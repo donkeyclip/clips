@@ -71,7 +71,20 @@
 }
 
 .product-name {
+  position: relative;
+  width: fit-content;
   font-size: 14px;
+}
+
+.text-outer-wrapper {
+  display: flex;
+}
+
+.hide-product {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--backgroundColor);
 }
 
 .product-cta-wrapper {
@@ -88,10 +101,14 @@
 }
 
 .product-cta {
+  position: relative;
+  width: fit-content;
+  height: 100%;
   color: var(--primaryColor);
 }
 
 .horizontal-line {
+  position: relative;
   height: 1px;
   background-color: var(--primaryColor);
 }

@@ -5,7 +5,7 @@ import pkg from "../package.json";
 import css from "./clip.css";
 import html from "./clip.html";
 import initParams from "./initParams";
-import { expandRetractImageCombo } from "./ClipIncidents";
+import { expandRetractImageCombo, showAndHideTextCombo } from "./ClipIncidents";
 
 const host = document.getElementById("clip");
 
@@ -49,6 +49,18 @@ Array.from({ length: numberOfProducts }).forEach((_, index) => {
       enterScenePosition,
       exitScenePosition,
       displayProductDuration: displayProductDuration,
+    }),
+    0,
+  );
+
+  clip.addIncident(
+    showAndHideTextCombo({
+      selector: `.product-wrapper-${index} .text-outer-wrapper .text`,
+      enterScenePosition: enterScenePosition + 500,
+      exitScenePosition,
+      enterAnimationDuration: 600,
+      exitAnimationDuration: 600,
+      displayTextDuration: displayProductDuration,
     }),
     0,
   );
