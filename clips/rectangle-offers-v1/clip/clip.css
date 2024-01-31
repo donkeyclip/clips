@@ -119,6 +119,10 @@
   background-color: var(--primaryColor);
 }
 
+.arrow {
+  animation: moveArrow 10s infinite;
+}
+
 @keyframes pulsingColor {
   0% {
     -webkit-text-stroke: 0.5px var(--primaryColor);
@@ -144,5 +148,23 @@
   }
   100% {
     -webkit-text-stroke: 0.5px black;
+  }
+}
+
+@keyframes moveArrow {
+  0% {
+    transform: translateX(-5px);
+  }
+  25% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-5px);
   }
 }
