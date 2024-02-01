@@ -8,7 +8,7 @@ import initParams from "./initParams";
 import {
   pulsingGridDotsCombo,
   scaleSmallBigCombo,
-  top,
+  topTranslate,
   topToBottomCombo,
   width,
 } from "./ClipIncidents";
@@ -40,8 +40,11 @@ const clip = new HTMLClip({
 
 clip.addIncident(width(".horizontal-line", "0px", "183px"), 200);
 
-clip.addIncident(top(".title-inner-wrapper .letter", "70px", "0px"), 0);
-clip.addIncident(top(".subtitle-inner-wrapper .letter", "50px", "0px"), 300);
+clip.addIncident(topTranslate(".title-inner-wrapper .letter", "100%", "0%"), 0);
+clip.addIncident(
+  topTranslate(".subtitle-inner-wrapper .letter", "100%", "0%"),
+  300,
+);
 
 [1, 2, 3].forEach((_, index) => {
   const delayBetweenProduct = 1000;

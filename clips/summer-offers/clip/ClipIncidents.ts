@@ -131,14 +131,18 @@ export const width = (
   );
 };
 
-export const top = (selector: string, from: string, to: string) => {
+export const topTranslate = (selector: string, from: string, to: string) => {
   return new CSSEffect(
     {
       animatedAttrs: {
-        top: to,
+        transform: {
+          translateY: to,
+        },
       },
       initialValues: {
-        top: from,
+        transform: {
+          translateY: from,
+        },
       },
     },
     {
