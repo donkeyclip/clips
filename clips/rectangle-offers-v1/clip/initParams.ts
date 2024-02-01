@@ -8,6 +8,7 @@ export default [
 
       primaryColor: "#FF7311",
       secondaryColor: "#19181C",
+      fontColor: "#000000",
       backgroundColor: "#F3F0E7",
 
       products: [

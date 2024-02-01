@@ -4,6 +4,7 @@
   margin: 0;
   --primaryColor: {{initParams.primaryColor}};
   --secondaryColor: {{initParams.secondaryColor}};
+  --fontColor: {{initParams.fontColor}};
   --backgroundColor: {{initParams.backgroundColor}};
   --mainFont: 'Krona One', sans-serif;;
 }
@@ -33,7 +34,7 @@
 
 .top-columns-wrapper .left-column {
   color: transparent;
-  -webkit-text-stroke: 0.5px black;
+  -webkit-text-stroke: 0.5px var(--fontColor);
   animation: pulsingColor2 8s infinite;
 }
 
@@ -129,7 +130,7 @@
 
   }
   50% {
-    -webkit-text-stroke: 0.5px black;
+    -webkit-text-stroke: 0.5px var(--fontColor);
 
   }
   100% {
@@ -139,7 +140,7 @@
 
 @keyframes pulsingColor2 {
   0% {
-    -webkit-text-stroke: 0.5px black;
+    -webkit-text-stroke: 0.5px var(--fontColor);
 
   }
   50% {
@@ -147,7 +148,7 @@
 
   }
   100% {
-    -webkit-text-stroke: 0.5px black;
+    -webkit-text-stroke: 0.5px var(--fontColor);
   }
 }
 
