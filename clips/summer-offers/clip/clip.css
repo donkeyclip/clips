@@ -4,6 +4,7 @@
   margin: 0;
   --primaryColor: {{initParams.primaryColor}};
   --secondaryColor: {{initParams.secondaryColor}};
+  --fontColor: {{initParams.fontColor}};
   --backgroundColor: {{initParams.backgroundColor}};
   --mainFont: 'Poppins', sans-serif;
 }
@@ -30,6 +31,7 @@
 .title-inner-wrapper {
   position: relative;
   display: flex;
+  color: var(--fontColor);
 }
 
 .letter {
@@ -51,6 +53,7 @@
   display: flex;
   z-index: 2;
   justify-content: flex-end;
+  color: var(--fontColor);
 }
 
 .subtitle-inner-wrapper::after {
@@ -75,6 +78,10 @@
 .discount-wrapper .secondary-text {
   color: var(--primaryColor);
   font-size: 64px;
+}
+
+.discount-wrapper .text {
+  color: var(--fontColor);
 }
 
 .cta-wrapper {
@@ -145,7 +152,6 @@
   top: 29px;
   left: 37px;
   background-color: var(--primaryColor);
-  /* border: 2px solid var(--primaryColor); */
 }
 
 .dots-wrapper {

@@ -8,6 +8,7 @@ export default {
 
   primaryColor: { label: "Primary Color", type: "color" },
   secondaryColor: { label: "Secondary Color", type: "color" },
+  fontColor: { label: "Font Color", type: "color" },
   backgroundColor: { label: "Background Color", type: "color" },
 
   products: {
