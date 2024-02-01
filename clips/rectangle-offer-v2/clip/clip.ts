@@ -7,6 +7,7 @@ import css from "./clip.css";
 import html from "./clip.html";
 import initParams from "./initParams";
 import initParamsValidationRules from "./initParamsValidationRules";
+import { clipPath } from "./clipIncidents";
 
 const element = document.getElementById("clip");
 
@@ -33,12 +34,24 @@ const clip = new HTMLClip({
   ],
 });
 
+clip.addIncident(
+  clipPath({
+    selector: "img",
+    to: "path('M125.428 131.35C98.081 160.665 9.1766 165.174 1.75831 204.572C-11.721 276.16 80.4289 259.85 119.428 273.85C147.429 286.85 262.018 275.917 292.918 257.551C324.562 238.743 338.007 200.606 343.824 164.227C349.322 129.847 341.788 95.4827 323.576 65.8382C304.845 35.3473 279.062 3.74679 243.427 0.798893C209.516 -2.00635 188.078 9.25892 158.759 26.5726C126.712 45.4967 158.043 96.3874 125.428 131.35Z')",
+    from: "path('M9.50007 120.838C5.50008 149.338 7.91829 131.94 0.5 171.338C20.5 204.5 23 212.338 0.500006 260.838C21 281.838 56.0183 272.255 86.9183 253.889C118.562 235.081 132.007 196.944 137.824 160.565C143.322 126.185 135.788 91.821 117.576 62.1765C98.8452 31.6856 73.0622 0.0850083 37.4272 -2.86289C3.51616 -5.66813 49.9271 34.8382 9.50006 65.8382C19.5001 104.838 34 79.8382 9.50007 120.838Z')",
+    duration: 1300,
+    easing: "easeInOutCubic",
+  }),
+  0,
+);
+
 // clip.addIncident(
-//   scale({
-//     value: 1,
-//     selector: ".clip-wrapper",
-//     duration: 500,
-//     easing: "easeInOutCubic",
+//   clipPath({
+//     selector: "img",
+//     from: "url(#test-path)",
+//     to: "circle(10%)",
+//     duration: 2000,
+//     // easing: "easeInOutCubic",
 //   }),
 //   0
 // );
