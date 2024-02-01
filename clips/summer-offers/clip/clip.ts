@@ -54,7 +54,7 @@ clip.addIncident(top(".subtitle-inner-wrapper .letter", "50px", "0px"), 300);
 
   clip.addIncident(
     topToBottomCombo(
-      `.product-${index}`,
+      `#product-${index}`,
       enterScenePosition,
       exitScenePosition,
     ),
