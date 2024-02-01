@@ -1,11 +1,9 @@
 export default {
   title: { label: "Title", type: "string" },
-  subtitle: { label: "Subtitle", type: "string" },
   ctaText: { label: "CTA Text", type: "string" },
 
-  primaryColor: { label: "Primary Color", type: "color" },
-  secondaryColor: { label: "Secondary Color", type: "color" },
   fontColor: { label: "Font Color", type: "color" },
+  primaryColor: { label: "Primary Color", type: "color" },
   backgroundColor: { label: "Background Color", type: "color" },
 
   products: {
@@ -14,8 +12,8 @@ export default {
     items: {
       type: "object",
       props: {
+        description: { type: "string" },
         featured_image: { type: "string" },
-        name: { type: "string" },
       },
     },
   },

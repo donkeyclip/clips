@@ -1,1 +1,27 @@
-<div class="container"></div>
+<div class="container">
+  <div
+    class="product-wrapper"
+    id="product-{{key}}"
+    mc-for="key,item"
+    mc-of="initParams.products"
+  >
+    <h2>{{initParams.title}}</h2>
+    <p>{{item.description}}</p>
+    <div class="image-wrapper">
+      <svg width="0" height="0">
+        <clipPath id="test-path">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M125.428 131.35C98.081 160.665 9.1766 165.174 1.75831 204.572C-11.721 276.16 80.4289 259.85 119.428 273.85C147.429 286.85 262.018 275.917 292.918 257.551C324.562 238.743 338.007 200.606 343.824 164.227C349.322 129.847 341.788 95.4827 323.576 65.8382C304.845 35.3473 279.062 3.74679 243.427 0.798893C209.516 -2.00635 188.078 9.25892 158.759 26.5726C126.712 45.4967 158.043 96.3874 125.428 131.35Z"
+            fill="white"
+            fill-opacity="0.1"
+          />
+        </clipPath>
+      </svg>
+      <img src="{{item.featured_image}}" />
+    </div>
+    <div class="horizontal-line"></div>
+    <div class="cta-wrapper">{{initParams.ctaText}}</div>
+  </div>
+</div>
