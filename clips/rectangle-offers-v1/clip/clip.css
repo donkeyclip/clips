@@ -84,7 +84,7 @@
 
 .hide-product {
   position: absolute;
-  width: 100%;
+  width: 110%;
   height: 100%;
   background-color: var(--backgroundColor);
 }
