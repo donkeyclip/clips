@@ -43,7 +43,7 @@ const productsLength = initParams[0].value.products.length;
 Array.from({ length: productsLength }).forEach((_, index) => {
   const animationDuration = 1300;
   const displayImageDuration = 4000;
-  const delayBetweenImageChange = 2000;
+  const delayBetweenImageChange = 500;
   const startingPosition =
     index *
     (animationDuration + displayImageDuration + delayBetweenImageChange);
@@ -74,11 +74,11 @@ Array.from({ length: productsLength }).forEach((_, index) => {
   // horizontal line animation
   clip.addIncident(
     clipPath({
-      selector: ".horizontal-line",
+      selector: `#product-${index} .horizontal-line`,
       from: "inset(5% 100% 0% 0%)",
       to: "inset(0% 20% 0% 0%)",
       duration: 800,
-      delay: startingPosition + 400,
+      delay: 400,
       easing: "easeInOutCubic",
     }),
     startingPosition,
@@ -86,12 +86,35 @@ Array.from({ length: productsLength }).forEach((_, index) => {
 
   clip.addIncident(
     clipPath({
-      selector: ".horizontal-line",
+      selector: `#product-${index} .horizontal-line`,
       from: "inset(0% 20% 0% 0%)",
       to: "inset(5% 100% 0% 0%)",
       duration: 800,
       // delay: endingPosition - 500,
       easing: "easeOutCubic",
+    }),
+    endingPosition,
+  );
+  // button animation
+  clip.addIncident(
+    clipPath({
+      selector: `#product-${index} .cta-wrapper`,
+      from: "inset(100% 0% 0% 0%)",
+      to: "inset(0% 0% 0% 0%)",
+      duration: 800,
+      delay: 600,
+      easing: "easeInOutCubic",
+    }),
+    startingPosition,
+  );
+
+  clip.addIncident(
+    clipPath({
+      selector: `#product-${index} .cta-wrapper`,
+      from: "inset(0% 0% 0% 0%)",
+      to: "inset(100% 0% 0% 0%)",
+      duration: 800,
+      easing: "easeInOutCubic",
     }),
     endingPosition,
   );
