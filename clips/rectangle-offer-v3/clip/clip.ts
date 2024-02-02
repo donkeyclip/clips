@@ -6,6 +6,7 @@ import css from "./clip.css";
 import html from "./clip.html";
 import initParams from "./initParams";
 import initParamsValidationRules from "./initParamsValidationRules";
+import { clipPath } from "./clipIncidents";
 
 const element = document.getElementById("clip");
 
@@ -44,86 +45,110 @@ const clip = new HTMLClip({
 //   0,
 // );
 
-// const productsLength = initParams[0].value.products.length;
+const productsLength = initParams[0].value.products.length;
 
-// Array.from({ length: productsLength }).forEach((_, index) => {
-//   const animationDuration = 1300;
-//   const displayImageDuration = 4000;
-//   const delayBetweenImageChange = 500;
-//   const startingPosition =
-//     index *
-//     (animationDuration + displayImageDuration + delayBetweenImageChange);
-//   const endingPosition = startingPosition + displayImageDuration;
-// clip path animation
-// clip.addIncident(
-//   clipPathImagesCombo({
-//     selector: `#product-${index} img`,
-//     duration: animationDuration,
-//     startingPosition,
-//     endingPosition,
-//     easing: "easeInOutCubic",
-//   }),
-//   0,
-// );
-// // text animation
-// clip.addIncident(
-//   showAndHideTextCombo({
-//     selector: `#product-${index} .description`,
-//     displayTextDuration: displayImageDuration,
-//     duration: animationDuration,
-//     enterScenePosition: startingPosition,
-//     exitScenePosition: endingPosition,
-//     easing: "easeInOutCubic",
-//   }),
-//   0,
-// );
-// horizontal line animation
-// clip.addIncident(
-//   clipPath({
-//     selector: `#product-${index} .horizontal-line`,
-//     from: "inset(5% 100% 0% 0%)",
-//     to: "inset(0% 20% 0% 0%)",
-//     duration: 800,
-//     delay: 400,
-//     easing: "easeInOutCubic",
-//   }),
-//   startingPosition,
-// );
+clip.addIncident(
+  clipPath({
+    selector: `.title-subtitle-wrapper`,
+    from: "inset(100% 0% 0% 0%)",
+    to: "inset(0% 0% 0% 0%)",
+    duration: 800,
+    delay: 400,
+    easing: "easeInOutCubic",
+  }),
+  0,
+);
 
-// clip.addIncident(
-//   clipPath({
-//     selector: `#product-${index} .horizontal-line`,
-//     from: "inset(0% 20% 0% 0%)",
-//     to: "inset(5% 100% 0% 0%)",
-//     duration: 800,
-//     // delay: endingPosition - 500,
-//     easing: "easeOutCubic",
-//   }),
-//   endingPosition,
-// );
-// button animation
-// clip.addIncident(
-//   clipPath({
-//     selector: `#product-${index} .cta-wrapper`,
-//     from: "inset(100% 0% 0% 0%)",
-//     to: "inset(0% 0% 0% 0%)",
-//     duration: 800,
-//     delay: 600,
-//     easing: "easeInOutCubic",
-//   }),
-//   startingPosition,
-// );
+Array.from({ length: productsLength }).forEach((_, index) => {
+  const animationDuration = 1300;
+  const displayImageDuration = 4000;
+  const delayBetweenImageChange = 500;
+  const startingPosition =
+    index *
+    (animationDuration + displayImageDuration + delayBetweenImageChange);
+  const endingPosition = startingPosition + displayImageDuration;
+  // clip path animation
+  // clip.addIncident(
+  //   clipPathImagesCombo({
+  //     selector: `#product-${index} img`,
+  //     duration: animationDuration,
+  //     startingPosition,
+  //     endingPosition,
+  //     easing: "easeInOutCubic",
+  //   }),
+  //   0,
+  // );
+  // // text animation
+  // clip.addIncident(
+  //   showAndHideTextCombo({
+  //     selector: `#product-${index} .description`,
+  //     displayTextDuration: displayImageDuration,
+  //     duration: animationDuration,
+  //     enterScenePosition: startingPosition,
+  //     exitScenePosition: endingPosition,
+  //     easing: "easeInOutCubic",
+  //   }),
+  //   0,
+  // );
 
-// clip.addIncident(
-//   clipPath({
-//     selector: `#product-${index} .cta-wrapper`,
-//     from: "inset(0% 0% 0% 0%)",
-//     to: "inset(100% 0% 0% 0%)",
-//     duration: 800,
-//     easing: "easeInOutCubic",
-//   }),
-//   endingPosition,
-// );
-// });
+  clip.addIncident(
+    clipPath({
+      selector: `#product-${index} img`,
+      from: "inset(0% 0% 100% 0%)",
+      to: "inset(0% 0% 0% 0%)",
+      duration: 800,
+      delay: 400,
+      easing: "easeInOutCubic",
+    }),
+    startingPosition,
+  );
+
+  clip.addIncident(
+    clipPath({
+      selector: `#product-${index} img`,
+      from: "inset(0% 0% 0% 0%)",
+      to: "inset(0% 0% 100% 0%)",
+      duration: 800,
+      delay: 400,
+      easing: "easeInOutCubic",
+    }),
+    endingPosition,
+  );
+
+  // clip.addIncident(
+  //   clipPath({
+  //     selector: `#product-${index} .horizontal-line`,
+  //     from: "inset(0% 20% 0% 0%)",
+  //     to: "inset(5% 100% 0% 0%)",
+  //     duration: 800,
+  //     // delay: endingPosition - 500,
+  //     easing: "easeOutCubic",
+  //   }),
+  //   endingPosition,
+  // );
+  // button animation
+  // clip.addIncident(
+  //   clipPath({
+  //     selector: `#product-${index} .cta-wrapper`,
+  //     from: "inset(100% 0% 0% 0%)",
+  //     to: "inset(0% 0% 0% 0%)",
+  //     duration: 800,
+  //     delay: 600,
+  //     easing: "easeInOutCubic",
+  //   }),
+  //   startingPosition,
+  // );
+
+  // clip.addIncident(
+  //   clipPath({
+  //     selector: `#product-${index} .cta-wrapper`,
+  //     from: "inset(0% 0% 0% 0%)",
+  //     to: "inset(100% 0% 0% 0%)",
+  //     duration: 800,
+  //     easing: "easeInOutCubic",
+  //   }),
+  //   endingPosition,
+  // );
+});
 
 export default renderDonkeyclip({ clipId: pkg.id, initParams, clip });
