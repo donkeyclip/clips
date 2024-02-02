@@ -5,6 +5,7 @@ import pkg from "../package.json";
 import css from "./clip.css";
 import html from "./clip.html";
 import initParams from "./initParams";
+import initParamsValidationRules from "./initParamsValidationRules";
 import { expandRetractImageCombo, showAndHideTextCombo } from "./ClipIncidents";
 
 const host = document.getElementById("clip");
@@ -19,6 +20,7 @@ const clip = new HTMLClip({
   css,
   host,
   initParams: initParams[0].value,
+  initParamsValidationRules,
   containerParams: {
     width: "300px",
     height: "300px",
