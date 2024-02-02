@@ -7,7 +7,7 @@ import css from "./clip.css";
 import html from "./clip.html";
 import initParams from "./initParams";
 import initParamsValidationRules from "./initParamsValidationRules";
-import { clipPathImagesCombo } from "./clipIncidents";
+import { clipPathImagesCombo, showAndHideTextCombo } from "./clipIncidents";
 
 const element = document.getElementById("clip");
 
@@ -44,13 +44,25 @@ Array.from({ length: productsLength }).forEach((_, index) => {
     index *
     (animationDuration + displayImageDuration + delayBetweenImageChange);
   const endingPosition = startingPosition + displayImageDuration;
-
+  // clip path animation
   clip.addIncident(
     clipPathImagesCombo({
       selector: `#product-${index} img`,
       duration: animationDuration,
       startingPosition,
       endingPosition,
+      easing: "easeInOutCubic",
+    }),
+    0,
+  );
+  // text animation
+  clip.addIncident(
+    showAndHideTextCombo({
+      selector: `#product-${index} .description`,
+      displayTextDuration: displayImageDuration,
+      duration: animationDuration,
+      enterScenePosition: startingPosition,
+      exitScenePosition: endingPosition,
       easing: "easeInOutCubic",
     }),
     0,
