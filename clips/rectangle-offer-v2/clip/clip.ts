@@ -7,7 +7,11 @@ import css from "./clip.css";
 import html from "./clip.html";
 import initParams from "./initParams";
 import initParamsValidationRules from "./initParamsValidationRules";
-import { clipPathImagesCombo, showAndHideTextCombo } from "./clipIncidents";
+import {
+  clipPath,
+  clipPathImagesCombo,
+  showAndHideTextCombo,
+} from "./clipIncidents";
 
 const element = document.getElementById("clip");
 
@@ -66,6 +70,30 @@ Array.from({ length: productsLength }).forEach((_, index) => {
       easing: "easeInOutCubic",
     }),
     0,
+  );
+  // horizontal line animation
+  clip.addIncident(
+    clipPath({
+      selector: ".horizontal-line",
+      from: "inset(5% 100% 0% 0%)",
+      to: "inset(0% 20% 0% 0%)",
+      duration: 800,
+      delay: startingPosition + 400,
+      easing: "easeInOutCubic",
+    }),
+    startingPosition,
+  );
+
+  clip.addIncident(
+    clipPath({
+      selector: ".horizontal-line",
+      from: "inset(0% 20% 0% 0%)",
+      to: "inset(5% 100% 0% 0%)",
+      duration: 800,
+      // delay: endingPosition - 500,
+      easing: "easeOutCubic",
+    }),
+    endingPosition,
   );
 });
 
