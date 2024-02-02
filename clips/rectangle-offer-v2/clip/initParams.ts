@@ -7,6 +7,7 @@ export default [
 
       fontColor: "#000000",
       primaryColor: "#FF00F5",
+      secondaryColor: "#ffffff",
       backgroundColor: "#EFEFEF",
 
       products: [

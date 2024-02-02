@@ -49,6 +49,7 @@
   z-index: 1;
   font-size: 32px;
   font-weight: 900;
+  color: var(--fontColor);
 }
 
 .description-line-wrapper {
@@ -64,6 +65,7 @@
   font-size: 12px;
   font-weight: 300;
   max-width: 130px;
+  color: var(--fontColor);
 }
 
 .description-line-wrapper::after {
@@ -91,11 +93,6 @@
   padding: 5px 10px;
   background-color: var(--primaryColor);
   width: fit-content;
-  color: var(--backgroundColor);
+  color: var(--secondaryColor);
   font-size: 10px;
 }
-
-/* img {
-  position: relative;
-  right: -150px;
-} */
