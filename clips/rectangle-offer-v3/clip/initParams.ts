@@ -7,9 +7,8 @@ export default [
       text: "50%",
       secondaryText: "off",
 
-      fontColor: "#000000",
-      primaryColor: "#FF00F5",
-      secondaryColor: "#ffffff",
+      fontColor: "#ffffff",
+      primaryColor: "#1C1C1C",
       backgroundColor: "#EFEFEF",
 
       products: [

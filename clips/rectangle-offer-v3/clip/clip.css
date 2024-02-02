@@ -3,7 +3,6 @@
   padding: 0;
   margin: 0;
   --primaryColor: {{initParams.primaryColor}};
-  --secondaryColor: {{initParams.secondaryColor}};
   --fontColor: {{initParams.fontColor}};
   --backgroundColor: {{initParams.backgroundColor}};
   --mainFont: 'Inter', sans-serif;
@@ -19,80 +18,32 @@
 }
 
 .product-wrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  gap: 2.2rem;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  padding: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
-.image-wrapper {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  right: -60px;
-}
-
-.image-wrapper img {
+.product-wrapper img {
+  width: 240px;
+  height: 200px;
   object-fit: cover;
-  width: 100%;
-  height: 100%;
-  /* clip-path: url(#test-path); */
-  clip-path: path('M250.5 147C244.5 184 252.918 162.102 245.5 201.5C267 225.5 245.5 222 245.5 254C270.572 287.15 262.018 275.917 292.918 257.551C324.562 238.743 338.007 200.606 343.824 164.227C349.322 129.847 341.788 95.4827 323.576 65.8382C304.845 35.3473 286.135 8.9479 250.5 6C216.589 3.19476 279.819 64.1863 250.5 81.5C229.5 113.5 283.115 112.037 250.5 147Z');
 }
 
-.title {
-  position: relative;
-  z-index: 1;
-  font-size: 32px;
-  font-weight: 900;
-  color: var(--fontColor);
-}
-
-.description-line-wrapper {
-  position: relative;
+.content-overlay {
   display: flex;
-  flex-direction: column; 
-  gap: 1rem;
-}
-
-.description {
-  position: relative;
-  z-index: 1;
-  font-size: 12px;
-  font-weight: 300;
-  max-width: 130px;
-  color: var(--fontColor);
-}
-
-.description-line-wrapper::after {
-  position: absolute;
-  z-index: 2;
-  top: 0;
-  left: -100%;
-  content: "";
-  background-color: var(--backgroundColor);
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
 }
 
-.horizontal-line {
+.content-overlay-inner-wrapper {
   position: relative;
-  z-index: 1;
-  width: 60px;
-  height: 2px;
-  background-color: var(--primaryColor);
-}
-
-.cta-wrapper {
-  position: relative;
-  z-index: 1;
-  padding: 5px 10px;
-  background-color: var(--primaryColor);
-  width: fit-content;
-  color: var(--secondaryColor);
-  font-size: 10px;
+  z-index: 2;
+  width: 90%;
+  height: 90%;
+  border: 2px solid red;
 }
