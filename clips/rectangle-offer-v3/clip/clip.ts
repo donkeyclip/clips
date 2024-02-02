@@ -27,7 +27,7 @@ const clip = new HTMLClip({
   fonts: [
     {
       type: `google-font`,
-      src: `https://fonts.googleapis.com/css2?family=Inter:wght@300;900&display=swap`,
+      src: `https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Poppins:wght@700&display=swap`,
     },
   ],
 });

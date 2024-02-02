@@ -5,7 +5,8 @@
   --primaryColor: {{initParams.primaryColor}};
   --fontColor: {{initParams.fontColor}};
   --backgroundColor: {{initParams.backgroundColor}};
-  --mainFont: 'Inter', sans-serif;
+  --mainFont: 'Poppins', sans-serif;
+  --secondaryFont: 'Cormorant Garamond', serif;
 }
 
 .container {
@@ -45,5 +46,32 @@
   z-index: 2;
   width: 90%;
   height: 90%;
-  border: 2px solid red;
+  top: -20px; 
+}
+
+.discount-wrapper {
+  font-size: 50px;
+  line-height: 60px;
+  font-family: var(--secondaryFont);
+  color: var(--primaryColor);
+}
+
+.title-subtitle-wrapper {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 2;
+  color: var(--fontColor);
+  background-color: var(--primaryColor);
+  line-height: 30px;
+  padding: 5px 20px;
+  font-size: 22px;
+}
+
+.title {
+  min-width: 200px;
+}
+
+.subtitle {
+  text-align: right;
 }
