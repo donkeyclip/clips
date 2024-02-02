@@ -75,3 +75,24 @@
 .subtitle {
   text-align: right;
 }
+
+.horizontal-line {
+  position: absolute;
+  top: 35px;
+  right: 20px;
+  width: 100px;
+  height: 2px;
+  background-color: var(--primaryColor);
+}
+
+.vertical-line {
+  position: absolute;
+  top: 35px;
+  right: 21px;
+  width: 100px;
+  height: 2px;
+  background-color: var(--primaryColor);
+  transform: rotate(-90deg);
+  transform-origin: right top;
+}
+
