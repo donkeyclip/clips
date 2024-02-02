@@ -38,6 +38,18 @@ const clip = new HTMLClip({
   ],
 });
 
+clip.addIncident(
+  clipPath({
+    selector: `.title`,
+    from: "inset(0% 0% 100% 0%)",
+    to: "inset(0% 0% 0% 0%)",
+    duration: 1000,
+    delay: 400,
+    easing: "easeInOutCubic",
+  }),
+  0,
+);
+
 const productsLength = initParams[0].value.products.length;
 
 Array.from({ length: productsLength }).forEach((_, index) => {
