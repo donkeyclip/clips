@@ -1,5 +1,4 @@
 /* eslint-disable sonarjs/no-duplicate-string */
-// import { left, opacity, scale, width } from "@donkeyclip/effects";
 import { HTMLClip } from "@donkeyclip/motorcortex";
 import { renderDonkeyclip } from "@donkeyclip/server";
 import pkg from "../package.json";
@@ -9,7 +8,7 @@ import initParams from "./initParams";
 import initParamsValidationRules from "./initParamsValidationRules";
 import {
   clipPath,
-  clipPathImagesCombo,
+  // clipPathImagesCombo,
   showAndHideTextCombo,
 } from "./clipIncidents";
 
@@ -61,16 +60,16 @@ Array.from({ length: productsLength }).forEach((_, index) => {
     (animationDuration + displayImageDuration + delayBetweenImageChange);
   const endingPosition = startingPosition + displayImageDuration;
   // clip path animation
-  clip.addIncident(
-    clipPathImagesCombo({
-      selector: `#product-${index} img`,
-      duration: animationDuration,
-      startingPosition,
-      endingPosition,
-      easing: "easeInOutCubic",
-    }),
-    0,
-  );
+  // clip.addIncident(
+  //   clipPathImagesCombo({
+  //     selector: `#product-${index} img`,
+  //     duration: animationDuration,
+  //     startingPosition,
+  //     endingPosition,
+  //     easing: "easeInOutCubic",
+  //   }),
+  //   0
+  // );
   // text animation
   clip.addIncident(
     showAndHideTextCombo({
