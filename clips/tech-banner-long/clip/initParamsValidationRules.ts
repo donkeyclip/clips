@@ -1,10 +1,5 @@
 export default {
-  title: {
-    label: "Title",
-    type: "string",
-  },
-
-  text: { label: "Text", type: "string" },
+  title: { label: "Title", type: "string" },
   secondaryText: { label: "Secondary Text", type: "string" },
 
   primaryColor: { label: "Primary Color", type: "color" },
@@ -12,7 +7,6 @@ export default {
   backgroundColor: { label: "Background Color", type: "color" },
   fontColor: { label: "Font Color", type: "color" },
 
-  ctaLink: { type: "string" },
   ctaText: { type: "string" },
 
   products: {
