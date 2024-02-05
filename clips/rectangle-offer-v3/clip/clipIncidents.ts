@@ -94,12 +94,12 @@ export const showAndHideTextCombo = ({
           attrs: {
             animatedAttrs: {
               transform: {
-                translateX: "0",
+                translateY: "0",
               },
             },
             initialValues: {
               transform: {
-                translateX: "-100%",
+                translateY: "100%",
               },
             },
           },
@@ -115,7 +115,7 @@ export const showAndHideTextCombo = ({
           attrs: {
             animatedAttrs: {
               transform: {
-                translateX: "-100%",
+                translateY: "100%",
               },
             },
           },

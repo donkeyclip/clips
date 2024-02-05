@@ -6,7 +6,7 @@ import css from "./clip.css";
 import html from "./clip.html";
 import initParams from "./initParams";
 import initParamsValidationRules from "./initParamsValidationRules";
-import { clipPath } from "./clipIncidents";
+import { clipPath, showAndHideTextCombo } from "./clipIncidents";
 
 const element = document.getElementById("clip");
 
@@ -54,6 +54,18 @@ clip.addIncident(
     to: "inset(0% 0% 0% 0%)",
     duration: 800,
     delay: 400,
+    easing: "easeInOutCubic",
+  }),
+  0,
+);
+
+clip.addIncident(
+  clipPath({
+    selector: `.discount-wrapper`,
+    from: "inset(0% 100% 0% 0%)",
+    to: "inset(0% 0% 0% 0%)",
+    duration: 800,
+    delay: 1000,
     easing: "easeInOutCubic",
   }),
   0,
@@ -150,5 +162,29 @@ Array.from({ length: productsLength }).forEach((_, index) => {
   //   endingPosition,
   // );
 });
+
+clip.addIncident(
+  showAndHideTextCombo({
+    selector: `.title`,
+    displayTextDuration: clip.calculatedDuration,
+    // duration: animationDuration,
+    enterScenePosition: 800,
+    exitScenePosition: clip.calculatedDuration,
+    easing: "easeInOutCubic",
+  }),
+  0,
+);
+
+clip.addIncident(
+  showAndHideTextCombo({
+    selector: `.subtitle`,
+    displayTextDuration: clip.calculatedDuration,
+    // duration: animationDuration,
+    enterScenePosition: 1000,
+    exitScenePosition: clip.calculatedDuration - 1000,
+    easing: "easeInOutCubic",
+  }),
+  0,
+);
 
 export default renderDonkeyclip({ clipId: pkg.id, initParams, clip });
