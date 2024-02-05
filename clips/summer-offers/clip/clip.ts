@@ -5,6 +5,7 @@ import pkg from "../package.json";
 import css from "./clip.css";
 import html from "./clip.html";
 import initParams from "./initParams";
+import initParamsValidationRules from "./initParamsValidationRules";
 import {
   pulsingGridDotsCombo,
   scaleSmallBigCombo,
@@ -25,6 +26,7 @@ const clip = new HTMLClip({
   css,
   host,
   initParams: initParams[0].value,
+  initParamsValidationRules,
   containerParams: {
     width: "705px",
     height: "290px",
