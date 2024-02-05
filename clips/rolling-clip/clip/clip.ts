@@ -6,12 +6,13 @@ import pkg from "../package.json";
 import css from "./clip.css";
 import html from "./clip.html";
 import initParams from "./initParams";
+import initParamsValidationRules from "./initParamsValidationRules";
 
 const host = document.getElementById("clip");
 
 if (!host)
   throw new Error(
-    "No element with id 'clip' found, so can't show the clip! Please check your html"
+    "No element with id 'clip' found, so can't show the clip! Please check your html",
   );
 
 const clip = new HTMLClip({
@@ -19,6 +20,7 @@ const clip = new HTMLClip({
   css,
   host,
   initParams: initParams[0].value,
+  initParamsValidationRules,
   containerParams: {
     width: "700px",
     height: "290px",
@@ -48,7 +50,7 @@ clip.addIncident(
     delay: "@stagger(0,600)",
     easing: "easeOutQuad",
   }),
-  0
+  0,
 );
 clip.addIncident(
   top({
@@ -59,7 +61,7 @@ clip.addIncident(
     delay: reverseDelay,
     easing: "easeOutQuad",
   }),
-  revercePosition
+  revercePosition,
 );
 
 clip.addIncident(
@@ -71,7 +73,7 @@ clip.addIncident(
     delay: "@stagger(0,600,0,linear,linear,true)",
     easing: "easeOutQuad",
   }),
-  0
+  0,
 );
 clip.addIncident(
   top({
@@ -82,7 +84,7 @@ clip.addIncident(
     delay: reverseDelay,
     easing: "easeOutQuad",
   }),
-  revercePosition
+  revercePosition,
 );
 
 clip.addIncident(
@@ -94,7 +96,7 @@ clip.addIncident(
     delay: "@stagger(0,600,0,linear,linear,true)",
     easing: "easeOutQuad",
   }),
-  0
+  0,
 );
 clip.addIncident(
   top({
@@ -105,7 +107,7 @@ clip.addIncident(
     delay: reverseDelay,
     easing: "easeOutQuad",
   }),
-  revercePosition
+  revercePosition,
 );
 
 clip.addIncident(
@@ -116,7 +118,7 @@ clip.addIncident(
     duration: 800,
     easing: "easeOutQuad",
   }),
-  0
+  0,
 );
 
 clip.addIncident(
@@ -128,7 +130,7 @@ clip.addIncident(
     delay: reverseDelay,
     easing: "easeOutQuad",
   }),
-  revercePosition
+  revercePosition,
 );
 const endPositionTop = calculateDiagonalEndPosition(-280, 656, -35, -1350);
 const endPositionBottom = calculateDiagonalEndPosition(470, -95, -35, 960);
@@ -140,7 +142,7 @@ clip.addIncident(
     selector: ".product-wrapper-top",
     duration: 8200,
   }),
-  0
+  0,
 );
 
 clip.addIncident(
@@ -150,7 +152,7 @@ clip.addIncident(
     selector: ".product-wrapper-top",
     duration: 8200,
   }),
-  0
+  0,
 );
 clip.addIncident(
   top({
@@ -159,7 +161,7 @@ clip.addIncident(
     selector: ".product-wrapper-bottom",
     duration: 8200,
   }),
-  0
+  0,
 );
 
 clip.addIncident(
@@ -169,7 +171,7 @@ clip.addIncident(
     selector: ".product-wrapper-bottom",
     duration: 8000,
   }),
-  0
+  0,
 );
 
 export default renderDonkeyclip({ clipId: pkg.id, initParams, clip });

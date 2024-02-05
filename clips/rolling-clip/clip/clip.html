@@ -16,7 +16,7 @@
     </div>
   </div>
   <div class="cta-wrapper left-transform">
-    <div class="cta">{{initParams.cta}}</div>
+    <div class="cta">{{initParams.ctaText}}</div>
   </div>
 
   <div class="product-wrapper product-wrapper-top absolute-flex">
@@ -24,7 +24,7 @@
       class="product-image"
       mc-for="key,item"
       mc-of="initParams.products"
-      style="background-image: url({{item.image}});"
+      style="background-image: url({{item.featured_image}});"
     ></div>
   </div>
   <div class="product-wrapper product-wrapper-bottom absolute-flex">
@@ -32,11 +32,11 @@
       class="product-image"
       mc-for="key,item"
       mc-of="initParams.products"
-      style="background-image: url({{item.image}});"
+      style="background-image: url({{item.featured_image}});"
     ></div>
   </div>
   <div class="offer-wrapper absolute-flex left-transform">
-    <div class="offer-letter" mc-for="key,item" mc-of="initParams.offer">
+    <div class="offer-letter" mc-for="key,item" mc-of="initParams.subtitle">
       {{item}}
       <div mc-if="item ===' '">&nbsp;</div>
     </div>
