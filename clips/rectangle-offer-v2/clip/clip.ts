@@ -1,5 +1,4 @@
 /* eslint-disable sonarjs/no-duplicate-string */
-// import { left, opacity, scale, width } from "@donkeyclip/effects";
 import { HTMLClip } from "@donkeyclip/motorcortex";
 import { renderDonkeyclip } from "@donkeyclip/server";
 import pkg from "../package.json";
@@ -10,6 +9,7 @@ import initParamsValidationRules from "./initParamsValidationRules";
 import {
   clipPath,
   clipPathImagesCombo,
+  opacity,
   showAndHideTextCombo,
 } from "./clipIncidents";
 
@@ -38,38 +38,69 @@ const clip = new HTMLClip({
   ],
 });
 
-clip.addIncident(
-  clipPath({
-    selector: `.title`,
-    from: "inset(0% 0% 100% 0%)",
-    to: "inset(0% 0% 0% 0%)",
-    duration: 1000,
-    delay: 400,
-    easing: "easeInOutCubic",
-  }),
-  0,
-);
-
 const productsLength = initParams[0].value.products.length;
 
 Array.from({ length: productsLength }).forEach((_, index) => {
   const animationDuration = 1300;
   const displayImageDuration = 4000;
-  const delayBetweenImageChange = 500;
+  const delayBetweenImageChange = -200;
   const startingPosition =
     index *
     (animationDuration + displayImageDuration + delayBetweenImageChange);
   const endingPosition = startingPosition + displayImageDuration;
+  clip.addIncident(
+    clipPath({
+      selector: `.title`,
+      from: "inset(0% 0% 100% 0%)",
+      to: "inset(0% 0% 0% 0%)",
+      duration: 1000,
+      delay: 400,
+      easing: "easeInOutCubic",
+    }),
+    startingPosition,
+  );
+
+  clip.addIncident(
+    clipPath({
+      selector: `.title`,
+      from: "inset(0% 0% 0% 0%)",
+      to: "inset(100% 0% 0% 0%)",
+      duration: 800,
+      easing: "easeInOutCubic",
+    }),
+    endingPosition,
+  );
   // clip path animation
   clip.addIncident(
     clipPathImagesCombo({
-      selector: `#product-${index} img`,
+      selector: `#product-${index} .img-1`,
       duration: animationDuration,
-      startingPosition,
+      startingPosition: startingPosition + 400,
       endingPosition,
       easing: "easeInOutCubic",
     }),
     0,
+  );
+  // opacity of the background image
+  clip.addIncident(
+    opacity({
+      selector: `#image-bg-${index}`,
+      from: 0,
+      to: 1,
+      duration: animationDuration,
+      easing: "easeInOutCubic",
+    }),
+    startingPosition,
+  );
+  clip.addIncident(
+    opacity({
+      selector: `#image-bg-${index}`,
+      from: 1,
+      to: 0,
+      duration: animationDuration,
+      easing: "easeInOutCubic",
+    }),
+    endingPosition,
   );
   // text animation
   clip.addIncident(
