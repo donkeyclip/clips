@@ -55,7 +55,7 @@ const productsLength = initParams[0].value.products.length;
 Array.from({ length: productsLength }).forEach((_, index) => {
   const animationDuration = 1300;
   const displayImageDuration = 4000;
-  const delayBetweenImageChange = 500;
+  const delayBetweenImageChange = 0;
   const startingPosition =
     index *
     (animationDuration + displayImageDuration + delayBetweenImageChange);
