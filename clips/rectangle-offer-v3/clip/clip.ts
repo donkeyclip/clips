@@ -74,7 +74,7 @@ clip.addIncident(
 Array.from({ length: productsLength }).forEach((_, index) => {
   const animationDuration = 1300;
   const displayImageDuration = 4000;
-  const delayBetweenImageChange = 500;
+  const delayBetweenImageChange = -1450;
   const startingPosition =
     index *
     (animationDuration + displayImageDuration + delayBetweenImageChange);
@@ -108,8 +108,7 @@ Array.from({ length: productsLength }).forEach((_, index) => {
       selector: `#product-${index} img`,
       from: "inset(0% 0% 100% 0%)",
       to: "inset(0% 0% 0% 0%)",
-      duration: 800,
-      delay: 400,
+      duration: animationDuration + 500,
       easing: "easeInOutCubic",
     }),
     startingPosition,
@@ -119,9 +118,8 @@ Array.from({ length: productsLength }).forEach((_, index) => {
     clipPath({
       selector: `#product-${index} img`,
       from: "inset(0% 0% 0% 0%)",
-      to: "inset(0% 0% 100% 0%)",
-      duration: 800,
-      delay: 400,
+      to: "inset(100% 0% 0% 0%)",
+      duration: animationDuration,
       easing: "easeInOutCubic",
     }),
     endingPosition,
