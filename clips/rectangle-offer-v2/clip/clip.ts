@@ -65,12 +65,13 @@ Array.from({ length: productsLength }).forEach((_, index) => {
     clipPathImagesCombo({
       selector: `#product-${index} .img-1`,
       duration: animationDuration,
-      startingPosition,
+      startingPosition: startingPosition + 400,
       endingPosition,
       easing: "easeInOutCubic",
     }),
     0,
   );
+  // opacity of the background image
   clip.addIncident(
     opacity({
       selector: `#image-bg-${index}`,

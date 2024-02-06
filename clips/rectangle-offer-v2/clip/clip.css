@@ -120,13 +120,3 @@
   color: var(--secondaryColor);
   font-size: 10px;
 }
-
-@keyframes test {
-  0%{
-    mask-position: 0% 0%;
-  }
-  100% {
-    mask-position: 100% 100%;
-
-  }
-}
