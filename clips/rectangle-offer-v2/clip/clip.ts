@@ -38,28 +38,38 @@ const clip = new HTMLClip({
   ],
 });
 
-clip.addIncident(
-  clipPath({
-    selector: `.title`,
-    from: "inset(0% 0% 100% 0%)",
-    to: "inset(0% 0% 0% 0%)",
-    duration: 1000,
-    delay: 400,
-    easing: "easeInOutCubic",
-  }),
-  0,
-);
-
 const productsLength = initParams[0].value.products.length;
 
 Array.from({ length: productsLength }).forEach((_, index) => {
   const animationDuration = 1300;
   const displayImageDuration = 4000;
-  const delayBetweenImageChange = 0;
+  const delayBetweenImageChange = -200;
   const startingPosition =
     index *
     (animationDuration + displayImageDuration + delayBetweenImageChange);
   const endingPosition = startingPosition + displayImageDuration;
+  clip.addIncident(
+    clipPath({
+      selector: `.title`,
+      from: "inset(0% 0% 100% 0%)",
+      to: "inset(0% 0% 0% 0%)",
+      duration: 1000,
+      delay: 400,
+      easing: "easeInOutCubic",
+    }),
+    startingPosition,
+  );
+
+  clip.addIncident(
+    clipPath({
+      selector: `.title`,
+      from: "inset(0% 0% 0% 0%)",
+      to: "inset(100% 0% 0% 0%)",
+      duration: 800,
+      easing: "easeInOutCubic",
+    }),
+    endingPosition,
+  );
   // clip path animation
   clip.addIncident(
     clipPathImagesCombo({
