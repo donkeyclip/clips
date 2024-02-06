@@ -14,7 +14,6 @@ export const topToBottomCombo = (
           attrs: {
             animatedAttrs: {
               top: 0,
-              scale: 1.1,
             },
             initialValues: {
               top: "-100%",
@@ -27,19 +26,6 @@ export const topToBottomCombo = (
           position: enterScenePosition,
         },
         // EXIT SCENE
-        {
-          incidentClass: CSSEffect,
-          attrs: {
-            animatedAttrs: {
-              scale: 0.95,
-            },
-          },
-          props: {
-            duration: 1000,
-            easing: "easeInOutCubic",
-          },
-          position: exitScenePosition - 500,
-        },
         {
           incidentClass: CSSEffect,
           attrs: {
