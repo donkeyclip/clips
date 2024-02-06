@@ -8,7 +8,8 @@ import initParams from "./initParams";
 import initParamsValidationRules from "./initParamsValidationRules";
 import {
   clipPath,
-  // clipPathImagesCombo,
+  clipPathImagesCombo,
+  opacity,
   showAndHideTextCombo,
 } from "./clipIncidents";
 
@@ -60,16 +61,36 @@ Array.from({ length: productsLength }).forEach((_, index) => {
     (animationDuration + displayImageDuration + delayBetweenImageChange);
   const endingPosition = startingPosition + displayImageDuration;
   // clip path animation
-  // clip.addIncident(
-  //   clipPathImagesCombo({
-  //     selector: `#product-${index} img`,
-  //     duration: animationDuration,
-  //     startingPosition,
-  //     endingPosition,
-  //     easing: "easeInOutCubic",
-  //   }),
-  //   0
-  // );
+  clip.addIncident(
+    clipPathImagesCombo({
+      selector: `#product-${index} .img-1`,
+      duration: animationDuration,
+      startingPosition,
+      endingPosition,
+      easing: "easeInOutCubic",
+    }),
+    0,
+  );
+  clip.addIncident(
+    opacity({
+      selector: `#image-bg-${index}`,
+      from: 0,
+      to: 1,
+      duration: animationDuration,
+      easing: "easeInOutCubic",
+    }),
+    startingPosition,
+  );
+  clip.addIncident(
+    opacity({
+      selector: `#image-bg-${index}`,
+      from: 1,
+      to: 0,
+      duration: animationDuration,
+      easing: "easeInOutCubic",
+    }),
+    endingPosition,
+  );
   // text animation
   clip.addIncident(
     showAndHideTextCombo({
