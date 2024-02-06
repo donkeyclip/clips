@@ -48,7 +48,9 @@ clip.addIncident(
   300,
 );
 
-[1, 2, 3].forEach((_, index) => {
+const productsLength = initParams[0].value.products.length;
+
+Array.from({ length: productsLength }).forEach((_, index) => {
   const delayBetweenProduct = 1000;
   const productDisplayDuration = 4000;
 
