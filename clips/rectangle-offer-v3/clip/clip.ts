@@ -6,7 +6,12 @@ import css from "./clip.css";
 import html from "./clip.html";
 import initParams from "./initParams";
 import initParamsValidationRules from "./initParamsValidationRules";
-import { clipPath, showAndHideTextCombo } from "./clipIncidents";
+import {
+  clipPath,
+  scale,
+  showAndHideTextCombo,
+  transformTop,
+} from "./clipIncidents";
 
 const element = document.getElementById("clip");
 
@@ -32,18 +37,6 @@ const clip = new HTMLClip({
     },
   ],
 });
-
-// clip.addIncident(
-//   clipPath({
-//     selector: `.title`,
-//     from: "inset(0% 0% 100% 0%)",
-//     to: "inset(0% 0% 0% 0%)",
-//     duration: 1000,
-//     delay: 400,
-//     easing: "easeInOutCubic",
-//   }),
-//   0,
-// );
 
 const productsLength = initParams[0].value.products.length;
 
@@ -79,30 +72,9 @@ Array.from({ length: productsLength }).forEach((_, index) => {
     index *
     (animationDuration + displayImageDuration + delayBetweenImageChange);
   const endingPosition = startingPosition + displayImageDuration;
-  // clip path animation
-  // clip.addIncident(
-  //   clipPathImagesCombo({
-  //     selector: `#product-${index} img`,
-  //     duration: animationDuration,
-  //     startingPosition,
-  //     endingPosition,
-  //     easing: "easeInOutCubic",
-  //   }),
-  //   0,
-  // );
-  // // text animation
-  // clip.addIncident(
-  //   showAndHideTextCombo({
-  //     selector: `#product-${index} .description`,
-  //     displayTextDuration: displayImageDuration,
-  //     duration: animationDuration,
-  //     enterScenePosition: startingPosition,
-  //     exitScenePosition: endingPosition,
-  //     easing: "easeInOutCubic",
-  //   }),
-  //   0,
-  // );
 
+  // const middleOfStartingAndEndingPosition = endingPosition / 2;
+  // console.log(middleOfStartingAndEndingPosition);
   clip.addIncident(
     clipPath({
       selector: `#product-${index} img`,
@@ -124,65 +96,144 @@ Array.from({ length: productsLength }).forEach((_, index) => {
     }),
     endingPosition,
   );
+  // discount animation
+  // ENTER SCENE STEPS
+  // STEP 1 make the top text larger
+  clip.addIncident(
+    scale({
+      selector: `.text`,
+      from: 1,
+      to: 1.3,
+      duration: animationDuration,
+      easing: "easeInOutCubic",
+    }),
+    endingPosition,
+  );
+  // STEP 2 make the bottom text smaller
+  clip.addIncident(
+    scale({
+      selector: `.secondary-text`,
+      from: 1,
+      to: 0.6,
+      duration: animationDuration,
+      easing: "easeInOutCubic",
+    }),
+    endingPosition,
+  );
+  // STEP 3 make the top text drop down
+  clip.addIncident(
+    transformTop({
+      selector: `.text`,
+      from: "0px",
+      to: "5px",
+      duration: animationDuration,
+      easing: "easeInOutCubic",
+    }),
+    endingPosition,
+  );
+  // STEP 4 make the bottom text drop down
+  clip.addIncident(
+    transformTop({
+      selector: `.secondary-text`,
+      from: "0px",
+      to: "30px",
+      duration: animationDuration,
+      easing: "easeInOutCubic",
+    }),
+    endingPosition,
+  );
+  // EXIT SCENE STEPS
+  // STEP 1 reset top text to its initial scale
+  clip.addIncident(
+    scale({
+      selector: `.text`,
+      from: 1.3,
+      to: 1,
+      duration: animationDuration,
+      easing: "easeInOutCubic",
+    }),
+    endingPosition + 1500,
+  );
+  // STEP 2 reset bottom text to its initial scale
+  clip.addIncident(
+    scale({
+      selector: `.secondary-text`,
+      from: 0.6,
+      to: 1,
+      duration: animationDuration,
+      easing: "easeInOutCubic",
+    }),
+    endingPosition + 1500,
+  );
+  // STEP 3 reset top text to its initial position
+  clip.addIncident(
+    transformTop({
+      selector: `.text`,
+      from: "5px",
+      to: "0px",
+      duration: animationDuration,
+      easing: "easeInOutCubic",
+    }),
+    endingPosition + 1500,
+  );
+  // STEP 4 reset bottom text to its initial position
+  clip.addIncident(
+    transformTop({
+      selector: `.secondary-text`,
+      from: "30px",
+      to: "0px",
+      duration: animationDuration,
+      easing: "easeInOutCubic",
+    }),
+    endingPosition + 1500,
+  );
+  if (index === productsLength - 1) {
+    clip.addIncident(
+      showAndHideTextCombo({
+        selector: `.title`,
+        displayTextDuration: clip.calculatedDuration,
+        // duration: animationDuration,
+        enterScenePosition: 800,
+        exitScenePosition: endingPosition,
+        easing: "easeInOutCubic",
+      }),
+      0,
+    );
+    clip.addIncident(
+      showAndHideTextCombo({
+        selector: `.subtitle`,
+        displayTextDuration: clip.calculatedDuration,
+        // duration: animationDuration,
+        enterScenePosition: 1000,
+        exitScenePosition: endingPosition,
+        easing: "easeInOutCubic",
+      }),
+      0,
+    );
+    clip.addIncident(
+      clipPath({
+        selector: `.title-subtitle-wrapper`,
+        from: "inset(0% 0% 0% 0%)",
+        to: "inset(100% 0% 0% 0%)",
+        duration: 800,
+        delay: 400,
+        easing: "easeInOutCubic",
+      }),
+      endingPosition,
+    );
 
-  // clip.addIncident(
-  //   clipPath({
-  //     selector: `#product-${index} .horizontal-line`,
-  //     from: "inset(0% 20% 0% 0%)",
-  //     to: "inset(5% 100% 0% 0%)",
-  //     duration: 800,
-  //     // delay: endingPosition - 500,
-  //     easing: "easeOutCubic",
-  //   }),
-  //   endingPosition,
-  // );
-  // button animation
-  // clip.addIncident(
-  //   clipPath({
-  //     selector: `#product-${index} .cta-wrapper`,
-  //     from: "inset(100% 0% 0% 0%)",
-  //     to: "inset(0% 0% 0% 0%)",
-  //     duration: 800,
-  //     delay: 600,
-  //     easing: "easeInOutCubic",
-  //   }),
-  //   startingPosition,
-  // );
-
-  // clip.addIncident(
-  //   clipPath({
-  //     selector: `#product-${index} .cta-wrapper`,
-  //     from: "inset(0% 0% 0% 0%)",
-  //     to: "inset(100% 0% 0% 0%)",
-  //     duration: 800,
-  //     easing: "easeInOutCubic",
-  //   }),
-  //   endingPosition,
-  // );
+    clip.addIncident(
+      clipPath({
+        selector: `.discount-wrapper`,
+        from: "inset(0% 0% 0% 0%)",
+        to: "inset(0% 100% 0% 0%)",
+        duration: 800,
+        delay: 1000,
+        easing: "easeInOutCubic",
+      }),
+      endingPosition,
+    );
+  }
 });
-
-clip.addIncident(
-  showAndHideTextCombo({
-    selector: `.title`,
-    displayTextDuration: clip.calculatedDuration,
-    // duration: animationDuration,
-    enterScenePosition: 800,
-    exitScenePosition: clip.calculatedDuration,
-    easing: "easeInOutCubic",
-  }),
-  0,
-);
-
-clip.addIncident(
-  showAndHideTextCombo({
-    selector: `.subtitle`,
-    displayTextDuration: clip.calculatedDuration,
-    // duration: animationDuration,
-    enterScenePosition: 1000,
-    exitScenePosition: clip.calculatedDuration - 1000,
-    easing: "easeInOutCubic",
-  }),
-  0,
-);
 
 export default renderDonkeyclip({ clipId: pkg.id, initParams, clip });

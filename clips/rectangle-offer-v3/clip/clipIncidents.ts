@@ -167,3 +167,73 @@ export const clipPath = ({
     },
   );
 };
+
+export const transformTop = ({
+  selector,
+  from,
+  to,
+  duration,
+  delay = 0,
+  easing = "linear",
+}: {
+  selector: string;
+  from: string;
+  to: string;
+  duration: string | number;
+  delay?: string | number;
+  easing?: string;
+}) => {
+  return new CSSEffect(
+    {
+      animatedAttrs: {
+        transform: {
+          translateY: to,
+        },
+      },
+      initialValues: {
+        transform: {
+          translateY: from,
+        },
+      },
+    },
+    {
+      selector,
+      duration,
+      delay,
+      easing,
+    },
+  );
+};
+
+export const scale = ({
+  selector,
+  from,
+  to,
+  duration,
+  delay = 0,
+  easing = "linear",
+}: {
+  selector: string;
+  from: number;
+  to: number;
+  duration: string | number;
+  delay?: string | number;
+  easing?: string;
+}) => {
+  return new CSSEffect(
+    {
+      animatedAttrs: {
+        scale: to,
+      },
+      initialValues: {
+        scale: from,
+      },
+    },
+    {
+      selector,
+      duration,
+      delay,
+      easing,
+    },
+  );
+};
