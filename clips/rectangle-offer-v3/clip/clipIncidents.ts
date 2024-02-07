@@ -105,7 +105,6 @@ export const showAndHideTextCombo = ({
           },
           props: {
             duration: enterAnimationDuration,
-            delay: "@stagger(0, 300)",
             easing,
           },
           position: enterScenePosition ? enterScenePosition : 0,
@@ -227,6 +226,39 @@ export const scale = ({
       },
       initialValues: {
         scale: from,
+      },
+    },
+    {
+      selector,
+      duration,
+      delay,
+      easing,
+    },
+  );
+};
+
+export const backgroundPosition = ({
+  selector,
+  from,
+  to,
+  duration,
+  delay = 0,
+  easing = "linear",
+}: {
+  selector: string;
+  from: string;
+  to: string;
+  duration: string | number;
+  delay?: string | number;
+  easing?: string;
+}) => {
+  return new CSSEffect(
+    {
+      animatedAttrs: {
+        backgroundPosition: to,
+      },
+      initialValues: {
+        backgroundPosition: from,
       },
     },
     {

@@ -5,6 +5,7 @@
   --primaryColor: {{initParams.primaryColor}};
   --fontColor: {{initParams.fontColor}};
   --backgroundColor: {{initParams.backgroundColor}};
+  --secondaryColor: {{initParams.secondaryColor}};
   --mainFont: 'Poppins', sans-serif;
   --secondaryFont: 'Cormorant Garamond', serif;
 }
@@ -79,6 +80,11 @@
   position: relative;
   min-width: 200px;
   transform: translateY(100%);
+  background: linear-gradient(to right, var(--secondaryColor), var(--primaryColor) 50%, white 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
 }
 
 .hide-text {
@@ -101,6 +107,11 @@
   position: relative;
   text-align: right;
   transform: translateY(100%);
+  background: linear-gradient(to right, var(--secondaryColor), var(--primaryColor) 50%, white 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
 }
 
 .horizontal-line {
@@ -122,5 +133,3 @@
   transform: rotate(-90deg);
   transform-origin: right top;
 }
-
-

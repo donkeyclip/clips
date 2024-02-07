@@ -7,6 +7,7 @@ import html from "./clip.html";
 import initParams from "./initParams";
 import initParamsValidationRules from "./initParamsValidationRules";
 import {
+  backgroundPosition,
   clipPath,
   scale,
   showAndHideTextCombo,
@@ -74,6 +75,8 @@ Array.from({ length: productsLength }).forEach((_, index) => {
   const endingPosition = startingPosition + displayImageDuration;
 
   const startingPositionOfDiscountAnimation = endingPosition - 2500;
+  const startingPositionOfTextColorAnimation = startingPosition + 2000;
+  const animationDurationOfTextColorAnimation = 1300;
 
   clip.addIncident(
     clipPath({
@@ -95,6 +98,52 @@ Array.from({ length: productsLength }).forEach((_, index) => {
       easing: "easeInOutCubic",
     }),
     endingPosition,
+  );
+
+  clip.addIncident(
+    backgroundPosition({
+      selector: `.title`,
+      from: "100% 0%",
+      to: "0% 100%",
+      duration: animationDurationOfTextColorAnimation,
+      easing: "easeInOutCubic",
+    }),
+    startingPositionOfTextColorAnimation,
+  );
+  clip.addIncident(
+    backgroundPosition({
+      selector: `.title`,
+      from: "0% 100%",
+      to: "-100% 0%",
+      duration: animationDurationOfTextColorAnimation,
+      easing: "easeInOutCubic",
+    }),
+    startingPositionOfTextColorAnimation +
+      animationDurationOfTextColorAnimation +
+      100,
+  );
+
+  clip.addIncident(
+    backgroundPosition({
+      selector: `.subtitle`,
+      from: "100% 0%",
+      to: "0% 100%",
+      duration: animationDurationOfTextColorAnimation,
+      easing: "easeInOutCubic",
+    }),
+    startingPositionOfTextColorAnimation,
+  );
+  clip.addIncident(
+    backgroundPosition({
+      selector: `.subtitle`,
+      from: "0% 100%",
+      to: "-100% 0%",
+      duration: animationDurationOfTextColorAnimation,
+      easing: "easeInOutCubic",
+    }),
+    startingPositionOfTextColorAnimation +
+      animationDurationOfTextColorAnimation +
+      100,
   );
   // discount animation
   // ENTER SCENE STEPS
@@ -190,7 +239,7 @@ Array.from({ length: productsLength }).forEach((_, index) => {
   if (index === productsLength - 1) {
     clip.addIncident(
       showAndHideTextCombo({
-        selector: `.title`,
+        selector: `.title, .title-2`,
         displayTextDuration: clip.calculatedDuration,
         // duration: animationDuration,
         enterScenePosition: 800,
@@ -201,7 +250,7 @@ Array.from({ length: productsLength }).forEach((_, index) => {
     );
     clip.addIncident(
       showAndHideTextCombo({
-        selector: `.subtitle`,
+        selector: `.subtitle, .subtitle-2`,
         displayTextDuration: clip.calculatedDuration,
         // duration: animationDuration,
         enterScenePosition: 1000,
