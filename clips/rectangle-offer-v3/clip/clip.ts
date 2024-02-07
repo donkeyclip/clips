@@ -73,8 +73,8 @@ Array.from({ length: productsLength }).forEach((_, index) => {
     (animationDuration + displayImageDuration + delayBetweenImageChange);
   const endingPosition = startingPosition + displayImageDuration;
 
-  // const middleOfStartingAndEndingPosition = endingPosition / 2;
-  // console.log(middleOfStartingAndEndingPosition);
+  const startingPositionOfDiscountAnimation = endingPosition - 2500;
+
   clip.addIncident(
     clipPath({
       selector: `#product-${index} img`,
@@ -107,7 +107,7 @@ Array.from({ length: productsLength }).forEach((_, index) => {
       duration: animationDuration,
       easing: "easeInOutCubic",
     }),
-    endingPosition,
+    startingPositionOfDiscountAnimation,
   );
   // STEP 2 make the bottom text smaller
   clip.addIncident(
@@ -118,7 +118,7 @@ Array.from({ length: productsLength }).forEach((_, index) => {
       duration: animationDuration,
       easing: "easeInOutCubic",
     }),
-    endingPosition,
+    startingPositionOfDiscountAnimation,
   );
   // STEP 3 make the top text drop down
   clip.addIncident(
@@ -129,7 +129,7 @@ Array.from({ length: productsLength }).forEach((_, index) => {
       duration: animationDuration,
       easing: "easeInOutCubic",
     }),
-    endingPosition,
+    startingPositionOfDiscountAnimation,
   );
   // STEP 4 make the bottom text drop down
   clip.addIncident(
@@ -140,7 +140,7 @@ Array.from({ length: productsLength }).forEach((_, index) => {
       duration: animationDuration,
       easing: "easeInOutCubic",
     }),
-    endingPosition,
+    startingPositionOfDiscountAnimation,
   );
   // EXIT SCENE STEPS
   // STEP 1 reset top text to its initial scale
@@ -152,7 +152,7 @@ Array.from({ length: productsLength }).forEach((_, index) => {
       duration: animationDuration,
       easing: "easeInOutCubic",
     }),
-    endingPosition + 1500,
+    startingPositionOfDiscountAnimation + 1500,
   );
   // STEP 2 reset bottom text to its initial scale
   clip.addIncident(
@@ -163,7 +163,7 @@ Array.from({ length: productsLength }).forEach((_, index) => {
       duration: animationDuration,
       easing: "easeInOutCubic",
     }),
-    endingPosition + 1500,
+    startingPositionOfDiscountAnimation + 1500,
   );
   // STEP 3 reset top text to its initial position
   clip.addIncident(
@@ -174,7 +174,7 @@ Array.from({ length: productsLength }).forEach((_, index) => {
       duration: animationDuration,
       easing: "easeInOutCubic",
     }),
-    endingPosition + 1500,
+    startingPositionOfDiscountAnimation + 1500,
   );
   // STEP 4 reset bottom text to its initial position
   clip.addIncident(
@@ -185,7 +185,7 @@ Array.from({ length: productsLength }).forEach((_, index) => {
       duration: animationDuration,
       easing: "easeInOutCubic",
     }),
-    endingPosition + 1500,
+    startingPositionOfDiscountAnimation + 1500,
   );
   if (index === productsLength - 1) {
     clip.addIncident(
