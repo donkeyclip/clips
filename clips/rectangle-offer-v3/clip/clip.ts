@@ -100,12 +100,24 @@ Array.from({ length: productsLength }).forEach((_, index) => {
   const startingPositionOfTextColorAnimation = startingPosition + 2000;
   const animationDurationOfTextColorAnimation = 1300;
 
+  // clip.addIncident(
+  //   clipPath({
+  //     selector: `#product-${index} img`,
+  //     from: "inset(0% 0% 100% 0%)",
+  //     to: "inset(0% 0% 0% 0%)",
+  //     duration: animationDuration + 500,
+  //     easing: "easeInOutCubic",
+  //   }),
+  //   startingPosition
+  // );
+
   clip.addIncident(
     clipPath({
       selector: `#product-${index} img`,
       from: "inset(0% 0% 100% 0%)",
       to: "inset(0% 0% 0% 0%)",
       duration: animationDuration + 500,
+      delay: 200,
       easing: "easeInOutCubic",
     }),
     startingPosition,
@@ -116,8 +128,8 @@ Array.from({ length: productsLength }).forEach((_, index) => {
       selector: `#product-${index} img`,
       from: "inset(0% 0% 0% 0%)",
       to: "inset(100% 0% 0% 0%)",
-      duration: animationDuration,
-      easing: "easeInOutCubic",
+      duration: animationDuration + 600,
+      easing: "easeOutCubic",
     }),
     endingPosition,
   );
