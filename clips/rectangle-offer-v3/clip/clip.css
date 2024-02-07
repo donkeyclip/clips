@@ -30,7 +30,7 @@
 
 .product-wrapper img {
   width: 240px;
-  height: 200px;
+  height: 240px;
   object-fit: cover;
 }
 
@@ -61,13 +61,14 @@
   color: var(--fontColor); 
   max-width: 70px;
   background-color: var(--primaryColor);
-  margin-top: 2rem;
+  margin-top: 20px;
+  margin-left: 10px;
 }
 
 .title-subtitle-wrapper {
   position: absolute;
   bottom: 10px;
-  right: 10px;
+  right: 20px;
   z-index: 2;
   color: var(--fontColor);
   background-color: var(--primaryColor);
@@ -118,7 +119,7 @@
 
 .horizontal-line {
   position: absolute;
-  top: 35px;
+  top: 15px;
   right: 20px;
   width: 100px;
   height: 2px;
@@ -127,7 +128,7 @@
 
 .vertical-line {
   position: absolute;
-  top: 35px;
+  top: 15px;
   right: 21px;
   width: 100px;
   height: 2px;
