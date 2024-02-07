@@ -65,6 +65,28 @@ clip.addIncident(
   0,
 );
 
+clip.addIncident(
+  clipPath({
+    selector: `.horizontal-line`,
+    from: "inset(0% 0% 0% 100%)",
+    to: "inset(0% 0% 0% 0%)",
+    duration: 800,
+    easing: "easeInOutCubic",
+  }),
+  1000,
+);
+
+clip.addIncident(
+  clipPath({
+    selector: `.vertical-line`,
+    from: "inset(0% 0% 0% 100%)",
+    to: "inset(0% 0% 0% 0%)",
+    duration: 800,
+    easing: "easeInOutCubic",
+  }),
+  1000,
+);
+
 Array.from({ length: productsLength }).forEach((_, index) => {
   const animationDuration = 1300;
   const displayImageDuration = 4000;
