@@ -6,6 +6,7 @@ import css from "./clip.css";
 import html from "./clip.html";
 import initParams from "./initParams";
 import initParamsValidationRules from "./initParamsValidationRules";
+import { opacity } from "./clipIncidents";
 
 const element = document.getElementById("clip");
 
@@ -31,6 +32,17 @@ const clip = new HTMLClip({
     },
   ],
 });
+
+clip.addIncident(
+  opacity({
+    selector: `svg`,
+    from: 0,
+    to: 1,
+    duration: 1500,
+    easing: "easeInOutCubic",
+  }),
+  0,
+);
 
 const productsLength = initParams[0].value.products.length;
 

@@ -271,7 +271,7 @@ export const mask = ({
   );
 };
 
-export const fill = ({
+export const opacity = ({
   selector,
   from,
   to,
@@ -280,8 +280,8 @@ export const fill = ({
   easing = "linear",
 }: {
   selector: string;
-  from: string;
-  to: string;
+  from: number;
+  to: number;
   duration: string | number;
   delay?: string | number;
   easing?: string;
@@ -289,10 +289,10 @@ export const fill = ({
   return new CSSEffect(
     {
       animatedAttrs: {
-        fill: to,
+        opacity: to,
       },
       initialValues: {
-        fill: from,
+        opacity: from,
       },
     },
     {
