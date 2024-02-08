@@ -3,6 +3,7 @@ export default {
   subtitle: { label: "Subtitle", type: "string" },
   text: { label: "Text", type: "string" },
   secondaryText: { label: "Secondary Text", type: "string" },
+  ctaText: { label: "CTA Text", type: "string" },
 
   fontColor: { label: "Font Color", type: "color" },
   primaryColor: { label: "Primary Color", type: "color" },
