@@ -8,8 +8,8 @@ export default [
       secondaryText: "Hand - Made - Hand - Made - Hand - Made",
 
       fontColor: "#595959",
-      primaryColor: "#595959",
-      secondaryColor: "#4B4B4B",
+      primaryColor: "#DADADA",
+      secondaryColor: "#EEE7E0",
       backgroundColor: "#EFEFEF",
 
       ctaText: "Explore Now",

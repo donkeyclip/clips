@@ -6,7 +6,6 @@ import css from "./clip.css";
 import html from "./clip.html";
 import initParams from "./initParams";
 import initParamsValidationRules from "./initParamsValidationRules";
-import { fill } from "./clipIncidents";
 
 const element = document.getElementById("clip");
 
@@ -47,28 +46,6 @@ Array.from({ length: productsLength }).forEach((_, index) => {
   // const startingPositionOfDiscountAnimation = endingPosition - 2500;
   // const startingPositionOfTextColorAnimation = startingPosition + 2000;
   // const animationDurationOfTextColorAnimation = 1300;
-
-  clip.addIncident(
-    fill({
-      selector: `.svg-container path`,
-      from: "#EEE7E0",
-      to: "#DADADA",
-      duration: 3000,
-      easing: "easeInOutCubic",
-    }),
-    0,
-  );
-
-  clip.addIncident(
-    fill({
-      selector: `.svg-container-2 path`,
-      from: "#DADADA",
-      to: "#EEE7E0",
-      duration: 3000,
-      easing: "easeInOutCubic",
-    }),
-    0,
-  );
 
   if (index === productsLength - 1) {
     // clip.addIncident(
