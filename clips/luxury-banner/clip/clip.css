@@ -17,7 +17,25 @@
   width: 100%;
   background-color: var(--backgroundColor);
   font-family: var(--mainFont);
+  padding: 1rem;
 }
+
+/* MAIN CONTENT */
+
+.product-wrapper {
+  position: relative;
+}
+
+img {
+  position: absolute;
+  right: 0;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-bottom-left-radius: 80px;
+}
+
+/* SVGS AND SVG ANIMATIONS */
 
 .svg-container {
   width: 100%;

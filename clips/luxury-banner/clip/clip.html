@@ -1,7 +1,9 @@
 <div class="container">
   <main>
     <div class="product-wrapper">
-      <img src="#" alt="" />
+      <div mc-for="key,item" mc-of="initParams.products">
+        <img src="{{item.featured_image}}" alt="" />
+      </div>
     </div>
     <div class="content-wrapper">
       <h2>{{initParams.title}}</h2>
