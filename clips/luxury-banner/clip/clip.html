@@ -1,7 +1,7 @@
 <div class="container">
   <main>
     <div class="product-wrapper">
-      <div mc-for="key,item" mc-of="initParams.products">
+      <div id="product-{{key}}" mc-for="key,item" mc-of="initParams.products">
         <img src="{{item.featured_image}}" alt="" />
       </div>
     </div>

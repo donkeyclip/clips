@@ -6,16 +6,18 @@ const endingPath = "inset(0% 0% 95% 0%)";
 const initialPath2 = "inset(0% 0% 95% 0%)";
 const endingPath2 = "inset(0% 0% 0% 0%)";
 
-export const productAnimationCombo = ({
+export const clipPathExpandFromLineCombo = ({
   selector,
   duration,
   startingPosition,
+  endingPosition,
   delay = 0,
   easing = "linear",
 }: {
   selector: string;
   duration: number;
   startingPosition: number;
+  endingPosition: number;
   delay?: string | number;
   easing?: string;
 }) => {
@@ -53,6 +55,38 @@ export const productAnimationCombo = ({
             easing,
           },
           position: startingPosition + duration,
+        },
+        {
+          incidentClass: CSSEffect,
+          attrs: {
+            animatedAttrs: {
+              clipPath: initialPath2,
+            },
+            initalValues: {
+              clipPath: endingPath2,
+            },
+          },
+          props: {
+            duration,
+            easing,
+          },
+          position: endingPosition,
+        },
+        {
+          incidentClass: CSSEffect,
+          attrs: {
+            animatedAttrs: {
+              clipPath: initialPath,
+            },
+            initalValues: {
+              clipPath: endingPath,
+            },
+          },
+          props: {
+            duration,
+            easing,
+          },
+          position: endingPosition + duration,
         },
       ],
     },

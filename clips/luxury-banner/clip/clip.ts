@@ -6,7 +6,7 @@ import css from "./clip.css";
 import html from "./clip.html";
 import initParams from "./initParams";
 import initParamsValidationRules from "./initParamsValidationRules";
-import { productAnimationCombo, opacity } from "./clipIncidents";
+import { clipPathExpandFromLineCombo, opacity } from "./clipIncidents";
 
 const element = document.getElementById("clip");
 
@@ -49,21 +49,22 @@ const productsLength = initParams[0].value.products.length;
 Array.from({ length: productsLength }).forEach((_, index) => {
   const animationDuration = 1300;
   const displayImageDuration = 4000;
-  const delayBetweenImageChange = -1450;
+  const delayBetweenImageChange = 0;
   const startingPosition =
     index *
     (animationDuration + displayImageDuration + delayBetweenImageChange);
-  // const endingPosition = startingPosition + displayImageDuration;
+  const endingPosition = startingPosition + displayImageDuration;
 
   // const startingPositionOfDiscountAnimation = endingPosition - 2500;
   // const startingPositionOfTextColorAnimation = startingPosition + 2000;
   // const animationDurationOfTextColorAnimation = 1300;
 
   clip.addIncident(
-    productAnimationCombo({
-      selector: `img`,
-      duration: 1200,
+    clipPathExpandFromLineCombo({
+      selector: `#product-${index} img`,
+      duration: 700,
       startingPosition,
+      endingPosition,
       easing: "easeInOutCubic",
     }),
     0,
