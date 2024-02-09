@@ -33,7 +33,13 @@ main {
   color: var(--fontColor);
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 1rem;
+}
+
+.content-inner-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .title, .cta {
@@ -62,7 +68,7 @@ main {
 }
 
 .horizontal-line {
-  width: 100px;
+  width: 120px;
   height: 1px;
   background-color: var(--fontColor);
 }
