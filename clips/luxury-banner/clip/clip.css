@@ -31,6 +31,9 @@ main {
 
 .content-wrapper {
   color: var(--fontColor);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .title, .cta {
@@ -56,6 +59,12 @@ main {
   width: fit-content;
   padding: 5px 20px;
   font-size: 16px;
+}
+
+.horizontal-line {
+  width: 100px;
+  height: 1px;
+  background-color: var(--fontColor);
 }
 
 .product-wrapper {
