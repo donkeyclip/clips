@@ -113,7 +113,6 @@ Array.from({ length: productsLength }).forEach((_, index) => {
       from: 0,
       to: 1,
       duration: 1000,
-      // delay: 1000,
       easing: "easeInOutCubic",
     }),
     startingPosition + 1200,
