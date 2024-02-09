@@ -51,7 +51,7 @@ clip.addIncident(
 
 clip.addIncident(
   clipPath({
-    selector: `.title-overlay`,
+    selector: `.title-overlay, .subtitle-overlay`,
     from: "inset(100% 0% 0% 0%)",
     to: "inset(0% 0% 0% 0%)",
     duration: 600,
@@ -63,7 +63,7 @@ clip.addIncident(
 
 clip.addIncident(
   color({
-    selector: `.title`,
+    selector: `.title, .subtitle`,
     from: "transparent",
     to: "var(--fontColor)",
     duration: 50,
@@ -73,7 +73,7 @@ clip.addIncident(
 
 clip.addIncident(
   clipPath({
-    selector: `.title-overlay`,
+    selector: `.title-overlay, .subtitle-overlay`,
     from: "inset(0% 0% 0% 0%)",
     to: "inset(0% 100% 0% 0%)",
     duration: 800,
