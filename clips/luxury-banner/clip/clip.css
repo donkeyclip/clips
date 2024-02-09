@@ -42,6 +42,7 @@ img {
   height: 150px;
   object-fit: cover;
   border-bottom-left-radius: 80px;
+  clip-path: inset(0% 0% 95% 100%);
 }
 
 /* SVGS AND SVG ANIMATIONS */

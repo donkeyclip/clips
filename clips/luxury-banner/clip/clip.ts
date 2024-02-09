@@ -6,7 +6,7 @@ import css from "./clip.css";
 import html from "./clip.html";
 import initParams from "./initParams";
 import initParamsValidationRules from "./initParamsValidationRules";
-import { opacity } from "./clipIncidents";
+import { productAnimationCombo, opacity } from "./clipIncidents";
 
 const element = document.getElementById("clip");
 
@@ -47,17 +47,27 @@ clip.addIncident(
 const productsLength = initParams[0].value.products.length;
 
 Array.from({ length: productsLength }).forEach((_, index) => {
-  // const animationDuration = 1300;
-  // const displayImageDuration = 4000;
-  // const delayBetweenImageChange = -1450;
-  // const startingPosition =
-  //   index *
-  //   (animationDuration + displayImageDuration + delayBetweenImageChange);
+  const animationDuration = 1300;
+  const displayImageDuration = 4000;
+  const delayBetweenImageChange = -1450;
+  const startingPosition =
+    index *
+    (animationDuration + displayImageDuration + delayBetweenImageChange);
   // const endingPosition = startingPosition + displayImageDuration;
 
   // const startingPositionOfDiscountAnimation = endingPosition - 2500;
   // const startingPositionOfTextColorAnimation = startingPosition + 2000;
   // const animationDurationOfTextColorAnimation = 1300;
+
+  clip.addIncident(
+    productAnimationCombo({
+      selector: `img`,
+      duration: 1200,
+      startingPosition,
+      easing: "easeInOutCubic",
+    }),
+    0,
+  );
 
   if (index === productsLength - 1) {
     // clip.addIncident(
@@ -81,17 +91,6 @@ Array.from({ length: productsLength }).forEach((_, index) => {
     //     easing: "easeInOutCubic",
     //   }),
     //   0
-    // );
-    // clip.addIncident(
-    //   clipPath({
-    //     selector: `.title-subtitle-wrapper`,
-    //     from: "inset(0% 0% 0% 0%)",
-    //     to: "inset(100% 0% 0% 0%)",
-    //     duration: 800,
-    //     delay: 400,
-    //     easing: "easeInOutCubic",
-    //   }),
-    //   endingPosition
     // );
     // clip.addIncident(
     //   clipPath({
