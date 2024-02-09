@@ -29,6 +29,35 @@ main {
   padding: 1rem;
 }
 
+.content-wrapper {
+  color: var(--fontColor);
+}
+
+.title, .cta {
+  font-family: var(--secondaryFont);
+}
+
+.title {
+  font-size: 32px;
+}
+
+.subtitle {
+  font-weight: 100;
+  font-size: 16px;
+}
+
+.text {
+  font-weight: 700;
+}
+
+.cta {
+  border: 1px solid var(--fontColor);
+  border-radius: 25px;
+  width: fit-content;
+  padding: 5px 20px;
+  font-size: 16px;
+}
+
 .product-wrapper {
   position: relative;
   right: 0;
