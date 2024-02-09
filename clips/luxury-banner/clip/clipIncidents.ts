@@ -4,7 +4,7 @@ const initialPath = "inset(0% 0% 95% 100%)";
 const endingPath = "inset(0% 0% 95% 0%)";
 
 const initialPath2 = "inset(0% 0% 95% 0%)";
-const endingPath2 = "inset(0% 0% 0% 0%)";
+const endingPath2 = "inset(0% 0% -1% 0%)";
 
 export const clipPathExpandFromLineCombo = ({
   selector,
