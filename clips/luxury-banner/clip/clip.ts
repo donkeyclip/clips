@@ -70,6 +70,29 @@ Array.from({ length: productsLength }).forEach((_, index) => {
     0,
   );
 
+  clip.addIncident(
+    opacity({
+      selector: `.img-overlay`,
+      from: 0,
+      to: 1,
+      duration: 1000,
+      // delay: 1000,
+      easing: "easeInOutCubic",
+    }),
+    startingPosition + 1200,
+  );
+
+  clip.addIncident(
+    opacity({
+      selector: `.img-overlay`,
+      from: 1,
+      to: 0,
+      duration: 1000,
+      easing: "easeInOutCubic",
+    }),
+    endingPosition - 1000,
+  );
+
   if (index === productsLength - 1) {
     // clip.addIncident(
     //   showAndHideTextCombo({

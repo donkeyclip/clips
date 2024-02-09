@@ -1,8 +1,14 @@
 <div class="container">
   <main>
     <div class="product-wrapper">
-      <div id="product-{{key}}" mc-for="key,item" mc-of="initParams.products">
-        <img src="{{item.featured_image}}" alt="" />
+      <div
+        id="product-{{key}}"
+        class="product"
+        mc-for="key,item"
+        mc-of="initParams.products"
+      >
+        <img src="{{item.featured_image}}" alt="product image" />
+        <div class="img-overlay"></div>
       </div>
     </div>
     <div class="content-wrapper">
