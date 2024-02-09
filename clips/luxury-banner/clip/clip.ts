@@ -6,7 +6,12 @@ import css from "./clip.css";
 import html from "./clip.html";
 import initParams from "./initParams";
 import initParamsValidationRules from "./initParamsValidationRules";
-import { clipPathExpandFromLineCombo, opacity } from "./clipIncidents";
+import {
+  clipPath,
+  clipPathExpandFromLineCombo,
+  color,
+  opacity,
+} from "./clipIncidents";
 
 const element = document.getElementById("clip");
 
@@ -42,6 +47,39 @@ clip.addIncident(
     easing: "easeInOutCubic",
   }),
   0,
+);
+
+clip.addIncident(
+  clipPath({
+    selector: `.title-overlay`,
+    from: "inset(100% 0% 0% 0%)",
+    to: "inset(0% 0% 0% 0%)",
+    duration: 600,
+    delay: 1000,
+    easing: "easeInOutCubic",
+  }),
+  0,
+);
+
+clip.addIncident(
+  color({
+    selector: `.title`,
+    from: "transparent",
+    to: "var(--fontColor)",
+    duration: 50,
+  }),
+  1650,
+);
+
+clip.addIncident(
+  clipPath({
+    selector: `.title-overlay`,
+    from: "inset(0% 0% 0% 0%)",
+    to: "inset(0% 100% 0% 0%)",
+    duration: 800,
+    easing: "easeInOutCubic",
+  }),
+  1650,
 );
 
 const productsLength = initParams[0].value.products.length;

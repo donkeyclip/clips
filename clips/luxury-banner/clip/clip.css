@@ -47,7 +47,18 @@ main {
 }
 
 .title {
+  position: relative;
   font-size: 32px;
+  width: fit-content;
+}
+
+.title-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--fontColor);
 }
 
 .subtitle {

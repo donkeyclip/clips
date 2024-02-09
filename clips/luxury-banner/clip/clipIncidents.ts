@@ -200,6 +200,39 @@ export const clipPath = ({
   );
 };
 
+export const color = ({
+  selector,
+  from,
+  to,
+  duration,
+  delay = 0,
+  easing = "linear",
+}: {
+  selector: string;
+  from: string;
+  to: string;
+  duration: string | number;
+  delay?: string | number;
+  easing?: string;
+}) => {
+  return new CSSEffect(
+    {
+      animatedAttrs: {
+        color: to,
+      },
+      initialValues: {
+        color: from,
+      },
+    },
+    {
+      selector,
+      duration,
+      delay,
+      easing,
+    },
+  );
+};
+
 // export const transformTop = ({
 //   selector,
 //   from,
