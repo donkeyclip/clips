@@ -21,7 +21,7 @@
 
 /* MAIN CONTENT */
 
-main {
+.main {
   position: relative;
   z-index: 10;
   display: flex;
@@ -52,13 +52,18 @@ main {
   width: fit-content;
 }
 
-.title-overlay, .subtitle-overlay {
+.title-overlay, .subtitle-overlay, .title-overlay-2, .subtitle-overlay-2 {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
   background-color: var(--fontColor);
+}
+
+.title-overlay-2, .subtitle-overlay-2 {
+  background-color: var(--secondaryColor);
+  /* clip-path: inset(100%, 100%, 100%, 100%); */
 }
 
 .subtitle {

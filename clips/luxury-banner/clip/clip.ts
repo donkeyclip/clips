@@ -92,20 +92,35 @@ Array.from({ length: productsLength }).forEach((_, index) => {
     index *
     (animationDuration + displayImageDuration + delayBetweenImageChange);
   const endingPosition = startingPosition + displayImageDuration;
-  // const startingPositionOfDiscountAnimation = endingPosition - 2500;
+  const startingPositionOfSecondTextOverlay = endingPosition + 500;
+  const endingPositionOfSecondTextOverlay = startingPosition - 400;
+  const animationDurationOfSecondTextOverlay = 600;
   // const startingPositionOfTextColorAnimation = startingPosition + 2000;
   // const animationDurationOfTextColorAnimation = 1300;
 
   clip.addIncident(
     clipPath({
-      selector: `.horizontal-line`,
+      selector: `.title-overlay-2, .subtitle-overlay-2`,
       from: "inset(0% 100% 0% 0%)",
       to: "inset(0% 0% 0% 0%)",
-      duration: 800,
+      duration: animationDurationOfSecondTextOverlay,
       easing: "easeInOutCubic",
     }),
-    startingPosition,
+    startingPositionOfSecondTextOverlay,
   );
+
+  if (index > 0) {
+    clip.addIncident(
+      clipPath({
+        selector: `.title-overlay-2, .subtitle-overlay-2`,
+        from: "inset(0% 0% 0% 0%)",
+        to: "inset(0% 0% 0% 100%)",
+        duration: animationDurationOfSecondTextOverlay,
+        easing: "easeInOutCubic",
+      }),
+      endingPositionOfSecondTextOverlay,
+    );
+  }
 
   clip.addIncident(
     clipPath({
@@ -115,7 +130,18 @@ Array.from({ length: productsLength }).forEach((_, index) => {
       duration: 800,
       easing: "easeInOutCubic",
     }),
-    endingPosition,
+    startingPositionOfSecondTextOverlay,
+  );
+
+  clip.addIncident(
+    clipPath({
+      selector: `.horizontal-line`,
+      from: "inset(0% 100% 0% 0%)",
+      to: "inset(0% 0% 0% 0%)",
+      duration: 600,
+      easing: "easeInOutCubic",
+    }),
+    startingPositionOfSecondTextOverlay + 900,
   );
 
   clip.addIncident(
