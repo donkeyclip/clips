@@ -44,6 +44,7 @@ const animationDuration = 1300;
 const displayImageDuration = 6000;
 const delayBetweenImageChange = 200;
 const animationDurationOfCombos = 700;
+const animationDurationOfStartingTextOverlaysAndHorizontalLine = 600;
 
 const animateClipStart = () => {
   const startingPositionOfImageRightToLeftAnimation =
@@ -64,7 +65,7 @@ const animateClipStart = () => {
       selector: `.title-overlay, .subtitle-overlay`,
       from: "inset(100% 0% 0% 0%)",
       to: "inset(0% 0% 0% 0%)",
-      duration: 600,
+      duration: animationDurationOfStartingTextOverlaysAndHorizontalLine,
       easing: "easeInOutCubic",
     }),
     startingPositionOfImageRightToLeftAnimation + animationDurationOfCombos,
@@ -85,7 +86,7 @@ const animateClipStart = () => {
       selector: `.title-overlay, .subtitle-overlay`,
       from: "inset(0% 0% 0% 0%)",
       to: "inset(0% 100% 0% 0%)",
-      duration: 800,
+      duration: animationDurationOfStartingTextOverlaysAndHorizontalLine,
       easing: "easeInOutCubic",
     }),
     startingPositionOfImageRightToLeftAnimation + animationDuration,
@@ -96,7 +97,7 @@ const animateClipStart = () => {
       selector: `.horizontal-line`,
       from: "inset(0% 100% 0% 0%)",
       to: "inset(0% 0% 0% 0%)",
-      duration: 600,
+      duration: animationDurationOfStartingTextOverlaysAndHorizontalLine,
       easing: "easeInOutCubic",
     }),
     startingPositionOfImageRightToLeftAnimation,
@@ -218,7 +219,7 @@ Array.from({ length: productsLength }).forEach((_, index) => {
         selector: `.horizontal-line`,
         from: "inset(0% 0% 0% 0%)",
         to: "inset(0% 100% 0% 0%)",
-        duration: 600,
+        duration: animationDurationOfStartingTextOverlaysAndHorizontalLine,
         easing: "easeInOutCubic",
       }),
       endingPosition + animationDurationOfCombos,
@@ -229,7 +230,7 @@ Array.from({ length: productsLength }).forEach((_, index) => {
         selector: `.title-overlay, .subtitle-overlay`,
         from: "inset(100% 0% 0% 0%)",
         to: "inset(0% 0% 0% 0%)",
-        duration: 600,
+        duration: animationDurationOfStartingTextOverlaysAndHorizontalLine,
         easing: "easeInOutCubic",
       }),
       endingPosition,
@@ -250,10 +251,10 @@ Array.from({ length: productsLength }).forEach((_, index) => {
         selector: `.title-overlay, .subtitle-overlay`,
         from: "inset(0% 0% 0% 0%)",
         to: "inset(0% 100% 0% 0%)",
-        duration: 800,
+        duration: animationDurationOfStartingTextOverlaysAndHorizontalLine,
         easing: "easeInOutCubic",
       }),
-      endingPosition + 600,
+      endingPosition + animationDurationOfStartingTextOverlaysAndHorizontalLine,
     );
   }
 });
