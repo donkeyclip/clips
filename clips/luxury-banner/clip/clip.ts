@@ -195,6 +195,7 @@ Array.from({ length: productsLength }).forEach((_, index) => {
   );
 
   if (index === productsLength - 1) {
+    // RESET ANIMATIONS TO INITIAL STATE
     clip.addIncident(
       color({
         selector: `.title, .subtitle`,
@@ -211,6 +212,17 @@ Array.from({ length: productsLength }).forEach((_, index) => {
         from: 1,
         to: 0,
         duration: 700,
+        easing: "easeInOutCubic",
+      }),
+      endingPosition + animationDurationOfCombos,
+    );
+
+    clip.addIncident(
+      clipPath({
+        selector: `.horizontal-line`,
+        from: "inset(0% 0% 0% 0%)",
+        to: "inset(0% 100% 0% 0%)",
+        duration: 600,
         easing: "easeInOutCubic",
       }),
       endingPosition + animationDurationOfCombos,
