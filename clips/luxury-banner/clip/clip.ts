@@ -102,6 +102,17 @@ const animateClipStart = () => {
     }),
     startingPositionOfImageRightToLeftAnimation,
   );
+
+  clip.addIncident(
+    clipPath({
+      selector: `.cta`,
+      from: "inset(0% 100% 0% 0%)",
+      to: "inset(0% 0% 0% 0%)",
+      duration: animationDurationOfStartingTextOverlaysAndHorizontalLine,
+      easing: "easeInOutCubic",
+    }),
+    startingPositionOfImageRightToLeftAnimation,
+  );
 };
 
 const animateTextOverlays = (
@@ -258,6 +269,17 @@ Array.from({ length: productsLength }).forEach((_, index) => {
         easing: "easeInOutCubic",
       }),
       endingPosition + animationDurationOfStartingTextOverlaysAndHorizontalLine,
+    );
+
+    clip.addIncident(
+      clipPath({
+        selector: `.cta`,
+        from: "inset(0% 0% 0% 0%)",
+        to: "inset(0% 100% 0% 0%)",
+        duration: animationDurationOfStartingTextOverlaysAndHorizontalLine,
+        easing: "easeInOutCubic",
+      }),
+      endingPosition + animationDurationOfCombos,
     );
   }
 });
