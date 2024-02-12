@@ -97,6 +97,28 @@ Array.from({ length: productsLength }).forEach((_, index) => {
   // const animationDurationOfTextColorAnimation = 1300;
 
   clip.addIncident(
+    clipPath({
+      selector: `.horizontal-line`,
+      from: "inset(0% 100% 0% 0%)",
+      to: "inset(0% 0% 0% 0%)",
+      duration: 800,
+      easing: "easeInOutCubic",
+    }),
+    startingPosition,
+  );
+
+  clip.addIncident(
+    clipPath({
+      selector: `.horizontal-line`,
+      from: "inset(0% 0% 0% 0%)",
+      to: "inset(0% 0% 0% 100%)",
+      duration: 800,
+      easing: "easeInOutCubic",
+    }),
+    endingPosition,
+  );
+
+  clip.addIncident(
     clipPathExpandFromLineCombo({
       selector: `#product-${index} img`,
       duration: 700,
