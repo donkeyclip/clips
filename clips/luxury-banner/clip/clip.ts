@@ -95,7 +95,12 @@ clip.addIncident(
 
 const productsLength = initParams[0].value.products.length;
 
-const animateTextOverlays = (endingPosition: number, duration: number) => {
+const animateTextOverlays = (
+  endingPosition: number,
+  duration: number,
+  index: number,
+) => {
+  if (index === productsLength - 1) return;
   // SLIDE OVERLAY FROM BOTTOM TO TOP
   clip.addIncident(
     clipPath({
@@ -170,7 +175,7 @@ Array.from({ length: productsLength }).forEach((_, index) => {
     startingPosition,
     endingPosition,
   );
-  animateTextOverlays(endingPosition, animationDurationOfCombos);
+  animateTextOverlays(endingPosition, animationDurationOfCombos, index);
 
   clip.addIncident(
     opacity({
@@ -196,15 +201,6 @@ Array.from({ length: productsLength }).forEach((_, index) => {
 
   if (index === productsLength - 1) {
     // RESET ANIMATIONS TO INITIAL STATE
-    clip.addIncident(
-      color({
-        selector: `.title, .subtitle`,
-        from: "var(--fontColor)",
-        to: "transparent",
-        duration: 50,
-      }),
-      endingPosition + animationDurationOfCombos,
-    );
 
     clip.addIncident(
       opacity({
@@ -226,6 +222,38 @@ Array.from({ length: productsLength }).forEach((_, index) => {
         easing: "easeInOutCubic",
       }),
       endingPosition + animationDurationOfCombos,
+    );
+
+    clip.addIncident(
+      clipPath({
+        selector: `.title-overlay, .subtitle-overlay`,
+        from: "inset(100% 0% 0% 0%)",
+        to: "inset(0% 0% 0% 0%)",
+        duration: 600,
+        easing: "easeInOutCubic",
+      }),
+      endingPosition,
+    );
+
+    clip.addIncident(
+      color({
+        selector: `.title, .subtitle`,
+        from: "var(--fontColor)",
+        to: "transparent",
+        duration: 50,
+      }),
+      endingPosition + animationDurationOfCombos,
+    );
+
+    clip.addIncident(
+      clipPath({
+        selector: `.title-overlay, .subtitle-overlay`,
+        from: "inset(0% 0% 0% 0%)",
+        to: "inset(0% 100% 0% 0%)",
+        duration: 800,
+        easing: "easeInOutCubic",
+      }),
+      endingPosition + 600,
     );
   }
 });
