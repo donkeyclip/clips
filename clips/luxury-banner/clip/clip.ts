@@ -214,4 +214,58 @@ Array.from({ length: productsLength }).forEach((_, index) => {
   }
 });
 
+clip.addIncident(
+  clipPath({
+    selector: `.title-overlay, .subtitle-overlay`,
+    from: "inset(100% 0% 0% 0%)",
+    to: "inset(0% 0% 0% 0%)",
+    duration: 600,
+    easing: "easeInOutCubic",
+  }),
+  clip.calculatedDuration - 1000,
+);
+
+clip.addIncident(
+  color({
+    selector: `.title, .subtitle`,
+    from: "var(--fontColor)",
+    to: "transparent",
+    duration: 50,
+  }),
+  clip.calculatedDuration - 400,
+);
+
+clip.addIncident(
+  clipPath({
+    selector: `.title-overlay, .subtitle-overlay`,
+    from: "inset(0% 0% 0% 0%)",
+    to: "inset(0% 100% 0% 0%)",
+    duration: 800,
+    easing: "easeInOutCubic",
+  }),
+  clip.calculatedDuration,
+);
+
+clip.addIncident(
+  clipPath({
+    selector: `.horizontal-line`,
+    from: "inset(0% 0% 0% 0%)",
+    to: "inset(0% 100% 0% 0%)",
+    duration: 600,
+    easing: "easeInOutCubic",
+  }),
+  clip.calculatedDuration,
+);
+
+clip.addIncident(
+  opacity({
+    selector: `svg`,
+    from: 1,
+    to: 0,
+    duration: 700,
+    easing: "easeInOutCubic",
+  }),
+  clip.calculatedDuration,
+);
+
 export default renderDonkeyclip({ clipId: pkg.id, initParams, clip });
