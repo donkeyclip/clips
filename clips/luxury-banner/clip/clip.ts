@@ -38,62 +38,70 @@ const clip = new HTMLClip({
   ],
 });
 
-clip.addIncident(
-  opacity({
-    selector: `svg`,
-    from: 0,
-    to: 1,
-    duration: 1500,
-    easing: "easeInOutCubic",
-  }),
-  0,
-);
-
-clip.addIncident(
-  clipPath({
-    selector: `.title-overlay, .subtitle-overlay`,
-    from: "inset(100% 0% 0% 0%)",
-    to: "inset(0% 0% 0% 0%)",
-    duration: 600,
-    delay: 1000,
-    easing: "easeInOutCubic",
-  }),
-  0,
-);
-
-clip.addIncident(
-  color({
-    selector: `.title, .subtitle`,
-    from: "transparent",
-    to: "var(--fontColor)",
-    duration: 50,
-  }),
-  1650,
-);
-
-clip.addIncident(
-  clipPath({
-    selector: `.title-overlay, .subtitle-overlay`,
-    from: "inset(0% 0% 0% 0%)",
-    to: "inset(0% 100% 0% 0%)",
-    duration: 800,
-    easing: "easeInOutCubic",
-  }),
-  1650,
-);
-
-clip.addIncident(
-  clipPath({
-    selector: `.horizontal-line`,
-    from: "inset(0% 100% 0% 0%)",
-    to: "inset(0% 0% 0% 0%)",
-    duration: 600,
-    easing: "easeInOutCubic",
-  }),
-  0,
-);
-
 const productsLength = initParams[0].value.products.length;
+
+const animationDuration = 1300;
+const displayImageDuration = 6000;
+const delayBetweenImageChange = 200;
+const animationDurationOfCombos = 700;
+
+const animateClipStart = () => {
+  const startingPositionOfImageRightToLeftAnimation =
+    0 * (animationDuration + displayImageDuration + delayBetweenImageChange);
+  clip.addIncident(
+    opacity({
+      selector: `svg`,
+      from: 0,
+      to: 1,
+      duration: 1500,
+      easing: "easeInOutCubic",
+    }),
+    0,
+  );
+
+  clip.addIncident(
+    clipPath({
+      selector: `.title-overlay, .subtitle-overlay`,
+      from: "inset(100% 0% 0% 0%)",
+      to: "inset(0% 0% 0% 0%)",
+      duration: 600,
+      easing: "easeInOutCubic",
+    }),
+    startingPositionOfImageRightToLeftAnimation + animationDurationOfCombos,
+  );
+
+  clip.addIncident(
+    color({
+      selector: `.title, .subtitle`,
+      from: "transparent",
+      to: "var(--fontColor)",
+      duration: 50,
+    }),
+    startingPositionOfImageRightToLeftAnimation + animationDuration + 50,
+  );
+
+  clip.addIncident(
+    clipPath({
+      selector: `.title-overlay, .subtitle-overlay`,
+      from: "inset(0% 0% 0% 0%)",
+      to: "inset(0% 100% 0% 0%)",
+      duration: 800,
+      easing: "easeInOutCubic",
+    }),
+    startingPositionOfImageRightToLeftAnimation + animationDuration,
+  );
+
+  clip.addIncident(
+    clipPath({
+      selector: `.horizontal-line`,
+      from: "inset(0% 100% 0% 0%)",
+      to: "inset(0% 0% 0% 0%)",
+      duration: 600,
+      easing: "easeInOutCubic",
+    }),
+    startingPositionOfImageRightToLeftAnimation,
+  );
+};
 
 const animateTextOverlays = (
   endingPosition: number,
@@ -153,22 +161,14 @@ const animateImages = (
   );
 };
 
+animateClipStart();
+
 Array.from({ length: productsLength }).forEach((_, index) => {
-  const animationDuration = 1300;
-  const displayImageDuration = 6000;
-  const delayBetweenImageChange = 200;
   const startingPosition =
     index *
     (animationDuration + displayImageDuration + delayBetweenImageChange);
   const endingPosition = startingPosition + displayImageDuration;
-  // const startingPositionOfSecondTextOverlay = endingPosition + 500;
-  // const startingPositionOfSecondTextOverlay = endingPosition;
-  // const animationDurationOfSecondTextOverlay = 700;
-  // const endingPositionOfSecondTextOverlay =
-  //   endingPosition + animationDurationOfSecondTextOverlay + 1000;
-  const animationDurationOfCombos = 700;
-  // const startingPositionOfTextColorAnimation = startingPosition + 2000;
-  // const animationDurationOfTextColorAnimation = 1300;
+
   animateImages(
     index,
     animationDurationOfCombos,
