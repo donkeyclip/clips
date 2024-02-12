@@ -82,7 +82,71 @@ clip.addIncident(
   1650,
 );
 
+clip.addIncident(
+  clipPath({
+    selector: `.horizontal-line`,
+    from: "inset(0% 100% 0% 0%)",
+    to: "inset(0% 0% 0% 0%)",
+    duration: 600,
+    easing: "easeInOutCubic",
+  }),
+  0,
+);
+
 const productsLength = initParams[0].value.products.length;
+
+const animateTextOverlays = (endingPosition: number, duration: number) => {
+  // SLIDE OVERLAY FROM BOTTOM TO TOP
+  clip.addIncident(
+    clipPath({
+      selector: `.title-overlay-2, .subtitle-overlay-2`,
+      from: "inset(100% 0% 0% 0%)",
+      to: "inset(0% 0% 0% 0%)",
+      duration,
+      easing: "easeInOutCubic",
+    }),
+    endingPosition,
+  );
+  // SLIDE OVERLAY FROM RIGHT TO LEFT
+  clip.addIncident(
+    clipPath({
+      selector: `.title-overlay-2, .subtitle-overlay-2`,
+      from: "inset(0% 0% 0% 0%)",
+      to: "inset(0% 100% 0% 0%)",
+      duration,
+      easing: "easeInOutCubic",
+    }),
+    endingPosition + duration,
+  );
+};
+
+const animateImages = (
+  index: number,
+  animationDurationOfCombos: number,
+  startingPosition: number,
+  endingPosition: number,
+) => {
+  const initialImagePath = "inset(0% 0% 95% 100%)";
+  const endingImagePath = "inset(0% 0% 95% 0%)";
+
+  const initialImagePath2 = "inset(0% 0% 95% 0%)";
+  const endingImagePath2 = "inset(0% 0% -1% 0%)";
+
+  clip.addIncident(
+    clipPathExpandFromLineCombo({
+      selector: `#product-${index} img`,
+      duration: animationDurationOfCombos,
+      startingPosition,
+      endingPosition,
+      initialPath: initialImagePath,
+      endingPath: endingImagePath,
+      initialPath2: initialImagePath2,
+      endingPath2: endingImagePath2,
+      easing: "easeInOutCubic",
+    }),
+    0,
+  );
+};
 
 Array.from({ length: productsLength }).forEach((_, index) => {
   const animationDuration = 1300;
@@ -92,68 +156,21 @@ Array.from({ length: productsLength }).forEach((_, index) => {
     index *
     (animationDuration + displayImageDuration + delayBetweenImageChange);
   const endingPosition = startingPosition + displayImageDuration;
-  const startingPositionOfSecondTextOverlay = endingPosition + 500;
-  const endingPositionOfSecondTextOverlay = startingPosition - 400;
-  const animationDurationOfSecondTextOverlay = 600;
+  // const startingPositionOfSecondTextOverlay = endingPosition + 500;
+  // const startingPositionOfSecondTextOverlay = endingPosition;
+  // const animationDurationOfSecondTextOverlay = 700;
+  // const endingPositionOfSecondTextOverlay =
+  //   endingPosition + animationDurationOfSecondTextOverlay + 1000;
+  const animationDurationOfCombos = 700;
   // const startingPositionOfTextColorAnimation = startingPosition + 2000;
   // const animationDurationOfTextColorAnimation = 1300;
-
-  clip.addIncident(
-    clipPath({
-      selector: `.title-overlay-2, .subtitle-overlay-2`,
-      from: "inset(0% 100% 0% 0%)",
-      to: "inset(0% 0% 0% 0%)",
-      duration: animationDurationOfSecondTextOverlay,
-      easing: "easeInOutCubic",
-    }),
-    startingPositionOfSecondTextOverlay,
+  animateImages(
+    index,
+    animationDurationOfCombos,
+    startingPosition,
+    endingPosition,
   );
-
-  if (index > 0) {
-    clip.addIncident(
-      clipPath({
-        selector: `.title-overlay-2, .subtitle-overlay-2`,
-        from: "inset(0% 0% 0% 0%)",
-        to: "inset(0% 0% 0% 100%)",
-        duration: animationDurationOfSecondTextOverlay,
-        easing: "easeInOutCubic",
-      }),
-      endingPositionOfSecondTextOverlay,
-    );
-  }
-
-  clip.addIncident(
-    clipPath({
-      selector: `.horizontal-line`,
-      from: "inset(0% 0% 0% 0%)",
-      to: "inset(0% 0% 0% 100%)",
-      duration: 800,
-      easing: "easeInOutCubic",
-    }),
-    startingPositionOfSecondTextOverlay,
-  );
-
-  clip.addIncident(
-    clipPath({
-      selector: `.horizontal-line`,
-      from: "inset(0% 100% 0% 0%)",
-      to: "inset(0% 0% 0% 0%)",
-      duration: 600,
-      easing: "easeInOutCubic",
-    }),
-    startingPositionOfSecondTextOverlay + 900,
-  );
-
-  clip.addIncident(
-    clipPathExpandFromLineCombo({
-      selector: `#product-${index} img`,
-      duration: 700,
-      startingPosition,
-      endingPosition,
-      easing: "easeInOutCubic",
-    }),
-    0,
-  );
+  animateTextOverlays(endingPosition, animationDurationOfCombos);
 
   clip.addIncident(
     opacity({
@@ -178,94 +195,27 @@ Array.from({ length: productsLength }).forEach((_, index) => {
   );
 
   if (index === productsLength - 1) {
-    // clip.addIncident(
-    //   showAndHideTextCombo({
-    //     selector: `.title, .title-2`,
-    //     displayTextDuration: clip.calculatedDuration,
-    //     // duration: animationDuration,
-    //     enterScenePosition: 800,
-    //     exitScenePosition: endingPosition,
-    //     easing: "easeInOutCubic",
-    //   }),
-    //   0
-    // );
-    // clip.addIncident(
-    //   showAndHideTextCombo({
-    //     selector: `.subtitle, .subtitle-2`,
-    //     displayTextDuration: clip.calculatedDuration,
-    //     // duration: animationDuration,
-    //     enterScenePosition: 1000,
-    //     exitScenePosition: endingPosition,
-    //     easing: "easeInOutCubic",
-    //   }),
-    //   0
-    // );
-    // clip.addIncident(
-    //   clipPath({
-    //     selector: `.discount-wrapper`,
-    //     from: "inset(0% 0% 0% 0%)",
-    //     to: "inset(0% 100% 0% 0%)",
-    //     duration: 800,
-    //     delay: 1000,
-    //     easing: "easeInOutCubic",
-    //   }),
-    //   endingPosition
-    // );
+    clip.addIncident(
+      color({
+        selector: `.title, .subtitle`,
+        from: "var(--fontColor)",
+        to: "transparent",
+        duration: 50,
+      }),
+      endingPosition + animationDurationOfCombos,
+    );
+
+    clip.addIncident(
+      opacity({
+        selector: `svg`,
+        from: 1,
+        to: 0,
+        duration: 700,
+        easing: "easeInOutCubic",
+      }),
+      endingPosition + animationDurationOfCombos,
+    );
   }
 });
-
-clip.addIncident(
-  clipPath({
-    selector: `.title-overlay, .subtitle-overlay`,
-    from: "inset(100% 0% 0% 0%)",
-    to: "inset(0% 0% 0% 0%)",
-    duration: 600,
-    easing: "easeInOutCubic",
-  }),
-  clip.calculatedDuration - 1000,
-);
-
-clip.addIncident(
-  color({
-    selector: `.title, .subtitle`,
-    from: "var(--fontColor)",
-    to: "transparent",
-    duration: 50,
-  }),
-  clip.calculatedDuration - 400,
-);
-
-clip.addIncident(
-  clipPath({
-    selector: `.title-overlay, .subtitle-overlay`,
-    from: "inset(0% 0% 0% 0%)",
-    to: "inset(0% 100% 0% 0%)",
-    duration: 800,
-    easing: "easeInOutCubic",
-  }),
-  clip.calculatedDuration,
-);
-
-clip.addIncident(
-  clipPath({
-    selector: `.horizontal-line`,
-    from: "inset(0% 0% 0% 0%)",
-    to: "inset(0% 100% 0% 0%)",
-    duration: 600,
-    easing: "easeInOutCubic",
-  }),
-  clip.calculatedDuration,
-);
-
-clip.addIncident(
-  opacity({
-    selector: `svg`,
-    from: 1,
-    to: 0,
-    duration: 700,
-    easing: "easeInOutCubic",
-  }),
-  clip.calculatedDuration,
-);
 
 export default renderDonkeyclip({ clipId: pkg.id, initParams, clip });

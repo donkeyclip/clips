@@ -1,16 +1,14 @@
 import { CSSEffect, Combo } from "@donkeyclip/motorcortex";
 
-const initialPath = "inset(0% 0% 95% 100%)";
-const endingPath = "inset(0% 0% 95% 0%)";
-
-const initialPath2 = "inset(0% 0% 95% 0%)";
-const endingPath2 = "inset(0% 0% -1% 0%)";
-
 export const clipPathExpandFromLineCombo = ({
   selector,
   duration,
   startingPosition,
   endingPosition,
+  initialPath,
+  endingPath,
+  initialPath2,
+  endingPath2,
   delay = 0,
   easing = "linear",
 }: {
@@ -18,6 +16,10 @@ export const clipPathExpandFromLineCombo = ({
   duration: number;
   startingPosition: number;
   endingPosition: number;
+  initialPath: string;
+  endingPath: string;
+  initialPath2: string;
+  endingPath2: string;
   delay?: string | number;
   easing?: string;
 }) => {
@@ -98,75 +100,6 @@ export const clipPathExpandFromLineCombo = ({
   );
 };
 
-// export const showAndHideTextCombo = ({
-//   selector,
-//   displayTextDuration,
-//   enterScenePosition = 0,
-//   exitScenePosition = 0,
-//   enterAnimationDuration = 1300,
-//   exitAnimationDuration = 1300,
-//   easing = "easeInOutQuad",
-// }: {
-//   selector: string;
-//   displayTextDuration: number;
-//   enterScenePosition?: number;
-//   exitScenePosition?: number;
-//   enterAnimationDuration?: number;
-//   exitAnimationDuration?: number;
-//   from?: string;
-//   to?: string;
-//   duration?: string | number;
-//   delay?: string | number;
-//   easing?: string;
-// }) => {
-//   return new Combo(
-//     {
-//       incidents: [
-//         {
-//           incidentClass: CSSEffect,
-//           attrs: {
-//             animatedAttrs: {
-//               transform: {
-//                 translateY: "0",
-//               },
-//             },
-//             initialValues: {
-//               transform: {
-//                 translateY: "100%",
-//               },
-//             },
-//           },
-//           props: {
-//             duration: enterAnimationDuration,
-//             easing,
-//           },
-//           position: enterScenePosition ? enterScenePosition : 0,
-//         },
-//         {
-//           incidentClass: CSSEffect,
-//           attrs: {
-//             animatedAttrs: {
-//               transform: {
-//                 translateY: "100%",
-//               },
-//             },
-//           },
-//           props: {
-//             duration: exitAnimationDuration,
-//             easing,
-//           },
-//           position: exitScenePosition
-//             ? exitScenePosition
-//             : displayTextDuration + enterAnimationDuration,
-//         },
-//       ],
-//     },
-//     {
-//       selector,
-//     },
-//   );
-// };
-
 export const clipPath = ({
   selector,
   from,
@@ -232,43 +165,6 @@ export const color = ({
     },
   );
 };
-
-// export const transformTop = ({
-//   selector,
-//   from,
-//   to,
-//   duration,
-//   delay = 0,
-//   easing = "linear",
-// }: {
-//   selector: string;
-//   from: string;
-//   to: string;
-//   duration: string | number;
-//   delay?: string | number;
-//   easing?: string;
-// }) => {
-//   return new CSSEffect(
-//     {
-//       animatedAttrs: {
-//         transform: {
-//           translateY: to,
-//         },
-//       },
-//       initialValues: {
-//         transform: {
-//           translateY: from,
-//         },
-//       },
-//     },
-//     {
-//       selector,
-//       duration,
-//       delay,
-//       easing,
-//     },
-//   );
-// };
 
 // export const scale = ({
 //   selector,

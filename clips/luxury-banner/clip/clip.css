@@ -63,6 +63,7 @@
 
 .title-overlay-2, .subtitle-overlay-2 {
   background-color: var(--secondaryColor);
+  /* clip-path: inset(100% 0% 0% 0%); */
   /* clip-path: inset(100%, 100%, 100%, 100%); */
 }
 
