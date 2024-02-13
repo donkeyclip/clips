@@ -60,10 +60,10 @@ export const expandRetractImageCombo = ({
           incidentClass: CSSEffect,
           attrs: {
             animatedAttrs: {
-              clipPath: "polygon(0% 10%,90% 10%,90% 100%,0% 100%)",
+              clipPath: "inset(0 0% 0% 0%)",
             },
             initialValues: {
-              clipPath: "polygon(10% 10%,10% 10%,10% 100%,10% 100%)",
+              clipPath: "inset(0 100% 0% 0%)",
             },
           },
           props: {
@@ -76,7 +76,7 @@ export const expandRetractImageCombo = ({
           incidentClass: CSSEffect,
           attrs: {
             animatedAttrs: {
-              clipPath: "polygon(100% 10%,90% 10%,90% 100%,100% 100%)",
+              clipPath: "inset(0 100% 0% 0%)",
             },
           },
           props: {
@@ -91,6 +91,7 @@ export const expandRetractImageCombo = ({
     },
     {
       selector,
+      easing,
     },
   );
 };
