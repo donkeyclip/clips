@@ -1,15 +1,79 @@
 import { CSSEffect, Combo } from "@donkeyclip/motorcortex";
 //This incident is export as function so you can use it more than one times
-export const clipPath = ({
+export const zIndex = ({
   selector,
   from,
   to,
   duration,
   delay = 0,
-  easing = "linear",
+  easing = "easeInOutQuad",
 }: {
   selector: string;
-  from: string;
+  from: number;
+  to: number;
+  duration: string | number;
+  delay?: string | number;
+  easing?: string;
+}) =>
+  new CSSEffect(
+    {
+      animatedAttrs: {
+        zIndex: to,
+      },
+      initialValues: {
+        zIndex: from,
+      },
+    },
+    {
+      selector,
+      duration,
+      delay,
+      easing,
+    },
+  );
+
+export const scale = ({
+  selector,
+  from,
+  to,
+  duration,
+  delay = 0,
+  easing = "easeInOutQuad",
+}: {
+  selector: string;
+  from: number;
+  to: number;
+  duration: string | number;
+  delay?: string | number;
+  easing?: string;
+}) =>
+  new CSSEffect(
+    {
+      animatedAttrs: {
+        scale: to,
+      },
+      initialValues: {
+        scale: from,
+      },
+    },
+    {
+      selector,
+      duration,
+      delay,
+      easing,
+    },
+  );
+
+export const rotate = ({
+  selector,
+  from,
+  to,
+  duration,
+  delay = 0,
+  easing = "easeInOutQuad",
+}: {
+  selector: string;
+  from?: string;
   to: string;
   duration: string | number;
   delay?: string | number;
@@ -18,10 +82,46 @@ export const clipPath = ({
   new CSSEffect(
     {
       animatedAttrs: {
-        clipPath: to,
+        transform: {
+          rotate: to,
+        },
       },
       initialValues: {
-        clipPath: from,
+        transform: {
+          rotate: from,
+        },
+      },
+    },
+    {
+      selector,
+      duration,
+      delay,
+      easing,
+    },
+  );
+
+export const opacity = ({
+  selector,
+  from,
+  to,
+  duration,
+  delay = 0,
+  easing = "easeInOutQuad",
+}: {
+  selector: string;
+  from: number;
+  to: number;
+  duration: string | number;
+  delay?: string | number;
+  easing?: string;
+}) =>
+  new CSSEffect(
+    {
+      animatedAttrs: {
+        opacity: to,
+      },
+      initialValues: {
+        opacity: from,
       },
     },
     {
@@ -60,10 +160,10 @@ export const expandRetractImageCombo = ({
           incidentClass: CSSEffect,
           attrs: {
             animatedAttrs: {
-              clipPath: "inset(0 0% 0% 0%)",
+              opacity: 1,
             },
             initialValues: {
-              clipPath: "inset(0 100% 0% 0%)",
+              opacity: 0,
             },
           },
           props: {
@@ -76,7 +176,7 @@ export const expandRetractImageCombo = ({
           incidentClass: CSSEffect,
           attrs: {
             animatedAttrs: {
-              clipPath: "inset(0 100% 0% 0%)",
+              opacity: 0,
             },
           },
           props: {

@@ -6,6 +6,7 @@ import css from "./clip.css";
 import html from "./clip.html";
 import initParams from "./initParams";
 import initParamsValidationRules from "./initParamsValidationRules";
+import { rotate, scale, zIndex } from "./ClipIncidents";
 
 const host = document.getElementById("clip");
 
@@ -35,43 +36,61 @@ const clip = new HTMLClip({
 
 const numberOfProducts = initParams[0].value.products.length;
 
-Array.from({ length: numberOfProducts }).forEach(() => {
-  // const delayBetweenImages = 1500;
-  // const displayProductDuration = 4000;
-  // const enterScenePosition =
-  //   index * (displayProductDuration + delayBetweenImages);
+// clip.addIncident(
+//   opacity({
+//     selector: `.product-wrapper`,
+//     from: 0,
+//     to: 1,
+//     duration: 1500,
+//     delay: "@stagger(0, 500)",
+//   }),
+//   0
+// );
+
+Array.from({ length: numberOfProducts }).forEach((_, index) => {
+  const delayBetweenImages = 1500;
+  const displayProductDuration = 4000;
+  const enterScenePosition =
+    index * (displayProductDuration + delayBetweenImages);
   // const exitScenePosition = enterScenePosition + displayProductDuration;
   // clip.addIncident(
   //   expandRetractImageCombo({
-  //     selector: `#product-wrapper-${index} .product-image-wrapper`,
+  //     selector: `#product-wrapper-${index} .product-image`,
   //     enterScenePosition,
   //     exitScenePosition,
   //     displayProductDuration: displayProductDuration,
   //   }),
-  //   0,
+  //   0
   // );
-  // clip.addIncident(
-  //   showAndHideTextCombo({
-  //     selector: `#product-wrapper-${index} .product-name .text-outer-wrapper .text`,
-  //     enterScenePosition: enterScenePosition + 500,
-  //     exitScenePosition,
-  //     enterAnimationDuration: 600,
-  //     exitAnimationDuration: 600,
-  //     displayTextDuration: displayProductDuration,
-  //   }),
-  //   0,
-  // );
-});
+  clip.addIncident(
+    zIndex({
+      selector: `#product-wrapper-${index}`,
+      from: 0,
+      to: 1,
+      duration: 700,
+    }),
+    enterScenePosition,
+  );
+  clip.addIncident(
+    scale({
+      selector: `#product-wrapper-${index} .product-image-wrapper, #product-wrapper-${index} .product-content`,
+      from: 0.9,
+      to: 1,
+      duration: 700,
+      delay: "@stagger(0, 200)",
+    }),
+    enterScenePosition,
+  );
 
-// clip.addIncident(
-//   showAndHideTextCombo({
-//     selector: `#product-wrapper-0 .product-cta .text-outer-wrapper .text`,
-//     enterScenePosition: 0,
-//     enterAnimationDuration: 600,
-//     exitAnimationDuration: 600,
-//     displayTextDuration: clip.calculatedDuration - 1000,
-//   }),
-//   0,
-// );
+  clip.addIncident(
+    rotate({
+      selector: `#product-wrapper-${index} .product-image-wrapper, #product-wrapper-${index} .product-content`,
+      to: "0deg",
+      duration: 700,
+      delay: "@stagger(0, 200)",
+    }),
+    enterScenePosition,
+  );
+});
 
 export default renderDonkeyclip({ clipId: pkg.id, initParams, clip });
