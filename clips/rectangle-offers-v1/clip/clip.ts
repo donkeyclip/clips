@@ -94,16 +94,6 @@ Array.from({ length: numberOfProducts }).forEach((_, index) => {
   );
   // EXIT ANIMATIONS
 
-  // clip.addIncident(
-  //   zIndex({
-  //     selector: `#product-wrapper-${index}`,
-  //     from: 1,
-  //     to: 0,
-  //     duration: 400,
-  //   }),
-  //   exitScenePosition
-  // );
-
   clip.addIncident(
     scale({
       selector: `#product-wrapper-${index} .product-image-wrapper, #product-wrapper-${index} .product-content`,
@@ -117,8 +107,18 @@ Array.from({ length: numberOfProducts }).forEach((_, index) => {
   const isEven = index % 2 === 0 ? true : false;
   clip.addIncident(
     rotate({
-      selector: `#product-wrapper-${index} .product-image-wrapper, #product-wrapper-${index} .product-content`,
+      selector: `#product-wrapper-${index} .product-image-wrapper`,
       to: isEven ? "-5deg" : "9deg",
+      duration: 700,
+      delay: "@stagger(0, 200)",
+    }),
+    exitScenePosition,
+  );
+
+  clip.addIncident(
+    rotate({
+      selector: `#product-wrapper-${index} .product-content`,
+      to: !isEven ? "-5deg" : "9deg",
       duration: 700,
       delay: "@stagger(0, 200)",
     }),
