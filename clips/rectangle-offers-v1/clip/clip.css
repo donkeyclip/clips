@@ -25,6 +25,7 @@
   align-items: flex-start;
   gap: 0.5rem;
   line-height: 15px;
+  mask-image: url(''), linear-gradient(90deg, transparent, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 1) 64%, transparent);
 }
 
 .top-columns-wrapper .right-column {
@@ -45,6 +46,7 @@
 
 .product-wrapper {
   position: absolute;
+  z-index: 2;
   top: 0;
   left: 0;
   width: 100%;
