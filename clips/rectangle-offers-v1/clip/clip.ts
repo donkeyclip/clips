@@ -6,7 +6,6 @@ import css from "./clip.css";
 import html from "./clip.html";
 import initParams from "./initParams";
 import initParamsValidationRules from "./initParamsValidationRules";
-import { expandRetractImageCombo } from "./ClipIncidents";
 
 const host = document.getElementById("clip");
 
@@ -36,25 +35,21 @@ const clip = new HTMLClip({
 
 const numberOfProducts = initParams[0].value.products.length;
 
-Array.from({ length: numberOfProducts }).forEach((_, index) => {
-  const delayBetweenImages = 1500;
-  const displayProductDuration = 4000;
-
-  const enterScenePosition =
-    index * (displayProductDuration + delayBetweenImages);
-
-  const exitScenePosition = enterScenePosition + displayProductDuration;
-
-  clip.addIncident(
-    expandRetractImageCombo({
-      selector: `#product-wrapper-${index} .product-image-wrapper`,
-      enterScenePosition,
-      exitScenePosition,
-      displayProductDuration: displayProductDuration,
-    }),
-    0,
-  );
-
+Array.from({ length: numberOfProducts }).forEach(() => {
+  // const delayBetweenImages = 1500;
+  // const displayProductDuration = 4000;
+  // const enterScenePosition =
+  //   index * (displayProductDuration + delayBetweenImages);
+  // const exitScenePosition = enterScenePosition + displayProductDuration;
+  // clip.addIncident(
+  //   expandRetractImageCombo({
+  //     selector: `#product-wrapper-${index} .product-image-wrapper`,
+  //     enterScenePosition,
+  //     exitScenePosition,
+  //     displayProductDuration: displayProductDuration,
+  //   }),
+  //   0,
+  // );
   // clip.addIncident(
   //   showAndHideTextCombo({
   //     selector: `#product-wrapper-${index} .product-name .text-outer-wrapper .text`,
