@@ -6,7 +6,7 @@ import css from "./clip.css";
 import html from "./clip.html";
 import initParams from "./initParams";
 import initParamsValidationRules from "./initParamsValidationRules";
-import { rotate, scale, zIndex } from "./ClipIncidents";
+import { opacity, rotate, scale, zIndex } from "./ClipIncidents";
 
 const host = document.getElementById("clip");
 
@@ -36,23 +36,12 @@ const clip = new HTMLClip({
 
 const numberOfProducts = initParams[0].value.products.length;
 
-// clip.addIncident(
-//   opacity({
-//     selector: `.product-wrapper`,
-//     from: 0,
-//     to: 1,
-//     duration: 1500,
-//     delay: "@stagger(0, 500)",
-//   }),
-//   0
-// );
-
 Array.from({ length: numberOfProducts }).forEach((_, index) => {
   const delayBetweenImages = 1500;
   const displayProductDuration = 4000;
   const enterScenePosition =
     index * (displayProductDuration + delayBetweenImages);
-  // const exitScenePosition = enterScenePosition + displayProductDuration;
+  const exitScenePosition = enterScenePosition + displayProductDuration;
   // clip.addIncident(
   //   expandRetractImageCombo({
   //     selector: `#product-wrapper-${index} .product-image`,
@@ -62,6 +51,7 @@ Array.from({ length: numberOfProducts }).forEach((_, index) => {
   //   }),
   //   0
   // );
+  // ENTER ANIMATIONS
   clip.addIncident(
     zIndex({
       selector: `#product-wrapper-${index}`,
@@ -69,8 +59,19 @@ Array.from({ length: numberOfProducts }).forEach((_, index) => {
       to: 1,
       duration: 700,
     }),
+    enterScenePosition + 400,
+  );
+
+  clip.addIncident(
+    opacity({
+      selector: `#product-wrapper-${index} .product-image, #product-wrapper-${index} .product-content h2, .product-content svg, .horizontal-line`,
+      from: 0,
+      to: 1,
+      duration: 1000,
+    }),
     enterScenePosition,
   );
+
   clip.addIncident(
     scale({
       selector: `#product-wrapper-${index} .product-image-wrapper, #product-wrapper-${index} .product-content`,
@@ -79,7 +80,7 @@ Array.from({ length: numberOfProducts }).forEach((_, index) => {
       duration: 700,
       delay: "@stagger(0, 200)",
     }),
-    enterScenePosition,
+    enterScenePosition + 400,
   );
 
   clip.addIncident(
@@ -89,7 +90,49 @@ Array.from({ length: numberOfProducts }).forEach((_, index) => {
       duration: 700,
       delay: "@stagger(0, 200)",
     }),
-    enterScenePosition,
+    enterScenePosition + 400,
+  );
+  // EXIT ANIMATIONS
+
+  // clip.addIncident(
+  //   zIndex({
+  //     selector: `#product-wrapper-${index}`,
+  //     from: 1,
+  //     to: 0,
+  //     duration: 400,
+  //   }),
+  //   exitScenePosition
+  // );
+
+  clip.addIncident(
+    scale({
+      selector: `#product-wrapper-${index} .product-image-wrapper, #product-wrapper-${index} .product-content`,
+      from: 1,
+      to: 0.9,
+      duration: 700,
+      delay: "@stagger(0, 200)",
+    }),
+    exitScenePosition,
+  );
+  const isEven = index % 2 === 0 ? true : false;
+  clip.addIncident(
+    rotate({
+      selector: `#product-wrapper-${index} .product-image-wrapper, #product-wrapper-${index} .product-content`,
+      to: isEven ? "-5deg" : "9deg",
+      duration: 700,
+      delay: "@stagger(0, 200)",
+    }),
+    exitScenePosition,
+  );
+
+  clip.addIncident(
+    opacity({
+      selector: `#product-wrapper-${index} .product-image, #product-wrapper-${index} .product-content h2, .product-content svg, .horizontal-line`,
+      from: 1,
+      to: 0,
+      duration: 1000,
+    }),
+    exitScenePosition + 2000,
   );
 });
 
