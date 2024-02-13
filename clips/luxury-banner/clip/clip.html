@@ -8,7 +8,7 @@
         height="120"
         class="rotating-text-wrapper"
       >
-        <defs>
+        <defs class="defs">
           <path
             id="circle"
             d="M 100, 100
@@ -18,10 +18,10 @@
                   "
           ></path>
         </defs>
-        <text>
+        <text class="svg-text">
           <textPath
             alignment-baseline="top"
-            xlink:href="#circle"
+            href="#circle"
             class="rotating-text"
           >
             {{initParams.secondaryText}}
