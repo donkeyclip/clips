@@ -27,9 +27,17 @@
   line-height: 15px;
 }
 
-.columns-overlay {
-    mask-image: url(''), linear-gradient(90deg, transparent, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 1) 64%, transparent);
+.columns-wrapper {
+  position: relative;
 }
+
+.columns-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  mask-image: url(''), linear-gradient(90deg, transparent, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 1) 64%, transparent);
+}
+
 
 .top-columns-wrapper .right-column, .right-column-2 {
   color: transparent;
