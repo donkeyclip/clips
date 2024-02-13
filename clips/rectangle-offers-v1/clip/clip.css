@@ -4,9 +4,11 @@
   margin: 0;
   --primaryColor: {{initParams.primaryColor}};
   --secondaryColor: {{initParams.secondaryColor}};
+  --secondaryColorLinear: {{initParams.secondaryColor}}80;
+  --primaryColorLinear: {{initParams.primaryColor}}66;
   --fontColor: {{initParams.fontColor}};
   --backgroundColor: {{initParams.backgroundColor}};
-  --mainFont: 'Krona One', sans-serif;;
+  --mainFont: 'Krona One', sans-serif;
 }
 
 .container {
@@ -120,7 +122,7 @@
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
   background: rgb(255,255,255);
-  background: linear-gradient(to top, rgba(255,255,255,0.5) 0%, rgba(255,115,17,0.4) 100%);
+  background: linear-gradient(to top, var(--secondaryColorLinear) 0%, var(--primaryColorLinear) 100%);
 }
 
 .product-content {
@@ -146,8 +148,8 @@
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
-  background: rgb(255,255,255);
-  background: linear-gradient(to top, rgba(255,255,255,0.5) 0%, rgba(255,115,17,0.4) 100%);
+  background: var(--secondaryColor);
+  background: linear-gradient(to top, var(--secondaryColorLinear) 0%, var(--primaryColorLinear) 100%);
 }
 
 .product-name {
