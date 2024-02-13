@@ -64,7 +64,7 @@ Array.from({ length: numberOfProducts }).forEach((_, index) => {
 
   clip.addIncident(
     opacity({
-      selector: `#product-wrapper-${index} .product-image, #product-wrapper-${index} .product-content h2, .product-content svg, .horizontal-line`,
+      selector: `#product-wrapper-${index} .product-image, #product-wrapper-${index} .product-content h2, .product-content svg`,
       from: 0,
       to: 1,
       duration: 1000,
@@ -127,7 +127,7 @@ Array.from({ length: numberOfProducts }).forEach((_, index) => {
 
   clip.addIncident(
     opacity({
-      selector: `#product-wrapper-${index} .product-image, #product-wrapper-${index} .product-content h2, .product-content svg, .horizontal-line`,
+      selector: `#product-wrapper-${index} .product-image, #product-wrapper-${index} .product-content h2, .product-content svg`,
       from: 1,
       to: 0,
       duration: 1000,

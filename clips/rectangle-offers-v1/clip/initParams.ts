@@ -7,7 +7,7 @@ export default [
       ctaText: "Buy Now",
 
       primaryColor: "#FF7311",
-      secondaryColor: "#19181C",
+      secondaryColor: "#ffffff",
       fontColor: "#000000",
       backgroundColor: "#F3F0E7",
 
