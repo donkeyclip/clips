@@ -55,8 +55,8 @@ Array.from({ length: numberOfProducts }).forEach((_, index) => {
   clip.addIncident(
     zIndex({
       selector: `#product-wrapper-${index}`,
-      from: 0,
-      to: 1,
+      from: 1,
+      to: 2,
       duration: 700,
     }),
     enterScenePosition + 400,
