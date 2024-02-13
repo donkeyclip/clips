@@ -6,7 +6,7 @@ import css from "./clip.css";
 import html from "./clip.html";
 import initParams from "./initParams";
 import initParamsValidationRules from "./initParamsValidationRules";
-import { expandRetractImageCombo, showAndHideTextCombo } from "./ClipIncidents";
+import { expandRetractImageCombo } from "./ClipIncidents";
 
 const host = document.getElementById("clip");
 
@@ -55,28 +55,28 @@ Array.from({ length: numberOfProducts }).forEach((_, index) => {
     0,
   );
 
-  clip.addIncident(
-    showAndHideTextCombo({
-      selector: `#product-wrapper-${index} .product-name .text-outer-wrapper .text`,
-      enterScenePosition: enterScenePosition + 500,
-      exitScenePosition,
-      enterAnimationDuration: 600,
-      exitAnimationDuration: 600,
-      displayTextDuration: displayProductDuration,
-    }),
-    0,
-  );
+  // clip.addIncident(
+  //   showAndHideTextCombo({
+  //     selector: `#product-wrapper-${index} .product-name .text-outer-wrapper .text`,
+  //     enterScenePosition: enterScenePosition + 500,
+  //     exitScenePosition,
+  //     enterAnimationDuration: 600,
+  //     exitAnimationDuration: 600,
+  //     displayTextDuration: displayProductDuration,
+  //   }),
+  //   0,
+  // );
 });
 
-clip.addIncident(
-  showAndHideTextCombo({
-    selector: `#product-wrapper-0 .product-cta .text-outer-wrapper .text`,
-    enterScenePosition: 0,
-    enterAnimationDuration: 600,
-    exitAnimationDuration: 600,
-    displayTextDuration: clip.calculatedDuration - 1000,
-  }),
-  0,
-);
+// clip.addIncident(
+//   showAndHideTextCombo({
+//     selector: `#product-wrapper-0 .product-cta .text-outer-wrapper .text`,
+//     enterScenePosition: 0,
+//     enterAnimationDuration: 600,
+//     exitAnimationDuration: 600,
+//     displayTextDuration: clip.calculatedDuration - 1000,
+//   }),
+//   0,
+// );
 
 export default renderDonkeyclip({ clipId: pkg.id, initParams, clip });
