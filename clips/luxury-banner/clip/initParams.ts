@@ -5,7 +5,7 @@ export default [
       title: "Summer Offers",
       subtitle: "Save Up To",
       text: "50% OFF",
-      secondaryText: "Hand - Made - Hand - Made - Hand - Made",
+      secondaryText: "Hand - Made - Hand - Made - Hand - Made - ",
 
       fontColor: "#595959",
       primaryColor: "#DADADA",

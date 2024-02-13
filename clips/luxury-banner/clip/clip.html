@@ -1,6 +1,33 @@
 <div class="container">
   <div class="main">
     <div class="product-wrapper">
+      <svg
+        id="rotatingText"
+        viewBox="0 0 200 200"
+        width="120"
+        height="120"
+        class="rotating-text-wrapper"
+      >
+        <defs>
+          <path
+            id="circle"
+            d="M 100, 100
+                  m -75, 0
+                  a 75, 75 0 1, 0 150, 0
+                  a 75, 75 0 1, 0 -150, 0
+                  "
+          ></path>
+        </defs>
+        <text>
+          <textPath
+            alignment-baseline="top"
+            xlink:href="#circle"
+            class="rotating-text"
+          >
+            {{initParams.secondaryText}}
+          </textPath>
+        </text>
+      </svg>
       <div
         id="product-{{key}}"
         class="product"

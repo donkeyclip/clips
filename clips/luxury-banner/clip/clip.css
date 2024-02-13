@@ -63,8 +63,6 @@
 
 .title-overlay-2, .subtitle-overlay-2 {
   background-color: var(--secondaryColor);
-  /* clip-path: inset(100% 0% 0% 0%); */
-  /* clip-path: inset(100%, 100%, 100%, 100%); */
 }
 
 .subtitle {
@@ -118,7 +116,27 @@ img {
   background-color: transparent;
 }
 
+
+
+
 /* SVGS AND SVG ANIMATIONS */
+
+.rotating-text-wrapper {
+  position: absolute;
+  top: -10px;
+  z-index: 3;
+  animation: rotateText 90s infinite linear;
+}
+
+.rotating-text-wrapper text {
+  fill: var(--fontColor);
+}
+
+.rotating-text {
+  font-family: var(--secondaryFont);
+  font-weight: bold;
+  font-size: 1.62rem;
+}
 
 .svg-container {
   width: 100%;
@@ -168,4 +186,13 @@ img {
     fill: var(--secondaryColor);
 
   }
+}
+
+@keyframes rotateText {
+  from {
+    transform: rotate(0deg);
+}
+to {
+    transform: rotate(360deg);
+}
 }
