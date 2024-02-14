@@ -1,10 +1,10 @@
 export default [
   {
-    name: "Rectangle Offer v1",
+    name: "Glassmorphism Banner",
     value: {
       title: "SUMMER OFFERS",
       subtitle: "50% OFF",
-      ctaText: "Buy Now",
+      ctaText: "Buy Now!",
 
       primaryColor: "#FF7311",
       secondaryColor: "#ffffff",
