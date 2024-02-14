@@ -39,9 +39,12 @@ const numberOfProducts = initParams[0].value.products.length;
 Array.from({ length: numberOfProducts }).forEach((_, index) => {
   const delayBetweenImages = 1500;
   const displayProductDuration = 4000;
+  const scaleProductImageAndCardAnimationDuration = 700;
+  const productImageAndCardStaggerDuration = "@stagger(0, 200)";
   const enterScenePosition =
     index * (displayProductDuration + delayBetweenImages);
   const exitScenePosition = enterScenePosition + displayProductDuration;
+  const scaleProductImageAndCardPosition = enterScenePosition + 400;
   // clip.addIncident(
   //   expandRetractImageCombo({
   //     selector: `#product-wrapper-${index} .product-image`,
@@ -76,21 +79,34 @@ Array.from({ length: numberOfProducts }).forEach((_, index) => {
     scale({
       selector: `#product-wrapper-${index} .product-image-wrapper, #product-wrapper-${index} .product-content`,
       from: 0.9,
-      to: 1,
-      duration: 700,
-      delay: "@stagger(0, 200)",
+      to: 1.1,
+      duration: scaleProductImageAndCardAnimationDuration,
     }),
-    enterScenePosition + 400,
+    scaleProductImageAndCardPosition,
+  );
+
+  clip.addIncident(
+    scale({
+      selector: `#product-wrapper-${index} .product-image-wrapper, #product-wrapper-${index} .product-content`,
+      from: 1.1,
+      to: 1,
+      duration: scaleProductImageAndCardAnimationDuration,
+      delay: productImageAndCardStaggerDuration,
+    }),
+    scaleProductImageAndCardPosition +
+      scaleProductImageAndCardAnimationDuration,
   );
 
   clip.addIncident(
     rotate({
       selector: `#product-wrapper-${index} .product-image-wrapper, #product-wrapper-${index} .product-content`,
       to: "0deg",
-      duration: 700,
-      delay: "@stagger(0, 200)",
+      duration: scaleProductImageAndCardAnimationDuration,
+      delay: productImageAndCardStaggerDuration,
     }),
-    enterScenePosition + 400,
+    scaleProductImageAndCardPosition +
+      scaleProductImageAndCardAnimationDuration +
+      200,
   );
   // EXIT ANIMATIONS
 
@@ -99,8 +115,8 @@ Array.from({ length: numberOfProducts }).forEach((_, index) => {
       selector: `#product-wrapper-${index} .product-image-wrapper, #product-wrapper-${index} .product-content`,
       from: 1,
       to: 0.9,
-      duration: 700,
-      delay: "@stagger(0, 200)",
+      duration: scaleProductImageAndCardAnimationDuration,
+      delay: productImageAndCardStaggerDuration,
     }),
     exitScenePosition,
   );
@@ -109,8 +125,8 @@ Array.from({ length: numberOfProducts }).forEach((_, index) => {
     rotate({
       selector: `#product-wrapper-${index} .product-image-wrapper`,
       to: isEven ? "-5deg" : "9deg",
-      duration: 700,
-      delay: "@stagger(0, 200)",
+      duration: scaleProductImageAndCardAnimationDuration,
+      delay: productImageAndCardStaggerDuration,
     }),
     exitScenePosition,
   );
@@ -119,8 +135,8 @@ Array.from({ length: numberOfProducts }).forEach((_, index) => {
     rotate({
       selector: `#product-wrapper-${index} .product-content`,
       to: !isEven ? "-5deg" : "9deg",
-      duration: 700,
-      delay: "@stagger(0, 200)",
+      duration: scaleProductImageAndCardAnimationDuration,
+      delay: productImageAndCardStaggerDuration,
     }),
     exitScenePosition,
   );
