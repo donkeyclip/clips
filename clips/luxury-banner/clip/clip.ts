@@ -52,6 +52,17 @@ const animateText = (delayBeforeStart = 0) => {
     }),
     delayBeforeStart,
   );
+
+  clip.addIncident(
+    clipPath({
+      selector: `.discount`,
+      from: "circle(0.0% at 50% 50%)",
+      to: "circle(50% at 50% 50%)",
+      duration: animationDurationOfCircles,
+      easing: "easeInOutCubic",
+    }),
+    delayBeforeStart,
+  );
 };
 
 const animateCircles = (delayBeforeStart = 0) => {
