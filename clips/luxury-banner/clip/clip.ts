@@ -6,6 +6,7 @@ import css from "./clip.css";
 import html from "./clip.html";
 import initParams from "./initParams";
 import initParamsValidationRules from "./initParamsValidationRules";
+import { strokeDashOffset } from "./clipIncidents";
 
 const element = document.getElementById("clip");
 
@@ -40,69 +41,50 @@ const productsLength = initParams[0].value.products.length;
 // const animationDurationOfCombos = 700;
 // const animationDurationOfStartingTextOverlaysAndHorizontalLine = 600;
 
-// const animateClipStart = () => {
-// const startingPositionOfImageRightToLeftAnimation =
-//   0 * (animationDuration + displayImageDuration + delayBetweenImageChange);
-// clip.addIncident(
-//   opacity({
-//     selector: `svg`,
-//     from: 0,
-//     to: 1,
-//     duration: 1500,
-//     easing: "easeInOutCubic",
-//   }),
-//   0
-// );
-// clip.addIncident(
-//   clipPath({
-//     selector: `.title-overlay, .subtitle-overlay`,
-//     from: "inset(100% 0% 0% 0%)",
-//     to: "inset(0% 0% 0% 0%)",
-//     duration: animationDurationOfStartingTextOverlaysAndHorizontalLine,
-//     easing: "easeInOutCubic",
-//   }),
-//   startingPositionOfImageRightToLeftAnimation + animationDurationOfCombos
-// );
-// clip.addIncident(
-//   color({
-//     selector: `.title, .subtitle`,
-//     from: "transparent",
-//     to: "var(--fontColor)",
-//     duration: 50,
-//   }),
-//   startingPositionOfImageRightToLeftAnimation + animationDuration + 50
-// );
-// clip.addIncident(
-//   clipPath({
-//     selector: `.title-overlay, .subtitle-overlay`,
-//     from: "inset(0% 0% 0% 0%)",
-//     to: "inset(0% 100% 0% 0%)",
-//     duration: animationDurationOfStartingTextOverlaysAndHorizontalLine,
-//     easing: "easeInOutCubic",
-//   }),
-//   startingPositionOfImageRightToLeftAnimation + animationDuration
-// );
-// clip.addIncident(
-//   clipPath({
-//     selector: `.horizontal-line`,
-//     from: "inset(0% 100% 0% 0%)",
-//     to: "inset(0% 0% 0% 0%)",
-//     duration: animationDurationOfStartingTextOverlaysAndHorizontalLine,
-//     easing: "easeInOutCubic",
-//   }),
-//   startingPositionOfImageRightToLeftAnimation
-// );
-// clip.addIncident(
-//   clipPath({
-//     selector: `.cta`,
-//     from: "inset(0% 100% 0% 0%)",
-//     to: "inset(0% 0% 0% 0%)",
-//     duration: animationDurationOfStartingTextOverlaysAndHorizontalLine,
-//     easing: "easeInOutCubic",
-//   }),
-//   startingPositionOfImageRightToLeftAnimation
-// );
-// };
+const animateCircles = () => {
+  const radiusOfCircle = 128.5;
+  const pi = 3.14;
+  const circumferenceOfCircle = Math.round(2 * pi * radiusOfCircle) + 1;
+  // SUMMER OFFERS CIRCLE
+  clip.addIncident(
+    strokeDashOffset({
+      selector: `.svg-1 svg`,
+      from: circumferenceOfCircle,
+      to: -370,
+      dashArrayFrom: circumferenceOfCircle,
+      dashArrayTo: circumferenceOfCircle / 2,
+      duration: 1500,
+      easing: "easeInOutCubic",
+    }),
+    0,
+  );
+  // PRODUCT IMAGE CIRCLE
+  clip.addIncident(
+    strokeDashOffset({
+      selector: `.svg-3 svg`,
+      from: -circumferenceOfCircle,
+      to: -250,
+      dashArrayFrom: circumferenceOfCircle,
+      dashArrayTo: circumferenceOfCircle / 2 + 80,
+      duration: 1500,
+      easing: "easeInOutCubic",
+    }),
+    0,
+  );
+  // CORNER CIRCLE
+  clip.addIncident(
+    strokeDashOffset({
+      selector: `.svg-2 svg`,
+      from: -circumferenceOfCircle,
+      to: -400,
+      dashArrayFrom: circumferenceOfCircle,
+      dashArrayTo: circumferenceOfCircle,
+      duration: 1000,
+      easing: "easeInOutCubic",
+    }),
+    0,
+  );
+};
 
 // const animateTextOverlays = (
 // endingPosition: number,
@@ -182,7 +164,7 @@ const productsLength = initParams[0].value.products.length;
 // );
 // };
 
-// animateClipStart();
+animateCircles();
 
 Array.from({ length: productsLength }).forEach((_, index) => {
   // const startingPosition =
