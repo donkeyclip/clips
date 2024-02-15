@@ -47,13 +47,21 @@
     </div>
   </div>
   <div class="product-wrapper">
-    <div class="content-wrapper">
-      <div class="title-subtitle-wrapper">
-        <h2 class="title">{{initParams.title}}</h2>
-        <h2 class="subtitle">{{initParams.subtitle}}</h2>
+    <div class="content-outer-wrapper">
+      <div class="content-wrapper">
+        <div class="title-subtitle-wrapper">
+          <h2 class="title">{{initParams.title}}</h2>
+          <h2 class="subtitle">{{initParams.subtitle}}</h2>
+        </div>
+        <div class="cta">
+          <h2>{{initParams.ctaText}}</h2>
+        </div>
       </div>
-      <div class="cta">
-        <h2>{{initParams.ctaText}}</h2>
+      <div class="discount-wrapper">
+        <div class="discount">
+          <h2>{{initParams.text}}</h2>
+          <h2>{{initParams.secondaryText}}</h2>
+        </div>
       </div>
     </div>
     <div
@@ -63,10 +71,6 @@
       mc-of="initParams.products"
     >
       <img src="{{item.featured_image}}" alt="product image" />
-      <div class="discount">
-        <h2>{{initParams.text}}</h2>
-        <h2>{{initParams.secondaryText}}</h2>
-      </div>
     </div>
   </div>
 </div>

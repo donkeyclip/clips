@@ -50,9 +50,9 @@ const animateCircles = () => {
     strokeDashOffset({
       selector: `.svg-1 svg`,
       from: circumferenceOfCircle,
-      to: -370,
+      to: 0,
       dashArrayFrom: circumferenceOfCircle,
-      dashArrayTo: circumferenceOfCircle / 2,
+      dashArrayTo: circumferenceOfCircle,
       duration: 1500,
       easing: "easeInOutCubic",
     }),
@@ -63,9 +63,9 @@ const animateCircles = () => {
     strokeDashOffset({
       selector: `.svg-3 svg`,
       from: -circumferenceOfCircle,
-      to: -250,
+      to: 0,
       dashArrayFrom: circumferenceOfCircle,
-      dashArrayTo: circumferenceOfCircle / 2 + 80,
+      dashArrayTo: circumferenceOfCircle,
       duration: 1500,
       easing: "easeInOutCubic",
     }),
