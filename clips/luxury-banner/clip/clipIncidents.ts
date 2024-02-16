@@ -1,76 +1,60 @@
-import { CSSEffect } from "@donkeyclip/motorcortex";
+import { CSSEffect, Combo } from "@donkeyclip/motorcortex";
 
-// export const drawLineCombo = ({
-//   selector,
-//   duration,
-//   from,
-//   to,
-//   dashArrayFrom,
-//   dashArrayTo,
-//   startingPosition,
-//   endingPosition,
-//   delay = 0,
-//   easing = "linear",
-// }: {
-//   selector: string;
-//   duration: number;
-//   from?: number;
-//   to: number;
-//   dashArrayFrom?: number;
-//   dashArrayTo: number;
-//   startingPosition: number;
-//   endingPosition: number;
-//   delay?: string | number;
-//   easing?: string;
-// }) => {
-//   return new Combo(
-//     {
-//       incidents: [
-//         {
-//           incidentClass: CSSEffect,
-//           attrs: {
-//             animatedAttrs: {
-//               strokeDasharray: dashArrayTo,
-//               strokeDashoffset: to,
-//             },
-//             initialValues: {
-//               strokeDasharray: dashArrayFrom,
-//               strokeDashoffset: from,
-//             },
-//           },
-//           props: {
-//             duration,
-//             easing,
-//           },
-//           position: startingPosition,
-//         },
-//         {
-//           incidentClass: CSSEffect,
-//           attrs: {
-//             animatedAttrs: {
-//               strokeDasharray: 808 / 2,
-//               strokeDashoffset: -370,
-//             },
-//             // initialValues: {
-//             //   strokeDasharray: dashArrayFrom,
-//             //   strokeDashoffset: from,
-//             // },
-//           },
-//           props: {
-//             duration,
-//             easing,
-//           },
-//           position: startingPosition + duration,
-//         },
-//       ],
-//     },
-//     {
-//       selector,
-//       delay,
-//       easing,
-//     }
-//   );
-// };
+export const scaleBigSmallCombo = ({
+  selector,
+  duration,
+  startingPosition,
+  delay = 0,
+  easing = "linear",
+}: {
+  selector: string;
+  duration: number;
+  startingPosition: number;
+  delay?: string | number;
+  easing?: string;
+}) => {
+  return new Combo(
+    {
+      incidents: [
+        {
+          incidentClass: CSSEffect,
+          attrs: {
+            animatedAttrs: {
+              transform: {
+                scale: 1.1,
+              },
+            },
+          },
+          props: {
+            duration,
+            easing,
+          },
+          position: startingPosition,
+        },
+        {
+          incidentClass: CSSEffect,
+          attrs: {
+            animatedAttrs: {
+              transform: {
+                scale: 1,
+              },
+            },
+          },
+          props: {
+            duration,
+            easing,
+          },
+          position: startingPosition + duration,
+        },
+      ],
+    },
+    {
+      selector,
+      delay,
+      easing,
+    },
+  );
+};
 
 export const clipPath = ({
   selector,
@@ -144,40 +128,40 @@ export const strokeDashOffset = ({
   );
 };
 
-// export const scale = ({
-//   selector,
-//   from,
-//   to,
-//   duration,
-//   delay = 0,
-//   easing = "linear",
-// }: {
-//   selector: string;
-//   from: number;
-//   to: number;
-//   duration: string | number;
-//   delay?: string | number;
-//   easing?: string;
-// }) => {
-//   return new CSSEffect(
-//     {
-//       animatedAttrs: {
-//         scale: to,
-//       },
-//       initialValues: {
-//         scale: from,
-//       },
-//     },
-//     {
-//       selector,
-//       duration,
-//       delay,
-//       easing,
-//     },
-//   );
-// };
+export const scale = ({
+  selector,
+  from,
+  to,
+  duration,
+  delay = 0,
+  easing = "linear",
+}: {
+  selector: string;
+  from: number;
+  to: number;
+  duration: string | number;
+  delay?: string | number;
+  easing?: string;
+}) => {
+  return new CSSEffect(
+    {
+      animatedAttrs: {
+        scale: to,
+      },
+      initialValues: {
+        scale: from,
+      },
+    },
+    {
+      selector,
+      duration,
+      delay,
+      easing,
+    },
+  );
+};
 
-export const mask = ({
+export const transformTop = ({
   selector,
   from,
   to,
@@ -195,10 +179,14 @@ export const mask = ({
   return new CSSEffect(
     {
       animatedAttrs: {
-        maskImage: to,
+        transform: {
+          translateY: to,
+        },
       },
       initialValues: {
-        maskImage: from,
+        transform: {
+          translateY: from,
+        },
       },
     },
     {

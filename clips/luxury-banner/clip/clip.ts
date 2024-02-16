@@ -6,7 +6,12 @@ import css from "./clip.css";
 import html from "./clip.html";
 import initParams from "./initParams";
 import initParamsValidationRules from "./initParamsValidationRules";
-import { clipPath, strokeDashOffset } from "./clipIncidents";
+import {
+  clipPath,
+  scale,
+  strokeDashOffset,
+  transformTop,
+} from "./clipIncidents";
 
 const element = document.getElementById("clip");
 
@@ -36,10 +41,101 @@ const clip = new HTMLClip({
 const productsLength = initParams[0].value.products.length;
 
 const animationDurationOfCircles = 1300;
-// const displayImageDuration = 6000;
-// const delayBetweenImageChange = 200;
-// const animationDurationOfCombos = 700;
-// const animationDurationOfStartingTextOverlaysAndHorizontalLine = 600;
+
+const animateDiscount = (startingPositionOfDiscountAnimation: number) => {
+  const animationDuration = 1300;
+  // discount animation
+  // ENTER SCENE STEPS
+  // STEP 1 make the top text larger
+  clip.addIncident(
+    scale({
+      selector: `.text`,
+      from: 1,
+      to: 1.3,
+      duration: animationDuration,
+      easing: "easeInOutCubic",
+    }),
+    startingPositionOfDiscountAnimation,
+  );
+  // STEP 2 make the bottom text smaller
+  clip.addIncident(
+    scale({
+      selector: `.secondary-text`,
+      from: 1,
+      to: 0.6,
+      duration: animationDuration,
+      easing: "easeInOutCubic",
+    }),
+    startingPositionOfDiscountAnimation,
+  );
+  // STEP 3 make the top text drop down
+  clip.addIncident(
+    transformTop({
+      selector: `.text`,
+      from: "0px",
+      to: "5px",
+      duration: animationDuration,
+      easing: "easeInOutCubic",
+    }),
+    startingPositionOfDiscountAnimation,
+  );
+  // STEP 4 make the bottom text drop down
+  clip.addIncident(
+    transformTop({
+      selector: `.secondary-text`,
+      from: "0px",
+      to: "5px",
+      duration: animationDuration,
+      easing: "easeInOutCubic",
+    }),
+    startingPositionOfDiscountAnimation,
+  );
+  // EXIT SCENE STEPS
+  // STEP 1 reset top text to its initial scale
+  clip.addIncident(
+    scale({
+      selector: `.text`,
+      from: 1.3,
+      to: 1,
+      duration: animationDuration,
+      easing: "easeInOutCubic",
+    }),
+    startingPositionOfDiscountAnimation + 1500,
+  );
+  // STEP 2 reset bottom text to its initial scale
+  clip.addIncident(
+    scale({
+      selector: `.secondary-text`,
+      from: 0.6,
+      to: 1,
+      duration: animationDuration,
+      easing: "easeInOutCubic",
+    }),
+    startingPositionOfDiscountAnimation + 1500,
+  );
+  // STEP 3 reset top text to its initial position
+  clip.addIncident(
+    transformTop({
+      selector: `.text`,
+      from: "5px",
+      to: "0px",
+      duration: animationDuration,
+      easing: "easeInOutCubic",
+    }),
+    startingPositionOfDiscountAnimation + 1500,
+  );
+  // STEP 4 reset bottom text to its initial position
+  clip.addIncident(
+    transformTop({
+      selector: `.secondary-text`,
+      from: "5px",
+      to: "0px",
+      duration: animationDuration,
+      easing: "easeInOutCubic",
+    }),
+    startingPositionOfDiscountAnimation + 1500,
+  );
+};
 
 const animateText = (delayBeforeStart = 0) => {
   clip.addIncident(
@@ -120,7 +216,7 @@ const animateProductImages = (delayBeforeStart = 0) => {
       index *
       (animationDuration + displayImageDuration + delayBetweenImageChange);
     const endingPosition = startingPosition + displayImageDuration;
-
+    animateDiscount(startingPosition);
     clip.addIncident(
       clipPath({
         selector: `#product-${index} img`,
