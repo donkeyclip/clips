@@ -28,7 +28,7 @@
     "@donkeyclip/server": "workspace:*",
     "eslint": "^8.46.0",
     "eslint-config-custom": "workspace:*",
-    "typescript": "5.1.6"
+    "typescript": "5.4.3"
   },
   "optionalDependencies": {
     "tsconfig": "workspace:*"
