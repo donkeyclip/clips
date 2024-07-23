@@ -63,7 +63,7 @@
   border-radius: 50%;
 }
 
-.offer-circle{
+.secondaryText-circle{
   position: absolute;
   width: 108px;
   height: 108px;
@@ -79,7 +79,7 @@
   align-items: center;
 }
 
-.offer{
+.secondaryText{
   font-weight: 800;
   font-size: 30px;
   line-height: 35px;

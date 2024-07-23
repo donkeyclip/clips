@@ -31,7 +31,7 @@ export const clipIncidents = (selector: string) =>
             },
           },
           props: {
-            selector: ".offer-circle",
+            selector: ".secondaryText-circle",
             duration: 800,
             easing: "easeOutCubic",
           },
@@ -111,7 +111,7 @@ export const clipIncidents = (selector: string) =>
             },
           },
           props: {
-            selector: ".offer-circle",
+            selector: ".secondaryText-circle",
             duration: 800,
             easing: "easeInCubic",
           },
@@ -166,5 +166,5 @@ export const clipIncidents = (selector: string) =>
     {
       selector,
       delay: "@expression(index *3000)",
-    }
+    },
   );
