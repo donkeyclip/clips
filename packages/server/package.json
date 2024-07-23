@@ -46,7 +46,7 @@
     "@types/minimist": "^1.2.2",
     "@types/node": "^18.10.0",
     "eslint": "^8.46.0",
-    "tsup": "7.1.0",
+    "tsup": "7.2.0",
     "typescript": "5.5.4"
   }
 }
