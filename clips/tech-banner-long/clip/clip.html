@@ -81,7 +81,7 @@
       />
     </svg>
 
-    <div class="text">{{initParams.text}}</div>
+    <div class="text">{{initParams.title}}</div>
     <div class="pr-name-wrapper">
       <div class="pr-name" mc-for="key,item" mc-of="initParams.products">
         <div class="letter" mc-for="key,letter" mc-of="item.name">
@@ -89,7 +89,7 @@
         </div>
       </div>
     </div>
-    <div class="cta">{{initParams.cta}}</div>
+    <div class="cta">{{initParams.ctaText}}</div>
 
     <svg
       id="line2"
@@ -111,14 +111,12 @@
   </div>
 
   <div class="pr-image" mc-for="key,item" mc-of="initParams.products">
-    <div class="image" style="background-image: url({{item.image}});"></div>
+    <div
+      class="image"
+      style="background-image: url({{item.featured_image}});"
+    ></div>
   </div>
-
-  <div class="offer-circle">
-    <div class="offer1">
-      <div>{{initParams.offer[0]}}</div>
-      <div>{{initParams.offer[1]}}</div>
-    </div>
-    <div class="offer2">{{initParams.offer[2]}}</div>
+  <div class="secondary-text">
+    <div class="secondary-text-inner-wrapper">{{initParams.secondaryText}}</div>
   </div>
 </div>

@@ -1,30 +1,27 @@
 export default [
   {
-    name: "Deafaut",
+    name: "Wave Offer Banner",
     value: {
-      backgroundLinearColor1: "#6AC0FF",
-      backgroundLinearColor2: "#0073FA",
+      primaryColor: "#6AC0FF",
+      secondaryColor: "#0073FA",
       fontColor: "#fff",
-      wave1:
-        "https://donkeyclip.github.io/clips/wave-offers-banners/clip/assets/w1.png",
-      wave2:
-        "https://donkeyclip.github.io/clips/wave-offers-banners/clip/assets/w2.png",
-      wave3:
-        "https://donkeyclip.github.io/clips/wave-offers-banners/clip/assets/w3.png",
-      text: "summer offers",
-      offer: "50 % off",
+      title: "summer offers",
+      subtitle: "50 % off",
       products: [
         {
-          image:
-            "https://donkeyclip.github.io/clips/wave-offers-banners/clip/assets/pr1.png",
+          name: "Product 1",
+          featured_image:
+            "https://donkeyclip.github.io/wave-offers-banner/server/assets/pr1.png",
         },
         {
-          image:
-            "https://donkeyclip.github.io/clips/wave-offers-banners/clip/assets/pr2.png",
+          name: "Product 2",
+          featured_image:
+            "https://donkeyclip.github.io/wave-offers-banner/server/assets/pr2.png",
         },
         {
-          image:
-            "https://donkeyclip.github.io/clips/wave-offers-banners/clip/assets/pr3.png",
+          name: "Product 3",
+          featured_image:
+            "https://donkeyclip.github.io/wave-offers-banner/server/assets/pr3.png",
         },
       ],
     },

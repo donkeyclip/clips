@@ -1,6 +1,6 @@
 * {
-  --bg-linear-color-1: {{ initParams.backgroundLinearColor1 }};
-  --bg-linear-color-2: {{ initParams.backgroundLinearColor2 }};
+  --bg-linear-color-1: {{ initParams.primaryColor }};
+  --bg-linear-color-2: {{ initParams.secondaryColor }};
   --font-color: {{ initParams.fontColor}};
 
 }
@@ -24,26 +24,23 @@ background: linear-gradient(100.26deg, var(--bg-linear-color-1) 2.31%, var(--bg-
 
 .wave1{
   height: 70px;
-  background: url({{initParams.wave1}});
+  background: url("https://donkeyclip.github.io/wave-offers-banner/server/assets/w1.png");
   background-size:470px 70px;
   animation: animate 20s linear infinite;
-
-
   animation-delay: 0s;
   bottom: -13px;
 }
 .wave2{
   height: 75px;
-  background: url({{initParams.wave2}});
+  background: url("https://donkeyclip.github.io/wave-offers-banner/server/assets/w2.png");
   background-size:470px 75px;
   animation: animate2 15s linear infinite;
-
   animation-delay: -5s;
   bottom: -5px;
 }
 .wave3{
   height: 75px;
-  background: url({{initParams.wave3}});
+  background: url("https://donkeyclip.github.io/wave-offers-banner/server/assets/w3.png");
   background-size:470px 75px;
   animation: animate3 8s linear infinite;
   animation-delay: -2s;

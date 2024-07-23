@@ -134,43 +134,29 @@
   <div class="column">
     <div class="text">
       <div class="t1 row-wrapper">
-        <div class="row" mc-for="key,item" mc-of="initParams.text[0]">
+        <div class="row" mc-for="key,item" mc-of="initParams.title">
           {{item}}
         </div>
       </div>
       <div class="t2 row-wrapper">
-        <div class="row" mc-for="key,item" mc-of="initParams.text[1]">
+        <div class="row" mc-for="key,item" mc-of="initParams.subtitle">
           {{item}}
         </div>
       </div>
     </div>
-
-    <div class="offer">
-      <div class="o1 row-wrapper">
-        <div class="row" mc-for="key,item" mc-of="initParams.offer[0]">
-          {{item}}
-        </div>
-      </div>
-      <div class="o2 row-wrapper">
-        <div class="row" mc-for="key,item" mc-of="initParams.offer[1]">
-          {{item}}
-        </div>
-      </div>
-      <div class="o3 row-wrapper">
-        <div class="row" mc-for="key,item" mc-of="initParams.offer[2]">
-          {{item}}
-        </div>
-      </div>
-    </div>
+    <div class="offer">{{initParams.text}}</div>
     <div class="cta">
-      <div class="cta-t">{{initParams.cta}}</div>
-      <div class="cta-t">{{initParams.cta}}</div>
-      <div class="cta-t">{{initParams.cta}}</div>
+      <div class="cta-t">{{initParams.ctaText}}</div>
+      <div class="cta-t">{{initParams.ctaText}}</div>
+      <div class="cta-t">{{initParams.ctaText}}</div>
     </div>
   </div>
 
   <div class="pr-bg" mc-for="key,item" mc-of="initParams.products">
-    <div class="image" style="background-image: url({{item.image}});"></div>
+    <div
+      class="image"
+      style="background-image: url({{item.featured_image}});"
+    ></div>
     <div class="shadow"></div>
   </div>
 </div>

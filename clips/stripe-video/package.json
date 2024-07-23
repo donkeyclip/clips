@@ -1,0 +1,42 @@
+{
+  "name": "stripe-video",
+  "id": "BB90EDB9-CD78-4707-AC8A-E75C520AA545",
+  "version": "1.0.0",
+  "description": "Starter repo for creating Donkeyclips",
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/donkeyclip/motorcortex-clip-starter"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "scripts": {
+    "lint": "eslint -c .eslintrc --no-error-on-unmatched-pattern ./**/*{.ts,.js}",
+    "lint:fix": "pnpm run lint -- --fix",
+    "start": "donkeyclip-server start ./clip/clip.ts"
+  },
+  "keywords": [
+    "motorcortex",
+    "donkeyclip",
+    "motorcortex-clip"
+  ],
+  "devDependencies": {
+    "@donkeyclip/effects": "workspace:*",
+    "@donkeyclip/motorcortex": "9.17.1",
+    "@donkeyclip/motorcortex-player": "2.10.11",
+    "@donkeyclip/server": "workspace:*",
+    "eslint": "^8.46.0",
+    "eslint-config-custom": "workspace:*",
+    "typescript": "5.1.6"
+  },
+  "optionalDependencies": {
+    "tsconfig": "workspace:*"
+  },
+  "dependencies": {
+    "@donkeyclip/motorcortex-anime": "^3.1.1",
+    "esbuild-loader": "^3.1.0",
+    "html-loader": "^4.2.0",
+    "postcss-loader": "7.3.3"
+  }
+}

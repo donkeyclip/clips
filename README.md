@@ -9,8 +9,4 @@
 
 ## Creating a new clip
 
-1. copy the folder `clips/landing-page-v2`
-2. paste that folder in `clips/<a-name-for-your-clip>`
-3. update the name of the clip inside `clips/<a-name-for-your-clip>/package.json`
-4. update the id of your clip in `clips/<a-name-for-your-clip>/server/id.js`
-5. run `pnpm i`
+`npm run create-clip <clip-name>`

@@ -1,25 +1,29 @@
 export default [
   {
-    name: "Deafaut",
+    name: "Grid Banner",
     value: {
       primaryColor: "#FF5DBE",
       secondaryColor: "#FA7474",
       backgroundColor: "#FCFCFC",
       fontColor: "#000",
-      text: ["summer", "offers"],
-      offer: ["50", "%", "off"],
-      cta: "Buy Now",
+      title: "summer",
+      subtitle: "offers",
+      text: "50 % OFF",
+      ctaText: "Buy Now",
       products: [
         {
-          image:
+          name: "Shoe 1",
+          featured_image:
             "https://donkeyclip.github.io/wave-offers-banner/server/assets/pr1.png",
         },
         {
-          image:
+          name: "Shoe 2",
+          featured_image:
             "https://donkeyclip.github.io/wave-offers-banner/server/assets/pr2.png",
         },
         {
-          image:
+          name: "Shoe 3",
+          featured_image:
             "https://donkeyclip.github.io/wave-offers-banner/server/assets/pr3.png",
         },
       ],
