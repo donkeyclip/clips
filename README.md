@@ -8,8 +8,4 @@
 2. pnpm start --filter=<clips-name-in-package-json/or-path-to-folder>...
 
 ## Creating a new clip
-
-1. copy the folder `clips/landing-page-v2`
-2. paste that folder in `clips/<a-name-for-your-clip>`
-3. update the name and the id of the clip inside `clips/<a-name-for-your-clip>/package.json`
-4. run `pnpm i`
+`npm run create-clip <clip-name>` 
