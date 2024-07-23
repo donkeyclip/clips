@@ -1,6 +1,7 @@
 {
   "private": true,
   "scripts": {
+    "create-clip": "sh create-clip.sh",
     "start": "turbo run start",
     "build": "turbo run build",
     "dev": "turbo run dev",
