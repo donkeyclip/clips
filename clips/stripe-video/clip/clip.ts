@@ -19,13 +19,13 @@ const clip = new HTMLClip({
   host,
   initParams: initParams[0].value,
   containerParams: {
-    width: "1280px",
-    height: "720px",
+    width: "1200px",
+    height: "320px",
   },
   fonts: [
     {
       type: "google-font",
-      src: "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap",
+      src: "https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap",
     },
   ],
   audio: "off",

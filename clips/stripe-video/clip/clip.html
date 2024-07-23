@@ -1,3 +1,29 @@
 <div class="root">
-  <video src="{{videoUrl}}" loop autoplay mute></video>
+  <div class="video-container">
+    <video src="{{initParams.videoUrl}}" loop autoplay muted></video>
+  </div>
+  <div class="content-container">
+    <div class="glassy-text">{{initParams.title}}</div>
+    <div class="content-info">
+      <div class="description">{{initParams.subtitle}}</div>
+      <div class="cta">
+        <a href="{{initParams.ctaLink}}" target="_blank"
+          >{{initParams.ctaText}}</a
+        >
+      </div>
+    </div>
+  </div>
+  <div class="products-container">
+    <div class="product" mc-for="key,product" mc-of="initParams.products">
+      <div class="product-image">
+        <img
+          src="{{product.image}}"
+          width="150px"
+          height="150px"
+          alt="{{product.title}}"
+        />
+      </div>
+      <div class="product-title">{{product.title}}</div>
+    </div>
+  </div>
 </div>
