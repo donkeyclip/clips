@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 importers:
 
   .:
@@ -925,8 +929,8 @@ importers:
         specifier: ^6.1.1
         version: 6.1.1(eslint@8.46.0)
       eslint-plugin-sonarjs:
-        specifier: ^0.19.0
-        version: 0.19.0(eslint@8.46.0)
+        specifier: ^0.25.0
+        version: 0.25.0(eslint@8.46.0)
       lint-staged:
         specifier: ^13.2.3
         version: 13.2.3
@@ -4308,7 +4312,7 @@ packages:
       esbuild: 0.18.17
       get-tsconfig: 4.6.2
       loader-utils: 2.0.4
-      webpack: 5.88.2(@swc/core@1.3.73)(esbuild@0.18.17)(webpack-cli@5.1.4)
+      webpack: 5.88.2
       webpack-sources: 1.4.3
     dev: false
 
@@ -4506,9 +4510,9 @@ packages:
       eslint: 8.46.0
     dev: false
 
-  /eslint-plugin-sonarjs@0.19.0(eslint@8.46.0):
-    resolution: {integrity: sha512-6+s5oNk5TFtVlbRxqZN7FIGmjdPCYQKaTzFPmqieCmsU1kBYDzndTeQav0xtQNwZJWu5awWfTGe8Srq9xFOGnw==}
-    engines: {node: '>=14'}
+  /eslint-plugin-sonarjs@0.25.0(eslint@8.46.0):
+    resolution: {integrity: sha512-DaZOtpUucEZbvowgKxVFwICV6r0h7jSCAx0IHICvCowP+etFussnhtaiCPSnYAuwVJ+P/6UFUhkv7QJklpXFyA==}
+    engines: {node: '>=16'}
     peerDependencies:
       eslint: ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
     dependencies:
@@ -5066,7 +5070,7 @@ packages:
     dependencies:
       html-minifier-terser: 7.2.0
       parse5: 7.1.2
-      webpack: 5.88.2(@swc/core@1.3.73)(esbuild@0.18.17)(webpack-cli@5.1.4)
+      webpack: 5.88.2
     dev: false
 
   /html-minifier-terser@7.2.0:
@@ -6187,7 +6191,7 @@ packages:
       jiti: 1.19.1
       postcss: 8.4.31
       semver: 7.5.4
-      webpack: 5.88.2(@swc/core@1.3.73)(esbuild@0.18.17)(webpack-cli@5.1.4)
+      webpack: 5.88.2
     dev: false
 
   /postcss-merge-longhand@6.0.0(postcss@8.4.31):
@@ -7141,6 +7145,30 @@ packages:
       webpack: 5.88.2(@swc/core@1.3.73)(esbuild@0.18.17)(webpack-cli@5.1.4)
     dev: false
 
+  /terser-webpack-plugin@5.3.9(webpack@5.88.2):
+    resolution: {integrity: sha512-ZuXsqE07EcggTWQjXUj+Aot/OMcD0bMKGgF63f7UxYcu5/AJF53aIpK1YoP5xR9l6s/Hy2b+t1AM0bLNPRuhwA==}
+    engines: {node: '>= 10.13.0'}
+    peerDependencies:
+      '@swc/core': '*'
+      esbuild: '*'
+      uglify-js: '*'
+      webpack: ^5.1.0
+    peerDependenciesMeta:
+      '@swc/core':
+        optional: true
+      esbuild:
+        optional: true
+      uglify-js:
+        optional: true
+    dependencies:
+      '@jridgewell/trace-mapping': 0.3.18
+      jest-worker: 27.5.1
+      schema-utils: 3.3.0
+      serialize-javascript: 6.0.1
+      terser: 5.19.2
+      webpack: 5.88.2
+    dev: false
+
   /terser@5.19.2:
     resolution: {integrity: sha512-qC5+dmecKJA4cpYxRa5aVkKehYsQKc+AHeKl0Oe62aYjBL8ZA33tTljktDHJSaxxMnbI5ZYw+o/S2DxxLu8OfA==}
     engines: {node: '>=10'}
@@ -7618,6 +7646,46 @@ packages:
     engines: {node: '>=10.13.0'}
     dev: false
 
+  /webpack@5.88.2:
+    resolution: {integrity: sha512-JmcgNZ1iKj+aiR0OvTYtWQqJwq37Pf683dY9bVORwVbUrDhLhdn/PlO2sHsFHPkj7sHNQF3JwaAkp49V+Sq1tQ==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
+    peerDependencies:
+      webpack-cli: '*'
+    peerDependenciesMeta:
+      webpack-cli:
+        optional: true
+    dependencies:
+      '@types/eslint-scope': 3.7.4
+      '@types/estree': 1.0.1
+      '@webassemblyjs/ast': 1.11.6
+      '@webassemblyjs/wasm-edit': 1.11.6
+      '@webassemblyjs/wasm-parser': 1.11.6
+      acorn: 8.10.0
+      acorn-import-assertions: 1.9.0(acorn@8.10.0)
+      browserslist: 4.21.10
+      chrome-trace-event: 1.0.3
+      enhanced-resolve: 5.15.0
+      es-module-lexer: 1.3.0
+      eslint-scope: 5.1.1
+      events: 3.3.0
+      glob-to-regexp: 0.4.1
+      graceful-fs: 4.2.11
+      json-parse-even-better-errors: 2.3.1
+      loader-runner: 4.3.0
+      mime-types: 2.1.35
+      neo-async: 2.6.2
+      schema-utils: 3.3.0
+      tapable: 2.2.1
+      terser-webpack-plugin: 5.3.9(webpack@5.88.2)
+      watchpack: 2.4.0
+      webpack-sources: 3.2.3
+    transitivePeerDependencies:
+      - '@swc/core'
+      - esbuild
+      - uglify-js
+    dev: false
+
   /webpack@5.88.2(@swc/core@1.3.73)(esbuild@0.18.17)(webpack-cli@5.1.4):
     resolution: {integrity: sha512-JmcgNZ1iKj+aiR0OvTYtWQqJwq37Pf683dY9bVORwVbUrDhLhdn/PlO2sHsFHPkj7sHNQF3JwaAkp49V+Sq1tQ==}
     engines: {node: '>=10.13.0'}
@@ -7760,7 +7828,3 @@ packages:
   /yocto-queue@0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
