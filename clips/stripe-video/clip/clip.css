@@ -1,0 +1,186 @@
+* {
+  --font-color: {{ initParams.fontColor }};
+  --primary-color: {{ initParams.primaryColor }};
+  --secondary-color: {{ initParams.secondaryColor }};
+  --bg-color: {{ initParams.backgroundColor }};
+  /*
+    This is an example of how to use MotorCortex's init params in css, using a css variable
+      if you are unfamiliar with css variables here is a quick guide https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties#basic_usage
+  */
+  font-family: "Raleway", sans-serif;
+  color: var(--font-color);
+}
+
+.root {
+  position: absolute;
+  top: 0 ;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+.video-container {
+  position: absolute;
+  width: 100%;
+  height: 100%; /* Adjust as needed */
+  overflow: hidden;
+  z-index: -1;
+  top:0px;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: blur(10px);
+
+}
+
+/* CONTENT CONTAINER */
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 20px 0 20px;
+}
+
+.content-container .title{
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--primary-color);
+  letter-spacing: 2px;
+}
+.content-container .content-info{
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--primary-color);
+  letter-spacing: 2px;
+  display: flex;
+  gap:10px;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+  padding:20px;
+  border-radius: 30px;
+}
+.cta{
+  font-weight: 700;
+}
+
+
+/* PRODUCTS CONTAINER */
+.products-container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+  color: black;
+  margin: 20px;
+}
+
+.product {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px; /* Adjust width as needed */
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 12px; /* Match border radius of product */
+  z-index: -1;
+}
+
+.product .product-image{
+  width: 100%;
+}
+.product img {
+  width: 100%;
+
+  object-fit: cover;
+  border-radius: 10px; /* Match product border radius */
+}
+.product-title {
+  position: absolute;
+  max-width: 70%;
+  white-space: nowrap; /* Prevent wrapping */
+  overflow: hidden; /* Hide the overflow */
+  text-overflow: ellipsis; /* Add ellipsis */
+  left: -10px;
+  top: -10px;
+  padding: 10px 15px; /* Adjust padding for more spacing inside */
+  font-size: 1.2em;
+  font-weight: 700;
+  color: var(--primary-color);
+  letter-spacing: 1px;
+  border-radius: 10px;
+  background: white; /* Ensure the background is white to see the effect */
+  z-index: 1; /* Ensure the content is above the pseudo-element */
+  display: inline-block;
+}
+
+
+
+
+/* GLASSY TEXT */
+.glassy-text {
+  font-size: 2em;
+  color: rgba(255, 255, 255, 0.75);
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: inline-block;
+}
+
+.glassy-text::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  background-clip: text;
+  -webkit-background-clip: text;
+  filter: blur(4px);
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.glassy-text::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0.5;
+}

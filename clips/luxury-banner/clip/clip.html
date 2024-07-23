@@ -1,0 +1,76 @@
+<div class="container">
+  <div class="bg-container">
+    <div class="svg-1">
+      <svg
+        width="300"
+        height="300"
+        viewBox="0 0 300 300"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="150"
+          cy="150"
+          r="128.5"
+          stroke="#F30C38"
+          stroke-width="43"
+        />
+      </svg>
+    </div>
+    <div class="svg-2">
+      <svg
+        width="200"
+        height="200"
+        viewBox="0 0 200 200"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle cx="100" cy="100" r="85" stroke="#F30C38" stroke-width="30" />
+      </svg>
+    </div>
+    <div class="svg-3">
+      <svg
+        width="300"
+        height="300"
+        viewBox="0 0 300 300"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="150"
+          cy="150"
+          r="128.5"
+          stroke="#F30C38"
+          stroke-width="43"
+        />
+      </svg>
+    </div>
+  </div>
+  <div class="product-wrapper">
+    <div class="content-outer-wrapper">
+      <div class="content-wrapper">
+        <div class="title-subtitle-wrapper">
+          <h2 class="title">{{initParams.title}}</h2>
+          <h2 class="subtitle">{{initParams.subtitle}}</h2>
+        </div>
+        <div class="cta">
+          <h2>{{initParams.ctaText}}</h2>
+        </div>
+      </div>
+      <div class="discount-wrapper">
+        <div class="discount">
+          <h2 class="text">{{initParams.text}}</h2>
+          <h2 class="secondary-text">{{initParams.secondaryText}}</h2>
+        </div>
+      </div>
+    </div>
+    <div
+      id="product-{{key}}"
+      class="product"
+      mc-for="key,item"
+      mc-of="initParams.products"
+    >
+      <img src="{{item.featured_image}}" alt="product image" />
+    </div>
+  </div>
+</div>
