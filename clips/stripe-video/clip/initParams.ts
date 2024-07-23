@@ -3,7 +3,7 @@ export default [
     name: "Default",
     value: {
       videoUrl:
-        "https://github.com/donkeyclip/clips/raw/main/clips/stripe-video/assets/background.mp4",
+        "https://github.com/donkeyclip/clips/raw/main/clips/stripe-video/assets/background.gif",
       backgroundColor: "#212121",
       fontColor: "#033372",
       title: "Summer Offers 2024",
