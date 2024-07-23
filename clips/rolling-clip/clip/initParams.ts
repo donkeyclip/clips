@@ -1,6 +1,6 @@
 export default [
   {
-    name: "Deafaut",
+    name: "Rolling Clip",
     value: {
       primaryColor: "#194759",
       backgroundColor: "#19181C",
@@ -8,20 +8,22 @@ export default [
       fontColor: "#fff",
       text: "Summer",
       secondaryText: "Offers",
-      offer: "50% OFF",
-      cta: "Explore Now",
-      url: "https://www.google.com",
+      subtitle: "50% OFF",
+      ctaText: "Explore Now",
       products: [
         {
-          image:
+          name: "Product 1",
+          featured_image:
             "https://donkeyclip.github.io/sportswear-clip/server/assets/product-1.jpg",
         },
         {
-          image:
+          name: "Product 2",
+          featured_image:
             "https://donkeyclip.github.io/sportswear-clip/server/assets/product-2.jpg",
         },
         {
-          image:
+          name: "Product 3",
+          featured_image:
             "https://donkeyclip.github.io/sportswear-clip/server/assets/product-3.jpg",
         },
       ],
