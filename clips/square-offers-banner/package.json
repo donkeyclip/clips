@@ -2,7 +2,7 @@
   "name": "square-offers-banner",
   "id": "264b6c41-a1b5-4163-a718-d39a7bb4e628",
   "version": "1.0.0",
-  "description": "Starter repo for creating Donkeyclips",
+  "description": "Starter repo for creating DonkeyClips",
   "author": "",
   "repository": {
     "type": "git",
@@ -23,7 +23,7 @@
   ],
   "devDependencies": {
     "@donkeyclip/effects": "workspace:*",
-    "@donkeyclip/motorcortex": "9.9.0",
+    "@donkeyclip/motorcortex": "9.17.1",
     "@donkeyclip/motorcortex-player": "2.10.11",
     "@donkeyclip/server": "workspace:*",
     "eslint": "^8.32.0",
