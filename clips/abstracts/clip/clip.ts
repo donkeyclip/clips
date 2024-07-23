@@ -6,18 +6,20 @@ import pkg from "../package.json";
 import css from "./clip.css";
 import html from "./clip.html";
 import initParams from "./initParams";
+import initParamsValidationRules from "./initParamsValidationRules";
 
 const host = document.getElementById("clip");
 
 if (!host)
   throw new Error(
-    "No element with id 'clip' found, so can't show the clip! Please check your html"
+    "No element with id 'clip' found, so can't show the clip! Please check your html",
   );
 
 const clip = new HTMLClip({
   html,
   css,
   host,
+  initParamsValidationRules,
   initParams: initParams[0].value,
   containerParams: {
     width: "700px",
@@ -44,7 +46,7 @@ clip.addIncident(
     delay: "@stagger(0,600)",
     easing: "easeOutQuad",
   }),
-  0
+  0,
 );
 clip.addIncident(
   top({
@@ -55,7 +57,7 @@ clip.addIncident(
     delay: reverseDelay,
     easing: "easeOutQuad",
   }),
-  revercePosition
+  revercePosition,
 );
 
 clip.addIncident(
@@ -67,7 +69,7 @@ clip.addIncident(
     delay: "@stagger(0,600,0,linear,linear,true)",
     easing: "easeOutQuad",
   }),
-  0
+  0,
 );
 clip.addIncident(
   top({
@@ -78,7 +80,7 @@ clip.addIncident(
     delay: reverseDelay,
     easing: "easeOutQuad",
   }),
-  revercePosition
+  revercePosition,
 );
 clip.addIncident(
   top({
@@ -88,7 +90,7 @@ clip.addIncident(
     duration: 1200,
     easing: "easeOutQuad",
   }),
-  0
+  0,
 );
 
 clip.addIncident(
@@ -100,7 +102,7 @@ clip.addIncident(
     delay: reverseDelay,
     easing: "easeOutQuad",
   }),
-  revercePosition
+  revercePosition,
 );
 
 clip.addIncident(
@@ -111,7 +113,7 @@ clip.addIncident(
     duration: 1200,
     easing: "easeOutQuad",
   }),
-  0
+  0,
 );
 
 clip.addIncident(
@@ -123,7 +125,7 @@ clip.addIncident(
     delay: reverseDelay,
     easing: "easeOutQuad",
   }),
-  revercePosition
+  revercePosition,
 );
 
 clip.addIncident(
@@ -134,7 +136,7 @@ clip.addIncident(
     duration: 1200,
     easing: "easeOutQuad",
   }),
-  0
+  0,
 );
 
 clip.addIncident(
@@ -146,7 +148,7 @@ clip.addIncident(
     delay: reverseDelay,
     easing: "easeOutQuad",
   }),
-  revercePosition
+  revercePosition,
 );
 
 clip.addIncident(
@@ -157,7 +159,7 @@ clip.addIncident(
     duration: 1200,
     easing: "easeOutQuad",
   }),
-  0
+  0,
 );
 
 clip.addIncident(
@@ -169,7 +171,7 @@ clip.addIncident(
     delay: reverseDelay,
     easing: "easeOutQuad",
   }),
-  revercePosition
+  revercePosition,
 );
 clip.addIncident(
   top({
@@ -179,7 +181,7 @@ clip.addIncident(
     duration: 1200,
     easing: "easeOutQuad",
   }),
-  0
+  0,
 );
 clip.addIncident(
   top({
@@ -190,7 +192,7 @@ clip.addIncident(
     delay: reverseDelay,
     easing: "easeOutQuad",
   }),
-  revercePosition
+  revercePosition,
 );
 clip.addIncident(
   top({
@@ -200,7 +202,7 @@ clip.addIncident(
     duration: 800,
     easing: "easeOutQuad",
   }),
-  0
+  0,
 );
 
 clip.addIncident(
@@ -212,12 +214,12 @@ clip.addIncident(
     easing: "easeOutQuad",
     delay: reverseDelay,
   }),
-  revercePosition
+  revercePosition,
 );
 
 clip.addIncident(
   topMoveCombo(".product-image", "10px", "260px", "-260px", 1000, 800, 3000),
-  0
+  0,
 );
 
 clip.addIncident(
@@ -229,7 +231,7 @@ clip.addIncident(
     easing: "easeOutQuad",
     delay: "@stagger(0,600)",
   }),
-  0
+  0,
 );
 clip.addIncident(
   opacity({
@@ -240,7 +242,7 @@ clip.addIncident(
     easing: "easeOutQuad",
     delay: "@expression(initParams.products.length*1000)",
   }),
-  revercePosition
+  revercePosition,
 );
 
 export default renderDonkeyclip({ clipId: pkg.id, initParams, clip });

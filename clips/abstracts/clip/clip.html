@@ -16,7 +16,7 @@
     </div>
   </div>
   <div class="cta-wrapper">
-    <div class="cta">{{initParams.cta}}</div>
+    <div class="cta">{{initParams.ctaText}}</div>
   </div>
 
   <div class="left-ball"></div>
@@ -26,14 +26,12 @@
       class="product-image absolute-flex"
       mc-for="key,item"
       mc-of="initParams.products"
-      style="background-image: url({{item.image}});"
+      style="background-image: url({{item.featured_image}});"
     ></div>
   </div>
   <div class="offer-wrapper absolute-flex">
-    <div class="offer-percentage">
-      {{initParams.offer[0]}} {{initParams.offer[1]}}
-    </div>
-    <div class="offer-text">{{initParams.offer[2]}}</div>
+    <div class="offer-percentage">{{initParams.thirdText}}</div>
+    <div class="offer-text">{{initParams.fourthText}}</div>
   </div>
 
   <svg

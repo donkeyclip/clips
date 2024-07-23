@@ -8,15 +8,17 @@ export default [
       fontColor: "#fff",
       text: "New Arrivals",
       secondaryText: "SMARTWATCH",
-      offer: ["50", "%", "OFF"],
-      cta: "Explore Now",
-      url: "https://www.google.com",
+      thirdText: "50%",
+      fourthText: "OFF",
+      ctaText: "Explore Now",
       products: [
         {
-          image: "https://i.ibb.co/Q9ff99H/smartwatch.png",
+          name: "Smartwatch",
+          featured_image: "https://i.ibb.co/Q9ff99H/smartwatch.png",
         },
         {
-          image: "https://i.ibb.co/Q9ff99H/smartwatch.png",
+          name: "Smartphone",
+          featured_image: "https://i.ibb.co/Q9ff99H/smartwatch.png",
         },
       ],
     },

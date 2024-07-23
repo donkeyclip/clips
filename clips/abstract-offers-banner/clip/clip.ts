@@ -6,18 +6,20 @@ import { clipIncidents } from "./ClipIncidents";
 import css from "./clip.css";
 import html from "./clip.html";
 import initParams from "./initParams";
+import initParamsValidationRules from "./initParamsValidationRules";
 
 const host = document.getElementById("clip");
 
 if (!host)
   throw new Error(
-    "No element with id 'clip' found, so can't show the clip! Please check your html"
+    "No element with id 'clip' found, so can't show the clip! Please check your html",
   );
 
 const clip = new HTMLClip({
   html,
   css,
   host,
+  initParamsValidationRules,
   initParams: initParams[0].value,
   containerParams: {
     width: "470px",
