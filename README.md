@@ -8,4 +8,5 @@
 2. pnpm start --filter=<clips-name-in-package-json/or-path-to-folder>...
 
 ## Creating a new clip
-`npm run create-clip <clip-name>` 
+
+`npm run create-clip <clip-name>`
