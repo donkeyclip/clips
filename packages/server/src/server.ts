@@ -2,12 +2,14 @@ import { Definition, utils } from "@donkeyclip/motorcortex";
 import Player from "@donkeyclip/motorcortex-player";
 import initParamsApply from "./scripts/initParamsApply";
 
+// eslint-disable-next-line
 function addWindowListeners(clip: any, liveDef: any) {
   window.addEventListener("message", (event) => {
     if (event.data.what === "initParamsChange") {
       const newLiveDef = initParamsApply(
         liveDef,
-        event.data.initParams as NonNullable<Definition["props"]>["initParams"]
+        event.data.initParams as NonNullable<Definition["props"]>["initParams"],
+        // eslint-disable-next-line
       ) as any;
       const projector = document.getElementById("projector");
       if (!projector) {
@@ -40,7 +42,9 @@ export function renderDonkeyclip({
   clip,
 }: {
   clipId: string;
+  // eslint-disable-next-line
   initParams: Record<string, any>;
+  // eslint-disable-next-line
   clip: any;
 }) {
   const liveDef = clip.exportLiveDefinition();
@@ -68,6 +72,7 @@ export function renderDonkeyclip({
 
   const searchOptions = {} as SearchOptions;
   for (const i in params) {
+    // eslint-disable-next-line
     searchOptions[params[i][0] as keyof SearchOptions] = params[i][1] as any;
   }
 
@@ -89,7 +94,7 @@ export function renderDonkeyclip({
       initParams,
       selectedParamsIndex: searchOptions.initParams,
     },
-    "*"
+    "*",
   );
 
   let timeout: ReturnType<typeof setTimeout> | null = null;
@@ -104,10 +109,11 @@ export function renderDonkeyclip({
             what: "msChanged",
             millisecond: ms,
           },
-          "*"
+          "*",
         );
       }, 100);
     },
+    pointerEvents: false,
   });
   const checkBlockWaitings = () => Object.keys(clip.blockingWaitings).length;
 
@@ -116,7 +122,8 @@ export function renderDonkeyclip({
       if (!checkBlockWaitings()) {
         clearInterval(interval);
         player.changeInitParams(
-          initParams[searchOptions.initParams as any].value
+          // eslint-disable-next-line
+          initParams[searchOptions.initParams as any].value,
         );
       }
     }, 100);
