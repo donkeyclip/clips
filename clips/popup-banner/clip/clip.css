@@ -1,33 +1,28 @@
 * {
-  --font-size: {
-      {
-      initParams.fontSize
-    }
-  }
+  --image-positioning: {{ initParams.imagePositioning }};
+  --cta-color: {{ initParams.colors.ctaColor }};
+  --text-color: {{ initParams.colors.textColor }};
+  --image-bg-color: {{ initParams.colors.imageBgColor }};
+  --text-bg-color: {{ initParams.colors.textBgColor }};
+  --product-text-color: {{ initParams.colors.productTextColor }};
 
-  ;
-
-  --font-color: {
-      {
-      initParams.color
-    }
-  }
-
-  ;
-  /*
-    This is an example of how to use MotorCortex's init params in css, using a css variable
-      if you are unfamiliar with css variables here is a quick guide https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties#basic_usage
-  */
+  --font: {{ initParams.font.name }};
+  font-family: var(--font);
 }
+
 
 .container {
   display: flex;
   justify-content: center;
   flex-direction: row;
   align-items: center;
+  width: 100%;
   height: 100%;
   color: var(--font-color);
   font-size: var(--font-size);
+  container-type: inline-size;
+  container-name: clip-root;
+  background: var(--image-bg-color);
 }
 
 .cta {
@@ -36,49 +31,48 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  border: 1px solid #2FFFD5;
-  color: #2FFFD5;
-  font-family: Inter;
+  border: 1px solid var(--cta-color);
+  color: var(--cta-color);
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
   line-height: 14px;
-  /* 116.667% */
+  opacity: 0;
 }
 
 .details-wrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 10px;
-  align-self: stretch;
+  justify-content: flex-start;
+  gap: 30px;
 }
 
 .info {
   position: absolute;
-  top: 159px;
   display: flex;
   width: 350px;
   flex-direction: column;
   align-items: flex-start;
   gap: 30px;
   width: 350px;
+  transform: translateY(30px);
+  transform-origin: top;
+}
+
+.text {
+  color: var(--text-color);
+  opacity: 0;
 }
 
 .title {
-  color: #DCDBEA;
-  font-family: Inter;
   font-size: 30px;
-  font-style: normal;
   font-weight: 700;
   line-height: 34px;
 }
 
 .subtitle {
-  color: #DCDBEA;
-  font-family: Inter;
   font-size: 18px;
-  font-style: normal;
   font-weight: 300;
   line-height: 26px;
 }
@@ -90,24 +84,22 @@
   justify-content: space-between;
   align-items: center;
   border-radius: 4px;
-  backdrop-filter: blur(23.399999618530273px);
   position: absolute;
   bottom: 30px;
 }
 
 .product-description {
   width: 230px;
-  height: 37px;
+  height: 36px;
   min-width: 230px;
   max-width: 260px;
   flex-shrink: 0;
   overflow: hidden;
-  color: #211556;
+  color: var(--product-text-color);
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
-  font-family: Inter;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -115,30 +107,24 @@
 }
 
 .price-wrapper {
+  color: var(--product-text-color);
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 9px;
+  font-size: 16px;
 }
 
 .new-price {
-  color: #211556;
-  font-family: Inter;
-  font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: 16px;
-  /* 100% */
 }
 
 .old-price {
-  color: #211556;
-  font-family: Inter;
-  font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  line-height: 15px;
-  /* 93.75% */
+  line-height: 16px;
   text-decoration-line: line-through;
   opacity: 0.5;
 }
@@ -152,33 +138,264 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
-.product-wrapper {
-  width: 450px;
+.products-bg{
+  width: 900px;
   height: 600px;
-  background: white;
+  background: var(--image-bg-color);
   position: absolute;
   left: 0;
 }
 
+.products {
+  width: 450px;
+  height: 600px;
+  background: var(--image-bg-color);
+  position: absolute;
+  left: 0;
+}
+
+.product-wrapper {
+  position: absolute;
+  height: 600px;
+  background: var(--image-bg-color);
+  position: absolute;
+  right: 0px;
+  width: 0;
+  overflow: hidden;
+}
+
+
 .product {
+  position: absolute;
+  right: 0;
+  width: 450px;
+  height: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.abstract-lines1 {
+.abstract-lines1-wrapper {
   position: absolute;
   top: 30px;
   left: 30px;
+  width: 0;
+  overflow: hidden;
+  transform-origin: top left;
 }
 
-.image {
+img {
   width: 450px;
   height: 450px;
-  background-color: #777680;
   position: absolute;
   top: 30px;
+  object-fit: var(--image-positioning);
+}
+
+.abstract-lines2-wrapper {
+  width: 0;
+  overflow: hidden;
+}
+
+/* @container clip-root (width <= 350px){
+  .cta{
+    display: flex;
+    padding: 11.683px 15.577px;
+    align-self: stretch;
+    font-size: 10px;
+  }
+
+  
+.products-bg{
+  width: 0px;
+  height: 0px;
+  background: var(--image-bg-color);
+  position: absolute;
+  left: 0;
+}
+
+  .products {
+    width: 350px;
+    height: 300px;
+    background: var(--image-bg-color);
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  img{
+    width: 230px;
+    height: 230px;
+    top: 5px;
+  }
+  .product-wrapper {
+    position: absolute;
+    height: 300px;
+    background: var(--image-bg-color);
+    position: absolute;
+    right: 0px;
+    width: 0;
+    overflow: hidden;
+  }
+  .product {
+    position: absolute;
+    right: 0;
+    width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .info-wrapper{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 300px;
+    left: 0px;
+    justify-content: flex-start;
+    padding-top: 24px;
+  }
+
+  .info{
+    width: 302px;
+  }
+
+  .title{
+    font-size: 23px;
+    line-height: 26px;
+  }
+  .subtitle{
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .abstract-lines1-wrapper{
+    top: 24px;
+    left: 24px;
+    transform: scale(0.5);
+  }
+
+  .product-details {
+    width: 302px;
+    bottom: 18px;
+  }
+
+  .product-description{
+    width: 180px;
+    height: 30px;
+    min-width: 180px;
+    max-width: 202.507px;
+    font-size: 11px;
+  }
+  .price-wrapper{
+    gap: 9px;
+    font-size: 13px;
+  }
+
+
+
+} */
+.mobile.popup {
+  .cta{
+    display: flex;
+    padding: 11.683px 15.577px;
+    align-self: stretch;
+    font-size: 10px;
+  }
+
+  
+.products-bg{
+  width: 0;
+  height: 0;
+  
+}
+
+  .products {
+    width: 350px;
+    height: 300px;
+    background: var(--image-bg-color);
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  img{
+    width: 230px;
+    height: 230px;
+    top: 5px;
+  }
+  .product-wrapper {
+    position: absolute;
+    height: 300px;
+    background: var(--image-bg-color);
+    position: absolute;
+    right: 0px;
+    width: 0;
+    overflow: hidden;
+  }
+  .product {
+    position: absolute;
+    right: 0;
+    width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .info-wrapper{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 300px;
+    left: 0px;
+    justify-content: flex-start;
+    padding-top: 24px;
+  }
+
+  .info{
+    width: 302px;
+  }
+
+  .title{
+    font-size: 23px;
+    line-height: 26px;
+  }
+  .subtitle{
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .abstract-lines1-wrapper{
+    top: 24px;
+    left: 24px;
+    transform: scale(0.5);
+  }
+
+  .product-details {
+    width: 302px;
+    bottom: 18px;
+  }
+
+  .product-description{
+    width: 180px;
+    height: 30px;
+    min-width: 180px;
+    max-width: 202.507px;
+    font-size: 11px;
+  }
+  .price-wrapper{
+    gap: 9px;
+    font-size: 13px;
+  }
+
+
+
 }
