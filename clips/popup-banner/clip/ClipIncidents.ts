@@ -1,5 +1,46 @@
 import { CSSEffect, Combo } from "@donkeyclip/motorcortex";
 
+export const gap = (
+  value: string,
+  selector: string,
+  duration: number,
+  easing = "linear",
+  initialValues?: { gap: string } | undefined,
+) =>
+  new CSSEffect(
+    {
+      animatedAttrs: {
+        gap: value,
+      },
+      initialValues,
+    },
+    {
+      selector,
+      duration,
+      easing,
+    },
+  );
+export const translateY = (
+  value: string,
+  selector: string,
+  duration: number,
+  easing = "linear",
+) =>
+  new CSSEffect(
+    {
+      animatedAttrs: {
+        transform: {
+          translateY: value,
+        },
+      },
+    },
+    {
+      selector,
+      duration,
+      easing,
+    },
+  );
+
 export const clipIncidents = (selector: string, half = false) => {
   const divider = half ? 2 : 1;
   return new Combo(
