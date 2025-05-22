@@ -5,8 +5,8 @@ import pkg from "../package.json";
 import css from "./clip.css";
 import html from "./clip.html";
 import initParams from "./initParams";
-import { gap, translateY } from "./ClipIncidents";
-import { opacity, width } from "@donkeyclip/effects";
+import { gap } from "./ClipIncidents";
+import { opacity, top, width } from "@donkeyclip/effects";
 
 const host = document.getElementById("clip");
 
@@ -14,10 +14,6 @@ if (!host)
   throw new Error(
     "No element with id 'clip' found, so can't show the clip! Please check your html",
   );
-// const clipContainerTargetWidth = "900px";
-// const clipContainerTargetHeight = "600px";
-const clipContainerTargetWidth = "350px";
-const clipContainerTargetHeight = "650px";
 
 const clip = new HTMLClip({
   html,
@@ -25,18 +21,20 @@ const clip = new HTMLClip({
   host,
   initParams: initParams[0].value,
   containerParams: {
-    width: clipContainerTargetWidth,
-    height: clipContainerTargetHeight,
+    width: "900px",
+    height: "600px",
   },
   fonts: [
     {
       type: "google-font",
-      src: initParams[0].value.font.src,
+      src: "https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&display=swap",
     },
   ],
   audio: "off",
 });
 
+const duration350 = 350;
+const duration500 = 500;
 const duration750 = 750;
 
 clip.addIncident(
@@ -55,49 +53,101 @@ clip.addIncident(
     delay: "@expression(3000*index)",
     duration: duration750,
   }),
-  duration750,
+  duration350,
 );
 
 clip.addIncident(
   width({
     value: "119px",
     selector: ".abstract-lines2-wrapper",
-    duration: duration750,
+    duration: duration350,
   }),
-  duration750,
+  duration350,
 );
 clip.addIncident(
   width({
     value: "133px",
     selector: ".abstract-lines1-wrapper",
-    duration: duration750,
+    duration: duration350,
   }),
-  duration750,
+  duration350,
 );
 clip.addIncident(
   opacity({
     value: 1,
     selector: ".text",
-    duration: duration750,
+    duration: duration350,
   }),
-  duration750,
+  duration350,
 );
 clip.addIncident(
-  gap("10px", ".details-wrapper", duration750, "easeInOutSine"),
-  duration750,
+  gap("10px", ".details-wrapper", duration350, 0, "easeInOutSine"),
+  duration350,
 );
 clip.addIncident(
-  translateY("0px", ".info", duration750, "easeInOutSine"),
-  duration750,
+  top({
+    value: "0px",
+    selector: ".info",
+    duration: duration350,
+  }),
+  duration350,
 );
 
 clip.addIncident(
   opacity({
     value: 1,
     selector: ".cta",
-    duration: duration750,
+    duration: duration350,
   }),
-  duration750 * 2 + 100,
+  duration750,
+);
+//outro
+clip.addIncident(
+  width({
+    value: "100%",
+    selector: ".products-bg",
+    easing: "easeInOutSine",
+    delay: "@expression(initParams.products.length*3000)",
+    duration: duration500,
+  }),
+  duration750 + duration350,
+);
+clip.addIncident(
+  width({
+    value: "0px",
+    selector: ".abstract-lines1-wrapper,.abstract-lines2-wrapper",
+    delay: "@expression(initParams.products.length*3000)",
+    duration: duration350,
+  }),
+  duration750 + duration350,
+);
+clip.addIncident(
+  opacity({
+    value: 0,
+    selector: ".text,.cta",
+    delay: "@expression(initParams.products.length*3000)",
+    duration: duration350,
+  }),
+  duration750 + duration350,
+);
+clip.addIncident(
+  gap(
+    "30px",
+    ".details-wrapper",
+    duration350,
+    "@expression(initParams.products.length*3000)",
+    "easeInOutSine",
+  ),
+  duration750 + duration350,
+);
+clip.addIncident(
+  top({
+    value: "30px",
+    selector: ".info",
+    duration: duration350,
+    delay: "@expression(initParams.products.length*3000)",
+  }),
+  duration750 + duration350,
 );
 
 export default renderDonkeyclip({ clipId: pkg.id, initParams, clip });

@@ -6,22 +6,21 @@ export default [
         {
           featured_image:
             "https://donkeyclip.github.io/clips/clips/popup-banner/images/image-1.png",
-          description:
-            "T-shirt navy blue T-shirt Navy blue lafj asfpkj asfjl aflkl aklk lafasdadad",
+          description: "T-shirt navy blue T-shirt navy blue T-shirt navy blue",
           oldPrice: "3500$",
           newPrice: "2000$",
         },
         {
           featured_image:
             "https://donkeyclip.github.io/clips/clips/popup-banner/images/image-2.png",
-          description: "gdhfi fg ghuif werhguierfj heikwfl je;owjfeiop",
+          description: "T-shirt orange with smile stamp",
           oldPrice: "2000$",
           newPrice: "1800$",
         },
         {
           featured_image:
             "https://donkeyclip.github.io/clips/clips/popup-banner/images/image-3.png",
-          description: "huf dfuufu  fudyhfui fuihiuf uehfreh dk f ifdei jfijre",
+          description: "T-shirt beige with mountain-flowers stamp",
           oldPrice: "300$",
           newPrice: "100$",
         },
@@ -33,20 +32,16 @@ export default [
 
       cta: "START SHOPPING",
       colors: {
-        ctaColor: "#2FFFD5",
+        ctaColor: "#F5B041",
         textColor: "#DCDBEA",
         imageBgColor: "#FFFFFF",
-        textBgColor: "#211556",
-        productTextColor: "#211556",
+        textBgColor: "#5d0a0a",
+        productTextColor: "#5d0a0a",
       },
       imagePositioning: "contain",
       countdown: {
         enabled: false,
         endDate: "",
-      },
-      font: {
-        name: "Inter",
-        src: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
       },
     },
   },
