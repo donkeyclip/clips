@@ -1,10 +1,10 @@
 * {
   --image-positioning: {{ initParams.imagePositioning }};
-  --cta-color: {{ initParams.colors.ctaColor }};
-  --text-color: {{ initParams.colors.textColor }};
-  --image-bg-color: {{ initParams.colors.imageBgColor }};
-  --text-bg-color: {{ initParams.colors.textBgColor }};
-  --product-text-color: {{ initParams.colors.productTextColor }};
+  --cta-color: {{ initParams.ctaColor }};
+  --text-color: {{ initParams.textColor }};
+  --image-bg-color: {{ initParams.imageBgColor }};
+  --text-bg-color: {{ initParams.textBgColor }};
+  --product-text-color: {{ initParams.productTextColor }};
 
   /* --font: {{ initParams.font.name }};
   font-family: var(--font); */
@@ -101,7 +101,6 @@
 
 .product-description {
   width: 230px;
-  height: 36px;
   min-width: 230px;
   max-width: 260px;
   flex-shrink: 0;

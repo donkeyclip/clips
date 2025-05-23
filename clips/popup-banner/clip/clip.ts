@@ -7,6 +7,7 @@ import html from "./clip.html";
 import initParams from "./initParams";
 import { gap } from "./ClipIncidents";
 import { opacity, top, width } from "@donkeyclip/effects";
+import initParamsValidationRules from "./initParamsValidationRules";
 
 const host = document.getElementById("clip");
 
@@ -20,6 +21,7 @@ const clip = new HTMLClip({
   css,
   host,
   initParams: initParams[0].value,
+  initParamsValidationRules: initParamsValidationRules,
   containerParams: {
     width: "900px",
     height: "600px",

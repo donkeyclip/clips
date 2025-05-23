@@ -49,10 +49,14 @@
       <div class="product">
         <img src="{{item.featured_image}}" alt="product image" />
         <div class="product-details">
-          <div class="product-description">{{item.description}}</div>
+          <div class="product-description">{{item.title}}</div>
           <div class="price-wrapper">
-            <div class="new-price">{{item.newPrice}}</div>
-            <div class="old-price">{{item.oldPrice}}</div>
+            <div class="new-price" mc-if="item.price !== ''">
+              {{item.price}}
+            </div>
+            <div class="old-price" mc-if="item.old_price !== ''">
+              {{item.old_price}}
+            </div>
           </div>
         </div>
       </div>
