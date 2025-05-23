@@ -5,32 +5,32 @@ export default [
       products: [
         {
           featured_image:
-            "https://donkeyclip.github.io/clips/clips/popup-banner/images/image-1.png",
-          title: "T-shirt navy blue T-shirt navy blue T-shirt navy blue",
+            "https://donkeyclip.github.io/clips/clips/popup-banner/images/image1.webp",
+          title: "Mystery Box – Cherry Edition | 🍒",
+          old_price: "45,99€",
+          price: "31,99€",
+        },
+        {
+          featured_image:
+            "https://donkeyclip.github.io/clips/clips/popup-banner/images/image2.webp",
+          title:
+            "✨VIRAL MYSTERY BOX – Σετ 3 Ατσάλινα Σκουλαρίκια & Γυαλι Ηλίου σε Χρυσό ή Ασημί",
+          old_price: "45,99€",
+          price: "31,99€",
+        },
+        {
+          featured_image:
+            "https://donkeyclip.github.io/clips/clips/popup-banner/images/image3.webp",
+          title: "Mystery Boxes No4 set ατσάλινα κοσμήματα 5 τεμάχια",
           old_price: "",
-          price: "",
-        },
-        {
-          featured_image:
-            "https://donkeyclip.github.io/clips/clips/popup-banner/images/image-2.png",
-          title: "T-shirt orange with smile stamp",
-          old_price: "2000$",
-          price: "1800$",
-        },
-        {
-          featured_image:
-            "https://donkeyclip.github.io/clips/clips/popup-banner/images/image-3.png",
-          title: "T-shirt beige with mountain-flowers stamp",
-          old_price: "300$",
-          price: "100$",
+          price: "31,99€",
         },
       ],
-      title:
-        "Summer Sale On! It is all about t-shirt and trousers to wear today",
+      title: "Mystery Boxes",
       subtitle:
-        "Save big on seasonal favorite. Save big on seasonal favorite. Save big on season favorite t-shirts and trousers",
+        "Μοναδικές Εκπλήξεις από την Pnoe Studio! Το πιο στυλάτο box είναι εδώ και σε προκαλεί να το ανοίξεις!",
 
-      cta: "START SHOPPING",
+      cta: "SHOP NOW",
 
       ctaColor: "#F5B041",
       textColor: "#DCDBEA",
@@ -38,7 +38,7 @@ export default [
       textBgColor: "#5d0a0a",
       productTextColor: "#5d0a0a",
 
-      imagePositioning: "contain",
+      imagePositioning: "cover",
       countdownEnabled: false,
       countadownEndDate: "",
       countdownStyles: "",
