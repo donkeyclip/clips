@@ -204,7 +204,7 @@ img {
   width: 450px;
   height: 450px;
   position: absolute;
-  top: 30px;
+  top: 50px;
   object-fit: var(--image-positioning);
 }
 
