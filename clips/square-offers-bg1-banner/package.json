@@ -23,20 +23,20 @@
   ],
   "devDependencies": {
     "@donkeyclip/effects": "workspace:*",
-    "@donkeyclip/motorcortex": "9.17.1",
-    "@donkeyclip/motorcortex-player": "2.10.11",
+    "@donkeyclip/motorcortex": "9.20.3",
+    "@donkeyclip/motorcortex-player": "2.12.12",
     "@donkeyclip/server": "workspace:*",
     "eslint": "^8.32.0",
     "eslint-config-custom": "workspace:*",
-    "typescript": "5.5.4"
+    "typescript": "5.8.3"
   },
   "optionalDependencies": {
     "tsconfig": "workspace:*"
   },
   "dependencies": {
     "@donkeyclip/motorcortex-anime": "^3.1.1",
-    "esbuild-loader": "^4.0.0",
-    "html-loader": "^4.2.0",
-    "postcss-loader": "7.3.3"
+    "esbuild-loader": "^4.3.0",
+    "html-loader": "^5.1.0",
+    "postcss-loader": "8.1.1"
   }
 }

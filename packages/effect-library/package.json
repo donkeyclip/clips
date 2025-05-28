@@ -27,10 +27,10 @@
     "tsconfig": "workspace:*"
   },
   "devDependencies": {
-    "@donkeyclip/motorcortex": "9.17.1",
+    "@donkeyclip/motorcortex": "9.20.3",
     "eslint": "^8.46.0",
     "eslint-config-custom": "workspace:*",
-    "tsup": "7.2.0",
-    "typescript": "5.5.4"
+    "tsup": "8.5.0",
+    "typescript": "5.8.3"
   }
 }
