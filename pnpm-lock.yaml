@@ -971,7 +971,7 @@ importers:
         version: 6.1.1(eslint@8.46.0)
       eslint-plugin-sonarjs:
         specifier: ^0.25.0
-        version: 0.25.0(eslint@8.46.0)
+        version: 0.25.1(eslint@8.46.0)
       lint-staged:
         specifier: ^13.2.3
         version: 13.2.3
@@ -4756,8 +4756,8 @@ packages:
       eslint: 8.46.0
     dev: false
 
-  /eslint-plugin-sonarjs@0.25.0(eslint@8.46.0):
-    resolution: {integrity: sha512-DaZOtpUucEZbvowgKxVFwICV6r0h7jSCAx0IHICvCowP+etFussnhtaiCPSnYAuwVJ+P/6UFUhkv7QJklpXFyA==}
+  /eslint-plugin-sonarjs@0.25.1(eslint@8.46.0):
+    resolution: {integrity: sha512-5IOKvj/GMBNqjxBdItfotfRHo7w48496GOu1hxdeXuD0mB1JBlDCViiLHETDTfA8pDAVSBimBEQoetRXYceQEw==}
     engines: {node: '>=16'}
     peerDependencies:
       eslint: ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
