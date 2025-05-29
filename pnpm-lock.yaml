@@ -55,8 +55,8 @@ importers:
         specifier: 9.20.3
         version: 9.20.3
       '@donkeyclip/motorcortex-player':
-        specifier: 2.12.12
-        version: 2.12.12(@donkeyclip/motorcortex@9.20.3)
+        specifier: 2.13.0
+        version: 2.13.0(@donkeyclip/motorcortex@9.20.3)
       '@donkeyclip/server':
         specifier: workspace:*
         version: link:../../packages/server
@@ -96,8 +96,8 @@ importers:
         specifier: 9.20.3
         version: 9.20.3
       '@donkeyclip/motorcortex-player':
-        specifier: 2.12.12
-        version: 2.12.12(@donkeyclip/motorcortex@9.20.3)
+        specifier: 2.13.0
+        version: 2.13.0(@donkeyclip/motorcortex@9.20.3)
       '@donkeyclip/server':
         specifier: workspace:*
         version: link:../../packages/server
@@ -137,8 +137,8 @@ importers:
         specifier: 9.20.3
         version: 9.20.3
       '@donkeyclip/motorcortex-player':
-        specifier: 2.12.12
-        version: 2.12.12(@donkeyclip/motorcortex@9.20.3)
+        specifier: 2.13.0
+        version: 2.13.0(@donkeyclip/motorcortex@9.20.3)
       '@donkeyclip/server':
         specifier: workspace:*
         version: link:../../packages/server
@@ -178,8 +178,8 @@ importers:
         specifier: 9.20.3
         version: 9.20.3
       '@donkeyclip/motorcortex-player':
-        specifier: 2.12.12
-        version: 2.12.12(@donkeyclip/motorcortex@9.20.3)
+        specifier: 2.13.0
+        version: 2.13.0(@donkeyclip/motorcortex@9.20.3)
       '@donkeyclip/server':
         specifier: workspace:*
         version: link:../../packages/server
@@ -219,8 +219,8 @@ importers:
         specifier: 9.20.3
         version: 9.20.3
       '@donkeyclip/motorcortex-player':
-        specifier: 2.12.12
-        version: 2.12.12(@donkeyclip/motorcortex@9.20.3)
+        specifier: 2.13.0
+        version: 2.13.0(@donkeyclip/motorcortex@9.20.3)
       '@donkeyclip/server':
         specifier: workspace:*
         version: link:../../packages/server
@@ -301,8 +301,8 @@ importers:
         specifier: 9.20.3
         version: 9.20.3
       '@donkeyclip/motorcortex-player':
-        specifier: 2.12.12
-        version: 2.12.12(@donkeyclip/motorcortex@9.20.3)
+        specifier: 2.13.0
+        version: 2.13.0(@donkeyclip/motorcortex@9.20.3)
       '@donkeyclip/server':
         specifier: workspace:*
         version: link:../../packages/server
@@ -383,8 +383,8 @@ importers:
         specifier: 9.20.3
         version: 9.20.3
       '@donkeyclip/motorcortex-player':
-        specifier: 2.12.12
-        version: 2.12.12(@donkeyclip/motorcortex@9.20.3)
+        specifier: 2.13.0
+        version: 2.13.0(@donkeyclip/motorcortex@9.20.3)
       '@donkeyclip/server':
         specifier: workspace:*
         version: link:../../packages/server
@@ -465,8 +465,8 @@ importers:
         specifier: 9.20.3
         version: 9.20.3
       '@donkeyclip/motorcortex-player':
-        specifier: 2.12.12
-        version: 2.12.12(@donkeyclip/motorcortex@9.20.3)
+        specifier: 2.13.0
+        version: 2.13.0(@donkeyclip/motorcortex@9.20.3)
       '@donkeyclip/server':
         specifier: workspace:*
         version: link:../../packages/server
@@ -506,8 +506,8 @@ importers:
         specifier: 9.20.3
         version: 9.20.3
       '@donkeyclip/motorcortex-player':
-        specifier: 2.12.12
-        version: 2.12.12(@donkeyclip/motorcortex@9.20.3)
+        specifier: 2.13.0
+        version: 2.13.0(@donkeyclip/motorcortex@9.20.3)
       '@donkeyclip/server':
         specifier: workspace:*
         version: link:../../packages/server
@@ -547,8 +547,8 @@ importers:
         specifier: 9.20.3
         version: 9.20.3
       '@donkeyclip/motorcortex-player':
-        specifier: 2.12.12
-        version: 2.12.12(@donkeyclip/motorcortex@9.20.3)
+        specifier: 2.13.0
+        version: 2.13.0(@donkeyclip/motorcortex@9.20.3)
       '@donkeyclip/server':
         specifier: workspace:*
         version: link:../../packages/server
@@ -588,8 +588,8 @@ importers:
         specifier: 9.20.3
         version: 9.20.3
       '@donkeyclip/motorcortex-player':
-        specifier: 2.12.12
-        version: 2.12.12(@donkeyclip/motorcortex@9.20.3)
+        specifier: 2.13.0
+        version: 2.13.0(@donkeyclip/motorcortex@9.20.3)
       '@donkeyclip/server':
         specifier: workspace:*
         version: link:../../packages/server
@@ -629,8 +629,8 @@ importers:
         specifier: 9.20.3
         version: 9.20.3
       '@donkeyclip/motorcortex-player':
-        specifier: 2.12.12
-        version: 2.12.12(@donkeyclip/motorcortex@9.20.3)
+        specifier: 2.13.0
+        version: 2.13.0(@donkeyclip/motorcortex@9.20.3)
       '@donkeyclip/server':
         specifier: workspace:*
         version: link:../../packages/server
@@ -670,8 +670,8 @@ importers:
         specifier: 9.20.3
         version: 9.20.3
       '@donkeyclip/motorcortex-player':
-        specifier: 2.12.12
-        version: 2.12.12(@donkeyclip/motorcortex@9.20.3)
+        specifier: 2.13.0
+        version: 2.13.0(@donkeyclip/motorcortex@9.20.3)
       '@donkeyclip/server':
         specifier: workspace:*
         version: link:../../packages/server
@@ -711,8 +711,8 @@ importers:
         specifier: 9.20.3
         version: 9.20.3
       '@donkeyclip/motorcortex-player':
-        specifier: 2.12.12
-        version: 2.12.12(@donkeyclip/motorcortex@9.20.3)
+        specifier: 2.13.0
+        version: 2.13.0(@donkeyclip/motorcortex@9.20.3)
       '@donkeyclip/server':
         specifier: workspace:*
         version: link:../../packages/server
@@ -752,8 +752,8 @@ importers:
         specifier: 9.20.3
         version: 9.20.3
       '@donkeyclip/motorcortex-player':
-        specifier: 2.12.12
-        version: 2.12.12(@donkeyclip/motorcortex@9.20.3)
+        specifier: 2.13.0
+        version: 2.13.0(@donkeyclip/motorcortex@9.20.3)
       '@donkeyclip/server':
         specifier: workspace:*
         version: link:../../packages/server
@@ -793,8 +793,8 @@ importers:
         specifier: 9.20.3
         version: 9.20.3
       '@donkeyclip/motorcortex-player':
-        specifier: 2.12.12
-        version: 2.12.12(@donkeyclip/motorcortex@9.20.3)
+        specifier: 2.13.0
+        version: 2.13.0(@donkeyclip/motorcortex@9.20.3)
       '@donkeyclip/server':
         specifier: workspace:*
         version: link:../../packages/server
@@ -834,8 +834,8 @@ importers:
         specifier: 9.20.3
         version: 9.20.3
       '@donkeyclip/motorcortex-player':
-        specifier: 2.12.12
-        version: 2.12.12(@donkeyclip/motorcortex@9.20.3)
+        specifier: 2.13.0
+        version: 2.13.0(@donkeyclip/motorcortex@9.20.3)
       '@donkeyclip/server':
         specifier: workspace:*
         version: link:../../packages/server
@@ -875,8 +875,8 @@ importers:
         specifier: 9.20.3
         version: 9.20.3
       '@donkeyclip/motorcortex-player':
-        specifier: 2.12.12
-        version: 2.12.12(@donkeyclip/motorcortex@9.20.3)
+        specifier: 2.13.0
+        version: 2.13.0(@donkeyclip/motorcortex@9.20.3)
       '@donkeyclip/server':
         specifier: workspace:*
         version: link:../../packages/server
@@ -996,7 +996,7 @@ importers:
         version: 9.20.3
       '@donkeyclip/motorcortex-player':
         specifier: ^2.12.12
-        version: 2.12.12(@donkeyclip/motorcortex@9.20.3)
+        version: 2.13.0(@donkeyclip/motorcortex@9.20.3)
       '@swc/core':
         specifier: ^1.11.29
         version: 1.11.29
@@ -1597,14 +1597,14 @@ packages:
     peerDependencies:
       '@donkeyclip/motorcortex': '>=8 < 10'
 
-  '@donkeyclip/motorcortex-player@2.12.12':
-    resolution: {integrity: sha512-muLrdE1yZwYye5mGLrqR5J71y40jo6WZCoFksIKuiD+/rpRLuYSn5dtVoWQR+D+yXfcskKHFBPL9YC8lPNl8Aw==}
+  '@donkeyclip/motorcortex-player@2.13.0':
+    resolution: {integrity: sha512-8T2/Y/Z2LtxCBMLPEeuB+ca38/8Sg08LGtS/eQpwonjn24HjptBuDrRoJckwyAkzVI7blL6/17lNfyxCZXplbw==}
     engines: {node: '>=12'}
     peerDependencies:
       '@donkeyclip/motorcortex': '>=9.19.0'
 
-  '@donkeyclip/motorcortex-utils@0.0.5':
-    resolution: {integrity: sha512-gC/joIaueu8T3axykb92nzAEYKAdyO09Qjd0cQm7TouVF8iQBtwFCSG3fyCHzcCYa0b5ma8P2V9FW05zaZps5A==}
+  '@donkeyclip/motorcortex-utils@0.0.6':
+    resolution: {integrity: sha512-oycBpRwQoVyXl0diCVjPBjWM7iVwLCKjRj3F2S3rCeOHjHzUuU3/2bkxepq6sqlOQfOhkNgpf4z4FvSNzIuw0g==}
 
   '@donkeyclip/motorcortex@9.20.3':
     resolution: {integrity: sha512-4py/EuEcLAgakMX5Dsx7yIi7ApEc8ZUxefPhcd1Qnb2pIK/Sp+QMf6uZDu2ZpuuGBbCCCnTaN3DEq6VzGgqvXQ==}
@@ -5767,12 +5767,12 @@ snapshots:
       '@donkeyclip/motorcortex': 9.20.3
       mc-animejs-core: 3.1.5
 
-  '@donkeyclip/motorcortex-player@2.12.12(@donkeyclip/motorcortex@9.20.3)':
+  '@donkeyclip/motorcortex-player@2.13.0(@donkeyclip/motorcortex@9.20.3)':
     dependencies:
       '@donkeyclip/motorcortex': 9.20.3
-      '@donkeyclip/motorcortex-utils': 0.0.5
+      '@donkeyclip/motorcortex-utils': 0.0.6
 
-  '@donkeyclip/motorcortex-utils@0.0.5': {}
+  '@donkeyclip/motorcortex-utils@0.0.6': {}
 
   '@donkeyclip/motorcortex@9.20.3':
     dependencies:
@@ -7601,7 +7601,7 @@ snapshots:
     dependencies:
       html-minifier-terser: 7.2.0
       parse5: 7.3.0
-      webpack: 5.99.9(@swc/core@1.11.29)(webpack-cli@6.0.1)
+      webpack: 5.99.9
 
   html-minifier-terser@7.2.0:
     dependencies:
@@ -8356,7 +8356,7 @@ snapshots:
       postcss: 8.5.4
       semver: 7.7.2
     optionalDependencies:
-      webpack: 5.99.9(@swc/core@1.11.29)(webpack-cli@6.0.1)
+      webpack: 5.99.9
     transitivePeerDependencies:
       - typescript
 
