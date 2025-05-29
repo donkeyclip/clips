@@ -993,10 +993,10 @@ importers:
     dependencies:
       '@donkeyclip/motorcortex':
         specifier: ^9.20.3
-        version: 9.20.3
+        version: 9.21.0
       '@donkeyclip/motorcortex-player':
         specifier: ^2.12.12
-        version: 2.12.12(@donkeyclip/motorcortex@9.20.3)
+        version: 2.13.0(@donkeyclip/motorcortex@9.21.0)
       '@swc/core':
         specifier: ^1.11.29
         version: 1.11.29
@@ -1603,11 +1603,23 @@ packages:
     peerDependencies:
       '@donkeyclip/motorcortex': '>=9.19.0'
 
+  '@donkeyclip/motorcortex-player@2.13.0':
+    resolution: {integrity: sha512-8T2/Y/Z2LtxCBMLPEeuB+ca38/8Sg08LGtS/eQpwonjn24HjptBuDrRoJckwyAkzVI7blL6/17lNfyxCZXplbw==}
+    engines: {node: '>=12'}
+    peerDependencies:
+      '@donkeyclip/motorcortex': '>=9.19.0'
+
   '@donkeyclip/motorcortex-utils@0.0.5':
     resolution: {integrity: sha512-gC/joIaueu8T3axykb92nzAEYKAdyO09Qjd0cQm7TouVF8iQBtwFCSG3fyCHzcCYa0b5ma8P2V9FW05zaZps5A==}
 
+  '@donkeyclip/motorcortex-utils@0.0.6':
+    resolution: {integrity: sha512-oycBpRwQoVyXl0diCVjPBjWM7iVwLCKjRj3F2S3rCeOHjHzUuU3/2bkxepq6sqlOQfOhkNgpf4z4FvSNzIuw0g==}
+
   '@donkeyclip/motorcortex@9.20.3':
     resolution: {integrity: sha512-4py/EuEcLAgakMX5Dsx7yIi7ApEc8ZUxefPhcd1Qnb2pIK/Sp+QMf6uZDu2ZpuuGBbCCCnTaN3DEq6VzGgqvXQ==}
+
+  '@donkeyclip/motorcortex@9.21.0':
+    resolution: {integrity: sha512-yhXXI5pwOei3AovAI6gOJbhMytf01qcZlm07iwSG7BAuuM7UhVLbVQGZqfHd9L52FyOnyrSzuLLO+luzGmPY8g==}
 
   '@esbuild/aix-ppc64@0.25.5':
     resolution: {integrity: sha512-9o3TMmpmftaCMepOdA5k/yDw8SfInyzWWTjYTFCX3kPSDJMROQTb8jg+h9Cnwnmm1vOzvxN7gIfB5V2ewpjtGA==}
@@ -5772,9 +5784,21 @@ snapshots:
       '@donkeyclip/motorcortex': 9.20.3
       '@donkeyclip/motorcortex-utils': 0.0.5
 
+  '@donkeyclip/motorcortex-player@2.13.0(@donkeyclip/motorcortex@9.21.0)':
+    dependencies:
+      '@donkeyclip/motorcortex': 9.21.0
+      '@donkeyclip/motorcortex-utils': 0.0.6
+
   '@donkeyclip/motorcortex-utils@0.0.5': {}
 
+  '@donkeyclip/motorcortex-utils@0.0.6': {}
+
   '@donkeyclip/motorcortex@9.20.3':
+    dependencies:
+      expr-eval: 2.0.2
+      fastest-validator: 1.19.1
+
+  '@donkeyclip/motorcortex@9.21.0':
     dependencies:
       expr-eval: 2.0.2
       fastest-validator: 1.19.1
