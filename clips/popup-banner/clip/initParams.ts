@@ -1,6 +1,6 @@
 export default [
   {
-    name: "Blue medium",
+    name: "Jewelry",
     value: {
       products: [
         {
@@ -13,22 +13,21 @@ export default [
         {
           featured_image:
             "https://donkeyclip.github.io/clips/clips/popup-banner/images/image2.webp",
-          title:
-            "✨VIRAL MYSTERY BOX – Σετ 3 Ατσάλινα Σκουλαρίκια & Γυαλι Ηλίου σε Χρυσό ή Ασημί",
+          title: "✨VIRAL MYSTERY BOX – Set of 3 Earings & Sunglasses ✨",
           old_price: "45,99€",
           price: "31,99€",
         },
         {
           featured_image:
             "https://donkeyclip.github.io/clips/clips/popup-banner/images/image3.webp",
-          title: "Mystery Boxes No4 set ατσάλινα κοσμήματα 5 τεμάχια",
+          title: "Mystery Box No4 - 5 pieces of jewelry ",
           old_price: "",
           price: "31,99€",
         },
       ],
       title: "Mystery Boxes",
       subtitle:
-        "Μοναδικές Εκπλήξεις από την Pnoe Studio! Το πιο στυλάτο box είναι εδώ και σε προκαλεί να το ανοίξεις!",
+        "Unique surprises! The most stylish boxes are here and dares you to open them!",
 
       cta: "SHOP NOW",
 
