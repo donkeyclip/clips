@@ -87,6 +87,7 @@ const config = (entryPoint: string): webpack.Configuration => {
       hot: true,
       static: [path.join(__dirname, "../cli/public"), entryFolder],
       open: "https://code.donkeyclip.com",
+      allowedHosts: "all",
     },
   };
 };

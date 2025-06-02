@@ -15,10 +15,10 @@
     "eslint-config-custom": "workspace:*",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.3",
-    "pnpm": "^10.11.0",
+    "pnpm": "^10.11.1",
     "prettier": "^3.5.3",
     "tsconfig": "workspace:*",
-    "turbo": "^2.5.3"
+    "turbo": "^2.5.4"
   },
   "packageManager": "pnpm@10.11.0",
   "name": "clip"

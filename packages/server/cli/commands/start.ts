@@ -11,8 +11,12 @@ export default function start(entryPoint: string) {
 
   return server.startCallback(() => {
     ["SIGINT", "SIGTERM"].forEach(function (sig) {
-      process.on(sig, function () {
-        server.close();
+      process.on(sig, async function () {
+        try {
+          await server.stop();
+        } catch (e) {
+          console.error("Error stopping the server:", e);
+        }
         process.exit();
       });
     });

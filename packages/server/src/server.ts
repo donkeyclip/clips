@@ -81,7 +81,7 @@ export function renderDonkeyclip({
     try {
       playerOptions = JSON.parse(atob(searchOptions.settings));
     } catch (e) {
-      console.error("Invalid options:", searchOptions.settings);
+      console.error("Invalid options:", searchOptions.settings, e);
     }
   }
 
