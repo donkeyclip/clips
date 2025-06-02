@@ -1,18 +1,32 @@
 name: Install frontend deps
 description: setup node + pnpm and install dependencies
+
+inputs:
+  filter:
+    description: package to filter install to
+    required: false
+    default: ""
+
 runs:
   using: composite
   steps:
+    - id: get_pnpm_version
+      name: Get pnpm version from package.json
+      shell: bash
+      run: |
+        pnpmVersion=$(grep -o '"packageManager": *"pnpm@[^"]*"' "$GITHUB_WORKSPACE/package.json" | sed -E 's/.*pnpm@([^"]+)".*/\1/')
+        echo "pnpm_version=$pnpmVersion" >> $GITHUB_OUTPUT
+
     - uses: pnpm/action-setup@v4
       with:
-        version: 8
+        version: ${{ steps.get_pnpm_version.outputs.pnpm_version }}
         run_install: false
 
     - name: Setup Node.js environment
       uses: actions/setup-node@v4
       with:
-        node-version: 18
-        cache: "pnpm"
+        node-version: 22
+        cache: pnpm
 
     - name: Get pnpm store directory
       id: pnpm-cache
@@ -25,10 +39,16 @@ runs:
       with:
         path: |
           ${{ steps.pnpm-cache.outputs.STORE_PATH }}
-        key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+        key: ${{ runner.os }}-pnpm-store-${{ inputs.filter }}-${{ hashFiles('**/pnpm-lock.yaml') }}
         restore-keys: |
-          ${{ runner.os }}-pnpm-store-
+          ${{ runner.os }}-pnpm-store-${{ inputs.filter }}-
 
-    - name: Install dependencies
+    - name: Install all dependencies
+      if: inputs.filter == ''
       shell: bash
       run: pnpm install --frozen-lockfile
+
+    - name: Install filtered dependencies
+      if: inputs.filter != ''
+      shell: bash
+      run: pnpm install --frozen-lockfile  --filter ${{ inputs.filter }}
