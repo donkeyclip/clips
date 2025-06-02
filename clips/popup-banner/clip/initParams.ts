@@ -29,8 +29,14 @@ export default [
       subtitle:
         "Unique surprises! The most stylish boxes are here and dares you to open them!",
 
-      cta: "SHOP NOW",
+      newCta: {
+        text: "SHOP NOW",
+        color: "#F5B041",
+        font: "Roboto",
+        fontWeight: "700",
+      },
 
+      cta: "SHOP NOW",
       ctaColor: "#F5B041",
       textColor: "#DCDBEA",
       imageBgColor: "#FFFFFF",

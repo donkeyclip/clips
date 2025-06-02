@@ -1,12 +1,12 @@
 /* eslint-disable sonarjs/no-duplicate-string */
+import { opacity, top, width } from "@donkeyclip/effects";
 import { HTMLClip } from "@donkeyclip/motorcortex";
 import { renderDonkeyclip } from "@donkeyclip/server";
 import pkg from "../package.json";
 import css from "./clip.css";
 import html from "./clip.html";
-import initParams from "./initParams";
 import { gap } from "./ClipIncidents";
-import { opacity, top, width } from "@donkeyclip/effects";
+import initParams from "./initParams";
 import initParamsValidationRules from "./initParamsValidationRules";
 
 const host = document.getElementById("clip");
@@ -22,6 +22,10 @@ const clip = new HTMLClip({
   host,
   initParams: initParams[0].value,
   initParamsValidationRules: initParamsValidationRules,
+  supportedDimensions: [
+    { width: "900px", height: "600px" },
+    { width: "600px", height: "1000px" },
+  ],
   containerParams: {
     width: "900px",
     height: "600px",
