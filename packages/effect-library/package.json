@@ -27,7 +27,7 @@
     "tsconfig": "workspace:*"
   },
   "devDependencies": {
-    "@donkeyclip/motorcortex": "9.17.1",
+    "@donkeyclip/motorcortex": "9.21.0",
     "eslint": "^8.46.0",
     "eslint-config-custom": "workspace:*",
     "tsup": "7.2.0",
