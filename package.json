@@ -7,14 +7,14 @@
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "lint-staged": "lint-staged",
-    "prepare": "husky install",
+    "prepare": "husky",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
-    "eslint": "^8.46.0",
+    "eslint": "^8.57.1",
     "eslint-config-custom": "workspace:*",
-    "husky": "^8.0.3",
-    "lint-staged": "^13.2.3",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.0",
     "pnpm": "^10.11.1",
     "prettier": "^3.5.3",
     "tsconfig": "workspace:*",

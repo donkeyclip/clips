@@ -1,9 +1,1 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
-
-# if [ "$(git status | grep -E '\.go' -c)" -gt 0 ]; then
-#   echo "Linting go files"
-#   golangci-lint run --fix
-#   git add "$(git status | grep -E '\.go' | rev | cut -d' ' -f 1 | rev)"
-# fi
 pnpm lint-staged

@@ -22,8 +22,9 @@
     "donkeyclip"
   ],
   "dependencies": {
-    "@donkeyclip/motorcortex": "^9.20.3",
-    "@donkeyclip/motorcortex-player": "^2.12.12",
+    "@donkeyclip/motorcortex": "^9.22.0",
+    "@donkeyclip/motorcortex-player": "^2.14.4",
+    "@donkeyclip/motorcortex-player-lite": "^1.1.0",
     "@swc/core": "^1.11.29",
     "autoprefixer": "^10.4.14",
     "css-minimizer-webpack-plugin": "^7.0.2",

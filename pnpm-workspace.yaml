@@ -1,3 +1,6 @@
 packages:
-  - "clips/*"
-  - "packages/*"
+  - clips/*
+  - packages/*
+onlyBuiltDependencies:
+  - "@swc/core"
+  - esbuild

@@ -6,7 +6,8 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "outDir": "./dist/",
-    "baseUrl": "."
+    "baseUrl": ".",
+    "esModuleInterop": true
   },
   "include": ["./src", "./cli"],
   "exclude": ["dist", "node_modules"]
