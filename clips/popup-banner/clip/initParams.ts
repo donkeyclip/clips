@@ -1,46 +1,50 @@
 export default [
   {
-    name: "Jewelry",
+    name: "Blue medium",
     value: {
       products: [
         {
           featured_image:
-            "https://donkeyclip.github.io/clips/clips/popup-banner/images/image1.webp",
-          title: "Mystery Box – Cherry Edition | 🍒",
+            "https://donkeyclip.github.io/clips/clips/popup-banner/images/image1.png",
+          title: "T-shirt navy blue",
           old_price: "45,99€",
           price: "31,99€",
         },
         {
           featured_image:
-            "https://donkeyclip.github.io/clips/clips/popup-banner/images/image2.webp",
-          title: "✨VIRAL MYSTERY BOX – Set of 3 Earings & Sunglasses ✨",
+            "https://donkeyclip.github.io/clips/clips/popup-banner/images/image2.png",
+          title: "T-shirt orange with smile stamp 😊",
           old_price: "45,99€",
           price: "31,99€",
         },
         {
           featured_image:
-            "https://donkeyclip.github.io/clips/clips/popup-banner/images/image3.webp",
-          title: "Mystery Box No4 - 5 pieces of jewelry ",
+            "https://donkeyclip.github.io/clips/clips/popup-banner/images/image3.png",
+          title: "T-shirt beige with mountain-flowers stamp 🌄",
           old_price: "",
           price: "31,99€",
         },
       ],
-      title: "Mystery Boxes",
+      title: "Summer Sale On!It is all about t-shirt",
       subtitle:
-        "Unique surprises! The most stylish boxes are here and dares you to open them!",
+        "Save big on seasonal favorite. Save big on seasonal favorite. Save big on season favorite t-shirts and trousers",
 
-      cta: "SHOP NOW",
-
-      ctaColor: "#F5B041",
-      textColor: "#DCDBEA",
+      cta: "START SHOPPING",
+      logo: {
+        default:
+          "https://donkeyclip.github.io/clips/clips/popup-banner/images/logo.png",
+      },
+      ctaColor: "#5d0a0a",
+      textColor: "#000000",
       imageBgColor: "#FFFFFF",
-      textBgColor: "#5d0a0a",
+      textBgColor: "#fff",
       productTextColor: "#5d0a0a",
 
       imagePositioning: "cover",
-      countdownEnabled: false,
-      countadownEndDate: "",
-      countdownStyles: "",
+      imageClipPath: true,
+      countdownEnabled: true,
+      countdownEndDate: 99950000,
+      fontFamily: "Eczar",
     },
   },
 ];

@@ -1,12 +1,25 @@
 export default {
   title: { label: "Title", type: "string" },
   subtitle: { label: "Subtitle", type: "string" },
+  logo: { label: "Logo", type: "img" },
   cta: { label: "CTA Text", type: "string" },
   ctaColor: { label: "CTA & Lines Color", type: "color" },
   textColor: { label: "Banner Text Color", type: "color" },
   imageBgColor: { label: "Product Background Color", type: "color" },
   textBgColor: { label: "Banner Background Color", type: "color" },
   productTextColor: { label: "Product's Text Color", type: "color" },
+  fontFamily: {
+    label: "Font Family",
+    type: "enum",
+    values: ["Eczar", "Inter", "Poppins", "Jura"],
+  },
+  imagePositioning: {
+    label: "Image Positioning",
+    type: "enum",
+    values: ["cover", "contain"],
+  },
+  countdownEnabled: { label: "Countdown Enabled", type: "boolean" },
+  countdownEndDate: { label: "Countdown Milliseconds", type: "number" },
   products: {
     label: "Products",
     type: "array",
