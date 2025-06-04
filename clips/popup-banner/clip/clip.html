@@ -1,64 +1,132 @@
 <div class="container">
   <div class="info-wrapper">
-    <div class="info">
-      <div class="details-wrapper">
-        <div class="abstract-lines2-wrapper">
-          <svg
-            width="119"
-            height="8"
-            viewBox="0 0 119 8"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g clip-path="url(#clip0_1055_2408)">
-              <line x1="137.801" y1="-149.199" x2="-12.1058" y2="0.707441" />
-              <line x1="142.751" y1="-144.249" x2="-7.15563" y2="5.65715" />
-              <line x1="147.7" y1="-139.3" x2="-2.20641" y2="10.6069" />
-              <line x1="152.65" y1="-134.35" x2="2.74378" y2="15.5566" />
-              <line x1="157.6" y1="-129.4" x2="7.693" y2="20.5068" />
-              <line x1="162.55" y1="-124.45" x2="12.6432" y2="25.4565" />
-              <line x1="167.499" y1="-119.5" x2="17.5924" y2="30.4062" />
-              <line x1="172.449" y1="-114.551" x2="22.5426" y2="35.3559" />
-              <line x1="177.398" y1="-109.601" x2="27.4918" y2="40.3056" />
-              <line x1="182.349" y1="-104.651" x2="32.442" y2="45.2553" />
-              <line x1="187.299" y1="-99.7016" x2="37.3922" y2="50.205" />
-              <line x1="192.248" y1="-94.7519" x2="42.3414" y2="55.1547" />
-              <line x1="197.198" y1="-89.8022" x2="47.2916" y2="60.1044" />
-              <line x1="202.147" y1="-84.8525" x2="52.2409" y2="65.0541" />
-              <line x1="207.098" y1="-79.9023" x2="57.191" y2="70.0043" />
-              <line x1="212.047" y1="-74.9526" x2="62.1403" y2="74.954" />
-            </g>
-            <defs>
-              <clipPath id="clip0_1055_2408">
-                <rect width="119" height="8" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-        </div>
+    <div class="info-cta">
+      <div class="info">
+        <div class="details-wrapper">
+          <img class="logo" src="{{initParams.logo.default}}" alt="logo" />
+          <div class="abstract-lines2-wrapper">
+            <svg
+              width="119"
+              height="8"
+              viewBox="0 0 119 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_1055_2408)">
+                <line x1="137.801" y1="-149.199" x2="-12.1058" y2="0.707441" />
+                <line x1="142.751" y1="-144.249" x2="-7.15563" y2="5.65715" />
+                <line x1="147.7" y1="-139.3" x2="-2.20641" y2="10.6069" />
+                <line x1="152.65" y1="-134.35" x2="2.74378" y2="15.5566" />
+                <line x1="157.6" y1="-129.4" x2="7.693" y2="20.5068" />
+                <line x1="162.55" y1="-124.45" x2="12.6432" y2="25.4565" />
+                <line x1="167.499" y1="-119.5" x2="17.5924" y2="30.4062" />
+                <line x1="172.449" y1="-114.551" x2="22.5426" y2="35.3559" />
+                <line x1="177.398" y1="-109.601" x2="27.4918" y2="40.3056" />
+                <line x1="182.349" y1="-104.651" x2="32.442" y2="45.2553" />
+                <line x1="187.299" y1="-99.7016" x2="37.3922" y2="50.205" />
+                <line x1="192.248" y1="-94.7519" x2="42.3414" y2="55.1547" />
+                <line x1="197.198" y1="-89.8022" x2="47.2916" y2="60.1044" />
+                <line x1="202.147" y1="-84.8525" x2="52.2409" y2="65.0541" />
+                <line x1="207.098" y1="-79.9023" x2="57.191" y2="70.0043" />
+                <line x1="212.047" y1="-74.9526" x2="62.1403" y2="74.954" />
+              </g>
+              <defs>
+                <clipPath id="clip0_1055_2408">
+                  <rect width="119" height="8" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
 
-        <div class="text title">{{initParams.title}}</div>
-        <div class="text subtitle">{{initParams.subtitle}}</div>
+          <div class="text title">{{initParams.title}}</div>
+          <div class="text subtitle">{{initParams.subtitle}}</div>
+        </div>
+        <div class="info-product-wrapper">
+          <div
+            class="info-product"
+            mc-for="key,item"
+            mc-of="initParams.products"
+          >
+            <div class="info-product-details">
+              <div class="product-description">{{item.title}}</div>
+              <div class="price-wrapper">
+                <div class="new-price" mc-if="item.price">{{item.price}}</div>
+                <div class="old-price" mc-if="item.old_price">
+                  <div mc-if="item.price">{{item.old_price}}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="cta">{{initParams.cta}}</div>
+      <div class="cta-countdown">
+        <div class="cta">{{initParams.cta}}</div>
+        <div class="countdown" mc-if="initParams.countdownEnabled">
+          <div class="countdown-wrapper">
+            <div class="value" id="free-days">0</div>
+            <div class="d">D</div>
+            <div class="countdown-text">DAYS</div>
+          </div>
+          <div class="countdown-wrapper">
+            <div class="value" id="free-hours">00</div>
+            <div class="d">:</div>
+            <div class="countdown-text">HOURS</div>
+          </div>
+          <div class="countdown-wrapper">
+            <div class="value" id="free-minutes">00</div>
+            <div class="d">:</div>
+            <div class="countdown-text">MINUTES</div>
+          </div>
+          <div class="countdown-wrapper">
+            <div class="value" id="free-seconds">00</div>
+            <div class="countdown-text">SECONDS</div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="countdown"></div>
   </div>
 
   <div class="products">
     <div class="product-wrapper" mc-for="key,item" mc-of="initParams.products">
       <div class="product">
-        <img src="{{item.featured_image}}" alt="product image" />
+        <img
+          src="{{item.featured_image}}"
+          alt="product image"
+          mc-if="initParams.imageClipPath == false"
+        />
+        <img
+          src="{{item.featured_image}}"
+          alt="product image"
+          mc-if="initParams.imageClipPath == true"
+          class="shape"
+        />
+
         <div class="product-details">
           <div class="product-description">{{item.title}}</div>
           <div class="price-wrapper">
-            <div class="new-price" mc-if="item.price !== ''">
-              {{item.price}}
-            </div>
-            <div class="old-price" mc-if="item.old_price !== ''">
-              {{item.old_price}}
+            <div class="new-price" mc-if="item.price">{{item.price}}</div>
+            <div class="old-price" mc-if="item.old_price">
+              <div mc-if="item.price">{{item.old_price}}</div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="countdown-mini" mc-if="initParams.countdownEnabled">
+      <div class="countdown-wrapper">
+        <div class="value" id="free-days">0</div>
+        <div class="d">D</div>
+      </div>
+      <div class="countdown-wrapper">
+        <div class="value" id="free-hours">00</div>
+        <div class="d">:</div>
+      </div>
+      <div class="countdown-wrapper">
+        <div class="value" id="free-minutes">00</div>
+        <div class="d">:</div>
+      </div>
+      <div class="countdown-wrapper">
+        <div class="value" id="free-seconds">00</div>
       </div>
     </div>
   </div>

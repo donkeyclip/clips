@@ -23,7 +23,7 @@
   ],
   "devDependencies": {
     "@donkeyclip/effects": "workspace:*",
-    "@donkeyclip/motorcortex": "9.22.0",
+    "@donkeyclip/motorcortex": "9.22.1",
     "@donkeyclip/server": "workspace:*",
     "eslint": "^8.46.0",
     "eslint-config-custom": "workspace:*",
@@ -33,6 +33,7 @@
     "tsconfig": "workspace:*"
   },
   "dependencies": {
+    "@donkeyclip/dc-countdown-plugin": "^0.0.3",
     "@donkeyclip/motorcortex-anime": "^3.1.1",
     "esbuild-loader": "^4.3.0",
     "html-loader": "^5.1.0",
