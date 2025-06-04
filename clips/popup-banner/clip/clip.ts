@@ -9,6 +9,10 @@ import { gap } from "./ClipIncidents";
 import { opacity, top, width } from "@donkeyclip/effects";
 import initParamsValidationRules from "./initParamsValidationRules";
 
+import { loadPlugin } from "@donkeyclip/motorcortex";
+import Countdown from "@donkeyclip/dc-countdown-plugin";
+const CountdownPlugin = loadPlugin(Countdown);
+
 const host = document.getElementById("clip");
 
 if (!host)
@@ -22,6 +26,11 @@ const clip = new HTMLClip({
   host,
   initParams: initParams[0].value,
   initParamsValidationRules: initParamsValidationRules,
+  supportedDimensions: [
+    { width: "900px", height: "600px" },
+    { width: "350px", height: "650px" },
+    { width: "900px", height: "150px" },
+  ],
   containerParams: {
     width: "900px",
     height: "600px",
@@ -57,6 +66,15 @@ clip.addIncident(
   }),
   duration350,
 );
+clip.addIncident(
+  width({
+    value: "100%",
+    selector: ".info-product",
+    delay: "@expression(3000*index)",
+    duration: duration750,
+  }),
+  duration350,
+);
 
 clip.addIncident(
   width({
@@ -77,7 +95,7 @@ clip.addIncident(
 clip.addIncident(
   opacity({
     value: 1,
-    selector: ".text",
+    selector: ".text,.logo",
     duration: duration350,
   }),
   duration350,
@@ -89,7 +107,7 @@ clip.addIncident(
 clip.addIncident(
   top({
     value: "0px",
-    selector: ".info",
+    selector: ".info-cta",
     duration: duration350,
   }),
   duration350,
@@ -98,7 +116,7 @@ clip.addIncident(
 clip.addIncident(
   opacity({
     value: 1,
-    selector: ".cta",
+    selector: ".cta-countdown",
     duration: duration350,
   }),
   duration750,
@@ -126,7 +144,7 @@ clip.addIncident(
 clip.addIncident(
   opacity({
     value: 0,
-    selector: ".text,.cta",
+    selector: ".text,.cta-countdown",
     delay: "@expression(initParams.products.length*3000)",
     duration: duration350,
   }),
@@ -145,11 +163,72 @@ clip.addIncident(
 clip.addIncident(
   top({
     value: "30px",
-    selector: ".info",
+    selector: ".info-cta",
     duration: duration350,
     delay: "@expression(initParams.products.length*3000)",
   }),
   duration750 + duration350,
 );
+const newEffectHours = new CountdownPlugin.Countdown(
+  {
+    type: "hours",
+    forceDoubleDigit: true,
+    operation: "free",
+    animatedAttrs: {
+      time: "@initParams.countdownEndDate",
+    },
+  },
+  {
+    selector: `#free-hours`,
+    duration: 1,
+  },
+);
+const newEffectMinutes = new CountdownPlugin.Countdown(
+  {
+    type: "minutes",
+    forceDoubleDigit: true,
+    operation: "free",
+    animatedAttrs: {
+      time: "@initParams.countdownEndDate",
+    },
+  },
+  {
+    selector: `#free-minutes`,
+    duration: 1,
+  },
+);
+const newEffectSeconds = new CountdownPlugin.Countdown(
+  {
+    type: "seconds",
+    forceDoubleDigit: true,
+    operation: "free",
+    animatedAttrs: {
+      time: "@initParams.countdownEndDate",
+    },
+  },
+  {
+    selector: `#free-seconds`,
+    duration: 1,
+  },
+);
+const newEffectDays = new CountdownPlugin.Countdown(
+  {
+    type: "days",
+    forceDoubleDigit: false,
+    operation: "free",
+    animatedAttrs: {
+      time: "@initParams.countdownEndDate",
+    },
+  },
+  {
+    selector: `#free-days`,
+    duration: 1,
+  },
+);
+
+clip.addIncident(newEffectDays, 0);
+clip.addIncident(newEffectHours, 0);
+clip.addIncident(newEffectMinutes, 0);
+clip.addIncident(newEffectSeconds, 0);
 
 export default renderDonkeyclip({ clipId: pkg.id, initParams, clip });

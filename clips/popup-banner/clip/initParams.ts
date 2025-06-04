@@ -31,17 +31,22 @@ export default [
         "Μοναδικές Εκπλήξεις από την Pnoe Studio! Το πιο στυλάτο box είναι εδώ και σε προκαλεί να το ανοίξεις!",
 
       cta: "SHOP NOW",
-
-      ctaColor: "#F5B041",
-      textColor: "#DCDBEA",
+      logo: {
+        default:
+          "https://pnoestudio.com/cdn/shop/files/PNOE_75_x_75_cm_.zip_-_1_003_40e2acfe-02ac-4c79-89bc-e8bed3e91aa7.png?v=1740744941&width=400",
+      },
+      ctaColor: "#5d0a0a",
+      textColor: "#000000",
       imageBgColor: "#FFFFFF",
-      textBgColor: "#5d0a0a",
+      textBgColor: "#fff",
       productTextColor: "#5d0a0a",
 
       imagePositioning: "cover",
-      countdownEnabled: false,
-      countadownEndDate: "",
+      imageClipPath: true,
+      countdownEnabled: true,
+      countdownEndDate: 99950000,
       countdownStyles: "",
+      fontFamily: "Eczar",
     },
   },
 ];

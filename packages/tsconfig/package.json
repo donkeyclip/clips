@@ -7,6 +7,6 @@
     "clip.json"
   ],
   "dependencies": {
-    "@donkeyclip/motorcortex": "9.21.0"
+    "@donkeyclip/motorcortex": "9.22.0"
   }
 }
