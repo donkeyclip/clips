@@ -226,6 +226,10 @@
   display: none;
 }
 
+.countdown-mini{
+  display: none;
+}
+
 .countdown{
   display: flex;
   flex-direction: row;
@@ -339,6 +343,10 @@ letter-spacing: 1.1px;
 
   .cta-countdown{
     gap: 30px;
+  }
+
+  .countdown-mini{
+    display: none;
   }
 
   .title{
@@ -457,7 +465,7 @@ letter-spacing: 1.1px;
     position: absolute;
     justify-content: flex-start;
     align-items: flex-start;
-    padding-top: 50px;
+    padding-top: 25px;
     padding-left: 25px;
     left: 200px;
   }
@@ -467,8 +475,10 @@ letter-spacing: 1.1px;
   }
 
   .title{
+    width: 436px;
     font-size: 23px;
-    line-height: 20px;
+    line-height: 26px;
+    -webkit-line-clamp: 2;
   }
 
   .subtitle{
@@ -522,6 +532,10 @@ letter-spacing: 1.1px;
     -webkit-line-clamp: 1;
   }
 
+  .countdown-mini{
+    display: none;
+  }
+
   .countdown{
     gap: 5px;
     width: 150px;
@@ -550,6 +564,184 @@ letter-spacing: 1.1px;
   .d{
     font-size: 15px;
     line-height: 15px;
+    display: block;
+  }
+}
+
+@container clip-root (max-height : 140px){
+
+.logo{
+  display: none;
+}
+
+.info-cta{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.cta-countdown{
+  display: none;
+}
+
+.products-bg{
+  position: absolute;
+  width: 100%;
+  height: 100px;
+}
+
+  .products {
+    width: 100px;
+    height: 100px;
+    background: var(--image-bg-color);
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .products img{
+    width: 100px;
+    height: 100px;
+    top: 0px;
+ 
+  }
+
+  .shape{
+    top: 11px !important;
+    margin-left: 20px;
+    clip-path: path('M80.9442 32.7766C81.2322 52.7026 67.2358 69.0616 44.0883 69.3962C35.0194 69.5273 24.0538 58.3429 18.6117 52.4728C13.1696 46.6028 -0.773605 38.1165 0.928846 27.5799C3.95643 8.84196 17.9144 8.24951 32.4379 5.08164C41.7548 3.04942 47.5025 1.31436 55.459 0.252805C71.2487 -1.85387 80.6562 12.8506 80.9442 32.7766Z');
+  }
+
+  .product-wrapper {
+    position: absolute;
+    height: 100px;
+    background: var(--image-bg-color);
+    position: absolute;
+    right: 0px;
+    width: 0;
+    overflow: hidden;
+  }
+  .product {
+    position: absolute;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .info-wrapper{
+    width: 293px;
+    height: 100px;
+    position: absolute;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 25px;
+    padding-left: 25px;
+    left: 100px;
+  }
+
+  .details-wrapper{
+    flex-direction: column-reverse;
+  }
+
+  .title{
+    font-size: 15px;
+    line-height: 16px;
+    margin-bottom: -10px;
+    max-width: 259px;
+    -webkit-line-clamp: 2;
+  }
+
+  .subtitle{
+    display: none;
+  }
+
+  .abstract-lines1-wrapper{
+    top: 6px;
+    left: 6px;
+    transform: scale(0.2);
+  }
+
+  .abstract-lines2-wrapper{
+    transform-origin: top left;
+    transform: scale(0.35);
+    display: block;
+    margin-bottom: -18px;
+  }
+
+  .product-details {
+    display: none;
+  }
+
+  .info-product-wrapper{
+    width: 259px;
+    position: relative;
+    height: 40px;
+  }
+  .info-product{
+    width: 259px;
+    height: 40px;
+    position: absolute;
+    right: 0px;
+    width: 0;
+    overflow: hidden;
+  } 
+  .info-product-details{
+    width: 259px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    color: var(--text-color);
+    right: 0;
+    background-color: var(--text-bg-color);
+
+  }
+
+  .product-description {
+    max-width: 259px;
+    -webkit-line-clamp: 1;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .price-wrapper{
+    gap: 9px;
+    font-size: 13px;
+  }
+
+  .countdown-mini{
+    position: absolute;
+    width: 100px;
+    height: 17px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    background-color: var(--text-bg-color);
+    bottom: 0;
+  }
+
+  .countdown-wrapper {
+    flex-direction: row;
+    gap: 0px;
+    color: var(--cta-color);
+    width: 14px;
+  }
+  
+  .value {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+
+  .d{
+    font-size: 12px;
+    line-height: 12px;
     display: block;
   }
 }

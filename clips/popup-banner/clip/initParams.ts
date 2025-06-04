@@ -5,27 +5,27 @@ export default [
       products: [
         {
           featured_image:
-            "https://donkeyclip.github.io/clips/clips/popup-banner/images/image1.png",
+            "https://donkeyclip.github.io/clips/clips/popup-banner/images/image1.webp",
           title: "T-shirt navy blue",
           old_price: "45,99€",
           price: "31,99€",
         },
         {
           featured_image:
-            "https://donkeyclip.github.io/clips/clips/popup-banner/images/image2.png",
+            "https://donkeyclip.github.io/clips/clips/popup-banner/images/image2.webp",
           title: "T-shirt orange with smile stamp 😊",
           old_price: "45,99€",
           price: "31,99€",
         },
         {
           featured_image:
-            "https://donkeyclip.github.io/clips/clips/popup-banner/images/image3.png",
+            "https://donkeyclip.github.io/clips/clips/popup-banner/images/image3.webp",
           title: "T-shirt beige with mountain-flowers stamp 🌄",
           old_price: "",
           price: "31,99€",
         },
       ],
-      title: "Summer Sale On!It is all about t-shirt",
+      title: "Summer Sale On! It is all about t-shirts and outfits",
       subtitle:
         "Save big on seasonal favorite. Save big on seasonal favorite. Save big on season favorite t-shirts and trousers",
 
