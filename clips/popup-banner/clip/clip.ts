@@ -23,12 +23,12 @@ const clip = new HTMLClip({
   host,
   initParams: initParams[0].value,
   initParamsValidationRules: initParamsValidationRules,
-  // supportedDimensions: [
-  //   { width: "900px", height: "600px" },
-  //   { width: "350px", height: "650px" },
-  //   { width: "900px", height: "150px" },
-  //   { width: "393px", height: "100px" },
-  // ],
+  supportedDimensions: [
+    { width: "900px", height: "600px" },
+    { width: "350px", height: "650px" },
+    { width: "900px", height: "150px" },
+    { width: "393px", height: "100px" },
+  ],
   containerParams: {
     width: "900px",
     height: "600px",
