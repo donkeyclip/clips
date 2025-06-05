@@ -42,8 +42,7 @@ export default [
 
       imagePositioning: "cover",
       imageClipPath: true,
-      countdownEnabled: true,
-      countdownEndDate: 99950000,
+      countdownMilliseconds: 99950000,
       fontFamily: "Eczar",
     },
   },

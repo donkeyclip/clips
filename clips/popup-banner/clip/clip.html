@@ -61,7 +61,7 @@
       </div>
       <div class="cta-countdown">
         <div class="cta">{{initParams.cta}}</div>
-        <div class="countdown" mc-if="initParams.countdownEnabled">
+        <div class="countdown" mc-if="initParams.countdownMilliseconds > 0">
           <div class="countdown-wrapper">
             <div class="value" id="free-days">0</div>
             <div class="d">D</div>
@@ -112,7 +112,7 @@
         </div>
       </div>
     </div>
-    <div class="countdown-mini" mc-if="initParams.countdownEnabled">
+    <div class="countdown-mini" mc-if="initParams.countdownMilliseconds > 0">
       <div class="countdown-wrapper">
         <div class="value" id="free-days">0</div>
         <div class="d">D</div>

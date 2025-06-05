@@ -18,8 +18,7 @@ export default {
     type: "enum",
     values: ["cover", "contain"],
   },
-  countdownEnabled: { label: "Countdown Enabled", type: "boolean" },
-  countdownEndDate: { label: "Countdown Milliseconds", type: "number" },
+  countdownMilliseconds: { label: "Countdown Milliseconds", type: "number" },
   products: {
     label: "Products",
     type: "array",

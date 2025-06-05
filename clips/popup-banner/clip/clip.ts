@@ -173,7 +173,7 @@ const newEffectHours = new CountdownPlugin.Countdown(
     forceDoubleDigit: true,
     operation: "free",
     animatedAttrs: {
-      time: "@initParams.countdownEndDate",
+      time: "@initParams.countdownMilliseconds",
     },
   },
   {
@@ -187,7 +187,7 @@ const newEffectMinutes = new CountdownPlugin.Countdown(
     forceDoubleDigit: true,
     operation: "free",
     animatedAttrs: {
-      time: "@initParams.countdownEndDate",
+      time: "@initParams.countdownMilliseconds",
     },
   },
   {
@@ -201,7 +201,7 @@ const newEffectSeconds = new CountdownPlugin.Countdown(
     forceDoubleDigit: true,
     operation: "free",
     animatedAttrs: {
-      time: "@initParams.countdownEndDate",
+      time: "@initParams.countdownMilliseconds",
     },
   },
   {
@@ -215,7 +215,7 @@ const newEffectDays = new CountdownPlugin.Countdown(
     forceDoubleDigit: false,
     operation: "free",
     animatedAttrs: {
-      time: "@initParams.countdownEndDate",
+      time: "@initParams.countdownMilliseconds",
     },
   },
   {
