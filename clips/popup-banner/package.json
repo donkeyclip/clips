@@ -23,7 +23,7 @@
   ],
   "devDependencies": {
     "@donkeyclip/effects": "workspace:*",
-    "@donkeyclip/motorcortex": "9.22.1",
+    "@donkeyclip/motorcortex": "9.22.2",
     "@donkeyclip/server": "workspace:*",
     "eslint": "^8.46.0",
     "eslint-config-custom": "workspace:*",

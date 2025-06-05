@@ -22,9 +22,9 @@
     "donkeyclip"
   ],
   "dependencies": {
-    "@donkeyclip/motorcortex": "^9.22.0",
-    "@donkeyclip/motorcortex-player": "^2.14.5",
-    "@donkeyclip/motorcortex-player-lite": "^1.1.1",
+    "@donkeyclip/motorcortex": "^9.22.2",
+    "@donkeyclip/motorcortex-player": "^2.14.6",
+    "@donkeyclip/motorcortex-player-lite": "^1.1.2",
     "@swc/core": "^1.11.31",
     "autoprefixer": "^10.4.14",
     "css-minimizer-webpack-plugin": "^7.0.2",
@@ -45,7 +45,7 @@
   },
   "devDependencies": {
     "@types/minimist": "^1.2.5",
-    "@types/node": "^22.15.29",
+    "@types/node": "^22.15.30",
     "eslint": "^8.46.0",
     "tsup": "8.5.0",
     "typescript": "5.8.3"

@@ -36,7 +36,7 @@ importers:
     dependencies:
       "@donkeyclip/motorcortex-anime":
         specifier: ^3.1.1
-        version: 3.1.1(@donkeyclip/motorcortex@9.22.1)
+        version: 3.1.1(@donkeyclip/motorcortex@9.22.2)
       esbuild-loader:
         specifier: ^4.3.0
         version: 4.3.0(webpack@5.99.9)
@@ -51,8 +51,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/effect-library
       "@donkeyclip/motorcortex":
-        specifier: 9.22.1
-        version: 9.22.1
+        specifier: 9.22.2
+        version: 9.22.2
       "@donkeyclip/server":
         specifier: workspace:*
         version: link:../../packages/server
@@ -74,7 +74,7 @@ importers:
     dependencies:
       "@donkeyclip/motorcortex-anime":
         specifier: ^3.1.1
-        version: 3.1.1(@donkeyclip/motorcortex@9.22.1)
+        version: 3.1.1(@donkeyclip/motorcortex@9.22.2)
       esbuild-loader:
         specifier: ^4.3.0
         version: 4.3.0(webpack@5.99.9)
@@ -89,8 +89,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/effect-library
       "@donkeyclip/motorcortex":
-        specifier: 9.22.1
-        version: 9.22.1
+        specifier: 9.22.2
+        version: 9.22.2
       "@donkeyclip/server":
         specifier: workspace:*
         version: link:../../packages/server
@@ -112,7 +112,7 @@ importers:
     dependencies:
       "@donkeyclip/motorcortex-anime":
         specifier: ^3.1.1
-        version: 3.1.1(@donkeyclip/motorcortex@9.22.1)
+        version: 3.1.1(@donkeyclip/motorcortex@9.22.2)
       esbuild-loader:
         specifier: ^4.3.0
         version: 4.3.0(webpack@5.99.9)
@@ -127,8 +127,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/effect-library
       "@donkeyclip/motorcortex":
-        specifier: 9.22.1
-        version: 9.22.1
+        specifier: 9.22.2
+        version: 9.22.2
       "@donkeyclip/server":
         specifier: workspace:*
         version: link:../../packages/server
@@ -150,7 +150,7 @@ importers:
     dependencies:
       "@donkeyclip/motorcortex-anime":
         specifier: ^3.1.1
-        version: 3.1.1(@donkeyclip/motorcortex@9.22.1)
+        version: 3.1.1(@donkeyclip/motorcortex@9.22.2)
       esbuild-loader:
         specifier: ^4.3.0
         version: 4.3.0(webpack@5.99.9)
@@ -165,8 +165,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/effect-library
       "@donkeyclip/motorcortex":
-        specifier: 9.22.1
-        version: 9.22.1
+        specifier: 9.22.2
+        version: 9.22.2
       "@donkeyclip/server":
         specifier: workspace:*
         version: link:../../packages/server
@@ -188,7 +188,7 @@ importers:
     dependencies:
       "@donkeyclip/motorcortex-anime":
         specifier: ^3.1.1
-        version: 3.1.1(@donkeyclip/motorcortex@9.22.1)
+        version: 3.1.1(@donkeyclip/motorcortex@9.22.2)
       esbuild-loader:
         specifier: ^4.3.0
         version: 4.3.0(webpack@5.99.9)
@@ -203,8 +203,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/effect-library
       "@donkeyclip/motorcortex":
-        specifier: 9.22.1
-        version: 9.22.1
+        specifier: 9.22.2
+        version: 9.22.2
       "@donkeyclip/server":
         specifier: workspace:*
         version: link:../../packages/server
@@ -226,7 +226,7 @@ importers:
     dependencies:
       "@donkeyclip/motorcortex-anime":
         specifier: ^3.1.1
-        version: 3.1.1(@donkeyclip/motorcortex@9.22.1)
+        version: 3.1.1(@donkeyclip/motorcortex@9.22.2)
       esbuild-loader:
         specifier: ^4.3.0
         version: 4.3.0(webpack@5.99.9)
@@ -241,8 +241,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/effect-library
       "@donkeyclip/motorcortex":
-        specifier: 9.22.1
-        version: 9.22.1
+        specifier: 9.22.2
+        version: 9.22.2
       "@donkeyclip/server":
         specifier: workspace:*
         version: link:../../packages/server
@@ -267,7 +267,7 @@ importers:
     dependencies:
       "@donkeyclip/motorcortex-anime":
         specifier: ^3.1.1
-        version: 3.1.1(@donkeyclip/motorcortex@9.22.1)
+        version: 3.1.1(@donkeyclip/motorcortex@9.22.2)
       esbuild-loader:
         specifier: ^4.3.0
         version: 4.3.0(webpack@5.99.9)
@@ -282,8 +282,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/effect-library
       "@donkeyclip/motorcortex":
-        specifier: 9.22.1
-        version: 9.22.1
+        specifier: 9.22.2
+        version: 9.22.2
       "@donkeyclip/server":
         specifier: workspace:*
         version: link:../../packages/server
@@ -305,7 +305,7 @@ importers:
     dependencies:
       "@donkeyclip/motorcortex-anime":
         specifier: ^3.1.1
-        version: 3.1.1(@donkeyclip/motorcortex@9.22.1)
+        version: 3.1.1(@donkeyclip/motorcortex@9.22.2)
       esbuild-loader:
         specifier: ^4.3.0
         version: 4.3.0(webpack@5.99.9)
@@ -320,8 +320,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/effect-library
       "@donkeyclip/motorcortex":
-        specifier: 9.22.1
-        version: 9.22.1
+        specifier: 9.22.2
+        version: 9.22.2
       "@donkeyclip/server":
         specifier: workspace:*
         version: link:../../packages/server
@@ -346,10 +346,10 @@ importers:
     dependencies:
       "@donkeyclip/dc-countdown-plugin":
         specifier: ^0.0.5
-        version: 0.0.5(@donkeyclip/motorcortex@9.22.1)(rollup@4.41.1)
+        version: 0.0.5(@donkeyclip/motorcortex@9.22.2)(rollup@4.41.1)
       "@donkeyclip/motorcortex-anime":
         specifier: ^3.1.1
-        version: 3.1.1(@donkeyclip/motorcortex@9.22.1)
+        version: 3.1.1(@donkeyclip/motorcortex@9.22.2)
       esbuild-loader:
         specifier: ^4.3.0
         version: 4.3.0(webpack@5.99.9)
@@ -364,8 +364,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/effect-library
       "@donkeyclip/motorcortex":
-        specifier: 9.22.1
-        version: 9.22.1
+        specifier: 9.22.2
+        version: 9.22.2
       "@donkeyclip/server":
         specifier: workspace:*
         version: link:../../packages/server
@@ -387,7 +387,7 @@ importers:
     dependencies:
       "@donkeyclip/motorcortex-anime":
         specifier: ^3.1.1
-        version: 3.1.1(@donkeyclip/motorcortex@9.22.1)
+        version: 3.1.1(@donkeyclip/motorcortex@9.22.2)
       esbuild-loader:
         specifier: ^4.3.0
         version: 4.3.0(webpack@5.99.9)
@@ -402,8 +402,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/effect-library
       "@donkeyclip/motorcortex":
-        specifier: 9.22.1
-        version: 9.22.1
+        specifier: 9.22.2
+        version: 9.22.2
       "@donkeyclip/server":
         specifier: workspace:*
         version: link:../../packages/server
@@ -428,7 +428,7 @@ importers:
     dependencies:
       "@donkeyclip/motorcortex-anime":
         specifier: ^3.1.1
-        version: 3.1.1(@donkeyclip/motorcortex@9.22.1)
+        version: 3.1.1(@donkeyclip/motorcortex@9.22.2)
       esbuild-loader:
         specifier: ^4.3.0
         version: 4.3.0(webpack@5.99.9)
@@ -443,8 +443,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/effect-library
       "@donkeyclip/motorcortex":
-        specifier: 9.22.1
-        version: 9.22.1
+        specifier: 9.22.2
+        version: 9.22.2
       "@donkeyclip/server":
         specifier: workspace:*
         version: link:../../packages/server
@@ -466,7 +466,7 @@ importers:
     dependencies:
       "@donkeyclip/motorcortex-anime":
         specifier: ^3.1.1
-        version: 3.1.1(@donkeyclip/motorcortex@9.22.1)
+        version: 3.1.1(@donkeyclip/motorcortex@9.22.2)
       esbuild-loader:
         specifier: ^4.3.0
         version: 4.3.0(webpack@5.99.9)
@@ -481,8 +481,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/effect-library
       "@donkeyclip/motorcortex":
-        specifier: 9.22.1
-        version: 9.22.1
+        specifier: 9.22.2
+        version: 9.22.2
       "@donkeyclip/server":
         specifier: workspace:*
         version: link:../../packages/server
@@ -504,7 +504,7 @@ importers:
     dependencies:
       "@donkeyclip/motorcortex-anime":
         specifier: ^3.1.1
-        version: 3.1.1(@donkeyclip/motorcortex@9.22.1)
+        version: 3.1.1(@donkeyclip/motorcortex@9.22.2)
       esbuild-loader:
         specifier: ^4.3.0
         version: 4.3.0(webpack@5.99.9)
@@ -519,8 +519,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/effect-library
       "@donkeyclip/motorcortex":
-        specifier: 9.22.1
-        version: 9.22.1
+        specifier: 9.22.2
+        version: 9.22.2
       "@donkeyclip/server":
         specifier: workspace:*
         version: link:../../packages/server
@@ -542,7 +542,7 @@ importers:
     dependencies:
       "@donkeyclip/motorcortex-anime":
         specifier: ^3.1.1
-        version: 3.1.1(@donkeyclip/motorcortex@9.22.1)
+        version: 3.1.1(@donkeyclip/motorcortex@9.22.2)
       esbuild-loader:
         specifier: ^4.3.0
         version: 4.3.0(webpack@5.99.9)
@@ -557,8 +557,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/effect-library
       "@donkeyclip/motorcortex":
-        specifier: 9.22.1
-        version: 9.22.1
+        specifier: 9.22.2
+        version: 9.22.2
       "@donkeyclip/server":
         specifier: workspace:*
         version: link:../../packages/server
@@ -580,7 +580,7 @@ importers:
     dependencies:
       "@donkeyclip/motorcortex-anime":
         specifier: ^3.1.1
-        version: 3.1.1(@donkeyclip/motorcortex@9.22.1)
+        version: 3.1.1(@donkeyclip/motorcortex@9.22.2)
       esbuild-loader:
         specifier: ^4.3.0
         version: 4.3.0(webpack@5.99.9)
@@ -595,8 +595,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/effect-library
       "@donkeyclip/motorcortex":
-        specifier: 9.22.1
-        version: 9.22.1
+        specifier: 9.22.2
+        version: 9.22.2
       "@donkeyclip/server":
         specifier: workspace:*
         version: link:../../packages/server
@@ -618,7 +618,7 @@ importers:
     dependencies:
       "@donkeyclip/motorcortex-anime":
         specifier: ^3.1.1
-        version: 3.1.1(@donkeyclip/motorcortex@9.22.1)
+        version: 3.1.1(@donkeyclip/motorcortex@9.22.2)
       esbuild-loader:
         specifier: ^4.3.0
         version: 4.3.0(webpack@5.99.9)
@@ -633,8 +633,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/effect-library
       "@donkeyclip/motorcortex":
-        specifier: 9.22.1
-        version: 9.22.1
+        specifier: 9.22.2
+        version: 9.22.2
       "@donkeyclip/server":
         specifier: workspace:*
         version: link:../../packages/server
@@ -656,7 +656,7 @@ importers:
     dependencies:
       "@donkeyclip/motorcortex-anime":
         specifier: ^3.1.1
-        version: 3.1.1(@donkeyclip/motorcortex@9.22.1)
+        version: 3.1.1(@donkeyclip/motorcortex@9.22.2)
       esbuild-loader:
         specifier: ^4.3.0
         version: 4.3.0(webpack@5.99.9)
@@ -671,8 +671,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/effect-library
       "@donkeyclip/motorcortex":
-        specifier: 9.22.1
-        version: 9.22.1
+        specifier: 9.22.2
+        version: 9.22.2
       "@donkeyclip/server":
         specifier: workspace:*
         version: link:../../packages/server
@@ -694,7 +694,7 @@ importers:
     dependencies:
       "@donkeyclip/motorcortex-anime":
         specifier: ^3.1.1
-        version: 3.1.1(@donkeyclip/motorcortex@9.22.1)
+        version: 3.1.1(@donkeyclip/motorcortex@9.22.2)
       esbuild-loader:
         specifier: ^4.3.0
         version: 4.3.0(webpack@5.99.9)
@@ -709,8 +709,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/effect-library
       "@donkeyclip/motorcortex":
-        specifier: 9.22.1
-        version: 9.22.1
+        specifier: 9.22.2
+        version: 9.22.2
       "@donkeyclip/server":
         specifier: workspace:*
         version: link:../../packages/server
@@ -732,7 +732,7 @@ importers:
     dependencies:
       "@donkeyclip/motorcortex-anime":
         specifier: ^3.1.1
-        version: 3.1.1(@donkeyclip/motorcortex@9.22.1)
+        version: 3.1.1(@donkeyclip/motorcortex@9.22.2)
       esbuild-loader:
         specifier: ^4.3.0
         version: 4.3.0(webpack@5.99.9)
@@ -747,8 +747,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/effect-library
       "@donkeyclip/motorcortex":
-        specifier: 9.22.1
-        version: 9.22.1
+        specifier: 9.22.2
+        version: 9.22.2
       "@donkeyclip/server":
         specifier: workspace:*
         version: link:../../packages/server
@@ -770,7 +770,7 @@ importers:
     dependencies:
       "@donkeyclip/motorcortex-anime":
         specifier: ^3.1.1
-        version: 3.1.1(@donkeyclip/motorcortex@9.22.1)
+        version: 3.1.1(@donkeyclip/motorcortex@9.22.2)
       esbuild-loader:
         specifier: ^4.3.0
         version: 4.3.0(webpack@5.99.9)
@@ -785,8 +785,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/effect-library
       "@donkeyclip/motorcortex":
-        specifier: 9.22.1
-        version: 9.22.1
+        specifier: 9.22.2
+        version: 9.22.2
       "@donkeyclip/server":
         specifier: workspace:*
         version: link:../../packages/server
@@ -808,7 +808,7 @@ importers:
     dependencies:
       "@donkeyclip/motorcortex-anime":
         specifier: ^3.1.1
-        version: 3.1.1(@donkeyclip/motorcortex@9.22.1)
+        version: 3.1.1(@donkeyclip/motorcortex@9.22.2)
       esbuild-loader:
         specifier: ^4.3.0
         version: 4.3.0(webpack@5.99.9)
@@ -823,8 +823,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/effect-library
       "@donkeyclip/motorcortex":
-        specifier: 9.22.1
-        version: 9.22.1
+        specifier: 9.22.2
+        version: 9.22.2
       "@donkeyclip/server":
         specifier: workspace:*
         version: link:../../packages/server
@@ -845,8 +845,8 @@ importers:
   packages/effect-library:
     devDependencies:
       "@donkeyclip/motorcortex":
-        specifier: 9.22.1
-        version: 9.22.1
+        specifier: 9.22.2
+        version: 9.22.2
       eslint:
         specifier: ^8.46.0
         version: 8.57.1
@@ -882,8 +882,8 @@ importers:
         specifier: ^7.27.1
         version: 7.27.1(@babel/core@7.27.4)
       "@types/node":
-        specifier: ^22.15.29
-        version: 22.15.29
+        specifier: ^22.15.30
+        version: 22.15.30
       "@typescript-eslint/eslint-plugin":
         specifier: ^6.2.1
         version: 6.21.0(@typescript-eslint/parser@6.21.0(eslint@8.57.1)(typescript@5.8.3))(eslint@8.57.1)(typescript@5.8.3)
@@ -940,14 +940,14 @@ importers:
   packages/server:
     dependencies:
       "@donkeyclip/motorcortex":
-        specifier: ^9.22.0
-        version: 9.22.1
+        specifier: ^9.22.2
+        version: 9.22.2
       "@donkeyclip/motorcortex-player":
-        specifier: ^2.14.5
-        version: 2.14.5(@donkeyclip/motorcortex-player-lite@1.1.1(@donkeyclip/motorcortex@9.22.1))(@donkeyclip/motorcortex@9.22.1)
+        specifier: ^2.14.6
+        version: 2.14.6(@donkeyclip/motorcortex-player-lite@1.1.2(@donkeyclip/motorcortex@9.22.2))(@donkeyclip/motorcortex@9.22.2)
       "@donkeyclip/motorcortex-player-lite":
-        specifier: ^1.1.1
-        version: 1.1.1(@donkeyclip/motorcortex@9.22.1)
+        specifier: ^1.1.2
+        version: 1.1.2(@donkeyclip/motorcortex@9.22.2)
       "@swc/core":
         specifier: ^1.11.31
         version: 1.11.31
@@ -992,8 +992,8 @@ importers:
         specifier: ^1.2.5
         version: 1.2.5
       "@types/node":
-        specifier: ^22.15.29
-        version: 22.15.29
+        specifier: ^22.15.30
+        version: 22.15.30
       eslint:
         specifier: ^8.46.0
         version: 8.57.1
@@ -1844,35 +1844,35 @@ packages:
     peerDependencies:
       "@donkeyclip/motorcortex": ">=8 < 10"
 
-  "@donkeyclip/motorcortex-player-lite@1.1.1":
+  "@donkeyclip/motorcortex-player-lite@1.1.2":
     resolution:
       {
-        integrity: sha512-hznfM7b44mroC5kSaMWdk9FrVtORWNgsCAXVpAmdWT/CG4q7wBT+DNhsZtmBwOo2uPbPbgLQ2aYWqHUCDpqHSw==,
+        integrity: sha512-TNRCnFkWDwRqNeeadMIbF+IeCEJOTyUdm4i+bi7F8hFSuH6GxEVIyUSLCYrhVLcOiBPeKHPoL6gDiv6Top5ucQ==,
       }
     engines: { node: ">=14" }
     peerDependencies:
       "@donkeyclip/motorcortex": ">= 7.4.0 < 10"
 
-  "@donkeyclip/motorcortex-player@2.14.5":
+  "@donkeyclip/motorcortex-player@2.14.6":
     resolution:
       {
-        integrity: sha512-+jh6ZtbtvivikF+ib6ydBtDRmCRStIqcL4O0caL1azs2yrBgpvy4+HDlCPd2GYpuNk0Dwc2bLivyflVrHmv7nA==,
+        integrity: sha512-jkP82JwnsfBPD39dwp5dAmUmDKXUZLSQmV+AJNIduTYNOo7MTX9Q0aM7I4QG5fHFtugkv5cynu0EKtXVXPnVFA==,
       }
     engines: { node: ">=12" }
     peerDependencies:
       "@donkeyclip/motorcortex": ">=9.19.0"
       "@donkeyclip/motorcortex-player-lite": ">=1.0.0"
 
-  "@donkeyclip/motorcortex-utils@0.0.8":
+  "@donkeyclip/motorcortex-utils@0.0.9":
     resolution:
       {
-        integrity: sha512-GiwSK02FTEvuJtV3FZKUdMDX/NhIHGkzFgjzSRAPnoWQDRjYv+K2M4eH9lWWUyXE4OWbgjab8mN6laC/TwI5Kw==,
+        integrity: sha512-aLzMEp65MsNWwb/kDd7UAP5vFW8yx5wWva0K0tmsmU3Bs5IFrXYXy2EaiNPYPcX2X1FEeuzz6DGAMoYE3cuG6g==,
       }
 
-  "@donkeyclip/motorcortex@9.22.1":
+  "@donkeyclip/motorcortex@9.22.2":
     resolution:
       {
-        integrity: sha512-2ng7Yk5+cgjTF0EsfaxOK0MkKXuywrlIrdeUC9u4mgOI3U8ou2ZY76qNYWXf4V4DOn5iLdUHIZicw/FRMOBD0g==,
+        integrity: sha512-/sL2DWJ2WA5nWfUWipI3TVKymwgcwiT42yCsWJsXWtHL2VVzoLWnLZ3FtpGoi5uYHLJ95R922LZXN4FKfZ9Hkw==,
       }
 
   "@esbuild/aix-ppc64@0.25.5":
@@ -2704,10 +2704,10 @@ packages:
         integrity: sha512-FQx220y22OKNTqaByeBGqHWYz4cl94tpcxeFdvBo3wjG6XPBuZ0BNgNZRV5J5TFmmcsJ4IzsLkmGRiQbnYsBEQ==,
       }
 
-  "@types/node@22.15.29":
+  "@types/node@22.15.30":
     resolution:
       {
-        integrity: sha512-LNdjOkUDlU1RZb8e1kOIUpN1qQUlzGkEtbVNo53vbrwDg5om6oduhm4SiUaPW5ASTXhAiP0jInWG8Qx9fVlOeQ==,
+        integrity: sha512-6Q7lr06bEHdlfplU6YRbgG1SFBdlsfNC4/lX+SkhiTs0cpJkOElmWls8PxDFv4yY/xKb8Y6SO0OmSX4wgqTZbA==,
       }
 
   "@types/qs@6.14.0":
@@ -8419,32 +8419,32 @@ snapshots:
 
   "@discoveryjs/json-ext@0.6.3": {}
 
-  "@donkeyclip/dc-countdown-plugin@0.0.5(@donkeyclip/motorcortex@9.22.1)(rollup@4.41.1)":
+  "@donkeyclip/dc-countdown-plugin@0.0.5(@donkeyclip/motorcortex@9.22.2)(rollup@4.41.1)":
     dependencies:
-      "@donkeyclip/motorcortex": 9.22.1
+      "@donkeyclip/motorcortex": 9.22.2
       "@rollup/plugin-terser": 0.4.4(rollup@4.41.1)
     transitivePeerDependencies:
       - rollup
 
-  "@donkeyclip/motorcortex-anime@3.1.1(@donkeyclip/motorcortex@9.22.1)":
+  "@donkeyclip/motorcortex-anime@3.1.1(@donkeyclip/motorcortex@9.22.2)":
     dependencies:
-      "@donkeyclip/motorcortex": 9.22.1
+      "@donkeyclip/motorcortex": 9.22.2
       mc-animejs-core: 3.1.5
 
-  "@donkeyclip/motorcortex-player-lite@1.1.1(@donkeyclip/motorcortex@9.22.1)":
+  "@donkeyclip/motorcortex-player-lite@1.1.2(@donkeyclip/motorcortex@9.22.2)":
     dependencies:
-      "@donkeyclip/motorcortex": 9.22.1
-      "@donkeyclip/motorcortex-utils": 0.0.8
+      "@donkeyclip/motorcortex": 9.22.2
+      "@donkeyclip/motorcortex-utils": 0.0.9
 
-  "@donkeyclip/motorcortex-player@2.14.5(@donkeyclip/motorcortex-player-lite@1.1.1(@donkeyclip/motorcortex@9.22.1))(@donkeyclip/motorcortex@9.22.1)":
+  "@donkeyclip/motorcortex-player@2.14.6(@donkeyclip/motorcortex-player-lite@1.1.2(@donkeyclip/motorcortex@9.22.2))(@donkeyclip/motorcortex@9.22.2)":
     dependencies:
-      "@donkeyclip/motorcortex": 9.22.1
-      "@donkeyclip/motorcortex-player-lite": 1.1.1(@donkeyclip/motorcortex@9.22.1)
-      "@donkeyclip/motorcortex-utils": 0.0.8
+      "@donkeyclip/motorcortex": 9.22.2
+      "@donkeyclip/motorcortex-player-lite": 1.1.2(@donkeyclip/motorcortex@9.22.2)
+      "@donkeyclip/motorcortex-utils": 0.0.9
 
-  "@donkeyclip/motorcortex-utils@0.0.8": {}
+  "@donkeyclip/motorcortex-utils@0.0.9": {}
 
-  "@donkeyclip/motorcortex@9.22.1":
+  "@donkeyclip/motorcortex@9.22.2":
     dependencies:
       expr-eval: 2.0.2
       fastest-validator: 1.19.1
@@ -8577,7 +8577,7 @@ snapshots:
       "@jest/schemas": 29.6.3
       "@types/istanbul-lib-coverage": 2.0.6
       "@types/istanbul-reports": 3.0.4
-      "@types/node": 22.15.29
+      "@types/node": 22.15.30
       "@types/yargs": 17.0.33
       chalk: 4.1.2
 
@@ -8772,20 +8772,20 @@ snapshots:
   "@types/body-parser@1.19.5":
     dependencies:
       "@types/connect": 3.4.38
-      "@types/node": 22.15.29
+      "@types/node": 22.15.30
 
   "@types/bonjour@3.5.13":
     dependencies:
-      "@types/node": 22.15.29
+      "@types/node": 22.15.30
 
   "@types/connect-history-api-fallback@1.5.4":
     dependencies:
       "@types/express-serve-static-core": 4.19.6
-      "@types/node": 22.15.29
+      "@types/node": 22.15.30
 
   "@types/connect@3.4.38":
     dependencies:
-      "@types/node": 22.15.29
+      "@types/node": 22.15.30
 
   "@types/eslint-scope@3.7.7":
     dependencies:
@@ -8801,7 +8801,7 @@ snapshots:
 
   "@types/express-serve-static-core@4.19.6":
     dependencies:
-      "@types/node": 22.15.29
+      "@types/node": 22.15.30
       "@types/qs": 6.14.0
       "@types/range-parser": 1.2.7
       "@types/send": 0.17.4
@@ -8817,7 +8817,7 @@ snapshots:
 
   "@types/http-proxy@1.17.16":
     dependencies:
-      "@types/node": 22.15.29
+      "@types/node": 22.15.30
 
   "@types/istanbul-lib-coverage@2.0.6": {}
 
@@ -8839,9 +8839,9 @@ snapshots:
 
   "@types/node-forge@1.3.11":
     dependencies:
-      "@types/node": 22.15.29
+      "@types/node": 22.15.30
 
-  "@types/node@22.15.29":
+  "@types/node@22.15.30":
     dependencies:
       undici-types: 6.21.0
 
@@ -8856,7 +8856,7 @@ snapshots:
   "@types/send@0.17.4":
     dependencies:
       "@types/mime": 1.3.5
-      "@types/node": 22.15.29
+      "@types/node": 22.15.30
 
   "@types/serve-index@1.9.4":
     dependencies:
@@ -8865,16 +8865,16 @@ snapshots:
   "@types/serve-static@1.15.7":
     dependencies:
       "@types/http-errors": 2.0.4
-      "@types/node": 22.15.29
+      "@types/node": 22.15.30
       "@types/send": 0.17.4
 
   "@types/sockjs@0.3.36":
     dependencies:
-      "@types/node": 22.15.29
+      "@types/node": 22.15.30
 
   "@types/ws@8.18.1":
     dependencies:
-      "@types/node": 22.15.29
+      "@types/node": 22.15.30
 
   "@types/yargs-parser@21.0.3": {}
 
@@ -10528,7 +10528,7 @@ snapshots:
   jest-util@29.7.0:
     dependencies:
       "@jest/types": 29.6.3
-      "@types/node": 22.15.29
+      "@types/node": 22.15.30
       chalk: 4.1.2
       ci-info: 3.9.0
       graceful-fs: 4.2.11
@@ -10536,13 +10536,13 @@ snapshots:
 
   jest-worker@27.5.1:
     dependencies:
-      "@types/node": 22.15.29
+      "@types/node": 22.15.30
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
   jest-worker@29.7.0:
     dependencies:
-      "@types/node": 22.15.29
+      "@types/node": 22.15.30
       jest-util: 29.7.0
       merge-stream: 2.0.0
       supports-color: 8.1.1
