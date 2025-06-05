@@ -11,7 +11,14 @@ export default {
   fontFamily: {
     label: "Font Family",
     type: "enum",
-    values: ["Eczar", "Inter", "Poppins", "Jura"],
+    values: [
+      "Eczar",
+      "Inter",
+      "Poppins",
+      "Jura",
+      "Source+Code+Pro",
+      "Noto+Serif",
+    ],
   },
   imagePositioning: {
     label: "Image Positioning",

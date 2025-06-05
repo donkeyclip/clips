@@ -1,14 +1,14 @@
 /* eslint-disable sonarjs/no-duplicate-string */
+import Countdown from "@donkeyclip/dc-countdown-plugin";
+import { opacity, top, width } from "@donkeyclip/effects";
 import { HTMLClip, loadPlugin } from "@donkeyclip/motorcortex";
 import { renderDonkeyclip } from "@donkeyclip/server";
 import pkg from "../package.json";
 import css from "./clip.css";
 import html from "./clip.html";
-import initParams from "./initParams";
 import { gap } from "./ClipIncidents";
-import { opacity, top, width } from "@donkeyclip/effects";
+import initParams from "./initParams";
 import initParamsValidationRules from "./initParamsValidationRules";
-import Countdown from "@donkeyclip/dc-countdown-plugin";
 const CountdownPlugin = loadPlugin(Countdown);
 const host = document.getElementById("clip");
 
@@ -36,7 +36,7 @@ const clip = new HTMLClip({
   fonts: [
     {
       type: "google-font",
-      src: "https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&display=swap",
+      src: "https://fonts.googleapis.com/css2?family={{initParams.fontFamily}}:wght@400..800&display=swap",
     },
   ],
   audio: "off",

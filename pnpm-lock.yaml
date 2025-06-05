@@ -345,8 +345,8 @@ importers:
   clips/popup-banner:
     dependencies:
       "@donkeyclip/dc-countdown-plugin":
-        specifier: ^0.0.4
-        version: 0.0.4(@donkeyclip/motorcortex@9.22.1)(rollup@4.41.1)
+        specifier: ^0.0.5
+        version: 0.0.5(@donkeyclip/motorcortex@9.22.1)(rollup@4.41.1)
       "@donkeyclip/motorcortex-anime":
         specifier: ^3.1.1
         version: 3.1.1(@donkeyclip/motorcortex@9.22.1)
@@ -1826,12 +1826,12 @@ packages:
       }
     engines: { node: ">=14.17.0" }
 
-  "@donkeyclip/dc-countdown-plugin@0.0.4":
+  "@donkeyclip/dc-countdown-plugin@0.0.5":
     resolution:
       {
-        integrity: sha512-VwW1rop0vshUyFXHVhA7fn6zMnsnMDA07CW9EwAuJTeg7uSSVDowt3Q3Kw4AEDJYrW3rvZFwBWXstRqcXxIyfw==,
+        integrity: sha512-ivUVVHFDxr+NsCAGDI0UYxdNpFhvmwIAj3u9YZs8e2BN6RPxtyabxNd+BPvpb0aYt/YwI3p9pWGb2ARlwAp7pw==,
       }
-    engines: { node: ">=16" }
+    engines: { node: ">=22" }
     peerDependencies:
       "@donkeyclip/motorcortex": ^9.21.0
 
@@ -8419,7 +8419,7 @@ snapshots:
 
   "@discoveryjs/json-ext@0.6.3": {}
 
-  "@donkeyclip/dc-countdown-plugin@0.0.4(@donkeyclip/motorcortex@9.22.1)(rollup@4.41.1)":
+  "@donkeyclip/dc-countdown-plugin@0.0.5(@donkeyclip/motorcortex@9.22.1)(rollup@4.41.1)":
     dependencies:
       "@donkeyclip/motorcortex": 9.22.1
       "@rollup/plugin-terser": 0.4.4(rollup@4.41.1)
