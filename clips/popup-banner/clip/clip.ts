@@ -36,7 +36,7 @@ const clip = new HTMLClip({
   fonts: [
     {
       type: "google-font",
-      src: "https://fonts.googleapis.com/css2?family={{initParams.fontFamily}}:wght@400..800&display=swap",
+      src: "https://fonts.googleapis.com/css2?family={{ initParams.fontFamily }}:wght@400..800&display=swap",
     },
   ],
   audio: "off",

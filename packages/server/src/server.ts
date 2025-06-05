@@ -115,7 +115,8 @@ export function renderDonkeyclip({
     },
     pointerEvents: false,
   });
-  const checkBlockWaitings = () => Object.keys(clip.blockingWaitings).length;
+  const checkBlockWaitings = () =>
+    Object.keys(clip.blockingWaitings || {}).length;
 
   if (searchOptions.initParams) {
     const interval = setInterval(() => {

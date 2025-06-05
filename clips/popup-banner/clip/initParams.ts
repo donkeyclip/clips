@@ -42,7 +42,7 @@ export default [
 
       imagePositioning: "cover",
       imageClipPath: true,
-      countdownMilliseconds: 99950000,
+      countdownMilliseconds: 0,
       fontFamily: "Eczar",
     },
   },
