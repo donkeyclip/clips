@@ -944,10 +944,10 @@ importers:
         version: 9.22.2
       "@donkeyclip/motorcortex-player":
         specifier: ^2.14.6
-        version: 2.14.6(@donkeyclip/motorcortex-player-lite@1.1.2(@donkeyclip/motorcortex@9.22.2))(@donkeyclip/motorcortex@9.22.2)
+        version: 2.14.7(@donkeyclip/motorcortex-player-lite@1.1.3(@donkeyclip/motorcortex@9.22.2))(@donkeyclip/motorcortex@9.22.2)
       "@donkeyclip/motorcortex-player-lite":
         specifier: ^1.1.2
-        version: 1.1.2(@donkeyclip/motorcortex@9.22.2)
+        version: 1.1.3(@donkeyclip/motorcortex@9.22.2)
       "@swc/core":
         specifier: ^1.11.31
         version: 1.11.31
@@ -1844,19 +1844,19 @@ packages:
     peerDependencies:
       "@donkeyclip/motorcortex": ">=8 < 10"
 
-  "@donkeyclip/motorcortex-player-lite@1.1.2":
+  "@donkeyclip/motorcortex-player-lite@1.1.3":
     resolution:
       {
-        integrity: sha512-TNRCnFkWDwRqNeeadMIbF+IeCEJOTyUdm4i+bi7F8hFSuH6GxEVIyUSLCYrhVLcOiBPeKHPoL6gDiv6Top5ucQ==,
+        integrity: sha512-BUIdnPGIyziJjQR7PH7dTB6yP5O0pYJ/NN9PkoexTIFu7Rq1YVrmPpQrfd3T6QP8VB/0RqpPINNB+OrMPgr+Iw==,
       }
     engines: { node: ">=14" }
     peerDependencies:
       "@donkeyclip/motorcortex": ">= 7.4.0 < 10"
 
-  "@donkeyclip/motorcortex-player@2.14.6":
+  "@donkeyclip/motorcortex-player@2.14.7":
     resolution:
       {
-        integrity: sha512-jkP82JwnsfBPD39dwp5dAmUmDKXUZLSQmV+AJNIduTYNOo7MTX9Q0aM7I4QG5fHFtugkv5cynu0EKtXVXPnVFA==,
+        integrity: sha512-XcGdkpXqGhBgdXIgwlLfAdDIiwj1JPopFyL/wy3XevlqIcMxtqW9Z6lxLxxjI3xOCn+ZNyvRM6d1fJ6XW5Zv2g==,
       }
     engines: { node: ">=12" }
     peerDependencies:
@@ -8431,15 +8431,15 @@ snapshots:
       "@donkeyclip/motorcortex": 9.22.2
       mc-animejs-core: 3.1.5
 
-  "@donkeyclip/motorcortex-player-lite@1.1.2(@donkeyclip/motorcortex@9.22.2)":
+  "@donkeyclip/motorcortex-player-lite@1.1.3(@donkeyclip/motorcortex@9.22.2)":
     dependencies:
       "@donkeyclip/motorcortex": 9.22.2
       "@donkeyclip/motorcortex-utils": 0.0.9
 
-  "@donkeyclip/motorcortex-player@2.14.6(@donkeyclip/motorcortex-player-lite@1.1.2(@donkeyclip/motorcortex@9.22.2))(@donkeyclip/motorcortex@9.22.2)":
+  "@donkeyclip/motorcortex-player@2.14.7(@donkeyclip/motorcortex-player-lite@1.1.3(@donkeyclip/motorcortex@9.22.2))(@donkeyclip/motorcortex@9.22.2)":
     dependencies:
       "@donkeyclip/motorcortex": 9.22.2
-      "@donkeyclip/motorcortex-player-lite": 1.1.2(@donkeyclip/motorcortex@9.22.2)
+      "@donkeyclip/motorcortex-player-lite": 1.1.3(@donkeyclip/motorcortex@9.22.2)
       "@donkeyclip/motorcortex-utils": 0.0.9
 
   "@donkeyclip/motorcortex-utils@0.0.9": {}
