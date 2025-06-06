@@ -1,7 +1,7 @@
 export default {
   title: { label: "Title", type: "string" },
   subtitle: { label: "Subtitle", type: "string" },
-  logo: { label: "Logo", type: "img" },
+  logo: { label: "Logo", type: "string" },
   cta: { label: "CTA Text", type: "string" },
   ctaColor: { label: "CTA & Lines Color", type: "color" },
   textColor: { label: "Banner Text Color", type: "color" },
@@ -25,7 +25,17 @@ export default {
     type: "enum",
     values: ["cover", "contain"],
   },
-  countdownMilliseconds: { label: "Countdown Milliseconds", type: "number" },
+  imageClipPath: {
+    label: "Enable Image Shape",
+    type: "boolean",
+    optional: true,
+    default: true,
+  },
+  countdownMilliseconds: {
+    label: "Countdown Milliseconds",
+    type: "number",
+    optional: true,
+  },
   products: {
     label: "Products",
     type: "array",

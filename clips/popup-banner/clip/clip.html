@@ -3,7 +3,12 @@
     <div class="info-cta">
       <div class="info">
         <div class="details-wrapper">
-          <img class="logo" src="{{initParams.logo.default}}" alt="logo" />
+          <img
+            mc-if="initParams.logo.length > 0"
+            class="logo"
+            src="{{initParams.logo}}"
+            alt="logo"
+          />
           <div class="abstract-lines2-wrapper">
             <svg
               width="119"
@@ -61,25 +66,27 @@
       </div>
       <div class="cta-countdown">
         <div class="cta">{{initParams.cta}}</div>
-        <div class="countdown" mc-if="initParams.countdownMilliseconds > 0">
-          <div class="countdown-wrapper">
-            <div class="value" id="free-days">0</div>
-            <div class="d">D</div>
-            <div class="countdown-text">DAYS</div>
-          </div>
-          <div class="countdown-wrapper">
-            <div class="value" id="free-hours">00</div>
-            <div class="d">:</div>
-            <div class="countdown-text">HOURS</div>
-          </div>
-          <div class="countdown-wrapper">
-            <div class="value" id="free-minutes">00</div>
-            <div class="d">:</div>
-            <div class="countdown-text">MINUTES</div>
-          </div>
-          <div class="countdown-wrapper">
-            <div class="value" id="free-seconds">00</div>
-            <div class="countdown-text">SECONDS</div>
+        <div mc-if="initParams.countdownMilliseconds">
+          <div class="countdown" mc-if="initParams.countdownMilliseconds > 0">
+            <div class="countdown-wrapper">
+              <div class="value" id="free-days">0</div>
+              <div class="d">D</div>
+              <div class="countdown-text">DAYS</div>
+            </div>
+            <div class="countdown-wrapper">
+              <div class="value" id="free-hours">00</div>
+              <div class="d">:</div>
+              <div class="countdown-text">HOURS</div>
+            </div>
+            <div class="countdown-wrapper">
+              <div class="value" id="free-minutes">00</div>
+              <div class="d">:</div>
+              <div class="countdown-text">MINUTES</div>
+            </div>
+            <div class="countdown-wrapper">
+              <div class="value" id="free-seconds">00</div>
+              <div class="countdown-text">SECONDS</div>
+            </div>
           </div>
         </div>
       </div>
@@ -112,21 +119,23 @@
         </div>
       </div>
     </div>
-    <div class="countdown-mini" mc-if="initParams.countdownMilliseconds > 0">
-      <div class="countdown-wrapper">
-        <div class="value" id="free-days">0</div>
-        <div class="d">D</div>
-      </div>
-      <div class="countdown-wrapper">
-        <div class="value" id="free-hours">00</div>
-        <div class="d">:</div>
-      </div>
-      <div class="countdown-wrapper">
-        <div class="value" id="free-minutes">00</div>
-        <div class="d">:</div>
-      </div>
-      <div class="countdown-wrapper">
-        <div class="value" id="free-seconds">00</div>
+    <div mc-if="initParams.countdownMilliseconds">
+      <div class="countdown-mini" mc-if="initParams.countdownMilliseconds > 0">
+        <div class="countdown-wrapper">
+          <div class="value" id="free-days">0</div>
+          <div class="d">D</div>
+        </div>
+        <div class="countdown-wrapper">
+          <div class="value" id="free-hours">00</div>
+          <div class="d">:</div>
+        </div>
+        <div class="countdown-wrapper">
+          <div class="value" id="free-minutes">00</div>
+          <div class="d">:</div>
+        </div>
+        <div class="countdown-wrapper">
+          <div class="value" id="free-seconds">00</div>
+        </div>
       </div>
     </div>
   </div>

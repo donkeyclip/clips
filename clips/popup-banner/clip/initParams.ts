@@ -30,10 +30,7 @@ export default [
         "Save big on seasonal favorite. Save big on seasonal favorite. Save big on season favorite t-shirts and trousers",
 
       cta: "START SHOPPING",
-      logo: {
-        default:
-          "https://donkeyclip.github.io/clips/clips/popup-banner/images/logo.png",
-      },
+      logo: "https://donkeyclip.github.io/clips/clips/popup-banner/images/logo.png",
       ctaColor: "#5d0a0a",
       textColor: "#000000",
       imageBgColor: "#FFFFFF",
@@ -42,7 +39,6 @@ export default [
 
       imagePositioning: "cover",
       imageClipPath: true,
-      countdownMilliseconds: 0,
       fontFamily: "Eczar",
     },
   },
