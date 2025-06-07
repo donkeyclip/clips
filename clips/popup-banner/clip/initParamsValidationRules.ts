@@ -1,7 +1,7 @@
 export default {
   title: { label: "Title", type: "string" },
   subtitle: { label: "Subtitle", type: "string" },
-  logo: { label: "Logo", type: "string" },
+  logo: { label: "Logo", type: "img" },
   cta: { label: "CTA Text", type: "string" },
   ctaColor: { label: "CTA & Lines Color", type: "color" },
   textColor: { label: "Banner Text Color", type: "color" },
