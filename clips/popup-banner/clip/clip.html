@@ -3,12 +3,17 @@
     <div class="info-cta">
       <div class="info">
         <div class="details-wrapper">
-          <img
-            mc-if="initParams.logo.length > 0"
-            class="logo"
-            src="{{initParams.logo.default}}"
-            alt="logo"
-          />
+          <picture mc-if="initParams.logo.default" class="logo">
+            <source
+              class="logo"
+              mc-for="key,item"
+              mc-of="initParams.logo"
+              mc-if="{{key}}!='default'"
+              srcset="{{item}}"
+              media="{{key}}"
+            />
+            <img alt="logo" src="{{initParams.logo.default}}" class="logo" />
+          </picture>
           <div class="abstract-lines2-wrapper">
             <svg
               width="119"
