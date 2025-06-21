@@ -200,7 +200,7 @@
   stroke: var(--cta-color);
 }
 
-.products img {
+.products .product-image {
   width: 450px;
   height: 450px;
   position: absolute;
@@ -270,7 +270,7 @@
     padding: 11.683px 15.577px;
     align-self: stretch;
     font-size: 0.625rem;
-    line-height: 0.625rem; 
+    line-height: 0.625rem;
   }
 
   .products-bg {
@@ -291,7 +291,7 @@
     top: 0;
   }
 
-  .products img {
+  .products .product-image {
     width: 230px;
     height: 230px;
     top: 5px;
@@ -426,7 +426,7 @@
     top: 0;
   }
 
-  .products img {
+  .products .product-image {
     width: 200px;
     height: 150px;
     top: 2px;
@@ -598,7 +598,7 @@
     top: 0;
   }
 
-  .products img {
+  .products .product-image {
     width: 100px;
     height: 100px;
     top: 0px;

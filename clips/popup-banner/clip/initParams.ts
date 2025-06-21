@@ -4,22 +4,34 @@ export default [
     value: {
       products: [
         {
-          featured_image:
-            "https://donkeyclip.github.io/clips/clips/popup-banner/images/image1.png",
+          featured_image: {
+            default:
+              "https://donkeyclip.github.io/clips/clips/popup-banner/images/image1.png",
+            "(max-width: 600px)":
+              "https://donkeyclip.github.io/clips/clips/popup-banner/images/image1.png",
+          },
           title: "T-shirt navy blue",
           old_price: "45,99€",
           price: "31,99€",
         },
         {
-          featured_image:
-            "https://donkeyclip.github.io/clips/clips/popup-banner/images/image2.png",
+          featured_image: {
+            default:
+              "https://donkeyclip.github.io/clips/clips/popup-banner/images/image2.png",
+            "(max-width: 600px)":
+              "https://donkeyclip.github.io/clips/clips/popup-banner/images/image1.png",
+          },
           title: "T-shirt orange with smile stamp 😊",
           old_price: "45,99€",
           price: "31,99€",
         },
         {
-          featured_image:
-            "https://donkeyclip.github.io/clips/clips/popup-banner/images/image3.png",
+          featured_image: {
+            default:
+              "https://donkeyclip.github.io/clips/clips/popup-banner/images/image3.png",
+            "(max-width: 600px)":
+              "https://donkeyclip.github.io/clips/clips/popup-banner/images/image1.png",
+          },
           title: "T-shirt beige with mountain-flowers stamp 🌄",
           old_price: "",
           price: "31,99€",

@@ -43,7 +43,7 @@ export default {
       label: "Item",
       type: "object",
       props: {
-        featured_image: { label: "Featured Image", type: "string" },
+        featured_image: { label: "Featured Image", type: "img" },
         title: { label: "Product Title", type: "string" },
         old_price: {
           label: "Old Price",
