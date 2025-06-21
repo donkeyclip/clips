@@ -17,11 +17,11 @@ importers:
         specifier: ^9.1.7
         version: 9.1.7
       lint-staged:
-        specifier: ^16.1.0
-        version: 16.1.0
+        specifier: ^16.1.2
+        version: 16.1.2
       pnpm:
-        specifier: ^10.11.1
-        version: 10.11.1
+        specifier: ^10.12.1
+        version: 10.12.1
       prettier:
         specifier: ^3.5.3
         version: 3.5.3
@@ -36,7 +36,7 @@ importers:
     dependencies:
       "@donkeyclip/motorcortex-anime":
         specifier: ^3.1.1
-        version: 3.1.1(@donkeyclip/motorcortex@9.22.2)
+        version: 3.1.1(@donkeyclip/motorcortex@9.23.3)
       esbuild-loader:
         specifier: ^4.3.0
         version: 4.3.0(webpack@5.99.9)
@@ -45,14 +45,14 @@ importers:
         version: 5.1.0(webpack@5.99.9)
       postcss-loader:
         specifier: 8.1.1
-        version: 8.1.1(postcss@8.5.4)(typescript@5.8.3)(webpack@5.99.9)
+        version: 8.1.1(postcss@8.5.6)(typescript@5.8.3)(webpack@5.99.9)
     devDependencies:
       "@donkeyclip/effects":
         specifier: workspace:*
         version: link:../../packages/effect-library
       "@donkeyclip/motorcortex":
-        specifier: 9.22.2
-        version: 9.22.2
+        specifier: 9.23.3
+        version: 9.23.3
       "@donkeyclip/server":
         specifier: workspace:*
         version: link:../../packages/server
@@ -74,7 +74,7 @@ importers:
     dependencies:
       "@donkeyclip/motorcortex-anime":
         specifier: ^3.1.1
-        version: 3.1.1(@donkeyclip/motorcortex@9.22.2)
+        version: 3.1.1(@donkeyclip/motorcortex@9.23.3)
       esbuild-loader:
         specifier: ^4.3.0
         version: 4.3.0(webpack@5.99.9)
@@ -83,14 +83,14 @@ importers:
         version: 5.1.0(webpack@5.99.9)
       postcss-loader:
         specifier: 8.1.1
-        version: 8.1.1(postcss@8.5.4)(typescript@5.8.3)(webpack@5.99.9)
+        version: 8.1.1(postcss@8.5.6)(typescript@5.8.3)(webpack@5.99.9)
     devDependencies:
       "@donkeyclip/effects":
         specifier: workspace:*
         version: link:../../packages/effect-library
       "@donkeyclip/motorcortex":
-        specifier: 9.22.2
-        version: 9.22.2
+        specifier: 9.23.3
+        version: 9.23.3
       "@donkeyclip/server":
         specifier: workspace:*
         version: link:../../packages/server
@@ -112,7 +112,7 @@ importers:
     dependencies:
       "@donkeyclip/motorcortex-anime":
         specifier: ^3.1.1
-        version: 3.1.1(@donkeyclip/motorcortex@9.22.2)
+        version: 3.1.1(@donkeyclip/motorcortex@9.23.3)
       esbuild-loader:
         specifier: ^4.3.0
         version: 4.3.0(webpack@5.99.9)
@@ -121,14 +121,14 @@ importers:
         version: 5.1.0(webpack@5.99.9)
       postcss-loader:
         specifier: 8.1.1
-        version: 8.1.1(postcss@8.5.4)(typescript@5.8.3)(webpack@5.99.9)
+        version: 8.1.1(postcss@8.5.6)(typescript@5.8.3)(webpack@5.99.9)
     devDependencies:
       "@donkeyclip/effects":
         specifier: workspace:*
         version: link:../../packages/effect-library
       "@donkeyclip/motorcortex":
-        specifier: 9.22.2
-        version: 9.22.2
+        specifier: 9.23.3
+        version: 9.23.3
       "@donkeyclip/server":
         specifier: workspace:*
         version: link:../../packages/server
@@ -150,7 +150,7 @@ importers:
     dependencies:
       "@donkeyclip/motorcortex-anime":
         specifier: ^3.1.1
-        version: 3.1.1(@donkeyclip/motorcortex@9.22.2)
+        version: 3.1.1(@donkeyclip/motorcortex@9.23.3)
       esbuild-loader:
         specifier: ^4.3.0
         version: 4.3.0(webpack@5.99.9)
@@ -159,14 +159,14 @@ importers:
         version: 5.1.0(webpack@5.99.9)
       postcss-loader:
         specifier: 8.1.1
-        version: 8.1.1(postcss@8.5.4)(typescript@5.8.3)(webpack@5.99.9)
+        version: 8.1.1(postcss@8.5.6)(typescript@5.8.3)(webpack@5.99.9)
     devDependencies:
       "@donkeyclip/effects":
         specifier: workspace:*
         version: link:../../packages/effect-library
       "@donkeyclip/motorcortex":
-        specifier: 9.22.2
-        version: 9.22.2
+        specifier: 9.23.3
+        version: 9.23.3
       "@donkeyclip/server":
         specifier: workspace:*
         version: link:../../packages/server
@@ -188,7 +188,7 @@ importers:
     dependencies:
       "@donkeyclip/motorcortex-anime":
         specifier: ^3.1.1
-        version: 3.1.1(@donkeyclip/motorcortex@9.22.2)
+        version: 3.1.1(@donkeyclip/motorcortex@9.23.3)
       esbuild-loader:
         specifier: ^4.3.0
         version: 4.3.0(webpack@5.99.9)
@@ -197,14 +197,14 @@ importers:
         version: 5.1.0(webpack@5.99.9)
       postcss-loader:
         specifier: 8.1.1
-        version: 8.1.1(postcss@8.5.4)(typescript@5.8.3)(webpack@5.99.9)
+        version: 8.1.1(postcss@8.5.6)(typescript@5.8.3)(webpack@5.99.9)
     devDependencies:
       "@donkeyclip/effects":
         specifier: workspace:*
         version: link:../../packages/effect-library
       "@donkeyclip/motorcortex":
-        specifier: 9.22.2
-        version: 9.22.2
+        specifier: 9.23.3
+        version: 9.23.3
       "@donkeyclip/server":
         specifier: workspace:*
         version: link:../../packages/server
@@ -226,7 +226,7 @@ importers:
     dependencies:
       "@donkeyclip/motorcortex-anime":
         specifier: ^3.1.1
-        version: 3.1.1(@donkeyclip/motorcortex@9.22.2)
+        version: 3.1.1(@donkeyclip/motorcortex@9.23.3)
       esbuild-loader:
         specifier: ^4.3.0
         version: 4.3.0(webpack@5.99.9)
@@ -235,14 +235,14 @@ importers:
         version: 5.1.0(webpack@5.99.9)
       postcss-loader:
         specifier: 8.1.1
-        version: 8.1.1(postcss@8.5.4)(typescript@5.8.3)(webpack@5.99.9)
+        version: 8.1.1(postcss@8.5.6)(typescript@5.8.3)(webpack@5.99.9)
     devDependencies:
       "@donkeyclip/effects":
         specifier: workspace:*
         version: link:../../packages/effect-library
       "@donkeyclip/motorcortex":
-        specifier: 9.22.2
-        version: 9.22.2
+        specifier: 9.23.3
+        version: 9.23.3
       "@donkeyclip/server":
         specifier: workspace:*
         version: link:../../packages/server
@@ -267,7 +267,7 @@ importers:
     dependencies:
       "@donkeyclip/motorcortex-anime":
         specifier: ^3.1.1
-        version: 3.1.1(@donkeyclip/motorcortex@9.22.2)
+        version: 3.1.1(@donkeyclip/motorcortex@9.23.3)
       esbuild-loader:
         specifier: ^4.3.0
         version: 4.3.0(webpack@5.99.9)
@@ -276,14 +276,14 @@ importers:
         version: 5.1.0(webpack@5.99.9)
       postcss-loader:
         specifier: 8.1.1
-        version: 8.1.1(postcss@8.5.4)(typescript@5.8.3)(webpack@5.99.9)
+        version: 8.1.1(postcss@8.5.6)(typescript@5.8.3)(webpack@5.99.9)
     devDependencies:
       "@donkeyclip/effects":
         specifier: workspace:*
         version: link:../../packages/effect-library
       "@donkeyclip/motorcortex":
-        specifier: 9.22.2
-        version: 9.22.2
+        specifier: 9.23.3
+        version: 9.23.3
       "@donkeyclip/server":
         specifier: workspace:*
         version: link:../../packages/server
@@ -305,7 +305,7 @@ importers:
     dependencies:
       "@donkeyclip/motorcortex-anime":
         specifier: ^3.1.1
-        version: 3.1.1(@donkeyclip/motorcortex@9.22.2)
+        version: 3.1.1(@donkeyclip/motorcortex@9.23.3)
       esbuild-loader:
         specifier: ^4.3.0
         version: 4.3.0(webpack@5.99.9)
@@ -314,14 +314,14 @@ importers:
         version: 5.1.0(webpack@5.99.9)
       postcss-loader:
         specifier: 8.1.1
-        version: 8.1.1(postcss@8.5.4)(typescript@5.8.3)(webpack@5.99.9)
+        version: 8.1.1(postcss@8.5.6)(typescript@5.8.3)(webpack@5.99.9)
     devDependencies:
       "@donkeyclip/effects":
         specifier: workspace:*
         version: link:../../packages/effect-library
       "@donkeyclip/motorcortex":
-        specifier: 9.22.2
-        version: 9.22.2
+        specifier: 9.23.3
+        version: 9.23.3
       "@donkeyclip/server":
         specifier: workspace:*
         version: link:../../packages/server
@@ -345,11 +345,11 @@ importers:
   clips/popup-banner:
     dependencies:
       "@donkeyclip/dc-countdown-plugin":
-        specifier: ^0.0.5
-        version: 0.0.5(@donkeyclip/motorcortex@9.22.2)(rollup@4.41.1)
+        specifier: ^0.1.0
+        version: 0.1.0(@donkeyclip/motorcortex@9.23.3)(rollup@4.41.1)
       "@donkeyclip/motorcortex-anime":
         specifier: ^3.1.1
-        version: 3.1.1(@donkeyclip/motorcortex@9.22.2)
+        version: 3.1.1(@donkeyclip/motorcortex@9.23.3)
       esbuild-loader:
         specifier: ^4.3.0
         version: 4.3.0(webpack@5.99.9)
@@ -358,14 +358,14 @@ importers:
         version: 5.1.0(webpack@5.99.9)
       postcss-loader:
         specifier: 8.1.1
-        version: 8.1.1(postcss@8.5.4)(typescript@5.8.3)(webpack@5.99.9)
+        version: 8.1.1(postcss@8.5.6)(typescript@5.8.3)(webpack@5.99.9)
     devDependencies:
       "@donkeyclip/effects":
         specifier: workspace:*
         version: link:../../packages/effect-library
       "@donkeyclip/motorcortex":
-        specifier: 9.22.2
-        version: 9.22.2
+        specifier: 9.23.3
+        version: 9.23.3
       "@donkeyclip/server":
         specifier: workspace:*
         version: link:../../packages/server
@@ -387,7 +387,7 @@ importers:
     dependencies:
       "@donkeyclip/motorcortex-anime":
         specifier: ^3.1.1
-        version: 3.1.1(@donkeyclip/motorcortex@9.22.2)
+        version: 3.1.1(@donkeyclip/motorcortex@9.23.3)
       esbuild-loader:
         specifier: ^4.3.0
         version: 4.3.0(webpack@5.99.9)
@@ -396,14 +396,14 @@ importers:
         version: 5.1.0(webpack@5.99.9)
       postcss-loader:
         specifier: 8.1.1
-        version: 8.1.1(postcss@8.5.4)(typescript@5.8.3)(webpack@5.99.9)
+        version: 8.1.1(postcss@8.5.6)(typescript@5.8.3)(webpack@5.99.9)
     devDependencies:
       "@donkeyclip/effects":
         specifier: workspace:*
         version: link:../../packages/effect-library
       "@donkeyclip/motorcortex":
-        specifier: 9.22.2
-        version: 9.22.2
+        specifier: 9.23.3
+        version: 9.23.3
       "@donkeyclip/server":
         specifier: workspace:*
         version: link:../../packages/server
@@ -428,7 +428,7 @@ importers:
     dependencies:
       "@donkeyclip/motorcortex-anime":
         specifier: ^3.1.1
-        version: 3.1.1(@donkeyclip/motorcortex@9.22.2)
+        version: 3.1.1(@donkeyclip/motorcortex@9.23.3)
       esbuild-loader:
         specifier: ^4.3.0
         version: 4.3.0(webpack@5.99.9)
@@ -437,14 +437,14 @@ importers:
         version: 5.1.0(webpack@5.99.9)
       postcss-loader:
         specifier: 8.1.1
-        version: 8.1.1(postcss@8.5.4)(typescript@5.8.3)(webpack@5.99.9)
+        version: 8.1.1(postcss@8.5.6)(typescript@5.8.3)(webpack@5.99.9)
     devDependencies:
       "@donkeyclip/effects":
         specifier: workspace:*
         version: link:../../packages/effect-library
       "@donkeyclip/motorcortex":
-        specifier: 9.22.2
-        version: 9.22.2
+        specifier: 9.23.3
+        version: 9.23.3
       "@donkeyclip/server":
         specifier: workspace:*
         version: link:../../packages/server
@@ -466,7 +466,7 @@ importers:
     dependencies:
       "@donkeyclip/motorcortex-anime":
         specifier: ^3.1.1
-        version: 3.1.1(@donkeyclip/motorcortex@9.22.2)
+        version: 3.1.1(@donkeyclip/motorcortex@9.23.3)
       esbuild-loader:
         specifier: ^4.3.0
         version: 4.3.0(webpack@5.99.9)
@@ -475,14 +475,14 @@ importers:
         version: 5.1.0(webpack@5.99.9)
       postcss-loader:
         specifier: 8.1.1
-        version: 8.1.1(postcss@8.5.4)(typescript@5.8.3)(webpack@5.99.9)
+        version: 8.1.1(postcss@8.5.6)(typescript@5.8.3)(webpack@5.99.9)
     devDependencies:
       "@donkeyclip/effects":
         specifier: workspace:*
         version: link:../../packages/effect-library
       "@donkeyclip/motorcortex":
-        specifier: 9.22.2
-        version: 9.22.2
+        specifier: 9.23.3
+        version: 9.23.3
       "@donkeyclip/server":
         specifier: workspace:*
         version: link:../../packages/server
@@ -504,7 +504,7 @@ importers:
     dependencies:
       "@donkeyclip/motorcortex-anime":
         specifier: ^3.1.1
-        version: 3.1.1(@donkeyclip/motorcortex@9.22.2)
+        version: 3.1.1(@donkeyclip/motorcortex@9.23.3)
       esbuild-loader:
         specifier: ^4.3.0
         version: 4.3.0(webpack@5.99.9)
@@ -513,14 +513,14 @@ importers:
         version: 5.1.0(webpack@5.99.9)
       postcss-loader:
         specifier: 8.1.1
-        version: 8.1.1(postcss@8.5.4)(typescript@5.8.3)(webpack@5.99.9)
+        version: 8.1.1(postcss@8.5.6)(typescript@5.8.3)(webpack@5.99.9)
     devDependencies:
       "@donkeyclip/effects":
         specifier: workspace:*
         version: link:../../packages/effect-library
       "@donkeyclip/motorcortex":
-        specifier: 9.22.2
-        version: 9.22.2
+        specifier: 9.23.3
+        version: 9.23.3
       "@donkeyclip/server":
         specifier: workspace:*
         version: link:../../packages/server
@@ -542,7 +542,7 @@ importers:
     dependencies:
       "@donkeyclip/motorcortex-anime":
         specifier: ^3.1.1
-        version: 3.1.1(@donkeyclip/motorcortex@9.22.2)
+        version: 3.1.1(@donkeyclip/motorcortex@9.23.3)
       esbuild-loader:
         specifier: ^4.3.0
         version: 4.3.0(webpack@5.99.9)
@@ -551,14 +551,14 @@ importers:
         version: 5.1.0(webpack@5.99.9)
       postcss-loader:
         specifier: 8.1.1
-        version: 8.1.1(postcss@8.5.4)(typescript@5.8.3)(webpack@5.99.9)
+        version: 8.1.1(postcss@8.5.6)(typescript@5.8.3)(webpack@5.99.9)
     devDependencies:
       "@donkeyclip/effects":
         specifier: workspace:*
         version: link:../../packages/effect-library
       "@donkeyclip/motorcortex":
-        specifier: 9.22.2
-        version: 9.22.2
+        specifier: 9.23.3
+        version: 9.23.3
       "@donkeyclip/server":
         specifier: workspace:*
         version: link:../../packages/server
@@ -580,7 +580,7 @@ importers:
     dependencies:
       "@donkeyclip/motorcortex-anime":
         specifier: ^3.1.1
-        version: 3.1.1(@donkeyclip/motorcortex@9.22.2)
+        version: 3.1.1(@donkeyclip/motorcortex@9.23.3)
       esbuild-loader:
         specifier: ^4.3.0
         version: 4.3.0(webpack@5.99.9)
@@ -589,14 +589,14 @@ importers:
         version: 5.1.0(webpack@5.99.9)
       postcss-loader:
         specifier: 8.1.1
-        version: 8.1.1(postcss@8.5.4)(typescript@5.8.3)(webpack@5.99.9)
+        version: 8.1.1(postcss@8.5.6)(typescript@5.8.3)(webpack@5.99.9)
     devDependencies:
       "@donkeyclip/effects":
         specifier: workspace:*
         version: link:../../packages/effect-library
       "@donkeyclip/motorcortex":
-        specifier: 9.22.2
-        version: 9.22.2
+        specifier: 9.23.3
+        version: 9.23.3
       "@donkeyclip/server":
         specifier: workspace:*
         version: link:../../packages/server
@@ -618,7 +618,7 @@ importers:
     dependencies:
       "@donkeyclip/motorcortex-anime":
         specifier: ^3.1.1
-        version: 3.1.1(@donkeyclip/motorcortex@9.22.2)
+        version: 3.1.1(@donkeyclip/motorcortex@9.23.3)
       esbuild-loader:
         specifier: ^4.3.0
         version: 4.3.0(webpack@5.99.9)
@@ -627,14 +627,14 @@ importers:
         version: 5.1.0(webpack@5.99.9)
       postcss-loader:
         specifier: 8.1.1
-        version: 8.1.1(postcss@8.5.4)(typescript@5.8.3)(webpack@5.99.9)
+        version: 8.1.1(postcss@8.5.6)(typescript@5.8.3)(webpack@5.99.9)
     devDependencies:
       "@donkeyclip/effects":
         specifier: workspace:*
         version: link:../../packages/effect-library
       "@donkeyclip/motorcortex":
-        specifier: 9.22.2
-        version: 9.22.2
+        specifier: 9.23.3
+        version: 9.23.3
       "@donkeyclip/server":
         specifier: workspace:*
         version: link:../../packages/server
@@ -656,7 +656,7 @@ importers:
     dependencies:
       "@donkeyclip/motorcortex-anime":
         specifier: ^3.1.1
-        version: 3.1.1(@donkeyclip/motorcortex@9.22.2)
+        version: 3.1.1(@donkeyclip/motorcortex@9.23.3)
       esbuild-loader:
         specifier: ^4.3.0
         version: 4.3.0(webpack@5.99.9)
@@ -665,14 +665,14 @@ importers:
         version: 5.1.0(webpack@5.99.9)
       postcss-loader:
         specifier: 8.1.1
-        version: 8.1.1(postcss@8.5.4)(typescript@5.8.3)(webpack@5.99.9)
+        version: 8.1.1(postcss@8.5.6)(typescript@5.8.3)(webpack@5.99.9)
     devDependencies:
       "@donkeyclip/effects":
         specifier: workspace:*
         version: link:../../packages/effect-library
       "@donkeyclip/motorcortex":
-        specifier: 9.22.2
-        version: 9.22.2
+        specifier: 9.23.3
+        version: 9.23.3
       "@donkeyclip/server":
         specifier: workspace:*
         version: link:../../packages/server
@@ -694,7 +694,7 @@ importers:
     dependencies:
       "@donkeyclip/motorcortex-anime":
         specifier: ^3.1.1
-        version: 3.1.1(@donkeyclip/motorcortex@9.22.2)
+        version: 3.1.1(@donkeyclip/motorcortex@9.23.3)
       esbuild-loader:
         specifier: ^4.3.0
         version: 4.3.0(webpack@5.99.9)
@@ -703,14 +703,14 @@ importers:
         version: 5.1.0(webpack@5.99.9)
       postcss-loader:
         specifier: 8.1.1
-        version: 8.1.1(postcss@8.5.4)(typescript@5.8.3)(webpack@5.99.9)
+        version: 8.1.1(postcss@8.5.6)(typescript@5.8.3)(webpack@5.99.9)
     devDependencies:
       "@donkeyclip/effects":
         specifier: workspace:*
         version: link:../../packages/effect-library
       "@donkeyclip/motorcortex":
-        specifier: 9.22.2
-        version: 9.22.2
+        specifier: 9.23.3
+        version: 9.23.3
       "@donkeyclip/server":
         specifier: workspace:*
         version: link:../../packages/server
@@ -732,7 +732,7 @@ importers:
     dependencies:
       "@donkeyclip/motorcortex-anime":
         specifier: ^3.1.1
-        version: 3.1.1(@donkeyclip/motorcortex@9.22.2)
+        version: 3.1.1(@donkeyclip/motorcortex@9.23.3)
       esbuild-loader:
         specifier: ^4.3.0
         version: 4.3.0(webpack@5.99.9)
@@ -741,14 +741,14 @@ importers:
         version: 5.1.0(webpack@5.99.9)
       postcss-loader:
         specifier: 8.1.1
-        version: 8.1.1(postcss@8.5.4)(typescript@5.8.3)(webpack@5.99.9)
+        version: 8.1.1(postcss@8.5.6)(typescript@5.8.3)(webpack@5.99.9)
     devDependencies:
       "@donkeyclip/effects":
         specifier: workspace:*
         version: link:../../packages/effect-library
       "@donkeyclip/motorcortex":
-        specifier: 9.22.2
-        version: 9.22.2
+        specifier: 9.23.3
+        version: 9.23.3
       "@donkeyclip/server":
         specifier: workspace:*
         version: link:../../packages/server
@@ -770,7 +770,7 @@ importers:
     dependencies:
       "@donkeyclip/motorcortex-anime":
         specifier: ^3.1.1
-        version: 3.1.1(@donkeyclip/motorcortex@9.22.2)
+        version: 3.1.1(@donkeyclip/motorcortex@9.23.3)
       esbuild-loader:
         specifier: ^4.3.0
         version: 4.3.0(webpack@5.99.9)
@@ -779,14 +779,14 @@ importers:
         version: 5.1.0(webpack@5.99.9)
       postcss-loader:
         specifier: 8.1.1
-        version: 8.1.1(postcss@8.5.4)(typescript@5.8.3)(webpack@5.99.9)
+        version: 8.1.1(postcss@8.5.6)(typescript@5.8.3)(webpack@5.99.9)
     devDependencies:
       "@donkeyclip/effects":
         specifier: workspace:*
         version: link:../../packages/effect-library
       "@donkeyclip/motorcortex":
-        specifier: 9.22.2
-        version: 9.22.2
+        specifier: 9.23.3
+        version: 9.23.3
       "@donkeyclip/server":
         specifier: workspace:*
         version: link:../../packages/server
@@ -808,7 +808,7 @@ importers:
     dependencies:
       "@donkeyclip/motorcortex-anime":
         specifier: ^3.1.1
-        version: 3.1.1(@donkeyclip/motorcortex@9.22.2)
+        version: 3.1.1(@donkeyclip/motorcortex@9.23.3)
       esbuild-loader:
         specifier: ^4.3.0
         version: 4.3.0(webpack@5.99.9)
@@ -817,14 +817,14 @@ importers:
         version: 5.1.0(webpack@5.99.9)
       postcss-loader:
         specifier: 8.1.1
-        version: 8.1.1(postcss@8.5.4)(typescript@5.8.3)(webpack@5.99.9)
+        version: 8.1.1(postcss@8.5.6)(typescript@5.8.3)(webpack@5.99.9)
     devDependencies:
       "@donkeyclip/effects":
         specifier: workspace:*
         version: link:../../packages/effect-library
       "@donkeyclip/motorcortex":
-        specifier: 9.22.2
-        version: 9.22.2
+        specifier: 9.23.3
+        version: 9.23.3
       "@donkeyclip/server":
         specifier: workspace:*
         version: link:../../packages/server
@@ -845,8 +845,8 @@ importers:
   packages/effect-library:
     devDependencies:
       "@donkeyclip/motorcortex":
-        specifier: 9.22.2
-        version: 9.22.2
+        specifier: 9.23.3
+        version: 9.23.3
       eslint:
         specifier: ^8.46.0
         version: 8.57.1
@@ -855,7 +855,7 @@ importers:
         version: link:../eslint-config-custom
       tsup:
         specifier: 8.5.0
-        version: 8.5.0(@swc/core@1.11.31)(jiti@1.21.7)(postcss@8.5.4)(typescript@5.8.3)(yaml@2.8.0)
+        version: 8.5.0(@swc/core@1.12.5)(jiti@1.21.7)(postcss@8.5.6)(typescript@5.8.3)(yaml@2.8.0)
       typescript:
         specifier: 5.8.3
         version: 5.8.3
@@ -892,7 +892,7 @@ importers:
         version: 6.21.0(eslint@8.57.1)(typescript@5.8.3)
       autoprefixer:
         specifier: ^10.4.14
-        version: 10.4.21(postcss@8.5.4)
+        version: 10.4.21(postcss@8.5.6)
       eslint:
         specifier: ^8.46.0
         version: 8.57.1
@@ -909,8 +909,8 @@ importers:
         specifier: ^2.13.3
         version: 2.15.2(eslint@8.57.1)
       eslint-plugin-import:
-        specifier: ^2.31.0
-        version: 2.31.0(@typescript-eslint/parser@6.21.0(eslint@8.57.1)(typescript@5.8.3))(eslint@8.57.1)
+        specifier: ^2.32.0
+        version: 2.32.0(@typescript-eslint/parser@6.21.0(eslint@8.57.1)(typescript@5.8.3))(eslint@8.57.1)
       eslint-plugin-n:
         specifier: ^14.0.0
         version: 14.0.0(eslint@8.57.1)
@@ -921,11 +921,11 @@ importers:
         specifier: ^0.25.0
         version: 0.25.1(eslint@8.57.1)
       lint-staged:
-        specifier: ^16.1.0
-        version: 16.1.0
+        specifier: ^16.1.2
+        version: 16.1.2
       postcss:
-        specifier: ^8.5.3
-        version: 8.5.4
+        specifier: ^8.5.6
+        version: 8.5.6
       prettier:
         specifier: ^3.5.3
         version: 3.5.3
@@ -940,26 +940,26 @@ importers:
   packages/server:
     dependencies:
       "@donkeyclip/motorcortex":
-        specifier: ^9.22.2
-        version: 9.22.2
+        specifier: ^9.23.3
+        version: 9.23.3
       "@donkeyclip/motorcortex-player":
-        specifier: ^2.14.6
-        version: 2.14.7(@donkeyclip/motorcortex-player-lite@1.1.3(@donkeyclip/motorcortex@9.22.2))(@donkeyclip/motorcortex@9.22.2)
+        specifier: ^2.15.4
+        version: 2.15.4(@donkeyclip/motorcortex-player-lite@1.2.4(@donkeyclip/motorcortex@9.23.3))(@donkeyclip/motorcortex@9.23.3)
       "@donkeyclip/motorcortex-player-lite":
-        specifier: ^1.1.2
-        version: 1.1.3(@donkeyclip/motorcortex@9.22.2)
+        specifier: ^1.2.4
+        version: 1.2.4(@donkeyclip/motorcortex@9.23.3)
       "@swc/core":
-        specifier: ^1.11.31
-        version: 1.11.31
+        specifier: ^1.12.5
+        version: 1.12.5
       autoprefixer:
         specifier: ^10.4.14
-        version: 10.4.21(postcss@8.5.4)
+        version: 10.4.21(postcss@8.5.6)
       css-minimizer-webpack-plugin:
         specifier: ^7.0.2
         version: 7.0.2(webpack@5.99.9)
       cssnano:
         specifier: ^7.0.7
-        version: 7.0.7(postcss@8.5.4)
+        version: 7.0.7(postcss@8.5.6)
       html-loader:
         specifier: ^5.1.0
         version: 5.1.0(webpack@5.99.9)
@@ -967,20 +967,20 @@ importers:
         specifier: ^1.2.8
         version: 1.2.8
       postcss:
-        specifier: ^8.5.3
-        version: 8.5.4
+        specifier: ^8.5.6
+        version: 8.5.6
       postcss-loader:
         specifier: 8.1.1
-        version: 8.1.1(postcss@8.5.4)(typescript@5.8.3)(webpack@5.99.9)
+        version: 8.1.1(postcss@8.5.6)(typescript@5.8.3)(webpack@5.99.9)
       source-map-loader:
         specifier: ^5.0.0
         version: 5.0.0(webpack@5.99.9)
       swc-loader:
         specifier: ^0.2.6
-        version: 0.2.6(@swc/core@1.11.31)(webpack@5.99.9)
+        version: 0.2.6(@swc/core@1.12.5)(webpack@5.99.9)
       webpack:
         specifier: ^5.99.9
-        version: 5.99.9(@swc/core@1.11.31)(webpack-cli@6.0.1)
+        version: 5.99.9(@swc/core@1.12.5)(webpack-cli@6.0.1)
       webpack-cli:
         specifier: ^6.0.1
         version: 6.0.1(webpack-dev-server@5.2.2)(webpack@5.99.9)
@@ -999,7 +999,7 @@ importers:
         version: 8.57.1
       tsup:
         specifier: 8.5.0
-        version: 8.5.0(@swc/core@1.11.31)(jiti@1.21.7)(postcss@8.5.4)(typescript@5.8.3)(yaml@2.8.0)
+        version: 8.5.0(@swc/core@1.12.5)(jiti@1.21.7)(postcss@8.5.6)(typescript@5.8.3)(yaml@2.8.0)
       typescript:
         specifier: 5.8.3
         version: 5.8.3
@@ -1826,10 +1826,10 @@ packages:
       }
     engines: { node: ">=14.17.0" }
 
-  "@donkeyclip/dc-countdown-plugin@0.0.5":
+  "@donkeyclip/dc-countdown-plugin@0.1.0":
     resolution:
       {
-        integrity: sha512-ivUVVHFDxr+NsCAGDI0UYxdNpFhvmwIAj3u9YZs8e2BN6RPxtyabxNd+BPvpb0aYt/YwI3p9pWGb2ARlwAp7pw==,
+        integrity: sha512-BUz7KpGnQ27g/z1YUMitcFgqt+RmgCbhd5JyntfCJaNuXnVWF8j+75+BBD/bknW4pMGfVtimsq6XmCr961hvQA==,
       }
     engines: { node: ">=22" }
     peerDependencies:
@@ -1844,35 +1844,35 @@ packages:
     peerDependencies:
       "@donkeyclip/motorcortex": ">=8 < 10"
 
-  "@donkeyclip/motorcortex-player-lite@1.1.3":
+  "@donkeyclip/motorcortex-player-lite@1.2.4":
     resolution:
       {
-        integrity: sha512-BUIdnPGIyziJjQR7PH7dTB6yP5O0pYJ/NN9PkoexTIFu7Rq1YVrmPpQrfd3T6QP8VB/0RqpPINNB+OrMPgr+Iw==,
+        integrity: sha512-/bh2Rcs8CtmTygvEv3CvH4QRzobbPg0RLc0xM/lfC4J9ogQrFjMXp4DX26jaUwdBQm2Z7mbm9GomGd0jzKJG6Q==,
       }
     engines: { node: ">=14" }
     peerDependencies:
       "@donkeyclip/motorcortex": ">= 7.4.0 < 10"
 
-  "@donkeyclip/motorcortex-player@2.14.7":
+  "@donkeyclip/motorcortex-player@2.15.4":
     resolution:
       {
-        integrity: sha512-XcGdkpXqGhBgdXIgwlLfAdDIiwj1JPopFyL/wy3XevlqIcMxtqW9Z6lxLxxjI3xOCn+ZNyvRM6d1fJ6XW5Zv2g==,
+        integrity: sha512-/1wdasurEYkZfrN0bHO982a/UTdAe2uHdGIXjouDZhGyxDGHCd93lYWRE1ji27Ad2+fYGYG76mrQ0Vi28X8iHw==,
       }
     engines: { node: ">=12" }
     peerDependencies:
       "@donkeyclip/motorcortex": ">=9.19.0"
       "@donkeyclip/motorcortex-player-lite": ">=1.0.0"
 
-  "@donkeyclip/motorcortex-utils@0.0.9":
+  "@donkeyclip/motorcortex-utils@0.0.11":
     resolution:
       {
-        integrity: sha512-aLzMEp65MsNWwb/kDd7UAP5vFW8yx5wWva0K0tmsmU3Bs5IFrXYXy2EaiNPYPcX2X1FEeuzz6DGAMoYE3cuG6g==,
+        integrity: sha512-tnb+AgW7p7Qou5Nqw7SyUkGsrjyWGx2l15/jeKrNIB22Fu7W2x3Up0pk82vyezlAL4DpLbjSUinh/vS9P6vYYw==,
       }
 
-  "@donkeyclip/motorcortex@9.22.2":
+  "@donkeyclip/motorcortex@9.23.3":
     resolution:
       {
-        integrity: sha512-/sL2DWJ2WA5nWfUWipI3TVKymwgcwiT42yCsWJsXWtHL2VVzoLWnLZ3FtpGoi5uYHLJ95R922LZXN4FKfZ9Hkw==,
+        integrity: sha512-bjzFk3GMaChngWufk7pgKAIgZMBi3Ner6BkeRe1me0xPujZmhKuP+mQfKttH+pGQwNWm++WCHVmci7OkHww0wg==,
       }
 
   "@esbuild/aix-ppc64@0.25.5":
@@ -2469,100 +2469,100 @@ packages:
         integrity: sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==,
       }
 
-  "@swc/core-darwin-arm64@1.11.31":
+  "@swc/core-darwin-arm64@1.12.5":
     resolution:
       {
-        integrity: sha512-NTEaYOts0OGSbJZc0O74xsji+64JrF1stmBii6D5EevWEtrY4wlZhm8SiP/qPrOB+HqtAihxWIukWkP2aSdGSQ==,
+        integrity: sha512-3WF+naP/qkt5flrTfJr+p07b522JcixKvIivM7FgvllA6LjJxf+pheoILrTS8IwrNAK/XtHfKWYcGY+3eaA4mA==,
       }
     engines: { node: ">=10" }
     cpu: [arm64]
     os: [darwin]
 
-  "@swc/core-darwin-x64@1.11.31":
+  "@swc/core-darwin-x64@1.12.5":
     resolution:
       {
-        integrity: sha512-THSGaSwT96JwXDwuXQ6yFBbn+xDMdyw7OmBpnweAWsh5DhZmQkALEm1DgdQO3+rrE99MkmzwAfclc0UmYro/OA==,
+        integrity: sha512-GCcD3dft8YN7unTBcW02Fx41jXp2MNQHCjx5ceWSEYOGvn7vBSUp7k7LkfTxGN5Ftxb9a1mxhPq8r4rD2u/aPw==,
       }
     engines: { node: ">=10" }
     cpu: [x64]
     os: [darwin]
 
-  "@swc/core-linux-arm-gnueabihf@1.11.31":
+  "@swc/core-linux-arm-gnueabihf@1.12.5":
     resolution:
       {
-        integrity: sha512-laKtQFnW7KHgE57Hx32os2SNAogcuIDxYE+3DYIOmDMqD7/1DCfJe6Rln2N9WcOw6HuDbDpyQavIwZNfSAa8vQ==,
+        integrity: sha512-jWlzP/Y4+wbE/EJM+WGIDQsklLFV3g5LmbYTBgrY4+5nb517P31mkBzf5y2knfNWPrL7HzNu0578j3Zi2E6Iig==,
       }
     engines: { node: ">=10" }
     cpu: [arm]
     os: [linux]
 
-  "@swc/core-linux-arm64-gnu@1.11.31":
+  "@swc/core-linux-arm64-gnu@1.12.5":
     resolution:
       {
-        integrity: sha512-T+vGw9aPE1YVyRxRr1n7NAdkbgzBzrXCCJ95xAZc/0+WUwmL77Z+js0J5v1KKTRxw4FvrslNCOXzMWrSLdwPSA==,
+        integrity: sha512-GkzgIUz+2r6J6Tn3hb7/4ByaWHRrRZt4vuN9BLAd+y65m2Bt0vlEpPtWhrB/TVe4hEkFR+W5PDETLEbUT4i0tQ==,
       }
     engines: { node: ">=10" }
     cpu: [arm64]
     os: [linux]
 
-  "@swc/core-linux-arm64-musl@1.11.31":
+  "@swc/core-linux-arm64-musl@1.12.5":
     resolution:
       {
-        integrity: sha512-Mztp5NZkyd5MrOAG+kl+QSn0lL4Uawd4CK4J7wm97Hs44N9DHGIG5nOz7Qve1KZo407Y25lTxi/PqzPKHo61zQ==,
+        integrity: sha512-g0AJ7QmZPj3Uw+C5pDa48LAUG7JBgQmB0mN5cW+s2mjaFKT0mTSxYALtx/MDZwJExDPo0yJV8kSbFO1tvFPyhg==,
       }
     engines: { node: ">=10" }
     cpu: [arm64]
     os: [linux]
 
-  "@swc/core-linux-x64-gnu@1.11.31":
+  "@swc/core-linux-x64-gnu@1.12.5":
     resolution:
       {
-        integrity: sha512-DDVE0LZcXOWwOqFU1Xi7gdtiUg3FHA0vbGb3trjWCuI1ZtDZHEQYL4M3/2FjqKZtIwASrDvO96w91okZbXhvMg==,
+        integrity: sha512-PeYoSziNy+iNiBHPtAsO84bzBne/mbCsG5ijYkAhS1GVsDgohClorUvRXXhcUZoX2gr8TfSI9WLHo30K+DKiHg==,
       }
     engines: { node: ">=10" }
     cpu: [x64]
     os: [linux]
 
-  "@swc/core-linux-x64-musl@1.11.31":
+  "@swc/core-linux-x64-musl@1.12.5":
     resolution:
       {
-        integrity: sha512-mJA1MzPPRIfaBUHZi0xJQ4vwL09MNWDeFtxXb0r4Yzpf0v5Lue9ymumcBPmw/h6TKWms+Non4+TDquAsweuKSw==,
+        integrity: sha512-EJrfCCIyuV5LLmYgKtIMwtgsnjVesdFe0IgQzEKs9OfB6cL6g7WO9conn8BkGX8jphVa7jChKxShDGkreWWDzA==,
       }
     engines: { node: ">=10" }
     cpu: [x64]
     os: [linux]
 
-  "@swc/core-win32-arm64-msvc@1.11.31":
+  "@swc/core-win32-arm64-msvc@1.12.5":
     resolution:
       {
-        integrity: sha512-RdtakUkNVAb/FFIMw3LnfNdlH1/ep6KgiPDRlmyUfd0WdIQ3OACmeBegEFNFTzi7gEuzy2Yxg4LWf4IUVk8/bg==,
+        integrity: sha512-FnwT7fxkJJMgsfiDoZKEVGyCzrPFbzpflFAAoTCUCu3MaHw6mW55o/MAAfofvJ1iIcEpec4o93OilsmKtpyO5Q==,
       }
     engines: { node: ">=10" }
     cpu: [arm64]
     os: [win32]
 
-  "@swc/core-win32-ia32-msvc@1.11.31":
+  "@swc/core-win32-ia32-msvc@1.12.5":
     resolution:
       {
-        integrity: sha512-hErXdCGsg7swWdG1fossuL8542I59xV+all751mYlBoZ8kOghLSKObGQTkBbuNvc0sUKWfWg1X0iBuIhAYar+w==,
+        integrity: sha512-jW6l4KFt9mIXSpGseE6BQOEFmbIeXeShDuWgldEJXKeXf/uPs8wrqv80XBIUwVpK0ZbmJwPQ0waGVj8UM3th2Q==,
       }
     engines: { node: ">=10" }
     cpu: [ia32]
     os: [win32]
 
-  "@swc/core-win32-x64-msvc@1.11.31":
+  "@swc/core-win32-x64-msvc@1.12.5":
     resolution:
       {
-        integrity: sha512-5t7SGjUBMMhF9b5j17ml/f/498kiBJNf4vZFNM421UGUEETdtjPN9jZIuQrowBkoFGJTCVL/ECM4YRtTH30u/A==,
+        integrity: sha512-AZszwuEjlz1tSNLQRm3T5OZJ5eebxjJlDQnnzXJmg0B7DJMRoaAe1HTLOmejxjFK6yWr7fh+pSeCw2PgQLxgqA==,
       }
     engines: { node: ">=10" }
     cpu: [x64]
     os: [win32]
 
-  "@swc/core@1.11.31":
+  "@swc/core@1.12.5":
     resolution:
       {
-        integrity: sha512-mAby9aUnKRjMEA7v8cVZS9Ah4duoRBnX7X6r5qrhTxErx+68MoY1TPrVwj/66/SWN3Bl+jijqAqoB8Qx0QE34A==,
+        integrity: sha512-KxA0PHHIuUBmQ/Oi+xFpVzILj2Oo37sTtftCbyowQlyx5YOknEOw1kLpas5hMcpznXgFyAWbpK71xQps4INPgA==,
       }
     engines: { node: ">=10" }
     peerDependencies:
@@ -2577,10 +2577,10 @@ packages:
         integrity: sha512-e2BR4lsJkkRlKZ/qCHPw9ZaSxc0MVUd7gtbtaB7aMvHeJVYe8sOB8DBZkP2DtISHGSku9sCK6T6cnY0CtXrOCQ==,
       }
 
-  "@swc/types@0.1.21":
+  "@swc/types@0.1.23":
     resolution:
       {
-        integrity: sha512-2YEtj5HJVbKivud9N4bpPBAyZhj4S2Ipe5LkUG94alTpr7in/GU/EARgPAd3BwU+YOmFVJC2+kjqhGRi3r0ZpQ==,
+        integrity: sha512-u1iIVZV9Q0jxY+yM2vw/hZGDNudsN85bBpTqzAQ9rzkxW9D+e3aEM4Han+ow518gSewkXgjmEK0BD79ZcNVgPw==,
       }
 
   "@trysound/sax@0.2.0":
@@ -3019,6 +3019,14 @@ packages:
     resolution:
       {
         integrity: sha512-OvQ/2pUDKmgfCg++xsTX1wGxfTaszcHVcTctW4UJB4hibJx2HXxxO5UmVgyjMa+ZDsiaf5wWLXYpRWMmBI0QHg==,
+      }
+    engines: { node: ">=0.4.0" }
+    hasBin: true
+
+  acorn@8.15.0:
+    resolution:
+      {
+        integrity: sha512-NZyJarBfL7nWwIq+FDL6Zp/yHEhePMNnnJ0y3qfieCrmNvYct8uvtiV41UvlSe6apAfk0fY1FbWx+NwfmpvtTg==,
       }
     engines: { node: ">=0.4.0" }
     hasBin: true
@@ -4142,10 +4150,10 @@ packages:
         integrity: sha512-WFj2isz22JahUv+B788TlO3N6zL3nNJGU8CcZbPZvVEkBPaJdCV4vy5wyghty5ROFbCRnm132v8BScu5/1BQ8g==,
       }
 
-  eslint-module-utils@2.12.0:
+  eslint-module-utils@2.12.1:
     resolution:
       {
-        integrity: sha512-wALZ0HFoytlyh/1+4wuZ9FJCD/leWHQzzrxJ8+rebyReSLk7LApMyd3WJaLVoN+D5+WIdJyDK1c6JnE65V4Zyg==,
+        integrity: sha512-L8jSWTze7K2mTg0vos/RuLRS5soomksDPoJLXIslC7c8Wmut3bx7CPpJijDcBZtxQ5lrbUdM+s0OlNbz0DCDNw==,
       }
     engines: { node: ">=4" }
     peerDependencies:
@@ -4192,10 +4200,10 @@ packages:
     peerDependencies:
       eslint: ">=4.19.1"
 
-  eslint-plugin-import@2.31.0:
+  eslint-plugin-import@2.32.0:
     resolution:
       {
-        integrity: sha512-ixmkI62Rbc2/w8Vfxyh1jQRTdRTF52VxwRVHl/ykPAmqG+Nb7/kNn+byLP0LxPgI7zWA16Jt82SybJInmMia3A==,
+        integrity: sha512-whOE1HFo/qJDyX4SnXzP4N6zOWn79WhnCUY/iDR0mPfQZO8wcYE4JClzI2oZrhBnnMUCBCHZhO6VQyoBU95mZA==,
       }
     engines: { node: ">=4" }
     peerDependencies:
@@ -5391,10 +5399,10 @@ packages:
         integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==,
       }
 
-  lint-staged@16.1.0:
+  lint-staged@16.1.2:
     resolution:
       {
-        integrity: sha512-HkpQh69XHxgCjObjejBT3s2ILwNjFx8M3nw+tJ/ssBauDlIpkx2RpqWSi1fBgkXLSSXnbR3iEq1NkVtpvV+FLQ==,
+        integrity: sha512-sQKw2Si2g9KUZNY3XNvRuDq4UJqpHwF0/FQzZR2M7I5MvtpWvibikCjUVJzZdGE0ByurEl3KQNvsGetd1ty1/Q==,
       }
     engines: { node: ">=20.17" }
     hasBin: true
@@ -6065,10 +6073,10 @@ packages:
         integrity: sha512-/Jm5M4RvtBFVkKWRu2BLUTNP8/M2a+UwuAX+ae4770q1qVGtfjG+WTCupoZixokjmHiry8uI+dlY8KXYV5HVVQ==,
       }
 
-  pnpm@10.11.1:
+  pnpm@10.12.1:
     resolution:
       {
-        integrity: sha512-5Rm592OYadyNXDxd/vc7PwkQlLCgBtcxc1PHKxJOgOGv1ClzLihwWta/oe6HnB/ORsEozOvTGSEB9D3WfGZ5Eg==,
+        integrity: sha512-8N2oWA8O6UgcXHmh2Se5Fk8sR46QmSrSaLuyRlpzaYQ5HWMz0sMnkTV4soBK8zR0ylVLopwEqLEwYKcXZ1rjrA==,
       }
     engines: { node: ">=18.12" }
     hasBin: true
@@ -6373,10 +6381,10 @@ packages:
         integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==,
       }
 
-  postcss@8.5.4:
+  postcss@8.5.6:
     resolution:
       {
-        integrity: sha512-QSa9EBe+uwlGTFmHsPKokv3B/oEMQZxfqW0QqNCyhpa6mB1afzulwn8hihglqAb2pOw+BJgNlmXQ8la2VeHB7w==,
+        integrity: sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==,
       }
     engines: { node: ^10 || ^12 || >=14 }
 
@@ -7145,10 +7153,10 @@ packages:
     engines: { node: ">=10" }
     hasBin: true
 
-  terser@5.41.0:
+  terser@5.43.1:
     resolution:
       {
-        integrity: sha512-H406eLPXpZbAX14+B8psIuvIr8+3c+2hkuYzpMkoE0ij+NdsVATbA78vb8neA/eqrj7rywa2pIkdmWRsXW6wmw==,
+        integrity: sha512-+6erLbBm0+LROX2sPXlUYx/ux5PyE9K/a92Wrt6oA+WDAoFTdpHE5tCYCI5PNzq2y8df4rA+QgHLJuR4jNymsg==,
       }
     engines: { node: ">=10" }
     hasBin: true
@@ -8419,32 +8427,32 @@ snapshots:
 
   "@discoveryjs/json-ext@0.6.3": {}
 
-  "@donkeyclip/dc-countdown-plugin@0.0.5(@donkeyclip/motorcortex@9.22.2)(rollup@4.41.1)":
+  "@donkeyclip/dc-countdown-plugin@0.1.0(@donkeyclip/motorcortex@9.23.3)(rollup@4.41.1)":
     dependencies:
-      "@donkeyclip/motorcortex": 9.22.2
+      "@donkeyclip/motorcortex": 9.23.3
       "@rollup/plugin-terser": 0.4.4(rollup@4.41.1)
     transitivePeerDependencies:
       - rollup
 
-  "@donkeyclip/motorcortex-anime@3.1.1(@donkeyclip/motorcortex@9.22.2)":
+  "@donkeyclip/motorcortex-anime@3.1.1(@donkeyclip/motorcortex@9.23.3)":
     dependencies:
-      "@donkeyclip/motorcortex": 9.22.2
+      "@donkeyclip/motorcortex": 9.23.3
       mc-animejs-core: 3.1.5
 
-  "@donkeyclip/motorcortex-player-lite@1.1.3(@donkeyclip/motorcortex@9.22.2)":
+  "@donkeyclip/motorcortex-player-lite@1.2.4(@donkeyclip/motorcortex@9.23.3)":
     dependencies:
-      "@donkeyclip/motorcortex": 9.22.2
-      "@donkeyclip/motorcortex-utils": 0.0.9
+      "@donkeyclip/motorcortex": 9.23.3
+      "@donkeyclip/motorcortex-utils": 0.0.11
 
-  "@donkeyclip/motorcortex-player@2.14.7(@donkeyclip/motorcortex-player-lite@1.1.3(@donkeyclip/motorcortex@9.22.2))(@donkeyclip/motorcortex@9.22.2)":
+  "@donkeyclip/motorcortex-player@2.15.4(@donkeyclip/motorcortex-player-lite@1.2.4(@donkeyclip/motorcortex@9.23.3))(@donkeyclip/motorcortex@9.23.3)":
     dependencies:
-      "@donkeyclip/motorcortex": 9.22.2
-      "@donkeyclip/motorcortex-player-lite": 1.1.3(@donkeyclip/motorcortex@9.22.2)
-      "@donkeyclip/motorcortex-utils": 0.0.9
+      "@donkeyclip/motorcortex": 9.23.3
+      "@donkeyclip/motorcortex-player-lite": 1.2.4(@donkeyclip/motorcortex@9.23.3)
+      "@donkeyclip/motorcortex-utils": 0.0.11
 
-  "@donkeyclip/motorcortex-utils@0.0.9": {}
+  "@donkeyclip/motorcortex-utils@0.0.11": {}
 
-  "@donkeyclip/motorcortex@9.22.2":
+  "@donkeyclip/motorcortex@9.23.3":
     dependencies:
       expr-eval: 2.0.2
       fastest-validator: 1.19.1
@@ -8647,7 +8655,7 @@ snapshots:
     dependencies:
       serialize-javascript: 6.0.2
       smob: 1.5.0
-      terser: 5.41.0
+      terser: 5.43.1
     optionalDependencies:
       rollup: 4.41.1
 
@@ -8715,55 +8723,55 @@ snapshots:
 
   "@sinclair/typebox@0.27.8": {}
 
-  "@swc/core-darwin-arm64@1.11.31":
+  "@swc/core-darwin-arm64@1.12.5":
     optional: true
 
-  "@swc/core-darwin-x64@1.11.31":
+  "@swc/core-darwin-x64@1.12.5":
     optional: true
 
-  "@swc/core-linux-arm-gnueabihf@1.11.31":
+  "@swc/core-linux-arm-gnueabihf@1.12.5":
     optional: true
 
-  "@swc/core-linux-arm64-gnu@1.11.31":
+  "@swc/core-linux-arm64-gnu@1.12.5":
     optional: true
 
-  "@swc/core-linux-arm64-musl@1.11.31":
+  "@swc/core-linux-arm64-musl@1.12.5":
     optional: true
 
-  "@swc/core-linux-x64-gnu@1.11.31":
+  "@swc/core-linux-x64-gnu@1.12.5":
     optional: true
 
-  "@swc/core-linux-x64-musl@1.11.31":
+  "@swc/core-linux-x64-musl@1.12.5":
     optional: true
 
-  "@swc/core-win32-arm64-msvc@1.11.31":
+  "@swc/core-win32-arm64-msvc@1.12.5":
     optional: true
 
-  "@swc/core-win32-ia32-msvc@1.11.31":
+  "@swc/core-win32-ia32-msvc@1.12.5":
     optional: true
 
-  "@swc/core-win32-x64-msvc@1.11.31":
+  "@swc/core-win32-x64-msvc@1.12.5":
     optional: true
 
-  "@swc/core@1.11.31":
+  "@swc/core@1.12.5":
     dependencies:
       "@swc/counter": 0.1.3
-      "@swc/types": 0.1.21
+      "@swc/types": 0.1.23
     optionalDependencies:
-      "@swc/core-darwin-arm64": 1.11.31
-      "@swc/core-darwin-x64": 1.11.31
-      "@swc/core-linux-arm-gnueabihf": 1.11.31
-      "@swc/core-linux-arm64-gnu": 1.11.31
-      "@swc/core-linux-arm64-musl": 1.11.31
-      "@swc/core-linux-x64-gnu": 1.11.31
-      "@swc/core-linux-x64-musl": 1.11.31
-      "@swc/core-win32-arm64-msvc": 1.11.31
-      "@swc/core-win32-ia32-msvc": 1.11.31
-      "@swc/core-win32-x64-msvc": 1.11.31
+      "@swc/core-darwin-arm64": 1.12.5
+      "@swc/core-darwin-x64": 1.12.5
+      "@swc/core-linux-arm-gnueabihf": 1.12.5
+      "@swc/core-linux-arm64-gnu": 1.12.5
+      "@swc/core-linux-arm64-musl": 1.12.5
+      "@swc/core-linux-x64-gnu": 1.12.5
+      "@swc/core-linux-x64-musl": 1.12.5
+      "@swc/core-win32-arm64-msvc": 1.12.5
+      "@swc/core-win32-ia32-msvc": 1.12.5
+      "@swc/core-win32-x64-msvc": 1.12.5
 
   "@swc/counter@0.1.3": {}
 
-  "@swc/types@0.1.21":
+  "@swc/types@0.1.23":
     dependencies:
       "@swc/counter": 0.1.3
 
@@ -9048,17 +9056,17 @@ snapshots:
 
   "@webpack-cli/configtest@3.0.1(webpack-cli@6.0.1)(webpack@5.99.9)":
     dependencies:
-      webpack: 5.99.9(@swc/core@1.11.31)(webpack-cli@6.0.1)
+      webpack: 5.99.9(@swc/core@1.12.5)(webpack-cli@6.0.1)
       webpack-cli: 6.0.1(webpack-dev-server@5.2.2)(webpack@5.99.9)
 
   "@webpack-cli/info@3.0.1(webpack-cli@6.0.1)(webpack@5.99.9)":
     dependencies:
-      webpack: 5.99.9(@swc/core@1.11.31)(webpack-cli@6.0.1)
+      webpack: 5.99.9(@swc/core@1.12.5)(webpack-cli@6.0.1)
       webpack-cli: 6.0.1(webpack-dev-server@5.2.2)(webpack@5.99.9)
 
   "@webpack-cli/serve@3.0.1(webpack-cli@6.0.1)(webpack-dev-server@5.2.2)(webpack@5.99.9)":
     dependencies:
-      webpack: 5.99.9(@swc/core@1.11.31)(webpack-cli@6.0.1)
+      webpack: 5.99.9(@swc/core@1.12.5)(webpack-cli@6.0.1)
       webpack-cli: 6.0.1(webpack-dev-server@5.2.2)(webpack@5.99.9)
     optionalDependencies:
       webpack-dev-server: 5.2.2(webpack-cli@6.0.1)(webpack@5.99.9)
@@ -9072,11 +9080,13 @@ snapshots:
       mime-types: 2.1.35
       negotiator: 0.6.3
 
-  acorn-jsx@5.3.2(acorn@8.14.1):
+  acorn-jsx@5.3.2(acorn@8.15.0):
     dependencies:
-      acorn: 8.14.1
+      acorn: 8.15.0
 
   acorn@8.14.1: {}
+
+  acorn@8.15.0: {}
 
   ajv-formats@2.1.1(ajv@8.17.1):
     optionalDependencies:
@@ -9182,14 +9192,14 @@ snapshots:
 
   async-function@1.0.0: {}
 
-  autoprefixer@10.4.21(postcss@8.5.4):
+  autoprefixer@10.4.21(postcss@8.5.6):
     dependencies:
       browserslist: 4.25.0
       caniuse-lite: 1.0.30001720
       fraction.js: 4.3.7
       normalize-range: 0.1.2
       picocolors: 1.1.1
-      postcss: 8.5.4
+      postcss: 8.5.6
       postcss-value-parser: 4.2.0
 
   available-typed-arrays@1.0.7:
@@ -9447,19 +9457,19 @@ snapshots:
       shebang-command: 2.0.0
       which: 2.0.2
 
-  css-declaration-sorter@7.2.0(postcss@8.5.4):
+  css-declaration-sorter@7.2.0(postcss@8.5.6):
     dependencies:
-      postcss: 8.5.4
+      postcss: 8.5.6
 
   css-minimizer-webpack-plugin@7.0.2(webpack@5.99.9):
     dependencies:
       "@jridgewell/trace-mapping": 0.3.25
-      cssnano: 7.0.7(postcss@8.5.4)
+      cssnano: 7.0.7(postcss@8.5.6)
       jest-worker: 29.7.0
-      postcss: 8.5.4
+      postcss: 8.5.6
       schema-utils: 4.3.2
       serialize-javascript: 6.0.2
-      webpack: 5.99.9(@swc/core@1.11.31)(webpack-cli@6.0.1)
+      webpack: 5.99.9(@swc/core@1.12.5)(webpack-cli@6.0.1)
 
   css-select@5.1.0:
     dependencies:
@@ -9483,49 +9493,49 @@ snapshots:
 
   cssesc@3.0.0: {}
 
-  cssnano-preset-default@7.0.7(postcss@8.5.4):
+  cssnano-preset-default@7.0.7(postcss@8.5.6):
     dependencies:
       browserslist: 4.25.0
-      css-declaration-sorter: 7.2.0(postcss@8.5.4)
-      cssnano-utils: 5.0.1(postcss@8.5.4)
-      postcss: 8.5.4
-      postcss-calc: 10.1.1(postcss@8.5.4)
-      postcss-colormin: 7.0.3(postcss@8.5.4)
-      postcss-convert-values: 7.0.5(postcss@8.5.4)
-      postcss-discard-comments: 7.0.4(postcss@8.5.4)
-      postcss-discard-duplicates: 7.0.2(postcss@8.5.4)
-      postcss-discard-empty: 7.0.1(postcss@8.5.4)
-      postcss-discard-overridden: 7.0.1(postcss@8.5.4)
-      postcss-merge-longhand: 7.0.5(postcss@8.5.4)
-      postcss-merge-rules: 7.0.5(postcss@8.5.4)
-      postcss-minify-font-values: 7.0.1(postcss@8.5.4)
-      postcss-minify-gradients: 7.0.1(postcss@8.5.4)
-      postcss-minify-params: 7.0.3(postcss@8.5.4)
-      postcss-minify-selectors: 7.0.5(postcss@8.5.4)
-      postcss-normalize-charset: 7.0.1(postcss@8.5.4)
-      postcss-normalize-display-values: 7.0.1(postcss@8.5.4)
-      postcss-normalize-positions: 7.0.1(postcss@8.5.4)
-      postcss-normalize-repeat-style: 7.0.1(postcss@8.5.4)
-      postcss-normalize-string: 7.0.1(postcss@8.5.4)
-      postcss-normalize-timing-functions: 7.0.1(postcss@8.5.4)
-      postcss-normalize-unicode: 7.0.3(postcss@8.5.4)
-      postcss-normalize-url: 7.0.1(postcss@8.5.4)
-      postcss-normalize-whitespace: 7.0.1(postcss@8.5.4)
-      postcss-ordered-values: 7.0.2(postcss@8.5.4)
-      postcss-reduce-initial: 7.0.3(postcss@8.5.4)
-      postcss-reduce-transforms: 7.0.1(postcss@8.5.4)
-      postcss-svgo: 7.0.2(postcss@8.5.4)
-      postcss-unique-selectors: 7.0.4(postcss@8.5.4)
+      css-declaration-sorter: 7.2.0(postcss@8.5.6)
+      cssnano-utils: 5.0.1(postcss@8.5.6)
+      postcss: 8.5.6
+      postcss-calc: 10.1.1(postcss@8.5.6)
+      postcss-colormin: 7.0.3(postcss@8.5.6)
+      postcss-convert-values: 7.0.5(postcss@8.5.6)
+      postcss-discard-comments: 7.0.4(postcss@8.5.6)
+      postcss-discard-duplicates: 7.0.2(postcss@8.5.6)
+      postcss-discard-empty: 7.0.1(postcss@8.5.6)
+      postcss-discard-overridden: 7.0.1(postcss@8.5.6)
+      postcss-merge-longhand: 7.0.5(postcss@8.5.6)
+      postcss-merge-rules: 7.0.5(postcss@8.5.6)
+      postcss-minify-font-values: 7.0.1(postcss@8.5.6)
+      postcss-minify-gradients: 7.0.1(postcss@8.5.6)
+      postcss-minify-params: 7.0.3(postcss@8.5.6)
+      postcss-minify-selectors: 7.0.5(postcss@8.5.6)
+      postcss-normalize-charset: 7.0.1(postcss@8.5.6)
+      postcss-normalize-display-values: 7.0.1(postcss@8.5.6)
+      postcss-normalize-positions: 7.0.1(postcss@8.5.6)
+      postcss-normalize-repeat-style: 7.0.1(postcss@8.5.6)
+      postcss-normalize-string: 7.0.1(postcss@8.5.6)
+      postcss-normalize-timing-functions: 7.0.1(postcss@8.5.6)
+      postcss-normalize-unicode: 7.0.3(postcss@8.5.6)
+      postcss-normalize-url: 7.0.1(postcss@8.5.6)
+      postcss-normalize-whitespace: 7.0.1(postcss@8.5.6)
+      postcss-ordered-values: 7.0.2(postcss@8.5.6)
+      postcss-reduce-initial: 7.0.3(postcss@8.5.6)
+      postcss-reduce-transforms: 7.0.1(postcss@8.5.6)
+      postcss-svgo: 7.0.2(postcss@8.5.6)
+      postcss-unique-selectors: 7.0.4(postcss@8.5.6)
 
-  cssnano-utils@5.0.1(postcss@8.5.4):
+  cssnano-utils@5.0.1(postcss@8.5.6):
     dependencies:
-      postcss: 8.5.4
+      postcss: 8.5.6
 
-  cssnano@7.0.7(postcss@8.5.4):
+  cssnano@7.0.7(postcss@8.5.6):
     dependencies:
-      cssnano-preset-default: 7.0.7(postcss@8.5.4)
+      cssnano-preset-default: 7.0.7(postcss@8.5.6)
       lilconfig: 3.1.3
-      postcss: 8.5.4
+      postcss: 8.5.6
 
   csso@5.0.5:
     dependencies:
@@ -9820,7 +9830,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-module-utils@2.12.0(@typescript-eslint/parser@6.21.0(eslint@8.57.1)(typescript@5.8.3))(eslint-import-resolver-node@0.3.9)(eslint@8.57.1):
+  eslint-module-utils@2.12.1(@typescript-eslint/parser@6.21.0(eslint@8.57.1)(typescript@5.8.3))(eslint-import-resolver-node@0.3.9)(eslint@8.57.1):
     dependencies:
       debug: 3.2.7
     optionalDependencies:
@@ -9846,7 +9856,7 @@ snapshots:
       eslint-utils: 2.1.0
       regexpp: 3.2.0
 
-  eslint-plugin-import@2.31.0(@typescript-eslint/parser@6.21.0(eslint@8.57.1)(typescript@5.8.3))(eslint@8.57.1):
+  eslint-plugin-import@2.32.0(@typescript-eslint/parser@6.21.0(eslint@8.57.1)(typescript@5.8.3))(eslint@8.57.1):
     dependencies:
       "@rtsao/scc": 1.1.0
       array-includes: 3.1.9
@@ -9857,7 +9867,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 8.57.1
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.12.0(@typescript-eslint/parser@6.21.0(eslint@8.57.1)(typescript@5.8.3))(eslint-import-resolver-node@0.3.9)(eslint@8.57.1)
+      eslint-module-utils: 2.12.1(@typescript-eslint/parser@6.21.0(eslint@8.57.1)(typescript@5.8.3))(eslint-import-resolver-node@0.3.9)(eslint@8.57.1)
       hasown: 2.0.2
       is-core-module: 2.16.1
       is-glob: 4.0.3
@@ -9972,8 +9982,8 @@ snapshots:
 
   espree@9.6.1:
     dependencies:
-      acorn: 8.14.1
-      acorn-jsx: 5.3.2(acorn@8.14.1)
+      acorn: 8.15.0
+      acorn-jsx: 5.3.2(acorn@8.15.0)
       eslint-visitor-keys: 3.4.3
 
   esquery@1.6.0:
@@ -10597,7 +10607,7 @@ snapshots:
 
   lines-and-columns@1.2.4: {}
 
-  lint-staged@16.1.0:
+  lint-staged@16.1.2:
     dependencies:
       chalk: 5.4.1
       commander: 14.0.0
@@ -10738,7 +10748,7 @@ snapshots:
 
   mlly@1.7.4:
     dependencies:
-      acorn: 8.14.1
+      acorn: 8.15.0
       pathe: 2.0.3
       pkg-types: 1.3.1
       ufo: 1.6.1
@@ -10954,165 +10964,165 @@ snapshots:
       mlly: 1.7.4
       pathe: 2.0.3
 
-  pnpm@10.11.1: {}
+  pnpm@10.12.1: {}
 
   possible-typed-array-names@1.1.0: {}
 
-  postcss-calc@10.1.1(postcss@8.5.4):
+  postcss-calc@10.1.1(postcss@8.5.6):
     dependencies:
-      postcss: 8.5.4
+      postcss: 8.5.6
       postcss-selector-parser: 7.1.0
       postcss-value-parser: 4.2.0
 
-  postcss-colormin@7.0.3(postcss@8.5.4):
+  postcss-colormin@7.0.3(postcss@8.5.6):
     dependencies:
       browserslist: 4.25.0
       caniuse-api: 3.0.0
       colord: 2.9.3
-      postcss: 8.5.4
+      postcss: 8.5.6
       postcss-value-parser: 4.2.0
 
-  postcss-convert-values@7.0.5(postcss@8.5.4):
+  postcss-convert-values@7.0.5(postcss@8.5.6):
     dependencies:
       browserslist: 4.25.0
-      postcss: 8.5.4
+      postcss: 8.5.6
       postcss-value-parser: 4.2.0
 
-  postcss-discard-comments@7.0.4(postcss@8.5.4):
+  postcss-discard-comments@7.0.4(postcss@8.5.6):
     dependencies:
-      postcss: 8.5.4
+      postcss: 8.5.6
       postcss-selector-parser: 7.1.0
 
-  postcss-discard-duplicates@7.0.2(postcss@8.5.4):
+  postcss-discard-duplicates@7.0.2(postcss@8.5.6):
     dependencies:
-      postcss: 8.5.4
+      postcss: 8.5.6
 
-  postcss-discard-empty@7.0.1(postcss@8.5.4):
+  postcss-discard-empty@7.0.1(postcss@8.5.6):
     dependencies:
-      postcss: 8.5.4
+      postcss: 8.5.6
 
-  postcss-discard-overridden@7.0.1(postcss@8.5.4):
+  postcss-discard-overridden@7.0.1(postcss@8.5.6):
     dependencies:
-      postcss: 8.5.4
+      postcss: 8.5.6
 
-  postcss-load-config@6.0.1(jiti@1.21.7)(postcss@8.5.4)(yaml@2.8.0):
+  postcss-load-config@6.0.1(jiti@1.21.7)(postcss@8.5.6)(yaml@2.8.0):
     dependencies:
       lilconfig: 3.1.3
     optionalDependencies:
       jiti: 1.21.7
-      postcss: 8.5.4
+      postcss: 8.5.6
       yaml: 2.8.0
 
-  postcss-loader@8.1.1(postcss@8.5.4)(typescript@5.8.3)(webpack@5.99.9):
+  postcss-loader@8.1.1(postcss@8.5.6)(typescript@5.8.3)(webpack@5.99.9):
     dependencies:
       cosmiconfig: 9.0.0(typescript@5.8.3)
       jiti: 1.21.7
-      postcss: 8.5.4
+      postcss: 8.5.6
       semver: 7.7.2
     optionalDependencies:
       webpack: 5.99.9
     transitivePeerDependencies:
       - typescript
 
-  postcss-merge-longhand@7.0.5(postcss@8.5.4):
+  postcss-merge-longhand@7.0.5(postcss@8.5.6):
     dependencies:
-      postcss: 8.5.4
+      postcss: 8.5.6
       postcss-value-parser: 4.2.0
-      stylehacks: 7.0.5(postcss@8.5.4)
+      stylehacks: 7.0.5(postcss@8.5.6)
 
-  postcss-merge-rules@7.0.5(postcss@8.5.4):
+  postcss-merge-rules@7.0.5(postcss@8.5.6):
     dependencies:
       browserslist: 4.25.0
       caniuse-api: 3.0.0
-      cssnano-utils: 5.0.1(postcss@8.5.4)
-      postcss: 8.5.4
+      cssnano-utils: 5.0.1(postcss@8.5.6)
+      postcss: 8.5.6
       postcss-selector-parser: 7.1.0
 
-  postcss-minify-font-values@7.0.1(postcss@8.5.4):
+  postcss-minify-font-values@7.0.1(postcss@8.5.6):
     dependencies:
-      postcss: 8.5.4
+      postcss: 8.5.6
       postcss-value-parser: 4.2.0
 
-  postcss-minify-gradients@7.0.1(postcss@8.5.4):
+  postcss-minify-gradients@7.0.1(postcss@8.5.6):
     dependencies:
       colord: 2.9.3
-      cssnano-utils: 5.0.1(postcss@8.5.4)
-      postcss: 8.5.4
+      cssnano-utils: 5.0.1(postcss@8.5.6)
+      postcss: 8.5.6
       postcss-value-parser: 4.2.0
 
-  postcss-minify-params@7.0.3(postcss@8.5.4):
+  postcss-minify-params@7.0.3(postcss@8.5.6):
     dependencies:
       browserslist: 4.25.0
-      cssnano-utils: 5.0.1(postcss@8.5.4)
-      postcss: 8.5.4
+      cssnano-utils: 5.0.1(postcss@8.5.6)
+      postcss: 8.5.6
       postcss-value-parser: 4.2.0
 
-  postcss-minify-selectors@7.0.5(postcss@8.5.4):
+  postcss-minify-selectors@7.0.5(postcss@8.5.6):
     dependencies:
       cssesc: 3.0.0
-      postcss: 8.5.4
+      postcss: 8.5.6
       postcss-selector-parser: 7.1.0
 
-  postcss-normalize-charset@7.0.1(postcss@8.5.4):
+  postcss-normalize-charset@7.0.1(postcss@8.5.6):
     dependencies:
-      postcss: 8.5.4
+      postcss: 8.5.6
 
-  postcss-normalize-display-values@7.0.1(postcss@8.5.4):
+  postcss-normalize-display-values@7.0.1(postcss@8.5.6):
     dependencies:
-      postcss: 8.5.4
+      postcss: 8.5.6
       postcss-value-parser: 4.2.0
 
-  postcss-normalize-positions@7.0.1(postcss@8.5.4):
+  postcss-normalize-positions@7.0.1(postcss@8.5.6):
     dependencies:
-      postcss: 8.5.4
+      postcss: 8.5.6
       postcss-value-parser: 4.2.0
 
-  postcss-normalize-repeat-style@7.0.1(postcss@8.5.4):
+  postcss-normalize-repeat-style@7.0.1(postcss@8.5.6):
     dependencies:
-      postcss: 8.5.4
+      postcss: 8.5.6
       postcss-value-parser: 4.2.0
 
-  postcss-normalize-string@7.0.1(postcss@8.5.4):
+  postcss-normalize-string@7.0.1(postcss@8.5.6):
     dependencies:
-      postcss: 8.5.4
+      postcss: 8.5.6
       postcss-value-parser: 4.2.0
 
-  postcss-normalize-timing-functions@7.0.1(postcss@8.5.4):
+  postcss-normalize-timing-functions@7.0.1(postcss@8.5.6):
     dependencies:
-      postcss: 8.5.4
+      postcss: 8.5.6
       postcss-value-parser: 4.2.0
 
-  postcss-normalize-unicode@7.0.3(postcss@8.5.4):
+  postcss-normalize-unicode@7.0.3(postcss@8.5.6):
     dependencies:
       browserslist: 4.25.0
-      postcss: 8.5.4
+      postcss: 8.5.6
       postcss-value-parser: 4.2.0
 
-  postcss-normalize-url@7.0.1(postcss@8.5.4):
+  postcss-normalize-url@7.0.1(postcss@8.5.6):
     dependencies:
-      postcss: 8.5.4
+      postcss: 8.5.6
       postcss-value-parser: 4.2.0
 
-  postcss-normalize-whitespace@7.0.1(postcss@8.5.4):
+  postcss-normalize-whitespace@7.0.1(postcss@8.5.6):
     dependencies:
-      postcss: 8.5.4
+      postcss: 8.5.6
       postcss-value-parser: 4.2.0
 
-  postcss-ordered-values@7.0.2(postcss@8.5.4):
+  postcss-ordered-values@7.0.2(postcss@8.5.6):
     dependencies:
-      cssnano-utils: 5.0.1(postcss@8.5.4)
-      postcss: 8.5.4
+      cssnano-utils: 5.0.1(postcss@8.5.6)
+      postcss: 8.5.6
       postcss-value-parser: 4.2.0
 
-  postcss-reduce-initial@7.0.3(postcss@8.5.4):
+  postcss-reduce-initial@7.0.3(postcss@8.5.6):
     dependencies:
       browserslist: 4.25.0
       caniuse-api: 3.0.0
-      postcss: 8.5.4
+      postcss: 8.5.6
 
-  postcss-reduce-transforms@7.0.1(postcss@8.5.4):
+  postcss-reduce-transforms@7.0.1(postcss@8.5.6):
     dependencies:
-      postcss: 8.5.4
+      postcss: 8.5.6
       postcss-value-parser: 4.2.0
 
   postcss-selector-parser@7.1.0:
@@ -11120,20 +11130,20 @@ snapshots:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
 
-  postcss-svgo@7.0.2(postcss@8.5.4):
+  postcss-svgo@7.0.2(postcss@8.5.6):
     dependencies:
-      postcss: 8.5.4
+      postcss: 8.5.6
       postcss-value-parser: 4.2.0
       svgo: 3.3.2
 
-  postcss-unique-selectors@7.0.4(postcss@8.5.4):
+  postcss-unique-selectors@7.0.4(postcss@8.5.6):
     dependencies:
-      postcss: 8.5.4
+      postcss: 8.5.6
       postcss-selector-parser: 7.1.0
 
   postcss-value-parser@4.2.0: {}
 
-  postcss@8.5.4:
+  postcss@8.5.6:
     dependencies:
       nanoid: 3.3.11
       picocolors: 1.1.1
@@ -11495,7 +11505,7 @@ snapshots:
     dependencies:
       iconv-lite: 0.6.3
       source-map-js: 1.2.1
-      webpack: 5.99.9(@swc/core@1.11.31)(webpack-cli@6.0.1)
+      webpack: 5.99.9(@swc/core@1.12.5)(webpack-cli@6.0.1)
 
   source-map-support@0.5.21:
     dependencies:
@@ -11601,10 +11611,10 @@ snapshots:
 
   strip-json-comments@3.1.1: {}
 
-  stylehacks@7.0.5(postcss@8.5.4):
+  stylehacks@7.0.5(postcss@8.5.6):
     dependencies:
       browserslist: 4.25.0
-      postcss: 8.5.4
+      postcss: 8.5.6
       postcss-selector-parser: 7.1.0
 
   sucrase@3.35.0:
@@ -11637,24 +11647,24 @@ snapshots:
       csso: 5.0.5
       picocolors: 1.1.1
 
-  swc-loader@0.2.6(@swc/core@1.11.31)(webpack@5.99.9):
+  swc-loader@0.2.6(@swc/core@1.12.5)(webpack@5.99.9):
     dependencies:
-      "@swc/core": 1.11.31
+      "@swc/core": 1.12.5
       "@swc/counter": 0.1.3
-      webpack: 5.99.9(@swc/core@1.11.31)(webpack-cli@6.0.1)
+      webpack: 5.99.9(@swc/core@1.12.5)(webpack-cli@6.0.1)
 
   tapable@2.2.2: {}
 
-  terser-webpack-plugin@5.3.14(@swc/core@1.11.31)(webpack@5.99.9):
+  terser-webpack-plugin@5.3.14(@swc/core@1.12.5)(webpack@5.99.9):
     dependencies:
       "@jridgewell/trace-mapping": 0.3.25
       jest-worker: 27.5.1
       schema-utils: 4.3.2
       serialize-javascript: 6.0.2
-      terser: 5.40.0
-      webpack: 5.99.9(@swc/core@1.11.31)(webpack-cli@6.0.1)
+      terser: 5.43.1
+      webpack: 5.99.9(@swc/core@1.12.5)(webpack-cli@6.0.1)
     optionalDependencies:
-      "@swc/core": 1.11.31
+      "@swc/core": 1.12.5
 
   terser-webpack-plugin@5.3.14(webpack@5.99.9):
     dependencies:
@@ -11662,7 +11672,7 @@ snapshots:
       jest-worker: 27.5.1
       schema-utils: 4.3.2
       serialize-javascript: 6.0.2
-      terser: 5.40.0
+      terser: 5.43.1
       webpack: 5.99.9
 
   terser@5.40.0:
@@ -11672,10 +11682,10 @@ snapshots:
       commander: 2.20.3
       source-map-support: 0.5.21
 
-  terser@5.41.0:
+  terser@5.43.1:
     dependencies:
       "@jridgewell/source-map": 0.3.6
-      acorn: 8.14.1
+      acorn: 8.15.0
       commander: 2.20.3
       source-map-support: 0.5.21
 
@@ -11733,7 +11743,7 @@ snapshots:
 
   tslib@2.8.1: {}
 
-  tsup@8.5.0(@swc/core@1.11.31)(jiti@1.21.7)(postcss@8.5.4)(typescript@5.8.3)(yaml@2.8.0):
+  tsup@8.5.0(@swc/core@1.12.5)(jiti@1.21.7)(postcss@8.5.6)(typescript@5.8.3)(yaml@2.8.0):
     dependencies:
       bundle-require: 5.1.0(esbuild@0.25.5)
       cac: 6.7.14
@@ -11744,7 +11754,7 @@ snapshots:
       fix-dts-default-cjs-exports: 1.0.1
       joycon: 3.1.1
       picocolors: 1.1.1
-      postcss-load-config: 6.0.1(jiti@1.21.7)(postcss@8.5.4)(yaml@2.8.0)
+      postcss-load-config: 6.0.1(jiti@1.21.7)(postcss@8.5.6)(yaml@2.8.0)
       resolve-from: 5.0.0
       rollup: 4.41.1
       source-map: 0.8.0-beta.0
@@ -11753,8 +11763,8 @@ snapshots:
       tinyglobby: 0.2.14
       tree-kill: 1.2.2
     optionalDependencies:
-      "@swc/core": 1.11.31
-      postcss: 8.5.4
+      "@swc/core": 1.12.5
+      postcss: 8.5.6
       typescript: 5.8.3
     transitivePeerDependencies:
       - jiti
@@ -11902,7 +11912,7 @@ snapshots:
       import-local: 3.2.0
       interpret: 3.1.1
       rechoir: 0.8.0
-      webpack: 5.99.9(@swc/core@1.11.31)(webpack-cli@6.0.1)
+      webpack: 5.99.9(@swc/core@1.12.5)(webpack-cli@6.0.1)
       webpack-merge: 6.0.1
     optionalDependencies:
       webpack-dev-server: 5.2.2(webpack-cli@6.0.1)(webpack@5.99.9)
@@ -11916,7 +11926,7 @@ snapshots:
       range-parser: 1.2.1
       schema-utils: 4.3.2
     optionalDependencies:
-      webpack: 5.99.9(@swc/core@1.11.31)(webpack-cli@6.0.1)
+      webpack: 5.99.9(@swc/core@1.12.5)(webpack-cli@6.0.1)
 
   webpack-dev-server@5.2.2(webpack-cli@6.0.1)(webpack@5.99.9):
     dependencies:
@@ -11949,7 +11959,7 @@ snapshots:
       webpack-dev-middleware: 7.4.2(webpack@5.99.9)
       ws: 8.18.2
     optionalDependencies:
-      webpack: 5.99.9(@swc/core@1.11.31)(webpack-cli@6.0.1)
+      webpack: 5.99.9(@swc/core@1.12.5)(webpack-cli@6.0.1)
       webpack-cli: 6.0.1(webpack-dev-server@5.2.2)(webpack@5.99.9)
     transitivePeerDependencies:
       - bufferutil
@@ -12001,7 +12011,7 @@ snapshots:
       - esbuild
       - uglify-js
 
-  webpack@5.99.9(@swc/core@1.11.31)(webpack-cli@6.0.1):
+  webpack@5.99.9(@swc/core@1.12.5)(webpack-cli@6.0.1):
     dependencies:
       "@types/eslint-scope": 3.7.7
       "@types/estree": 1.0.7
@@ -12024,7 +12034,7 @@ snapshots:
       neo-async: 2.6.2
       schema-utils: 4.3.2
       tapable: 2.2.2
-      terser-webpack-plugin: 5.3.14(@swc/core@1.11.31)(webpack@5.99.9)
+      terser-webpack-plugin: 5.3.14(@swc/core@1.12.5)(webpack@5.99.9)
       watchpack: 2.4.4
       webpack-sources: 3.3.2
     optionalDependencies:

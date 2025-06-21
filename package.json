@@ -14,8 +14,8 @@
     "eslint": "^8.57.1",
     "eslint-config-custom": "workspace:*",
     "husky": "^9.1.7",
-    "lint-staged": "^16.1.0",
-    "pnpm": "^10.11.1",
+    "lint-staged": "^16.1.2",
+    "pnpm": "^10.12.1",
     "prettier": "^3.5.3",
     "tsconfig": "workspace:*",
     "turbo": "^2.5.4"
