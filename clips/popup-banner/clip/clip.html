@@ -105,7 +105,7 @@
       <div class="product">
         <picture
           mc-if="initParams.imageClipPath == false"
-          class="product-image"
+          class="product-image-container"
         >
           <source
             mc-for="imgKey,imgItem"
@@ -113,7 +113,6 @@
             mc-if="{{imgKey}}!='default'"
             srcset="{{imgItem}}"
             media="{{imgKey}}"
-            class="product-image"
           />
           <img
             src="{{item.featured_image.default}}"
@@ -121,14 +120,16 @@
             class="product-image"
           />
         </picture>
-        <picture mc-if="initParams.imageClipPath == true" class="product-image">
+        <picture
+          mc-if="initParams.imageClipPath == true"
+          class="product-image-container"
+        >
           <source
             mc-for="imgKey,imgItem"
             mc-of="item.featured_image"
             mc-if="{{imgKey}}!='default'"
             srcset="{{imgItem}}"
             media="{{imgKey}}"
-            class="shape product-image"
           />
           <img
             src="{{item.featured_image.default}}"
