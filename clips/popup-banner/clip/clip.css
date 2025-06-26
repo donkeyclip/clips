@@ -96,6 +96,7 @@
 .product-details {
   display: flex;
   width: 390px;
+  height: 43px;
   padding: 10px;
   justify-content: space-between;
   gap: 9px; /*min-gap*/
@@ -377,6 +378,7 @@
 
   .product-details {
     width: 302px;
+    height: 35px;
     bottom: 0px;
   }
 
