@@ -178,7 +178,7 @@ const newEffectHours = new CountdownPlugin.Countdown(
   },
   {
     selector: `#free-hours`,
-    duration: 1,
+    duration: "@expression(initParams.products.length*3000+750+350+500)",
   },
 );
 const newEffectMinutes = new CountdownPlugin.Countdown(
@@ -192,7 +192,7 @@ const newEffectMinutes = new CountdownPlugin.Countdown(
   },
   {
     selector: `#free-minutes`,
-    duration: 1,
+    duration: "@expression(initParams.products.length*3000+750+350+500)",
   },
 );
 const newEffectSeconds = new CountdownPlugin.Countdown(
@@ -206,7 +206,7 @@ const newEffectSeconds = new CountdownPlugin.Countdown(
   },
   {
     selector: `#free-seconds`,
-    duration: 1,
+    duration: "@expression(initParams.products.length*3000+750+350+500)",
   },
 );
 const newEffectDays = new CountdownPlugin.Countdown(
@@ -220,7 +220,7 @@ const newEffectDays = new CountdownPlugin.Countdown(
   },
   {
     selector: `#free-days`,
-    duration: 1,
+    duration: "@expression(initParams.products.length*3000+750+350+500)",
   },
 );
 

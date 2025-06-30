@@ -22,6 +22,10 @@
   background: var(--image-bg-color);
 }
 
+.countdown-fallback{
+  display: none;
+}
+
 .cta-countdown {
   display: flex;
   flex-direction: column;
