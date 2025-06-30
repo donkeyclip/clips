@@ -557,7 +557,7 @@
   }
 
   .countdown {
-    gap: 3px;
+    gap: 5px;
     width: 150px;
     height: 37px;
     align-items: center;
@@ -566,11 +566,17 @@
   }
 
   .countdown-wrapper {
-    flex-direction: row;
-    gap: 0px;
     color: var(--cta-color);
+    justify-content: center;
     width: 18px;
+    flex-direction: row;
   }
+  .countdown-wrapper:nth-child(1) {
+    width: fit-content;
+    gap: 1px;
+    margin-right: 5px;
+  }
+
 
   .value {
     font-size: 15px;
@@ -582,6 +588,7 @@
   }
 
   .d {
+    color: var(--cta-color);
     font-size: 15px;
    line-height: 15px;
     display: block;
@@ -742,7 +749,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 3px;
+    gap: 2px;
     background-color: var(--text-bg-color);
     bottom: 0;
   }
@@ -752,6 +759,10 @@
     gap: 0px;
     color: var(--cta-color);
     width: 14px;
+  }
+
+    .countdown-wrapper:nth-child(1) {
+    margin-right: 3px;
   }
 
   .value {
