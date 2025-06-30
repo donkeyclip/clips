@@ -25,7 +25,7 @@
     "@donkeyclip/effects": "workspace:*",
     "@donkeyclip/motorcortex": "9.23.4",
     "@donkeyclip/server": "workspace:*",
-    "eslint": "^8.46.0",
+    "eslint": "^9.0.0",
     "eslint-config-custom": "workspace:*",
     "prettier": "^3.6.2",
     "typescript": "5.8.3"
